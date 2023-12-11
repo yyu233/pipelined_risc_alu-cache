@@ -1,0 +1,12 @@
+mux_8_1.v  
+decoder_3_8.v  
+mux16_2_1.v  
+nand2.v    
+dff.v          
+mux16_8_1.v  
+not1.v     
+rf_bypass.v
+mux_2_1.v    
+reg_16.v   
+rf.v
+

@@ -1,0 +1,52 @@
+Information: Updating graph... (UID-83)
+Warning: Design 'proc' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : reference
+Design : proc
+Version: L-2016.03-SP4-1
+Date   : Fri Apr 14 22:22:14 2017
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2X1             gscl45nm       2.346500       1      2.346500  
+AND2X2             gscl45nm       2.815800       1      2.815800  
+AOI22X1            gscl45nm       3.285100      16     52.561600  
+BUFX2              gscl45nm       2.346500      10     23.464999  
+EX_MEM                          906.687578       1    906.687578  h, n
+ID_EX                          1161.986772       1   1161.986772  h, n
+IF_ID                           925.459578       1    925.459578  h, n
+INVX1              gscl45nm       1.407900      32     45.052799  
+INVX2              gscl45nm       1.877200       3      5.631600  
+INVX4              gscl45nm       3.285100       1      3.285100  
+MEM_WB                          238.873694       1    238.873694  h, n
+alu                            2995.541844       1   2995.541844  h
+alu_b_mux                        87.289800       1     87.289800  h
+for_unit2                       316.308195       1    316.308195  h
+for_unit_1                      856.941785       1    856.941785  h
+haz_d                            58.662498       1     58.662498  h
+instr_decoder                   411.106792       1    411.106792  h
+lt_lte                           11.732500       1     11.732500  h
+memory2c_0                    14321.627834       1  14321.627834  h, n
+memory2c_1                    14346.031434       1  14346.031434  h, n
+pc_jump_B_sel_1                   4.693000       1      4.693000  h
+pc_jump_out                     802.033682       1    802.033682  h
+pc_unit                         783.730982       1    783.730982  h, n
+rf_bypass                      5036.996794       1   5036.996794  h, n
+stall_c                          22.526399       1     22.526399  h, n
+wrt_ctrl                        584.278489       1    584.278489  h
+-----------------------------------------------------------------------------
+Total 26 references                                 44007.668049
+1

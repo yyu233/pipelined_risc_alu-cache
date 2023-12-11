@@ -1,0 +1,75 @@
+# vsim -c proc_hier_pbench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
+# Start time: 00:12:59 on Apr 11,2017
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: proc.v(92): (vopt-2685) [TFMPC] - Too few port connections for 'jump_out'.  Expected 8, found 7.
+# ** Warning: proc.v(92): (vopt-2718) [TFMPC] - Missing connection for port 'flush'.
+# //  Questa Sim
+# //  Version 10.4c linux Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading work.proc_hier_pbench(fast)
+# Loading work.proc_hier(fast)
+# Loading work.clkrst(fast)
+# Loading work.proc(fast)
+# Loading work.pc_unit(fast)
+# Loading work.cla16(fast)
+# Loading work.top_ahead(fast)
+# Loading work.ahead4(fast)
+# Loading work.cla4(fast)
+# Loading work.pfa(fast)
+# Loading work.haz_d(fast)
+# Loading work.memory2c(fast)
+# Loading work.IF_ID(fast)
+# Loading work.register(fast)
+# Loading work.dff(fast)
+# Loading work.instr_decoder(fast)
+# Loading work.in_dest_ctrl(fast)
+# Loading work.alu_sign(fast)
+# Loading work.alu_inv(fast)
+# Loading work.imm_ext(fast)
+# Loading work.pc_jump_B_sel(fast)
+# Loading work.rf_bypass(fast)
+# Loading work.rf(fast)
+# Loading work.for_unit2(fast)
+# Loading work.pc_jump_out(fast)
+# Loading work.pc_ctrl(fast)
+# Loading work.ID_EX(fast)
+# Loading work.for_unit_1(fast)
+# Loading work.alu_b_mux(fast)
+# Loading work.alu(fast)
+# Loading work.input_inv(fast)
+# Loading work.xor2(fast)
+# Loading work.ofl_detector(fast)
+# Loading work.mux_2_1(fast)
+# Loading work.not1(fast)
+# Loading work.nand2(fast)
+# Loading work.zero_detector(fast)
+# Loading work.shifter(fast)
+# Loading work.mux_stage_1(fast)
+# Loading work.mux_stage_2(fast)
+# Loading work.mux_stage_3(fast)
+# Loading work.mux_stage_4(fast)
+# Loading work.lt_lte(fast)
+# Loading work.wrt_ctrl(fast)
+# Loading work.EX_MEM(fast)
+# Loading work.MEM_WB(fast)
+# log -howmany -rec /* 
+# 7005
+#  run -all
+# Hello world...simulation starting
+# See verilogsim.log and verilogsim.ptrace for output
+# ** Note: $finish    : proc_hier_pbench.v(115)
+#    Time: 1105 ns  Iteration: 0  Instance: /proc_hier_pbench
+# End time: 00:13:01 on Apr 11,2017, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 2

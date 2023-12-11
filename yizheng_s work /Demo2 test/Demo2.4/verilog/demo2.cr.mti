@@ -1,0 +1,687 @@
+I:/ECE552/Demo2.2/verilog/top_ahead.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/top_ahead.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module top_ahead
+
+Top level modules:
+	top_ahead
+
+} {} {}} I:/ECE552/Demo2/verilog/mux_stage_2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/mux_stage_2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_2
+
+Top level modules:
+	mux_stage_2
+
+} {} {}} I:/ECE552/Demo2.2/verilog/dff.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/dff.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module dff
+
+Top level modules:
+	dff
+
+} {} {}} I:/ECE552/Demo2.2/verilog/mux_stage_4.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/mux_stage_4.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_4
+
+Top level modules:
+	mux_stage_4
+
+} {} {}} I:/ECE552/Demo2.2/verilog/flush_stall.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/flush_stall.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module flush_stall
+
+Top level modules:
+	flush_stall
+
+} {} {}} I:/ECE552/Demo2.2/verilog/ID_EX.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/ID_EX.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ID_EX
+
+Top level modules:
+	ID_EX
+
+} {} {}} I:/ECE552/Demo2.2/verilog/rf_bypass.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/rf_bypass.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module rf_bypass
+
+Top level modules:
+	rf_bypass
+
+} {} {}} I:/ECE552/Demo2/verilog/in_dest_ctrl.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/in_dest_ctrl.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module in_dest_ctrl
+
+Top level modules:
+	in_dest_ctrl
+
+} {} {}} I:/ECE552/Demo2/verilog/proc_hier_bench.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/proc_hier_bench.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module proc_hier_bench
+
+Top level modules:
+	proc_hier_bench
+
+} {} {}} I:/ECE552/Demo2/verilog/mux_2_1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/mux_2_1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_2_1
+
+Top level modules:
+	mux_2_1
+
+} {} {}} I:/ECE552/Demo2/verilog/IF_ID.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/IF_ID.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module IF_ID
+
+Top level modules:
+	IF_ID
+
+} {} {}} I:/ECE552/Demo2.2/verilog/clkrst.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/clkrst.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module clkrst
+
+Top level modules:
+	clkrst
+
+} {} {}} I:/ECE552/Demo2.2/verilog/instr_decoder.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/instr_decoder.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module instr_decoder
+
+Top level modules:
+	instr_decoder
+
+} {} {}} I:/ECE552/Demo2/verilog/mux_4_1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/mux_4_1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_4_1
+
+Top level modules:
+	mux_4_1
+
+} {} {}} I:/ECE552/Demo2.2/verilog/memory2c.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/memory2c.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module memory2c
+
+Top level modules:
+	memory2c
+
+} {} {}} I:/ECE552/Demo2.2/verilog/for_unit_1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/for_unit_1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module for_unit_1
+
+Top level modules:
+	for_unit_1
+
+} {} {}} I:/ECE552/Demo2/verilog/alu_inv.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/alu_inv.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module alu_inv
+
+Top level modules:
+	alu_inv
+
+} {} {}} I:/ECE552/Demo2/verilog/haz_d.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/haz_d.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module haz_d
+
+Top level modules:
+	haz_d
+
+} {} {}} I:/ECE552/Demo2.2/verilog/pc_ctrl.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/pc_ctrl.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pc_ctrl
+
+Top level modules:
+	pc_ctrl
+
+} {} {}} I:/ECE552/Demo2.2/verilog/pc_unit.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/pc_unit.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pc_unit
+
+Top level modules:
+	pc_unit
+
+} {} {}} I:/ECE552/Demo2/verilog/ofl_detector.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/ofl_detector.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ofl_detector
+
+Top level modules:
+	ofl_detector
+
+} {} {}} I:/ECE552/Demo2/verilog/proc_hier.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/proc_hier.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module proc_hier
+
+Top level modules:
+	proc_hier
+
+} {} {}} I:/ECE552/Demo2/verilog/nand2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/nand2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module nand2
+
+Top level modules:
+	nand2
+
+} {} {}} I:/ECE552/Demo2.2/verilog/input_inv.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/input_inv.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module input_inv
+
+Top level modules:
+	input_inv
+
+} {} {}} I:/ECE552/Demo2.2/verilog/cla4.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/cla4.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module cla4
+
+Top level modules:
+	cla4
+
+} {} {}} I:/ECE552/Demo2.2/verilog/mux_stage_1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/mux_stage_1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_1
+
+Top level modules:
+	mux_stage_1
+
+} {} {}} I:/ECE552/Demo2/verilog/shifter.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/shifter.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module shifter
+
+Top level modules:
+	shifter
+
+} {} {}} I:/ECE552/Demo2.2/verilog/haz_d_2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/haz_d_2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module haz_d_2
+
+Top level modules:
+	haz_d_2
+
+} {} {}} I:/ECE552/Demo2/verilog/cla16.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/cla16.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module cla16
+
+Top level modules:
+	cla16
+
+} {} {}} I:/ECE552/Demo2/verilog/ahead4.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/ahead4.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ahead4
+
+Top level modules:
+	ahead4
+
+} {} {}} I:/ECE552/Demo2/verilog/mux_stage_3.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/mux_stage_3.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_3
+
+Top level modules:
+	mux_stage_3
+
+} {} {}} I:/ECE552/Demo2.2/verilog/rf.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/rf.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module rf
+
+Top level modules:
+	rf
+
+} {} {}} I:/ECE552/Demo2/verilog/alu.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/alu.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} I:/ECE552/Demo2.2/verilog/xor2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/xor2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module xor2
+
+Top level modules:
+	xor2
+
+} {} {}} I:/ECE552/Demo2/verilog/imm_ext.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/imm_ext.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module imm_ext
+
+Top level modules:
+	imm_ext
+
+} {} {}} I:/ECE552/Demo2/verilog/lt_lte.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/lt_lte.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module lt_lte
+
+Top level modules:
+	lt_lte
+
+} {} {}} I:/ECE552/Demo2/verilog/alu_b_mux.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/alu_b_mux.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module alu_b_mux
+
+Top level modules:
+	alu_b_mux
+
+} {} {}} I:/ECE552/Demo2.2/verilog/pc_jump_out.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/pc_jump_out.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pc_jump_out
+
+Top level modules:
+	pc_jump_out
+
+} {} {}} I:/ECE552/Demo2/verilog/register.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/register.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} I:/ECE552/Demo2/verilog/memory2c.syn.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/memory2c.syn.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module memory2c
+
+Top level modules:
+	memory2c
+
+} {} {}} I:/ECE552/Demo2.2/verilog/for_unit_2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/for_unit_2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module for_unit2
+
+Top level modules:
+	for_unit2
+
+} {} {}} I:/ECE552/Demo2.2/verilog/MEM_WB.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/MEM_WB.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module MEM_WB
+
+Top level modules:
+	MEM_WB
+
+} {} {}} I:/ECE552/Demo2/verilog/pfa.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/pfa.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pfa
+
+Top level modules:
+	pfa
+
+} {} {}} I:/ECE552/Demo2/verilog/wrt_ctrl.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/wrt_ctrl.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module wrt_ctrl
+
+Top level modules:
+	wrt_ctrl
+
+} {} {}} I:/ECE552/Demo2/verilog/zero_detector.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/zero_detector.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module zero_detector
+
+Top level modules:
+	zero_detector
+
+} {} {}} I:/ECE552/Demo2.2/verilog/proc_hier_pbench.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/proc_hier_pbench.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module proc_hier_pbench
+
+Top level modules:
+	proc_hier_pbench
+
+} {} {}} I:/ECE552/Demo2.2/verilog/pc_jump_B_sel.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/pc_jump_B_sel.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pc_jump_B_sel
+
+Top level modules:
+	pc_jump_B_sel
+
+} {} {}} I:/ECE552/Demo2.2/verilog/not1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/not1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module not1
+
+Top level modules:
+	not1
+
+} {} {}} I:/ECE552/Demo2.2/verilog/alu_sign.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/alu_sign.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module alu_sign
+
+Top level modules:
+	alu_sign
+
+} {} {}} I:/ECE552/Demo2/verilog/EX_MEM.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/EX_MEM.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module EX_MEM
+
+Top level modules:
+	EX_MEM
+
+} {} {}} I:/ECE552/Demo2/verilog/top_ahead.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/top_ahead.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module top_ahead
+
+Top level modules:
+	top_ahead
+
+} {} {}} I:/ECE552/Demo2.2/verilog/mux_stage_2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/mux_stage_2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_2
+
+Top level modules:
+	mux_stage_2
+
+} {} {}} I:/ECE552/Demo2/verilog/mux_stage_4.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/mux_stage_4.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_4
+
+Top level modules:
+	mux_stage_4
+
+} {} {}} I:/ECE552/Demo2/verilog/dff.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/dff.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module dff
+
+Top level modules:
+	dff
+
+} {} {}} I:/ECE552/Demo2/verilog/ID_EX.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/ID_EX.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ID_EX
+
+Top level modules:
+	ID_EX
+
+} {} {}} I:/ECE552/Demo2/verilog/rf_bypass.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/rf_bypass.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module rf_bypass
+
+Top level modules:
+	rf_bypass
+
+} {} {}} I:/ECE552/Demo2.2/verilog/in_dest_ctrl.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/in_dest_ctrl.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module in_dest_ctrl
+
+Top level modules:
+	in_dest_ctrl
+
+} {} {}} I:/ECE552/Demo2/verilog/clkrst.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/clkrst.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module clkrst
+
+Top level modules:
+	clkrst
+
+} {} {}} I:/ECE552/Demo2.2/verilog/IF_ID.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/IF_ID.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module IF_ID
+
+Top level modules:
+	IF_ID
+
+} {} {}} I:/ECE552/Demo2.2/verilog/mux_2_1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/mux_2_1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_2_1
+
+Top level modules:
+	mux_2_1
+
+} {} {}} I:/ECE552/Demo2.2/verilog/proc.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/proc.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module proc
+
+Top level modules:
+	proc
+
+} {} {}} I:/ECE552/Demo2/verilog/instr_decoder.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/instr_decoder.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module instr_decoder
+
+Top level modules:
+	instr_decoder
+
+} {} {}} I:/ECE552/Demo2.2/verilog/mux_4_1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/mux_4_1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_4_1
+
+Top level modules:
+	mux_4_1
+
+} {} {}} I:/ECE552/Demo2/verilog/for_unit_1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/for_unit_1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module for_unit_1
+
+Top level modules:
+	for_unit_1
+
+} {} {}} I:/ECE552/Demo2/verilog/memory2c.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/memory2c.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module memory2c
+
+Top level modules:
+	memory2c
+
+} {} {}} I:/ECE552/Demo2.2/verilog/alu_inv.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/alu_inv.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module alu_inv
+
+Top level modules:
+	alu_inv
+
+} {} {}} I:/ECE552/Demo2.2/verilog/haz_d.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/haz_d.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module haz_d
+
+Top level modules:
+	haz_d
+
+} {} {}} I:/ECE552/Demo2/verilog/pc_ctrl.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/pc_ctrl.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pc_ctrl
+
+Top level modules:
+	pc_ctrl
+
+} {} {}} I:/ECE552/Demo2/verilog/pc_unit.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/pc_unit.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pc_unit
+
+Top level modules:
+	pc_unit
+
+} {} {}} I:/ECE552/Demo2.2/verilog/ofl_detector.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/ofl_detector.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ofl_detector
+
+Top level modules:
+	ofl_detector
+
+} {} {}} I:/ECE552/Demo2.2/verilog/stall_c.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/stall_c.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module stall_c
+
+Top level modules:
+	stall_c
+
+} {} {}} I:/ECE552/Demo2.2/verilog/nand2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/nand2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module nand2
+
+Top level modules:
+	nand2
+
+} {} {}} I:/ECE552/Demo2.2/verilog/proc_hier.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/proc_hier.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module proc_hier
+
+Top level modules:
+	proc_hier
+
+} {} {}} I:/ECE552/Demo2/verilog/cla4.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/cla4.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module cla4
+
+Top level modules:
+	cla4
+
+} {} {}} I:/ECE552/Demo2/verilog/input_inv.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/input_inv.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module input_inv
+
+Top level modules:
+	input_inv
+
+} {} {}} I:/ECE552/Demo2/verilog/mux_stage_1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/mux_stage_1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_1
+
+Top level modules:
+	mux_stage_1
+
+} {} {}} I:/ECE552/Demo2.2/verilog/shifter.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/shifter.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module shifter
+
+Top level modules:
+	shifter
+
+} {} {}} I:/ECE552/Demo2.2/verilog/ahead4.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/ahead4.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ahead4
+
+Top level modules:
+	ahead4
+
+} {} {}} I:/ECE552/Demo2.2/verilog/cla16.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/cla16.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module cla16
+
+Top level modules:
+	cla16
+
+} {} {}} I:/ECE552/Demo2.2/verilog/mux_stage_3.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/mux_stage_3.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_3
+
+Top level modules:
+	mux_stage_3
+
+} {} {}} I:/ECE552/Demo2/verilog/rf.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/rf.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module rf
+
+Top level modules:
+	rf
+
+} {} {}} I:/ECE552/Demo2.2/verilog/alu.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/alu.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} I:/ECE552/Demo2/verilog/xor2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/xor2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module xor2
+
+Top level modules:
+	xor2
+
+} {} {}} I:/ECE552/Demo2.2/verilog/imm_ext.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/imm_ext.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module imm_ext
+
+Top level modules:
+	imm_ext
+
+} {} {}} I:/ECE552/Demo2.2/verilog/alu_b_mux.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/alu_b_mux.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module alu_b_mux
+
+Top level modules:
+	alu_b_mux
+
+} {} {}} I:/ECE552/Demo2.2/verilog/lt_lte.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/lt_lte.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module lt_lte
+
+Top level modules:
+	lt_lte
+
+} {} {}} I:/ECE552/Demo2/verilog/pc_jump_out.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/pc_jump_out.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pc_jump_out
+
+Top level modules:
+	pc_jump_out
+
+} {} {}} I:/ECE552/Demo2.2/verilog/register.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/register.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} I:/ECE552/Demo2.2/verilog/memory2c.syn.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/memory2c.syn.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module memory2c
+
+Top level modules:
+	memory2c
+
+} {} {}} I:/ECE552/Demo2/verilog/MEM_WB.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/MEM_WB.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module MEM_WB
+
+Top level modules:
+	MEM_WB
+
+} {} {}} I:/ECE552/Demo2.2/verilog/pfa.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/pfa.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pfa
+
+Top level modules:
+	pfa
+
+} {} {}} I:/ECE552/Demo2.2/verilog/zero_detector.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/zero_detector.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module zero_detector
+
+Top level modules:
+	zero_detector
+
+} {} {}} I:/ECE552/Demo2.2/verilog/wrt_ctrl.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/wrt_ctrl.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module wrt_ctrl
+
+Top level modules:
+	wrt_ctrl
+
+} {} {}} I:/ECE552/Demo2/verilog/proc_hier_pbench.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/proc_hier_pbench.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module proc_hier_pbench
+
+Top level modules:
+	proc_hier_pbench
+
+} {} {}} I:/ECE552/Demo2/verilog/alu_sign.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/alu_sign.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module alu_sign
+
+Top level modules:
+	alu_sign
+
+} {} {}} I:/ECE552/Demo2/verilog/not1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/not1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module not1
+
+Top level modules:
+	not1
+
+} {} {}} I:/ECE552/Demo2/verilog/pc_jump_B_sel.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2/verilog/pc_jump_B_sel.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pc_jump_B_sel
+
+Top level modules:
+	pc_jump_B_sel
+
+} {} {}} I:/ECE552/Demo2.2/verilog/EX_MEM.v {1 {vlog -work work -vopt -stats=none I:/ECE552/Demo2.2/verilog/EX_MEM.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module EX_MEM
+
+Top level modules:
+	EX_MEM
+
+} {} {}}

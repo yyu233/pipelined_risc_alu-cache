@@ -1,0 +1,66 @@
+ 
+****************************************
+Report : cell
+Design : rf_bypass
+Version: L-2016.03-SP4-1
+Date   : Mon Feb 27 00:12:11 2017
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U2                        NAND3X1         gscl45nm        2.346500  
+U4                        XOR2X1          gscl45nm        4.693000  
+U5                        XNOR2X1         gscl45nm        4.693000  
+U6                        XNOR2X1         gscl45nm        4.693000  
+U7                        NAND3X1         gscl45nm        2.346500  
+U9                        XOR2X1          gscl45nm        4.693000  
+U10                       XNOR2X1         gscl45nm        4.693000  
+U11                       XNOR2X1         gscl45nm        4.693000  
+U12                       BUFX2           gscl45nm        2.346500  
+U13                       BUFX2           gscl45nm        2.346500  
+U14                       BUFX2           gscl45nm        2.346500  
+U15                       INVX1           gscl45nm        1.407900  
+U16                       INVX1           gscl45nm        1.407900  
+U17                       INVX1           gscl45nm        1.407900  
+U18                       INVX1           gscl45nm        1.407900  
+U19                       INVX1           gscl45nm        1.407900  
+U20                       BUFX2           gscl45nm        2.346500  
+U21                       BUFX2           gscl45nm        2.346500  
+U22                       BUFX2           gscl45nm        2.346500  
+U23                       BUFX2           gscl45nm        2.346500  
+U24                       BUFX2           gscl45nm        2.346500  
+U25                       BUFX2           gscl45nm        2.346500  
+U26                       BUFX2           gscl45nm        2.346500  
+U27                       BUFX2           gscl45nm        2.346500  
+U28                       BUFX2           gscl45nm        2.346500  
+U29                       BUFX2           gscl45nm        2.346500  
+U30                       BUFX2           gscl45nm        2.346500  
+U31                       BUFX2           gscl45nm        2.346500  
+U32                       BUFX2           gscl45nm        2.346500  
+U33                       BUFX2           gscl45nm        2.346500  
+U34                       BUFX2           gscl45nm        2.346500  
+U35                       BUFX2           gscl45nm        2.346500  
+U36                       INVX2           gscl45nm        1.877200  
+U37                       INVX1           gscl45nm        1.407900  
+U38                       OR2X1           gscl45nm        2.346500  
+U39                       INVX1           gscl45nm        1.407900  
+U40                       OR2X1           gscl45nm        2.346500  
+U41                       INVX1           gscl45nm        1.407900  
+U42                       BUFX2           gscl45nm        2.346500  
+U43                       BUFX2           gscl45nm        2.346500  
+m1                        mux16_2_1_1                     172.702396
+                                                                    h
+m2                        mux16_2_1_0                     172.702396
+                                                                    h
+rfile                     rf                              5705.279966
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 43 cells                                            6150.645656
+1

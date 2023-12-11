@@ -1,0 +1,7 @@
+// Write your answer to Problem 2 (b) here
+The forwarding takes place when the first instruction at mem stage
+and the second instruction at the alu stage. The two inputs to alu 
+are forwarded by the value at EX/MEM pipeline registers. 
+We need forwarding because the old value of r1 is used by second 
+add instruction at EX stage before the new value is writtern to r1 
+by the first instructino. 

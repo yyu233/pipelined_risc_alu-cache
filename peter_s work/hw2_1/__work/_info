@@ -1,0 +1,396 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/u/l/u/luick/private/cs552/hw2/hw2_1
+T_opt
+!s110 1486846378
+VBQY0D1mC[QJfF1SbPFKD`0
+04 18 4 work shifter_hier_bench fast 0
+=1-f8bc1294044c-589f79a9-e2165-63a8
+o-quiet -auto_acc_if_foreign -work __work +acc
+n@_opt
+OE;O;10.4c;61
+vclkrst
+Z1 !s110 1486846377
+!i10b 1
+!s100 c^DJe8Tm9AS?OSo>b>@Xo1
+IhEjhn3C>:Y:9S9HJNbN002
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1454710153
+8clkrst.v
+Fclkrst.v
+L0 12
+Z3 OE;L;10.4c;61
+r1
+!s85 0
+31
+Z4 !s108 1486846377.000000
+Z5 !s107 shifter.v|shifter_hier.v|shifter_hier_bench.v|right_shifter_3.v|right_shifter_2.v|right_shifter_1.v|right_shifter_0.v|not1.v|nor3.v|nor2.v|nand3.v|nand2.v|mux2_1.v|left_shifter_3.v|left_shifter_2.v|left_shifter_1.v|left_shifter_0.v|clkrst.v|
+Z6 !s90 +define+RANDSEED=3|-work|__work|clkrst.v|left_shifter_0.v|left_shifter_1.v|left_shifter_2.v|left_shifter_3.v|mux2_1.v|nand2.v|nand3.v|nor2.v|nor3.v|not1.v|right_shifter_0.v|right_shifter_1.v|right_shifter_2.v|right_shifter_3.v|shifter_hier_bench.v|shifter_hier.v|shifter.v|
+!i113 0
+Z7 o-work __work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 +define+RANDSEED=3 -work __work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vleft_shifter_0
+R1
+!i10b 1
+!s100 TaV]j;6dQm>FjNKhh;0fM0
+Ig`AA0FXbT>8G7I8:O^zK83
+R2
+R0
+w1486846306
+8left_shifter_0.v
+Fleft_shifter_0.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vleft_shifter_1
+R1
+!i10b 1
+!s100 PPMRc6X[QASj37bBQGlK71
+IbYGHWgH2POUCCY8^2Nn6N1
+R2
+R0
+w1486846318
+8left_shifter_1.v
+Fleft_shifter_1.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vleft_shifter_2
+R1
+!i10b 1
+!s100 Ub7UN7c0J7F;Wmo]fXH[_3
+Ilj]3<TNJC_L`YMhR[J;[70
+R2
+R0
+w1486846336
+8left_shifter_2.v
+Fleft_shifter_2.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vleft_shifter_3
+R1
+!i10b 1
+!s100 ViZH=T<e_Te7V8MakKR3=1
+IibR`aIIORb_BbVPkFDjlI3
+R2
+R0
+w1486846374
+8left_shifter_3.v
+Fleft_shifter_3.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vmux2_1
+R1
+!i10b 1
+!s100 R6[2JY3Nf?l_8:T98Pbb?0
+IL?[Czm7G?d4cN]MP]MRi02
+R2
+R0
+w1486839970
+8mux2_1.v
+Fmux2_1.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vnand2
+R1
+!i10b 1
+!s100 ISa?1STS90[eV_=8949@R1
+I=JOS]oeg2cXTUI@l1HX0D3
+R2
+R0
+Z9 w1486839971
+8nand2.v
+Fnand2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vnand3
+R1
+!i10b 1
+!s100 X]l_HU63HoW?Sd`4hMCZT2
+I8ih[8I94UGi[<82o;dH2W1
+R2
+R0
+R9
+8nand3.v
+Fnand3.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vnor2
+R1
+!i10b 1
+!s100 SNK[jK6955=m0Zbh6gQU`3
+I4iYG5O@fGK?M6Ol_=I1e@2
+R2
+R0
+R9
+8nor2.v
+Fnor2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vnor3
+R1
+!i10b 1
+!s100 E``DB^3@2B4;z1V:=z=LE0
+I[Jj=H]OlZO5n_8;f4[`h01
+R2
+R0
+R9
+8nor3.v
+Fnor3.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vnot1
+R1
+!i10b 1
+!s100 KWFGS]d0`N730YhRHI;lF1
+Ine_M0KPMZa7FAXcV[XF@M1
+R2
+R0
+R9
+8not1.v
+Fnot1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vright_shifter_0
+R1
+!i10b 1
+!s100 0Pdl;66FBn^H_5eV[5b`<0
+I`=hkN9m?XZUEEW[?D[oMV2
+R2
+R0
+w1486846249
+8right_shifter_0.v
+Fright_shifter_0.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vright_shifter_1
+R1
+!i10b 1
+!s100 Bj:QIP[H2D91GW9FI:Sz<1
+IB08N7@MRV>1AzQF_^Bo=20
+R2
+R0
+w1486846263
+8right_shifter_1.v
+Fright_shifter_1.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vright_shifter_2
+R1
+!i10b 1
+!s100 bK8;LD=ie6nJ?8VKJmgBg1
+ITY[92o5REQA6mCEJCMjLg1
+R2
+R0
+w1486846278
+8right_shifter_2.v
+Fright_shifter_2.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vright_shifter_3
+R1
+!i10b 1
+!s100 oo_]8WCFWO47HAcPnAnH32
+Il^4;n2W87]SSi`31BF?`o0
+R2
+R0
+w1486846290
+8right_shifter_3.v
+Fright_shifter_3.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vshifter
+R1
+!i10b 1
+!s100 CV15Y3=lmjMHOLAW^Jgjk3
+Ij<OBHPP7nZfKAQdoYkl9:1
+R2
+R0
+w1486845904
+8shifter.v
+Fshifter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vshifter_hier
+R1
+!i10b 1
+!s100 `Jn88BVHFG0bQDCTKPYQ=3
+I4RI`=2oo5OYdza^g?UY@T3
+R2
+R0
+w1454534861
+8shifter_hier.v
+Fshifter_hier.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8
+vshifter_hier_bench
+R1
+!i10b 1
+!s100 US@<HA=D:=7JCUIQKKgW51
+Ih@MO8F>a2kNZ9OAOVf`PX0
+R2
+R0
+w1454710418
+8shifter_hier_bench.v
+Fshifter_hier_bench.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 0
+R7
+R8

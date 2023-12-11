@@ -1,0 +1,851 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : rf_bypass
+Version: L-2016.03-SP4-1
+Date   : Mon Feb 27 00:07:19 2017
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<15>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U94/Y (AOI22X1)                     0.06       0.44 f
+  ins1/U286/Y (BUFX2)                      0.04       0.48 f
+  ins1/U38/Y (AND2X1)                      0.04       0.53 f
+  ins1/U93/Y (NAND3X1)                     0.03       0.56 r
+  ins1/U318/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<15> (rf)                  0.00       0.59 r
+  U177/Y (AND2X1)                          0.03       0.62 r
+  U178/Y (INVX1)                           0.02       0.63 f
+  U36/Y (OAI21X1)                          0.01       0.65 r
+  read2data<15> (out)                      0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<14>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U99/Y (AOI22X1)                     0.06       0.44 f
+  ins1/U285/Y (BUFX2)                      0.04       0.48 f
+  ins1/U37/Y (AND2X1)                      0.04       0.53 f
+  ins1/U98/Y (NAND3X1)                     0.03       0.56 r
+  ins1/U317/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<14> (rf)                  0.00       0.59 r
+  U175/Y (AND2X1)                          0.03       0.62 r
+  U176/Y (INVX1)                           0.02       0.63 f
+  U38/Y (OAI21X1)                          0.01       0.65 r
+  read2data<14> (out)                      0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<13>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U104/Y (AOI22X1)                    0.06       0.44 f
+  ins1/U284/Y (BUFX2)                      0.04       0.48 f
+  ins1/U36/Y (AND2X1)                      0.04       0.53 f
+  ins1/U103/Y (NAND3X1)                    0.03       0.56 r
+  ins1/U316/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<13> (rf)                  0.00       0.59 r
+  U173/Y (AND2X1)                          0.03       0.62 r
+  U174/Y (INVX1)                           0.02       0.63 f
+  U40/Y (OAI21X1)                          0.01       0.65 r
+  read2data<13> (out)                      0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<12>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U109/Y (AOI22X1)                    0.06       0.44 f
+  ins1/U283/Y (BUFX2)                      0.04       0.48 f
+  ins1/U35/Y (AND2X1)                      0.04       0.53 f
+  ins1/U108/Y (NAND3X1)                    0.03       0.56 r
+  ins1/U315/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<12> (rf)                  0.00       0.59 r
+  U171/Y (AND2X1)                          0.03       0.62 r
+  U172/Y (INVX1)                           0.02       0.63 f
+  U42/Y (OAI21X1)                          0.01       0.65 r
+  read2data<12> (out)                      0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<11>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U114/Y (AOI22X1)                    0.06       0.44 f
+  ins1/U282/Y (BUFX2)                      0.04       0.48 f
+  ins1/U34/Y (AND2X1)                      0.04       0.53 f
+  ins1/U113/Y (NAND3X1)                    0.03       0.56 r
+  ins1/U314/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<11> (rf)                  0.00       0.59 r
+  U169/Y (AND2X1)                          0.03       0.62 r
+  U170/Y (INVX1)                           0.02       0.63 f
+  U44/Y (OAI21X1)                          0.01       0.65 r
+  read2data<11> (out)                      0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<10>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U119/Y (AOI22X1)                    0.06       0.44 f
+  ins1/U281/Y (BUFX2)                      0.04       0.48 f
+  ins1/U33/Y (AND2X1)                      0.04       0.53 f
+  ins1/U118/Y (NAND3X1)                    0.03       0.56 r
+  ins1/U313/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<10> (rf)                  0.00       0.59 r
+  U167/Y (AND2X1)                          0.03       0.62 r
+  U168/Y (INVX1)                           0.02       0.63 f
+  U46/Y (OAI21X1)                          0.01       0.65 r
+  read2data<10> (out)                      0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<9>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U49/Y (AOI22X1)                     0.06       0.44 f
+  ins1/U295/Y (BUFX2)                      0.04       0.48 f
+  ins1/U47/Y (AND2X1)                      0.04       0.53 f
+  ins1/U48/Y (NAND3X1)                     0.03       0.56 r
+  ins1/U327/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<9> (rf)                   0.00       0.59 r
+  U195/Y (AND2X1)                          0.03       0.62 r
+  U196/Y (INVX1)                           0.02       0.63 f
+  U18/Y (OAI21X1)                          0.01       0.65 r
+  read2data<9> (out)                       0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<8>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U54/Y (AOI22X1)                     0.06       0.44 f
+  ins1/U294/Y (BUFX2)                      0.04       0.48 f
+  ins1/U46/Y (AND2X1)                      0.04       0.53 f
+  ins1/U53/Y (NAND3X1)                     0.03       0.56 r
+  ins1/U326/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<8> (rf)                   0.00       0.59 r
+  U193/Y (AND2X1)                          0.03       0.62 r
+  U194/Y (INVX1)                           0.02       0.63 f
+  U20/Y (OAI21X1)                          0.01       0.65 r
+  read2data<8> (out)                       0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<7>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U59/Y (AOI22X1)                     0.06       0.44 f
+  ins1/U293/Y (BUFX2)                      0.04       0.48 f
+  ins1/U45/Y (AND2X1)                      0.04       0.53 f
+  ins1/U58/Y (NAND3X1)                     0.03       0.56 r
+  ins1/U325/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<7> (rf)                   0.00       0.59 r
+  U191/Y (AND2X1)                          0.03       0.62 r
+  U192/Y (INVX1)                           0.02       0.63 f
+  U22/Y (OAI21X1)                          0.01       0.65 r
+  read2data<7> (out)                       0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<6>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U64/Y (AOI22X1)                     0.06       0.44 f
+  ins1/U292/Y (BUFX2)                      0.04       0.48 f
+  ins1/U44/Y (AND2X1)                      0.04       0.53 f
+  ins1/U63/Y (NAND3X1)                     0.03       0.56 r
+  ins1/U324/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<6> (rf)                   0.00       0.59 r
+  U189/Y (AND2X1)                          0.03       0.62 r
+  U190/Y (INVX1)                           0.02       0.63 f
+  U24/Y (OAI21X1)                          0.01       0.65 r
+  read2data<6> (out)                       0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<5>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U69/Y (AOI22X1)                     0.06       0.44 f
+  ins1/U291/Y (BUFX2)                      0.04       0.48 f
+  ins1/U43/Y (AND2X1)                      0.04       0.53 f
+  ins1/U68/Y (NAND3X1)                     0.03       0.56 r
+  ins1/U323/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<5> (rf)                   0.00       0.59 r
+  U187/Y (AND2X1)                          0.03       0.62 r
+  U188/Y (INVX1)                           0.02       0.63 f
+  U26/Y (OAI21X1)                          0.01       0.65 r
+  read2data<5> (out)                       0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<4>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U74/Y (AOI22X1)                     0.06       0.44 f
+  ins1/U290/Y (BUFX2)                      0.04       0.48 f
+  ins1/U42/Y (AND2X1)                      0.04       0.53 f
+  ins1/U73/Y (NAND3X1)                     0.03       0.56 r
+  ins1/U322/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<4> (rf)                   0.00       0.59 r
+  U185/Y (AND2X1)                          0.03       0.62 r
+  U186/Y (INVX1)                           0.02       0.63 f
+  U28/Y (OAI21X1)                          0.01       0.65 r
+  read2data<4> (out)                       0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<3>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U79/Y (AOI22X1)                     0.06       0.44 f
+  ins1/U289/Y (BUFX2)                      0.04       0.48 f
+  ins1/U41/Y (AND2X1)                      0.04       0.53 f
+  ins1/U78/Y (NAND3X1)                     0.03       0.56 r
+  ins1/U321/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<3> (rf)                   0.00       0.59 r
+  U183/Y (AND2X1)                          0.03       0.62 r
+  U184/Y (INVX1)                           0.02       0.63 f
+  U30/Y (OAI21X1)                          0.01       0.65 r
+  read2data<3> (out)                       0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<2>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U84/Y (AOI22X1)                     0.06       0.44 f
+  ins1/U288/Y (BUFX2)                      0.04       0.48 f
+  ins1/U40/Y (AND2X1)                      0.04       0.53 f
+  ins1/U83/Y (NAND3X1)                     0.03       0.56 r
+  ins1/U320/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<2> (rf)                   0.00       0.59 r
+  U181/Y (AND2X1)                          0.03       0.62 r
+  U182/Y (INVX1)                           0.02       0.63 f
+  U32/Y (OAI21X1)                          0.01       0.65 r
+  read2data<2> (out)                       0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<1>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U89/Y (AOI22X1)                     0.06       0.44 f
+  ins1/U287/Y (BUFX2)                      0.04       0.48 f
+  ins1/U39/Y (AND2X1)                      0.04       0.53 f
+  ins1/U88/Y (NAND3X1)                     0.03       0.56 r
+  ins1/U319/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<1> (rf)                   0.00       0.59 r
+  U179/Y (AND2X1)                          0.03       0.62 r
+  U180/Y (INVX1)                           0.02       0.63 f
+  U34/Y (OAI21X1)                          0.01       0.65 r
+  read2data<1> (out)                       0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<0>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  read2regsel<0> (in)                      0.00       0.10 f
+  U109/Y (BUFX2)                           0.05       0.15 f
+  ins1/read2regsel<0> (rf)                 0.00       0.15 f
+  ins1/U31/Y (INVX1)                       0.04       0.19 r
+  ins1/U125/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U406/Y (BUFX2)                      0.03       0.24 f
+  ins1/U407/Y (INVX1)                      0.14       0.38 r
+  ins1/U124/Y (AOI22X1)                    0.06       0.44 f
+  ins1/U280/Y (BUFX2)                      0.04       0.48 f
+  ins1/U32/Y (AND2X1)                      0.04       0.53 f
+  ins1/U123/Y (NAND3X1)                    0.03       0.56 r
+  ins1/U312/Y (BUFX2)                      0.03       0.59 r
+  ins1/read2data<0> (rf)                   0.00       0.59 r
+  U165/Y (AND2X1)                          0.03       0.62 r
+  U166/Y (INVX1)                           0.02       0.63 f
+  U48/Y (OAI21X1)                          0.01       0.65 r
+  read2data<0> (out)                       0.00       0.65 r
+  data arrival time                                   0.65
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.65
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: read1regsel<2>
+              (input port clocked by clk)
+  Endpoint: read1data<3>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<2> (in)                      0.00       0.10 r
+  U203/Y (BUFX2)                           0.08       0.18 r
+  ins1/read1regsel<2> (rf)                 0.00       0.18 r
+  ins1/U214/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U396/Y (BUFX2)                      0.03       0.24 f
+  ins1/U397/Y (INVX1)                      0.14       0.37 r
+  ins1/U167/Y (AOI22X1)                    0.07       0.44 f
+  ins1/U273/Y (BUFX2)                      0.04       0.48 f
+  ins1/U23/Y (AND2X1)                      0.04       0.52 f
+  ins1/U166/Y (NAND3X1)                    0.03       0.55 r
+  ins1/U305/Y (BUFX2)                      0.03       0.59 r
+  ins1/read1data<3> (rf)                   0.00       0.59 r
+  U151/Y (AND2X1)                          0.03       0.62 r
+  U152/Y (INVX1)                           0.02       0.63 f
+  U67/Y (OAI21X1)                          0.01       0.64 r
+  read1data<3> (out)                       0.00       0.64 r
+  data arrival time                                   0.64
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.64
+  -----------------------------------------------------------
+  slack (MET)                                         0.26
+
+
+  Startpoint: read1regsel<2>
+              (input port clocked by clk)
+  Endpoint: read1data<2>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<2> (in)                      0.00       0.10 r
+  U203/Y (BUFX2)                           0.08       0.18 r
+  ins1/read1regsel<2> (rf)                 0.00       0.18 r
+  ins1/U214/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U396/Y (BUFX2)                      0.03       0.24 f
+  ins1/U397/Y (INVX1)                      0.14       0.37 r
+  ins1/U172/Y (AOI22X1)                    0.07       0.44 f
+  ins1/U272/Y (BUFX2)                      0.04       0.48 f
+  ins1/U22/Y (AND2X1)                      0.04       0.52 f
+  ins1/U171/Y (NAND3X1)                    0.03       0.55 r
+  ins1/U304/Y (BUFX2)                      0.03       0.59 r
+  ins1/read1data<2> (rf)                   0.00       0.59 r
+  U149/Y (AND2X1)                          0.03       0.62 r
+  U150/Y (INVX1)                           0.02       0.63 f
+  U69/Y (OAI21X1)                          0.01       0.64 r
+  read1data<2> (out)                       0.00       0.64 r
+  data arrival time                                   0.64
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.64
+  -----------------------------------------------------------
+  slack (MET)                                         0.26
+
+
+  Startpoint: read1regsel<2>
+              (input port clocked by clk)
+  Endpoint: read1data<1>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<2> (in)                      0.00       0.10 r
+  U203/Y (BUFX2)                           0.08       0.18 r
+  ins1/read1regsel<2> (rf)                 0.00       0.18 r
+  ins1/U214/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U396/Y (BUFX2)                      0.03       0.24 f
+  ins1/U397/Y (INVX1)                      0.14       0.37 r
+  ins1/U177/Y (AOI22X1)                    0.07       0.44 f
+  ins1/U271/Y (BUFX2)                      0.04       0.48 f
+  ins1/U21/Y (AND2X1)                      0.04       0.52 f
+  ins1/U176/Y (NAND3X1)                    0.03       0.55 r
+  ins1/U303/Y (BUFX2)                      0.03       0.59 r
+  ins1/read1data<1> (rf)                   0.00       0.59 r
+  U147/Y (AND2X1)                          0.03       0.62 r
+  U148/Y (INVX1)                           0.02       0.63 f
+  U71/Y (OAI21X1)                          0.01       0.64 r
+  read1data<1> (out)                       0.00       0.64 r
+  data arrival time                                   0.64
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.64
+  -----------------------------------------------------------
+  slack (MET)                                         0.26
+
+
+  Startpoint: read1regsel<2>
+              (input port clocked by clk)
+  Endpoint: read1data<0>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<2> (in)                      0.00       0.10 r
+  U203/Y (BUFX2)                           0.08       0.18 r
+  ins1/read1regsel<2> (rf)                 0.00       0.18 r
+  ins1/U214/Y (NAND3X1)                    0.02       0.20 f
+  ins1/U396/Y (BUFX2)                      0.03       0.24 f
+  ins1/U397/Y (INVX1)                      0.14       0.37 r
+  ins1/U212/Y (AOI22X1)                    0.07       0.44 f
+  ins1/U264/Y (BUFX2)                      0.04       0.48 f
+  ins1/U14/Y (AND2X1)                      0.04       0.52 f
+  ins1/U211/Y (NAND3X1)                    0.03       0.55 r
+  ins1/U296/Y (BUFX2)                      0.03       0.59 r
+  ins1/read1data<0> (rf)                   0.00       0.59 r
+  U133/Y (AND2X1)                          0.03       0.62 r
+  U134/Y (INVX1)                           0.02       0.63 f
+  U85/Y (OAI21X1)                          0.01       0.64 r
+  read1data<0> (out)                       0.00       0.64 r
+  data arrival time                                   0.64
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.64
+  -----------------------------------------------------------
+  slack (MET)                                         0.26
+
+
+1

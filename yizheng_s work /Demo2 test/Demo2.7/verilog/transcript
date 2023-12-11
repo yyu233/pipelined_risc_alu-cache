@@ -1,0 +1,45 @@
+# //  Questa Sim
+# //  Version 10.4c linux Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# dump.wlf opened as dataset "dataset"
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/clk
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/rst
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/instr
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/pc_add2
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/instr_addr
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/haz/reg_en_ID_EX
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/haz/is_bj
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/haz/mem_en_ID_EX
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/haz/mem_wr_ID_EX
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/haz/w1_reg_ID_EX
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/haz/read_reg1
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/haz/read_reg2
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/haz/wrt_IF_ID
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/haz/stall_c
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/PC/halt
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/PC/pause_PC
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/PC/PC_2
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/PC/pc_in
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/PC/pc_out
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/if_id/flush
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/if_id/clk
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/if_id/rst
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/if_id/instr
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/if_id/wrt_IF_ID
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/if_id/pc_add2
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/if_id/instr_IF_ID
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/if_id/pc_add2_IF_ID
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/if_id/is_rst
+add wave -position end  dataset:/proc_hier_pbench/DUT/p0/if_id/writedata

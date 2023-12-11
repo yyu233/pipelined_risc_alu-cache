@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : cell
+Design : proc
+Version: L-2016.03-SP4-1
+Date   : Mon Apr 10 13:29:46 2017
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U1                        BUFX2           gscl45nm        2.346500  
+U2                        BUFX2           gscl45nm        2.346500  
+U3                        BUFX2           gscl45nm        2.346500  
+U4                        INVX1           gscl45nm        1.407900  
+U5                        INVX1           gscl45nm        1.407900  
+decode                    ID                              6611.028952
+                                                                    h, n
+execute                   IE                              3470.473433
+                                                                    h
+fetch                     IF                              15118.968515
+                                                                    h, n
+halt_delay                dff_463                         11.732500 h, n
+memory                    IM                              13067.658275
+                                                                    h, n
+pipeDE                    ID_IE                           1049.354775
+                                                                    h, n
+pipeEM                    IE_IM                           1257.723970
+                                                                    h, n
+pipeFD                    IF_ID                           698.787686
+                                                                    h, n
+pipeMW                    IM_IW                           1055.455675
+                                                                    h, n
+writeback                 IW                              946.108783
+                                                                    h
+--------------------------------------------------------------------------------
+Total 15 cells                                            43297.147863
+1

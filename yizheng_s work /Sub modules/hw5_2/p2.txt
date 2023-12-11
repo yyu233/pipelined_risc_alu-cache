@@ -1,0 +1,9 @@
+// Write your answer to Problem 2 (b) and (c) here
+If we only have one alu at the EX stage, the processor only knows whether to take the branch of  
+ the 1st instruction (beqz) and where the branch target address is when the branch instruction 
+ reach the MEM stage. That will take 4 clock cycles. If we wait until the branch is complete, 
+ we need to stall the processor until the branch instruction completes.That is inefficient and very slow.  
+ 
+ No. If the register used by the branch instruction is the target register written by the instructin that is
+ still in the pipeline, we may need to stall and wait until the valid data is ready for the branch. Thus it may 
+ not always take 1 cycle. 

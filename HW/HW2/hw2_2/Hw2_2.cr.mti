@@ -1,0 +1,197 @@
+I:/ECE552/HW2/hw2_2/zero_detector.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/zero_detector.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module zero_detector
+
+Top level modules:
+	zero_detector
+
+} {} {}} I:/ECE552/HW2/hw2_2/nor2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/nor2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module nor2
+
+Top level modules:
+	nor2
+
+} {} {}} I:/ECE552/HW2/hw2_2/alu_hier.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/alu_hier.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module alu_hier
+
+Top level modules:
+	alu_hier
+
+} {} {}} I:/ECE552/HW2/hw2_2/cla4_tb.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/cla4_tb.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module cla4_tb
+
+Top level modules:
+	cla4_tb
+
+} {} {}} I:/ECE552/HW2/hw2_2/ofl_detector.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/ofl_detector.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ofl_detector
+
+Top level modules:
+	ofl_detector
+
+} {} {}} I:/ECE552/HW2/hw2_2/not1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/not1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module not1
+
+Top level modules:
+	not1
+
+} {} {}} I:/ECE552/HW2/hw2_2/nand2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/nand2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module nand2
+
+Top level modules:
+	nand2
+
+} {} {}} I:/ECE552/HW2/hw2_2/cla4.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/cla4.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module cla4
+
+Top level modules:
+	cla4
+
+} {} {}} I:/ECE552/HW2/hw2_2/shifter_hier.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/shifter_hier.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module shifter_hier
+
+Top level modules:
+	shifter_hier
+
+} {} {}} I:/ECE552/HW2/hw2_2/input_inv.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/input_inv.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module input_inv
+
+Top level modules:
+	input_inv
+
+} {} {}} I:/ECE552/HW2/hw2_2/top_ahead.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/top_ahead.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module top_ahead
+
+Top level modules:
+	top_ahead
+
+} {} {}} I:/ECE552/HW2/hw2_2/shifter.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/shifter.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module shifter
+
+Top level modules:
+	shifter
+
+} {} {}} I:/ECE552/HW2/hw2_2/mux_stage_1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/mux_stage_1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_1
+
+Top level modules:
+	mux_stage_1
+
+} {} {}} I:/ECE552/HW2/hw2_2/mux_stage_2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/mux_stage_2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_2
+
+Top level modules:
+	mux_stage_2
+
+} {} {}} I:/ECE552/HW2/hw2_2/cla16.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/cla16.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module cla16
+
+Top level modules:
+	cla16
+
+} {} {}} I:/ECE552/HW2/hw2_2/ahead4.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/ahead4.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module ahead4
+
+Top level modules:
+	ahead4
+
+} {} {}} I:/ECE552/HW2/hw2_2/mux_stage_3.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/mux_stage_3.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_3
+
+Top level modules:
+	mux_stage_3
+
+} {} {}} I:/ECE552/HW2/hw2_2/dir_mux.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/dir_mux.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module dir_mux
+
+Top level modules:
+	dir_mux
+
+} {} {}} I:/ECE552/HW2/hw2_2/alu_hier_bench.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/alu_hier_bench.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module alu_hier_bench
+
+Top level modules:
+	alu_hier_bench
+
+} {} {}} I:/ECE552/HW2/hw2_2/mux_stage_4.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/mux_stage_4.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_4
+
+Top level modules:
+	mux_stage_4
+
+} {} {}} I:/ECE552/HW2/hw2_2/alu.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/alu.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} I:/ECE552/HW2/hw2_2/clkrst.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/clkrst.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module clkrst
+
+Top level modules:
+	clkrst
+
+} {} {}} I:/ECE552/HW2/hw2_2/mux_2_1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/mux_2_1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_2_1
+
+Top level modules:
+	mux_2_1
+
+} {} {}} I:/ECE552/HW2/hw2_2/xor2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/xor2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module xor2
+
+Top level modules:
+	xor2
+
+} {} {}} I:/ECE552/HW2/hw2_2/cla16_tb.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/cla16_tb.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module cla16_tb
+
+Top level modules:
+	cla16_tb
+
+} {} {}} I:/ECE552/HW2/hw2_2/rot_detector.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/rot_detector.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module rot_detector
+
+Top level modules:
+	rot_detector
+
+} {} {}} I:/ECE552/HW2/hw2_2/op_low_s_tb.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/op_low_s_tb.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module op_low_s_tb
+
+Top level modules:
+	op_low_s_tb
+
+} {} {}} I:/ECE552/HW2/hw2_2/pfa.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_2/pfa.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module pfa
+
+Top level modules:
+	pfa
+
+} {} {}}

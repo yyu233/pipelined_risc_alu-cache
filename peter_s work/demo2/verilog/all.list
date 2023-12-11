@@ -1,0 +1,8 @@
+./../verification/mytests/bnez_0.asm
+./../verification/mytests/bnez_1.asm
+./../verification/mytests/bnez_2.asm
+./../verification/mytests/jal_0.asm
+./../verification/mytests/jal_1.asm
+./../verification/mytests/jalr_0.asm
+./../verification/mytests/jalr_1.asm
+./../verification/mytests/jalr_2.asm

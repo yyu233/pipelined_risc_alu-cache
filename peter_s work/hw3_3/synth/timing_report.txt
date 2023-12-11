@@ -1,0 +1,1623 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : rf_bypass
+Version: L-2016.03-SP4-1
+Date   : Mon Feb 27 00:12:11 2017
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<1>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<0> (in)                      0.02       0.12 r
+  rfile/read1regsel<0> (rf)                0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)           0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read1/m1/S<0> (mux_8_1_30)         0.00       0.26 r
+  rfile/read1/m1/U1/Y (INVX1)              0.08       0.33 f
+  rfile/read1/m1/U2/Y (INVX8)              0.02       0.35 r
+  rfile/read1/m1/m0/S (mux_2_1_216)        0.00       0.35 r
+  rfile/read1/m1/m0/B/in2 (nand2_649)      0.00       0.35 r
+  rfile/read1/m1/m0/B/U1/Y (AND2X1)        0.03       0.38 r
+  rfile/read1/m1/m0/B/U2/Y (INVX1)         0.02       0.40 f
+  rfile/read1/m1/m0/B/out (nand2_649)      0.00       0.40 f
+  rfile/read1/m1/m0/C/in2 (nand2_648)      0.00       0.40 f
+  rfile/read1/m1/m0/C/U1/Y (AND2X1)        0.03       0.43 f
+  rfile/read1/m1/m0/C/U2/Y (INVX1)         0.00       0.44 r
+  rfile/read1/m1/m0/C/out (nand2_648)      0.00       0.44 r
+  rfile/read1/m1/m0/Out (mux_2_1_216)      0.00       0.44 r
+  rfile/read1/m1/m4/InA (mux_2_1_212)      0.00       0.44 r
+  rfile/read1/m1/m4/A/in1 (nand2_638)      0.00       0.44 r
+  rfile/read1/m1/m4/A/U1/Y (AND2X1)        0.04       0.48 r
+  rfile/read1/m1/m4/A/U2/Y (INVX1)         0.02       0.50 f
+  rfile/read1/m1/m4/A/out (nand2_638)      0.00       0.50 f
+  rfile/read1/m1/m4/C/in1 (nand2_636)      0.00       0.50 f
+  rfile/read1/m1/m4/C/U1/Y (AND2X1)        0.04       0.54 f
+  rfile/read1/m1/m4/C/U2/Y (INVX1)         0.00       0.54 r
+  rfile/read1/m1/m4/C/out (nand2_636)      0.00       0.54 r
+  rfile/read1/m1/m4/Out (mux_2_1_212)      0.00       0.54 r
+  rfile/read1/m1/m6/InA (mux_2_1_210)      0.00       0.54 r
+  rfile/read1/m1/m6/A/in1 (nand2_632)      0.00       0.54 r
+  rfile/read1/m1/m6/A/U1/Y (AND2X1)        0.04       0.58 r
+  rfile/read1/m1/m6/A/U2/Y (INVX1)         0.02       0.61 f
+  rfile/read1/m1/m6/A/out (nand2_632)      0.00       0.61 f
+  rfile/read1/m1/m6/C/in1 (nand2_630)      0.00       0.61 f
+  rfile/read1/m1/m6/C/U1/Y (AND2X1)        0.04       0.65 f
+  rfile/read1/m1/m6/C/U2/Y (INVX1)         0.00       0.65 r
+  rfile/read1/m1/m6/C/out (nand2_630)      0.00       0.65 r
+  rfile/read1/m1/m6/Out (mux_2_1_210)      0.00       0.65 r
+  rfile/read1/m1/Out (mux_8_1_30)          0.00       0.65 r
+  rfile/read1/Out<1> (mux16_8_1_1)         0.00       0.65 r
+  rfile/read1data<1> (rf)                  0.00       0.65 r
+  m1/InB<1> (mux16_2_1_1)                  0.00       0.65 r
+  m1/m1/InB (mux_2_1_254)                  0.00       0.65 r
+  m1/m1/B/in1 (nand2_763)                  0.00       0.65 r
+  m1/m1/B/U1/Y (AND2X1)                    0.04       0.69 r
+  m1/m1/B/U2/Y (INVX1)                     0.02       0.71 f
+  m1/m1/B/out (nand2_763)                  0.00       0.71 f
+  m1/m1/C/in2 (nand2_762)                  0.00       0.71 f
+  m1/m1/C/U1/Y (NAND2X1)                   0.02       0.73 r
+  m1/m1/C/out (nand2_762)                  0.00       0.73 r
+  m1/m1/Out (mux_2_1_254)                  0.00       0.73 r
+  m1/Out<1> (mux16_2_1_1)                  0.00       0.73 r
+  read1data<1> (out)                       0.00       0.73 r
+  data arrival time                                   0.73
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.73
+  -----------------------------------------------------------
+  slack (MET)                                         0.17
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<0>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<0> (in)                      0.02       0.12 r
+  rfile/read1regsel<0> (rf)                0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)           0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read1/m0/S<0> (mux_8_1_31)         0.00       0.26 r
+  rfile/read1/m0/U1/Y (INVX1)              0.08       0.33 f
+  rfile/read1/m0/U2/Y (INVX8)              0.02       0.35 r
+  rfile/read1/m0/m0/S (mux_2_1_223)        0.00       0.35 r
+  rfile/read1/m0/m0/B/in2 (nand2_670)      0.00       0.35 r
+  rfile/read1/m0/m0/B/U1/Y (AND2X1)        0.03       0.38 r
+  rfile/read1/m0/m0/B/U2/Y (INVX1)         0.02       0.40 f
+  rfile/read1/m0/m0/B/out (nand2_670)      0.00       0.40 f
+  rfile/read1/m0/m0/C/in2 (nand2_669)      0.00       0.40 f
+  rfile/read1/m0/m0/C/U1/Y (AND2X1)        0.03       0.43 f
+  rfile/read1/m0/m0/C/U2/Y (INVX1)         0.00       0.44 r
+  rfile/read1/m0/m0/C/out (nand2_669)      0.00       0.44 r
+  rfile/read1/m0/m0/Out (mux_2_1_223)      0.00       0.44 r
+  rfile/read1/m0/m4/InA (mux_2_1_219)      0.00       0.44 r
+  rfile/read1/m0/m4/A/in1 (nand2_659)      0.00       0.44 r
+  rfile/read1/m0/m4/A/U1/Y (AND2X1)        0.04       0.48 r
+  rfile/read1/m0/m4/A/U2/Y (INVX1)         0.02       0.50 f
+  rfile/read1/m0/m4/A/out (nand2_659)      0.00       0.50 f
+  rfile/read1/m0/m4/C/in1 (nand2_657)      0.00       0.50 f
+  rfile/read1/m0/m4/C/U1/Y (AND2X1)        0.04       0.54 f
+  rfile/read1/m0/m4/C/U2/Y (INVX1)         0.00       0.54 r
+  rfile/read1/m0/m4/C/out (nand2_657)      0.00       0.54 r
+  rfile/read1/m0/m4/Out (mux_2_1_219)      0.00       0.54 r
+  rfile/read1/m0/m6/InA (mux_2_1_217)      0.00       0.54 r
+  rfile/read1/m0/m6/A/in1 (nand2_653)      0.00       0.54 r
+  rfile/read1/m0/m6/A/U1/Y (AND2X1)        0.04       0.58 r
+  rfile/read1/m0/m6/A/U2/Y (INVX1)         0.02       0.61 f
+  rfile/read1/m0/m6/A/out (nand2_653)      0.00       0.61 f
+  rfile/read1/m0/m6/C/in1 (nand2_651)      0.00       0.61 f
+  rfile/read1/m0/m6/C/U1/Y (AND2X1)        0.04       0.65 f
+  rfile/read1/m0/m6/C/U2/Y (INVX1)         0.00       0.65 r
+  rfile/read1/m0/m6/C/out (nand2_651)      0.00       0.65 r
+  rfile/read1/m0/m6/Out (mux_2_1_217)      0.00       0.65 r
+  rfile/read1/m0/Out (mux_8_1_31)          0.00       0.65 r
+  rfile/read1/Out<0> (mux16_8_1_1)         0.00       0.65 r
+  rfile/read1data<0> (rf)                  0.00       0.65 r
+  m1/InB<0> (mux16_2_1_1)                  0.00       0.65 r
+  m1/m0/InB (mux_2_1_255)                  0.00       0.65 r
+  m1/m0/B/in1 (nand2_766)                  0.00       0.65 r
+  m1/m0/B/U1/Y (AND2X1)                    0.04       0.69 r
+  m1/m0/B/U2/Y (INVX1)                     0.02       0.71 f
+  m1/m0/B/out (nand2_766)                  0.00       0.71 f
+  m1/m0/C/in2 (nand2_765)                  0.00       0.71 f
+  m1/m0/C/U1/Y (NAND2X1)                   0.02       0.73 r
+  m1/m0/C/out (nand2_765)                  0.00       0.73 r
+  m1/m0/Out (mux_2_1_255)                  0.00       0.73 r
+  m1/Out<0> (mux16_2_1_1)                  0.00       0.73 r
+  read1data<0> (out)                       0.00       0.73 r
+  data arrival time                                   0.73
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.73
+  -----------------------------------------------------------
+  slack (MET)                                         0.17
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<1>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read2regsel<0> (in)                      0.02       0.12 r
+  rfile/read2regsel<0> (rf)                0.00       0.12 r
+  rfile/read2/S<0> (mux16_8_1_0)           0.00       0.12 r
+  rfile/read2/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read2/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read2/m1/S<0> (mux_8_1_14)         0.00       0.26 r
+  rfile/read2/m1/U1/Y (INVX1)              0.08       0.33 f
+  rfile/read2/m1/U2/Y (INVX8)              0.02       0.35 r
+  rfile/read2/m1/m0/S (mux_2_1_104)        0.00       0.35 r
+  rfile/read2/m1/m0/B/in2 (nand2_313)      0.00       0.35 r
+  rfile/read2/m1/m0/B/U1/Y (AND2X1)        0.03       0.38 r
+  rfile/read2/m1/m0/B/U2/Y (INVX1)         0.02       0.40 f
+  rfile/read2/m1/m0/B/out (nand2_313)      0.00       0.40 f
+  rfile/read2/m1/m0/C/in2 (nand2_312)      0.00       0.40 f
+  rfile/read2/m1/m0/C/U1/Y (AND2X1)        0.03       0.43 f
+  rfile/read2/m1/m0/C/U2/Y (INVX1)         0.00       0.44 r
+  rfile/read2/m1/m0/C/out (nand2_312)      0.00       0.44 r
+  rfile/read2/m1/m0/Out (mux_2_1_104)      0.00       0.44 r
+  rfile/read2/m1/m4/InA (mux_2_1_100)      0.00       0.44 r
+  rfile/read2/m1/m4/A/in1 (nand2_302)      0.00       0.44 r
+  rfile/read2/m1/m4/A/U1/Y (AND2X1)        0.04       0.48 r
+  rfile/read2/m1/m4/A/U2/Y (INVX1)         0.02       0.50 f
+  rfile/read2/m1/m4/A/out (nand2_302)      0.00       0.50 f
+  rfile/read2/m1/m4/C/in1 (nand2_300)      0.00       0.50 f
+  rfile/read2/m1/m4/C/U1/Y (AND2X1)        0.04       0.54 f
+  rfile/read2/m1/m4/C/U2/Y (INVX1)         0.00       0.54 r
+  rfile/read2/m1/m4/C/out (nand2_300)      0.00       0.54 r
+  rfile/read2/m1/m4/Out (mux_2_1_100)      0.00       0.54 r
+  rfile/read2/m1/m6/InA (mux_2_1_98)       0.00       0.54 r
+  rfile/read2/m1/m6/A/in1 (nand2_296)      0.00       0.54 r
+  rfile/read2/m1/m6/A/U1/Y (AND2X1)        0.04       0.58 r
+  rfile/read2/m1/m6/A/U2/Y (INVX1)         0.02       0.61 f
+  rfile/read2/m1/m6/A/out (nand2_296)      0.00       0.61 f
+  rfile/read2/m1/m6/C/in1 (nand2_294)      0.00       0.61 f
+  rfile/read2/m1/m6/C/U1/Y (AND2X1)        0.04       0.65 f
+  rfile/read2/m1/m6/C/U2/Y (INVX1)         0.00       0.65 r
+  rfile/read2/m1/m6/C/out (nand2_294)      0.00       0.65 r
+  rfile/read2/m1/m6/Out (mux_2_1_98)       0.00       0.65 r
+  rfile/read2/m1/Out (mux_8_1_14)          0.00       0.65 r
+  rfile/read2/Out<1> (mux16_8_1_0)         0.00       0.65 r
+  rfile/read2data<1> (rf)                  0.00       0.65 r
+  m2/InB<1> (mux16_2_1_0)                  0.00       0.65 r
+  m2/m1/InB (mux_2_1_238)                  0.00       0.65 r
+  m2/m1/B/in1 (nand2_715)                  0.00       0.65 r
+  m2/m1/B/U1/Y (AND2X1)                    0.04       0.69 r
+  m2/m1/B/U2/Y (INVX1)                     0.02       0.71 f
+  m2/m1/B/out (nand2_715)                  0.00       0.71 f
+  m2/m1/C/in2 (nand2_714)                  0.00       0.71 f
+  m2/m1/C/U1/Y (NAND2X1)                   0.02       0.73 r
+  m2/m1/C/out (nand2_714)                  0.00       0.73 r
+  m2/m1/Out (mux_2_1_238)                  0.00       0.73 r
+  m2/Out<1> (mux16_2_1_0)                  0.00       0.73 r
+  read2data<1> (out)                       0.00       0.73 r
+  data arrival time                                   0.73
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.73
+  -----------------------------------------------------------
+  slack (MET)                                         0.17
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<0>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read2regsel<0> (in)                      0.02       0.12 r
+  rfile/read2regsel<0> (rf)                0.00       0.12 r
+  rfile/read2/S<0> (mux16_8_1_0)           0.00       0.12 r
+  rfile/read2/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read2/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read2/m0/S<0> (mux_8_1_15)         0.00       0.26 r
+  rfile/read2/m0/U1/Y (INVX1)              0.08       0.33 f
+  rfile/read2/m0/U2/Y (INVX8)              0.02       0.35 r
+  rfile/read2/m0/m0/S (mux_2_1_111)        0.00       0.35 r
+  rfile/read2/m0/m0/B/in2 (nand2_334)      0.00       0.35 r
+  rfile/read2/m0/m0/B/U1/Y (AND2X1)        0.03       0.38 r
+  rfile/read2/m0/m0/B/U2/Y (INVX1)         0.02       0.40 f
+  rfile/read2/m0/m0/B/out (nand2_334)      0.00       0.40 f
+  rfile/read2/m0/m0/C/in2 (nand2_333)      0.00       0.40 f
+  rfile/read2/m0/m0/C/U1/Y (AND2X1)        0.03       0.43 f
+  rfile/read2/m0/m0/C/U2/Y (INVX1)         0.00       0.44 r
+  rfile/read2/m0/m0/C/out (nand2_333)      0.00       0.44 r
+  rfile/read2/m0/m0/Out (mux_2_1_111)      0.00       0.44 r
+  rfile/read2/m0/m4/InA (mux_2_1_107)      0.00       0.44 r
+  rfile/read2/m0/m4/A/in1 (nand2_323)      0.00       0.44 r
+  rfile/read2/m0/m4/A/U1/Y (AND2X1)        0.04       0.48 r
+  rfile/read2/m0/m4/A/U2/Y (INVX1)         0.02       0.50 f
+  rfile/read2/m0/m4/A/out (nand2_323)      0.00       0.50 f
+  rfile/read2/m0/m4/C/in1 (nand2_321)      0.00       0.50 f
+  rfile/read2/m0/m4/C/U1/Y (AND2X1)        0.04       0.54 f
+  rfile/read2/m0/m4/C/U2/Y (INVX1)         0.00       0.54 r
+  rfile/read2/m0/m4/C/out (nand2_321)      0.00       0.54 r
+  rfile/read2/m0/m4/Out (mux_2_1_107)      0.00       0.54 r
+  rfile/read2/m0/m6/InA (mux_2_1_105)      0.00       0.54 r
+  rfile/read2/m0/m6/A/in1 (nand2_317)      0.00       0.54 r
+  rfile/read2/m0/m6/A/U1/Y (AND2X1)        0.04       0.58 r
+  rfile/read2/m0/m6/A/U2/Y (INVX1)         0.02       0.61 f
+  rfile/read2/m0/m6/A/out (nand2_317)      0.00       0.61 f
+  rfile/read2/m0/m6/C/in1 (nand2_315)      0.00       0.61 f
+  rfile/read2/m0/m6/C/U1/Y (AND2X1)        0.04       0.65 f
+  rfile/read2/m0/m6/C/U2/Y (INVX1)         0.00       0.65 r
+  rfile/read2/m0/m6/C/out (nand2_315)      0.00       0.65 r
+  rfile/read2/m0/m6/Out (mux_2_1_105)      0.00       0.65 r
+  rfile/read2/m0/Out (mux_8_1_15)          0.00       0.65 r
+  rfile/read2/Out<0> (mux16_8_1_0)         0.00       0.65 r
+  rfile/read2data<0> (rf)                  0.00       0.65 r
+  m2/InB<0> (mux16_2_1_0)                  0.00       0.65 r
+  m2/m0/InB (mux_2_1_239)                  0.00       0.65 r
+  m2/m0/B/in1 (nand2_718)                  0.00       0.65 r
+  m2/m0/B/U1/Y (AND2X1)                    0.04       0.69 r
+  m2/m0/B/U2/Y (INVX1)                     0.02       0.71 f
+  m2/m0/B/out (nand2_718)                  0.00       0.71 f
+  m2/m0/C/in2 (nand2_717)                  0.00       0.71 f
+  m2/m0/C/U1/Y (NAND2X1)                   0.02       0.73 r
+  m2/m0/C/out (nand2_717)                  0.00       0.73 r
+  m2/m0/Out (mux_2_1_239)                  0.00       0.73 r
+  m2/Out<0> (mux16_2_1_0)                  0.00       0.73 r
+  read2data<0> (out)                       0.00       0.73 r
+  data arrival time                                   0.73
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.73
+  -----------------------------------------------------------
+  slack (MET)                                         0.17
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<15>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  read1regsel<0> (in)                                     0.02       0.12 r
+  rfile/read1regsel<0> (rf)                               0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)                          0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                                0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                                0.12       0.26 r
+  rfile/read1/m15/S<0> (mux_8_1_16)                       0.00       0.26 r
+  rfile/read1/m15/U1/Y (INVX2)                            0.03       0.29 f
+  rfile/read1/m15/U2/Y (INVX8)                            0.03       0.32 r
+  rfile/read1/m15/m0/S (mux_2_1_118)                      0.00       0.32 r
+  rfile/read1/m15/m0/nS/in1 (not1_118)                    0.00       0.32 r
+  rfile/read1/m15/m0/nS/U1/Y (INVX1)                      0.02       0.34 f
+  rfile/read1/m15/m0/nS/out (not1_118)                    0.00       0.34 f
+  rfile/read1/m15/m0/A/in2 (nand2_356)                    0.00       0.34 f
+  rfile/read1/m15/m0/A/U1/Y (AND2X1)                      0.03       0.37 f
+  rfile/read1/m15/m0/A/U2/Y (INVX1)                       0.00       0.38 r
+  rfile/read1/m15/m0/A/out (nand2_356)                    0.00       0.38 r
+  rfile/read1/m15/m0/C/in1 (nand2_354)                    0.00       0.38 r
+  rfile/read1/m15/m0/C/U1/Y (AND2X1)                      0.04       0.42 r
+  rfile/read1/m15/m0/C/U2/Y (INVX1)                       0.02       0.44 f
+  rfile/read1/m15/m0/C/out (nand2_354)                    0.00       0.44 f
+  rfile/read1/m15/m0/Out (mux_2_1_118)                    0.00       0.44 f
+  rfile/read1/m15/m4/InA (mux_2_1_114)                    0.00       0.44 f
+  rfile/read1/m15/m4/A/in1 (nand2_344)                    0.00       0.44 f
+  rfile/read1/m15/m4/A/U1/Y (AND2X1)                      0.04       0.48 f
+  rfile/read1/m15/m4/A/U2/Y (INVX1)                       0.00       0.48 r
+  rfile/read1/m15/m4/A/out (nand2_344)                    0.00       0.48 r
+  rfile/read1/m15/m4/C/in1 (nand2_342)                    0.00       0.48 r
+  rfile/read1/m15/m4/C/U1/Y (AND2X1)                      0.04       0.52 r
+  rfile/read1/m15/m4/C/U2/Y (INVX1)                       0.02       0.55 f
+  rfile/read1/m15/m4/C/out (nand2_342)                    0.00       0.55 f
+  rfile/read1/m15/m4/Out (mux_2_1_114)                    0.00       0.55 f
+  rfile/read1/m15/m6/InA (mux_2_1_112)                    0.00       0.55 f
+  rfile/read1/m15/m6/A/in1 (nand2_338)                    0.00       0.55 f
+  rfile/read1/m15/m6/A/U1/Y (AND2X1)                      0.04       0.59 f
+  rfile/read1/m15/m6/A/U2/Y (INVX1)                       0.00       0.59 r
+  rfile/read1/m15/m6/A/out (nand2_338)                    0.00       0.59 r
+  rfile/read1/m15/m6/C/in1 (nand2_336)                    0.00       0.59 r
+  rfile/read1/m15/m6/C/U1/Y (AND2X1)                      0.04       0.63 r
+  rfile/read1/m15/m6/C/U2/Y (INVX1)                       0.02       0.65 f
+  rfile/read1/m15/m6/C/out (nand2_336)                    0.00       0.65 f
+  rfile/read1/m15/m6/Out (mux_2_1_112)                    0.00       0.65 f
+  rfile/read1/m15/Out (mux_8_1_16)                        0.00       0.65 f
+  rfile/read1/Out<15> (mux16_8_1_1)                       0.00       0.65 f
+  rfile/read1data<15> (rf)                                0.00       0.65 f
+  m1/InB<15> (mux16_2_1_1)                                0.00       0.65 f
+  m1/m15/InB (mux_2_1_240)                                0.00       0.65 f
+  m1/m15/B/in1 (nand2_721)                                0.00       0.65 f
+  m1/m15/B/U1/Y (AND2X1)                                  0.04       0.69 f
+  m1/m15/B/U2/Y (INVX1)                                   0.00       0.70 r
+  m1/m15/B/out (nand2_721)                                0.00       0.70 r
+  m1/m15/C/in2 (nand2_720)                                0.00       0.70 r
+  m1/m15/C/U1/Y (NAND2X1)                                 0.01       0.70 f
+  m1/m15/C/out (nand2_720)                                0.00       0.70 f
+  m1/m15/Out (mux_2_1_240)                                0.00       0.70 f
+  m1/Out<15> (mux16_2_1_1)                                0.00       0.70 f
+  read1data<15> (out)                                     0.00       0.70 f
+  data arrival time                                                  0.70
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.10       0.90
+  data required time                                                 0.90
+  --------------------------------------------------------------------------
+  data required time                                                 0.90
+  data arrival time                                                 -0.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<14>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  read1regsel<0> (in)                                     0.02       0.12 r
+  rfile/read1regsel<0> (rf)                               0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)                          0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                                0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                                0.12       0.26 r
+  rfile/read1/m14/S<0> (mux_8_1_17)                       0.00       0.26 r
+  rfile/read1/m14/U1/Y (INVX2)                            0.03       0.29 f
+  rfile/read1/m14/U2/Y (INVX8)                            0.03       0.32 r
+  rfile/read1/m14/m0/S (mux_2_1_125)                      0.00       0.32 r
+  rfile/read1/m14/m0/nS/in1 (not1_125)                    0.00       0.32 r
+  rfile/read1/m14/m0/nS/U1/Y (INVX1)                      0.02       0.34 f
+  rfile/read1/m14/m0/nS/out (not1_125)                    0.00       0.34 f
+  rfile/read1/m14/m0/A/in2 (nand2_377)                    0.00       0.34 f
+  rfile/read1/m14/m0/A/U1/Y (AND2X1)                      0.03       0.37 f
+  rfile/read1/m14/m0/A/U2/Y (INVX1)                       0.00       0.38 r
+  rfile/read1/m14/m0/A/out (nand2_377)                    0.00       0.38 r
+  rfile/read1/m14/m0/C/in1 (nand2_375)                    0.00       0.38 r
+  rfile/read1/m14/m0/C/U1/Y (AND2X1)                      0.04       0.42 r
+  rfile/read1/m14/m0/C/U2/Y (INVX1)                       0.02       0.44 f
+  rfile/read1/m14/m0/C/out (nand2_375)                    0.00       0.44 f
+  rfile/read1/m14/m0/Out (mux_2_1_125)                    0.00       0.44 f
+  rfile/read1/m14/m4/InA (mux_2_1_121)                    0.00       0.44 f
+  rfile/read1/m14/m4/A/in1 (nand2_365)                    0.00       0.44 f
+  rfile/read1/m14/m4/A/U1/Y (AND2X1)                      0.04       0.48 f
+  rfile/read1/m14/m4/A/U2/Y (INVX1)                       0.00       0.48 r
+  rfile/read1/m14/m4/A/out (nand2_365)                    0.00       0.48 r
+  rfile/read1/m14/m4/C/in1 (nand2_363)                    0.00       0.48 r
+  rfile/read1/m14/m4/C/U1/Y (AND2X1)                      0.04       0.52 r
+  rfile/read1/m14/m4/C/U2/Y (INVX1)                       0.02       0.55 f
+  rfile/read1/m14/m4/C/out (nand2_363)                    0.00       0.55 f
+  rfile/read1/m14/m4/Out (mux_2_1_121)                    0.00       0.55 f
+  rfile/read1/m14/m6/InA (mux_2_1_119)                    0.00       0.55 f
+  rfile/read1/m14/m6/A/in1 (nand2_359)                    0.00       0.55 f
+  rfile/read1/m14/m6/A/U1/Y (AND2X1)                      0.04       0.59 f
+  rfile/read1/m14/m6/A/U2/Y (INVX1)                       0.00       0.59 r
+  rfile/read1/m14/m6/A/out (nand2_359)                    0.00       0.59 r
+  rfile/read1/m14/m6/C/in1 (nand2_357)                    0.00       0.59 r
+  rfile/read1/m14/m6/C/U1/Y (AND2X1)                      0.04       0.63 r
+  rfile/read1/m14/m6/C/U2/Y (INVX1)                       0.02       0.65 f
+  rfile/read1/m14/m6/C/out (nand2_357)                    0.00       0.65 f
+  rfile/read1/m14/m6/Out (mux_2_1_119)                    0.00       0.65 f
+  rfile/read1/m14/Out (mux_8_1_17)                        0.00       0.65 f
+  rfile/read1/Out<14> (mux16_8_1_1)                       0.00       0.65 f
+  rfile/read1data<14> (rf)                                0.00       0.65 f
+  m1/InB<14> (mux16_2_1_1)                                0.00       0.65 f
+  m1/m14/InB (mux_2_1_241)                                0.00       0.65 f
+  m1/m14/B/in1 (nand2_724)                                0.00       0.65 f
+  m1/m14/B/U1/Y (AND2X1)                                  0.04       0.69 f
+  m1/m14/B/U2/Y (INVX1)                                   0.00       0.70 r
+  m1/m14/B/out (nand2_724)                                0.00       0.70 r
+  m1/m14/C/in2 (nand2_723)                                0.00       0.70 r
+  m1/m14/C/U1/Y (NAND2X1)                                 0.01       0.70 f
+  m1/m14/C/out (nand2_723)                                0.00       0.70 f
+  m1/m14/Out (mux_2_1_241)                                0.00       0.70 f
+  m1/Out<14> (mux16_2_1_1)                                0.00       0.70 f
+  read1data<14> (out)                                     0.00       0.70 f
+  data arrival time                                                  0.70
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.10       0.90
+  data required time                                                 0.90
+  --------------------------------------------------------------------------
+  data required time                                                 0.90
+  data arrival time                                                 -0.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<13>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  read1regsel<0> (in)                                     0.02       0.12 r
+  rfile/read1regsel<0> (rf)                               0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)                          0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                                0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                                0.12       0.26 r
+  rfile/read1/m13/S<0> (mux_8_1_18)                       0.00       0.26 r
+  rfile/read1/m13/U1/Y (INVX2)                            0.03       0.29 f
+  rfile/read1/m13/U2/Y (INVX8)                            0.03       0.32 r
+  rfile/read1/m13/m0/S (mux_2_1_132)                      0.00       0.32 r
+  rfile/read1/m13/m0/nS/in1 (not1_132)                    0.00       0.32 r
+  rfile/read1/m13/m0/nS/U1/Y (INVX1)                      0.02       0.34 f
+  rfile/read1/m13/m0/nS/out (not1_132)                    0.00       0.34 f
+  rfile/read1/m13/m0/A/in2 (nand2_398)                    0.00       0.34 f
+  rfile/read1/m13/m0/A/U1/Y (AND2X1)                      0.03       0.37 f
+  rfile/read1/m13/m0/A/U2/Y (INVX1)                       0.00       0.38 r
+  rfile/read1/m13/m0/A/out (nand2_398)                    0.00       0.38 r
+  rfile/read1/m13/m0/C/in1 (nand2_396)                    0.00       0.38 r
+  rfile/read1/m13/m0/C/U1/Y (AND2X1)                      0.04       0.42 r
+  rfile/read1/m13/m0/C/U2/Y (INVX1)                       0.02       0.44 f
+  rfile/read1/m13/m0/C/out (nand2_396)                    0.00       0.44 f
+  rfile/read1/m13/m0/Out (mux_2_1_132)                    0.00       0.44 f
+  rfile/read1/m13/m4/InA (mux_2_1_128)                    0.00       0.44 f
+  rfile/read1/m13/m4/A/in1 (nand2_386)                    0.00       0.44 f
+  rfile/read1/m13/m4/A/U1/Y (AND2X1)                      0.04       0.48 f
+  rfile/read1/m13/m4/A/U2/Y (INVX1)                       0.00       0.48 r
+  rfile/read1/m13/m4/A/out (nand2_386)                    0.00       0.48 r
+  rfile/read1/m13/m4/C/in1 (nand2_384)                    0.00       0.48 r
+  rfile/read1/m13/m4/C/U1/Y (AND2X1)                      0.04       0.52 r
+  rfile/read1/m13/m4/C/U2/Y (INVX1)                       0.02       0.55 f
+  rfile/read1/m13/m4/C/out (nand2_384)                    0.00       0.55 f
+  rfile/read1/m13/m4/Out (mux_2_1_128)                    0.00       0.55 f
+  rfile/read1/m13/m6/InA (mux_2_1_126)                    0.00       0.55 f
+  rfile/read1/m13/m6/A/in1 (nand2_380)                    0.00       0.55 f
+  rfile/read1/m13/m6/A/U1/Y (AND2X1)                      0.04       0.59 f
+  rfile/read1/m13/m6/A/U2/Y (INVX1)                       0.00       0.59 r
+  rfile/read1/m13/m6/A/out (nand2_380)                    0.00       0.59 r
+  rfile/read1/m13/m6/C/in1 (nand2_378)                    0.00       0.59 r
+  rfile/read1/m13/m6/C/U1/Y (AND2X1)                      0.04       0.63 r
+  rfile/read1/m13/m6/C/U2/Y (INVX1)                       0.02       0.65 f
+  rfile/read1/m13/m6/C/out (nand2_378)                    0.00       0.65 f
+  rfile/read1/m13/m6/Out (mux_2_1_126)                    0.00       0.65 f
+  rfile/read1/m13/Out (mux_8_1_18)                        0.00       0.65 f
+  rfile/read1/Out<13> (mux16_8_1_1)                       0.00       0.65 f
+  rfile/read1data<13> (rf)                                0.00       0.65 f
+  m1/InB<13> (mux16_2_1_1)                                0.00       0.65 f
+  m1/m13/InB (mux_2_1_242)                                0.00       0.65 f
+  m1/m13/B/in1 (nand2_727)                                0.00       0.65 f
+  m1/m13/B/U1/Y (AND2X1)                                  0.04       0.69 f
+  m1/m13/B/U2/Y (INVX1)                                   0.00       0.70 r
+  m1/m13/B/out (nand2_727)                                0.00       0.70 r
+  m1/m13/C/in2 (nand2_726)                                0.00       0.70 r
+  m1/m13/C/U1/Y (NAND2X1)                                 0.01       0.70 f
+  m1/m13/C/out (nand2_726)                                0.00       0.70 f
+  m1/m13/Out (mux_2_1_242)                                0.00       0.70 f
+  m1/Out<13> (mux16_2_1_1)                                0.00       0.70 f
+  read1data<13> (out)                                     0.00       0.70 f
+  data arrival time                                                  0.70
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.10       0.90
+  data required time                                                 0.90
+  --------------------------------------------------------------------------
+  data required time                                                 0.90
+  data arrival time                                                 -0.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<12>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  read1regsel<0> (in)                                     0.02       0.12 r
+  rfile/read1regsel<0> (rf)                               0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)                          0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                                0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                                0.12       0.26 r
+  rfile/read1/m12/S<0> (mux_8_1_19)                       0.00       0.26 r
+  rfile/read1/m12/U1/Y (INVX2)                            0.03       0.29 f
+  rfile/read1/m12/U2/Y (INVX8)                            0.03       0.32 r
+  rfile/read1/m12/m0/S (mux_2_1_139)                      0.00       0.32 r
+  rfile/read1/m12/m0/nS/in1 (not1_139)                    0.00       0.32 r
+  rfile/read1/m12/m0/nS/U1/Y (INVX1)                      0.02       0.34 f
+  rfile/read1/m12/m0/nS/out (not1_139)                    0.00       0.34 f
+  rfile/read1/m12/m0/A/in2 (nand2_419)                    0.00       0.34 f
+  rfile/read1/m12/m0/A/U1/Y (AND2X1)                      0.03       0.37 f
+  rfile/read1/m12/m0/A/U2/Y (INVX1)                       0.00       0.38 r
+  rfile/read1/m12/m0/A/out (nand2_419)                    0.00       0.38 r
+  rfile/read1/m12/m0/C/in1 (nand2_417)                    0.00       0.38 r
+  rfile/read1/m12/m0/C/U1/Y (AND2X1)                      0.04       0.42 r
+  rfile/read1/m12/m0/C/U2/Y (INVX1)                       0.02       0.44 f
+  rfile/read1/m12/m0/C/out (nand2_417)                    0.00       0.44 f
+  rfile/read1/m12/m0/Out (mux_2_1_139)                    0.00       0.44 f
+  rfile/read1/m12/m4/InA (mux_2_1_135)                    0.00       0.44 f
+  rfile/read1/m12/m4/A/in1 (nand2_407)                    0.00       0.44 f
+  rfile/read1/m12/m4/A/U1/Y (AND2X1)                      0.04       0.48 f
+  rfile/read1/m12/m4/A/U2/Y (INVX1)                       0.00       0.48 r
+  rfile/read1/m12/m4/A/out (nand2_407)                    0.00       0.48 r
+  rfile/read1/m12/m4/C/in1 (nand2_405)                    0.00       0.48 r
+  rfile/read1/m12/m4/C/U1/Y (AND2X1)                      0.04       0.52 r
+  rfile/read1/m12/m4/C/U2/Y (INVX1)                       0.02       0.55 f
+  rfile/read1/m12/m4/C/out (nand2_405)                    0.00       0.55 f
+  rfile/read1/m12/m4/Out (mux_2_1_135)                    0.00       0.55 f
+  rfile/read1/m12/m6/InA (mux_2_1_133)                    0.00       0.55 f
+  rfile/read1/m12/m6/A/in1 (nand2_401)                    0.00       0.55 f
+  rfile/read1/m12/m6/A/U1/Y (AND2X1)                      0.04       0.59 f
+  rfile/read1/m12/m6/A/U2/Y (INVX1)                       0.00       0.59 r
+  rfile/read1/m12/m6/A/out (nand2_401)                    0.00       0.59 r
+  rfile/read1/m12/m6/C/in1 (nand2_399)                    0.00       0.59 r
+  rfile/read1/m12/m6/C/U1/Y (AND2X1)                      0.04       0.63 r
+  rfile/read1/m12/m6/C/U2/Y (INVX1)                       0.02       0.65 f
+  rfile/read1/m12/m6/C/out (nand2_399)                    0.00       0.65 f
+  rfile/read1/m12/m6/Out (mux_2_1_133)                    0.00       0.65 f
+  rfile/read1/m12/Out (mux_8_1_19)                        0.00       0.65 f
+  rfile/read1/Out<12> (mux16_8_1_1)                       0.00       0.65 f
+  rfile/read1data<12> (rf)                                0.00       0.65 f
+  m1/InB<12> (mux16_2_1_1)                                0.00       0.65 f
+  m1/m12/InB (mux_2_1_243)                                0.00       0.65 f
+  m1/m12/B/in1 (nand2_730)                                0.00       0.65 f
+  m1/m12/B/U1/Y (AND2X1)                                  0.04       0.69 f
+  m1/m12/B/U2/Y (INVX1)                                   0.00       0.70 r
+  m1/m12/B/out (nand2_730)                                0.00       0.70 r
+  m1/m12/C/in2 (nand2_729)                                0.00       0.70 r
+  m1/m12/C/U1/Y (NAND2X1)                                 0.01       0.70 f
+  m1/m12/C/out (nand2_729)                                0.00       0.70 f
+  m1/m12/Out (mux_2_1_243)                                0.00       0.70 f
+  m1/Out<12> (mux16_2_1_1)                                0.00       0.70 f
+  read1data<12> (out)                                     0.00       0.70 f
+  data arrival time                                                  0.70
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.10       0.90
+  data required time                                                 0.90
+  --------------------------------------------------------------------------
+  data required time                                                 0.90
+  data arrival time                                                 -0.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<11>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  read1regsel<0> (in)                                     0.02       0.12 r
+  rfile/read1regsel<0> (rf)                               0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)                          0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                                0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                                0.12       0.26 r
+  rfile/read1/m11/S<0> (mux_8_1_20)                       0.00       0.26 r
+  rfile/read1/m11/U1/Y (INVX2)                            0.03       0.29 f
+  rfile/read1/m11/U2/Y (INVX8)                            0.03       0.32 r
+  rfile/read1/m11/m0/S (mux_2_1_146)                      0.00       0.32 r
+  rfile/read1/m11/m0/nS/in1 (not1_146)                    0.00       0.32 r
+  rfile/read1/m11/m0/nS/U1/Y (INVX1)                      0.02       0.34 f
+  rfile/read1/m11/m0/nS/out (not1_146)                    0.00       0.34 f
+  rfile/read1/m11/m0/A/in2 (nand2_440)                    0.00       0.34 f
+  rfile/read1/m11/m0/A/U1/Y (AND2X1)                      0.03       0.37 f
+  rfile/read1/m11/m0/A/U2/Y (INVX1)                       0.00       0.38 r
+  rfile/read1/m11/m0/A/out (nand2_440)                    0.00       0.38 r
+  rfile/read1/m11/m0/C/in1 (nand2_438)                    0.00       0.38 r
+  rfile/read1/m11/m0/C/U1/Y (AND2X1)                      0.04       0.42 r
+  rfile/read1/m11/m0/C/U2/Y (INVX1)                       0.02       0.44 f
+  rfile/read1/m11/m0/C/out (nand2_438)                    0.00       0.44 f
+  rfile/read1/m11/m0/Out (mux_2_1_146)                    0.00       0.44 f
+  rfile/read1/m11/m4/InA (mux_2_1_142)                    0.00       0.44 f
+  rfile/read1/m11/m4/A/in1 (nand2_428)                    0.00       0.44 f
+  rfile/read1/m11/m4/A/U1/Y (AND2X1)                      0.04       0.48 f
+  rfile/read1/m11/m4/A/U2/Y (INVX1)                       0.00       0.48 r
+  rfile/read1/m11/m4/A/out (nand2_428)                    0.00       0.48 r
+  rfile/read1/m11/m4/C/in1 (nand2_426)                    0.00       0.48 r
+  rfile/read1/m11/m4/C/U1/Y (AND2X1)                      0.04       0.52 r
+  rfile/read1/m11/m4/C/U2/Y (INVX1)                       0.02       0.55 f
+  rfile/read1/m11/m4/C/out (nand2_426)                    0.00       0.55 f
+  rfile/read1/m11/m4/Out (mux_2_1_142)                    0.00       0.55 f
+  rfile/read1/m11/m6/InA (mux_2_1_140)                    0.00       0.55 f
+  rfile/read1/m11/m6/A/in1 (nand2_422)                    0.00       0.55 f
+  rfile/read1/m11/m6/A/U1/Y (AND2X1)                      0.04       0.59 f
+  rfile/read1/m11/m6/A/U2/Y (INVX1)                       0.00       0.59 r
+  rfile/read1/m11/m6/A/out (nand2_422)                    0.00       0.59 r
+  rfile/read1/m11/m6/C/in1 (nand2_420)                    0.00       0.59 r
+  rfile/read1/m11/m6/C/U1/Y (AND2X1)                      0.04       0.63 r
+  rfile/read1/m11/m6/C/U2/Y (INVX1)                       0.02       0.65 f
+  rfile/read1/m11/m6/C/out (nand2_420)                    0.00       0.65 f
+  rfile/read1/m11/m6/Out (mux_2_1_140)                    0.00       0.65 f
+  rfile/read1/m11/Out (mux_8_1_20)                        0.00       0.65 f
+  rfile/read1/Out<11> (mux16_8_1_1)                       0.00       0.65 f
+  rfile/read1data<11> (rf)                                0.00       0.65 f
+  m1/InB<11> (mux16_2_1_1)                                0.00       0.65 f
+  m1/m11/InB (mux_2_1_244)                                0.00       0.65 f
+  m1/m11/B/in1 (nand2_733)                                0.00       0.65 f
+  m1/m11/B/U1/Y (AND2X1)                                  0.04       0.69 f
+  m1/m11/B/U2/Y (INVX1)                                   0.00       0.70 r
+  m1/m11/B/out (nand2_733)                                0.00       0.70 r
+  m1/m11/C/in2 (nand2_732)                                0.00       0.70 r
+  m1/m11/C/U1/Y (NAND2X1)                                 0.01       0.70 f
+  m1/m11/C/out (nand2_732)                                0.00       0.70 f
+  m1/m11/Out (mux_2_1_244)                                0.00       0.70 f
+  m1/Out<11> (mux16_2_1_1)                                0.00       0.70 f
+  read1data<11> (out)                                     0.00       0.70 f
+  data arrival time                                                  0.70
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.10       0.90
+  data required time                                                 0.90
+  --------------------------------------------------------------------------
+  data required time                                                 0.90
+  data arrival time                                                 -0.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<10>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 r
+  read1regsel<0> (in)                                     0.02       0.12 r
+  rfile/read1regsel<0> (rf)                               0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)                          0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                                0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                                0.12       0.26 r
+  rfile/read1/m10/S<0> (mux_8_1_21)                       0.00       0.26 r
+  rfile/read1/m10/U1/Y (INVX2)                            0.03       0.29 f
+  rfile/read1/m10/U2/Y (INVX8)                            0.03       0.32 r
+  rfile/read1/m10/m0/S (mux_2_1_153)                      0.00       0.32 r
+  rfile/read1/m10/m0/nS/in1 (not1_153)                    0.00       0.32 r
+  rfile/read1/m10/m0/nS/U1/Y (INVX1)                      0.02       0.34 f
+  rfile/read1/m10/m0/nS/out (not1_153)                    0.00       0.34 f
+  rfile/read1/m10/m0/A/in2 (nand2_461)                    0.00       0.34 f
+  rfile/read1/m10/m0/A/U1/Y (AND2X1)                      0.03       0.37 f
+  rfile/read1/m10/m0/A/U2/Y (INVX1)                       0.00       0.38 r
+  rfile/read1/m10/m0/A/out (nand2_461)                    0.00       0.38 r
+  rfile/read1/m10/m0/C/in1 (nand2_459)                    0.00       0.38 r
+  rfile/read1/m10/m0/C/U1/Y (AND2X1)                      0.04       0.42 r
+  rfile/read1/m10/m0/C/U2/Y (INVX1)                       0.02       0.44 f
+  rfile/read1/m10/m0/C/out (nand2_459)                    0.00       0.44 f
+  rfile/read1/m10/m0/Out (mux_2_1_153)                    0.00       0.44 f
+  rfile/read1/m10/m4/InA (mux_2_1_149)                    0.00       0.44 f
+  rfile/read1/m10/m4/A/in1 (nand2_449)                    0.00       0.44 f
+  rfile/read1/m10/m4/A/U1/Y (AND2X1)                      0.04       0.48 f
+  rfile/read1/m10/m4/A/U2/Y (INVX1)                       0.00       0.48 r
+  rfile/read1/m10/m4/A/out (nand2_449)                    0.00       0.48 r
+  rfile/read1/m10/m4/C/in1 (nand2_447)                    0.00       0.48 r
+  rfile/read1/m10/m4/C/U1/Y (AND2X1)                      0.04       0.52 r
+  rfile/read1/m10/m4/C/U2/Y (INVX1)                       0.02       0.55 f
+  rfile/read1/m10/m4/C/out (nand2_447)                    0.00       0.55 f
+  rfile/read1/m10/m4/Out (mux_2_1_149)                    0.00       0.55 f
+  rfile/read1/m10/m6/InA (mux_2_1_147)                    0.00       0.55 f
+  rfile/read1/m10/m6/A/in1 (nand2_443)                    0.00       0.55 f
+  rfile/read1/m10/m6/A/U1/Y (AND2X1)                      0.04       0.59 f
+  rfile/read1/m10/m6/A/U2/Y (INVX1)                       0.00       0.59 r
+  rfile/read1/m10/m6/A/out (nand2_443)                    0.00       0.59 r
+  rfile/read1/m10/m6/C/in1 (nand2_441)                    0.00       0.59 r
+  rfile/read1/m10/m6/C/U1/Y (AND2X1)                      0.04       0.63 r
+  rfile/read1/m10/m6/C/U2/Y (INVX1)                       0.02       0.65 f
+  rfile/read1/m10/m6/C/out (nand2_441)                    0.00       0.65 f
+  rfile/read1/m10/m6/Out (mux_2_1_147)                    0.00       0.65 f
+  rfile/read1/m10/Out (mux_8_1_21)                        0.00       0.65 f
+  rfile/read1/Out<10> (mux16_8_1_1)                       0.00       0.65 f
+  rfile/read1data<10> (rf)                                0.00       0.65 f
+  m1/InB<10> (mux16_2_1_1)                                0.00       0.65 f
+  m1/m10/InB (mux_2_1_245)                                0.00       0.65 f
+  m1/m10/B/in1 (nand2_736)                                0.00       0.65 f
+  m1/m10/B/U1/Y (AND2X1)                                  0.04       0.69 f
+  m1/m10/B/U2/Y (INVX1)                                   0.00       0.70 r
+  m1/m10/B/out (nand2_736)                                0.00       0.70 r
+  m1/m10/C/in2 (nand2_735)                                0.00       0.70 r
+  m1/m10/C/U1/Y (NAND2X1)                                 0.01       0.70 f
+  m1/m10/C/out (nand2_735)                                0.00       0.70 f
+  m1/m10/Out (mux_2_1_245)                                0.00       0.70 f
+  m1/Out<10> (mux16_2_1_1)                                0.00       0.70 f
+  read1data<10> (out)                                     0.00       0.70 f
+  data arrival time                                                  0.70
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  output external delay                                  -0.10       0.90
+  data required time                                                 0.90
+  --------------------------------------------------------------------------
+  data required time                                                 0.90
+  data arrival time                                                 -0.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<9>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<0> (in)                      0.02       0.12 r
+  rfile/read1regsel<0> (rf)                0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)           0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read1/m9/S<0> (mux_8_1_22)         0.00       0.26 r
+  rfile/read1/m9/U1/Y (INVX2)              0.03       0.29 f
+  rfile/read1/m9/U2/Y (INVX8)              0.03       0.32 r
+  rfile/read1/m9/m0/S (mux_2_1_160)        0.00       0.32 r
+  rfile/read1/m9/m0/nS/in1 (not1_160)      0.00       0.32 r
+  rfile/read1/m9/m0/nS/U1/Y (INVX1)        0.02       0.34 f
+  rfile/read1/m9/m0/nS/out (not1_160)      0.00       0.34 f
+  rfile/read1/m9/m0/A/in2 (nand2_482)      0.00       0.34 f
+  rfile/read1/m9/m0/A/U1/Y (AND2X1)        0.03       0.37 f
+  rfile/read1/m9/m0/A/U2/Y (INVX1)         0.00       0.38 r
+  rfile/read1/m9/m0/A/out (nand2_482)      0.00       0.38 r
+  rfile/read1/m9/m0/C/in1 (nand2_480)      0.00       0.38 r
+  rfile/read1/m9/m0/C/U1/Y (AND2X1)        0.04       0.42 r
+  rfile/read1/m9/m0/C/U2/Y (INVX1)         0.02       0.44 f
+  rfile/read1/m9/m0/C/out (nand2_480)      0.00       0.44 f
+  rfile/read1/m9/m0/Out (mux_2_1_160)      0.00       0.44 f
+  rfile/read1/m9/m4/InA (mux_2_1_156)      0.00       0.44 f
+  rfile/read1/m9/m4/A/in1 (nand2_470)      0.00       0.44 f
+  rfile/read1/m9/m4/A/U1/Y (AND2X1)        0.04       0.48 f
+  rfile/read1/m9/m4/A/U2/Y (INVX1)         0.00       0.48 r
+  rfile/read1/m9/m4/A/out (nand2_470)      0.00       0.48 r
+  rfile/read1/m9/m4/C/in1 (nand2_468)      0.00       0.48 r
+  rfile/read1/m9/m4/C/U1/Y (AND2X1)        0.04       0.52 r
+  rfile/read1/m9/m4/C/U2/Y (INVX1)         0.02       0.55 f
+  rfile/read1/m9/m4/C/out (nand2_468)      0.00       0.55 f
+  rfile/read1/m9/m4/Out (mux_2_1_156)      0.00       0.55 f
+  rfile/read1/m9/m6/InA (mux_2_1_154)      0.00       0.55 f
+  rfile/read1/m9/m6/A/in1 (nand2_464)      0.00       0.55 f
+  rfile/read1/m9/m6/A/U1/Y (AND2X1)        0.04       0.59 f
+  rfile/read1/m9/m6/A/U2/Y (INVX1)         0.00       0.59 r
+  rfile/read1/m9/m6/A/out (nand2_464)      0.00       0.59 r
+  rfile/read1/m9/m6/C/in1 (nand2_462)      0.00       0.59 r
+  rfile/read1/m9/m6/C/U1/Y (AND2X1)        0.04       0.63 r
+  rfile/read1/m9/m6/C/U2/Y (INVX1)         0.02       0.65 f
+  rfile/read1/m9/m6/C/out (nand2_462)      0.00       0.65 f
+  rfile/read1/m9/m6/Out (mux_2_1_154)      0.00       0.65 f
+  rfile/read1/m9/Out (mux_8_1_22)          0.00       0.65 f
+  rfile/read1/Out<9> (mux16_8_1_1)         0.00       0.65 f
+  rfile/read1data<9> (rf)                  0.00       0.65 f
+  m1/InB<9> (mux16_2_1_1)                  0.00       0.65 f
+  m1/m9/InB (mux_2_1_246)                  0.00       0.65 f
+  m1/m9/B/in1 (nand2_739)                  0.00       0.65 f
+  m1/m9/B/U1/Y (AND2X1)                    0.04       0.69 f
+  m1/m9/B/U2/Y (INVX1)                     0.00       0.70 r
+  m1/m9/B/out (nand2_739)                  0.00       0.70 r
+  m1/m9/C/in2 (nand2_738)                  0.00       0.70 r
+  m1/m9/C/U1/Y (NAND2X1)                   0.01       0.70 f
+  m1/m9/C/out (nand2_738)                  0.00       0.70 f
+  m1/m9/Out (mux_2_1_246)                  0.00       0.70 f
+  m1/Out<9> (mux16_2_1_1)                  0.00       0.70 f
+  read1data<9> (out)                       0.00       0.70 f
+  data arrival time                                   0.70
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<8>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<0> (in)                      0.02       0.12 r
+  rfile/read1regsel<0> (rf)                0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)           0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read1/m8/S<0> (mux_8_1_23)         0.00       0.26 r
+  rfile/read1/m8/U1/Y (INVX2)              0.03       0.29 f
+  rfile/read1/m8/U2/Y (INVX8)              0.03       0.32 r
+  rfile/read1/m8/m0/S (mux_2_1_167)        0.00       0.32 r
+  rfile/read1/m8/m0/nS/in1 (not1_167)      0.00       0.32 r
+  rfile/read1/m8/m0/nS/U1/Y (INVX1)        0.02       0.34 f
+  rfile/read1/m8/m0/nS/out (not1_167)      0.00       0.34 f
+  rfile/read1/m8/m0/A/in2 (nand2_503)      0.00       0.34 f
+  rfile/read1/m8/m0/A/U1/Y (AND2X1)        0.03       0.37 f
+  rfile/read1/m8/m0/A/U2/Y (INVX1)         0.00       0.38 r
+  rfile/read1/m8/m0/A/out (nand2_503)      0.00       0.38 r
+  rfile/read1/m8/m0/C/in1 (nand2_501)      0.00       0.38 r
+  rfile/read1/m8/m0/C/U1/Y (AND2X1)        0.04       0.42 r
+  rfile/read1/m8/m0/C/U2/Y (INVX1)         0.02       0.44 f
+  rfile/read1/m8/m0/C/out (nand2_501)      0.00       0.44 f
+  rfile/read1/m8/m0/Out (mux_2_1_167)      0.00       0.44 f
+  rfile/read1/m8/m4/InA (mux_2_1_163)      0.00       0.44 f
+  rfile/read1/m8/m4/A/in1 (nand2_491)      0.00       0.44 f
+  rfile/read1/m8/m4/A/U1/Y (AND2X1)        0.04       0.48 f
+  rfile/read1/m8/m4/A/U2/Y (INVX1)         0.00       0.48 r
+  rfile/read1/m8/m4/A/out (nand2_491)      0.00       0.48 r
+  rfile/read1/m8/m4/C/in1 (nand2_489)      0.00       0.48 r
+  rfile/read1/m8/m4/C/U1/Y (AND2X1)        0.04       0.52 r
+  rfile/read1/m8/m4/C/U2/Y (INVX1)         0.02       0.55 f
+  rfile/read1/m8/m4/C/out (nand2_489)      0.00       0.55 f
+  rfile/read1/m8/m4/Out (mux_2_1_163)      0.00       0.55 f
+  rfile/read1/m8/m6/InA (mux_2_1_161)      0.00       0.55 f
+  rfile/read1/m8/m6/A/in1 (nand2_485)      0.00       0.55 f
+  rfile/read1/m8/m6/A/U1/Y (AND2X1)        0.04       0.59 f
+  rfile/read1/m8/m6/A/U2/Y (INVX1)         0.00       0.59 r
+  rfile/read1/m8/m6/A/out (nand2_485)      0.00       0.59 r
+  rfile/read1/m8/m6/C/in1 (nand2_483)      0.00       0.59 r
+  rfile/read1/m8/m6/C/U1/Y (AND2X1)        0.04       0.63 r
+  rfile/read1/m8/m6/C/U2/Y (INVX1)         0.02       0.65 f
+  rfile/read1/m8/m6/C/out (nand2_483)      0.00       0.65 f
+  rfile/read1/m8/m6/Out (mux_2_1_161)      0.00       0.65 f
+  rfile/read1/m8/Out (mux_8_1_23)          0.00       0.65 f
+  rfile/read1/Out<8> (mux16_8_1_1)         0.00       0.65 f
+  rfile/read1data<8> (rf)                  0.00       0.65 f
+  m1/InB<8> (mux16_2_1_1)                  0.00       0.65 f
+  m1/m8/InB (mux_2_1_247)                  0.00       0.65 f
+  m1/m8/B/in1 (nand2_742)                  0.00       0.65 f
+  m1/m8/B/U1/Y (AND2X1)                    0.04       0.69 f
+  m1/m8/B/U2/Y (INVX1)                     0.00       0.70 r
+  m1/m8/B/out (nand2_742)                  0.00       0.70 r
+  m1/m8/C/in2 (nand2_741)                  0.00       0.70 r
+  m1/m8/C/U1/Y (NAND2X1)                   0.01       0.70 f
+  m1/m8/C/out (nand2_741)                  0.00       0.70 f
+  m1/m8/Out (mux_2_1_247)                  0.00       0.70 f
+  m1/Out<8> (mux16_2_1_1)                  0.00       0.70 f
+  read1data<8> (out)                       0.00       0.70 f
+  data arrival time                                   0.70
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<7>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<0> (in)                      0.02       0.12 r
+  rfile/read1regsel<0> (rf)                0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)           0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read1/m7/S<0> (mux_8_1_24)         0.00       0.26 r
+  rfile/read1/m7/U1/Y (INVX2)              0.03       0.29 f
+  rfile/read1/m7/U2/Y (INVX8)              0.03       0.32 r
+  rfile/read1/m7/m0/S (mux_2_1_174)        0.00       0.32 r
+  rfile/read1/m7/m0/nS/in1 (not1_174)      0.00       0.32 r
+  rfile/read1/m7/m0/nS/U1/Y (INVX1)        0.02       0.34 f
+  rfile/read1/m7/m0/nS/out (not1_174)      0.00       0.34 f
+  rfile/read1/m7/m0/A/in2 (nand2_524)      0.00       0.34 f
+  rfile/read1/m7/m0/A/U1/Y (AND2X1)        0.03       0.37 f
+  rfile/read1/m7/m0/A/U2/Y (INVX1)         0.00       0.38 r
+  rfile/read1/m7/m0/A/out (nand2_524)      0.00       0.38 r
+  rfile/read1/m7/m0/C/in1 (nand2_522)      0.00       0.38 r
+  rfile/read1/m7/m0/C/U1/Y (AND2X1)        0.04       0.42 r
+  rfile/read1/m7/m0/C/U2/Y (INVX1)         0.02       0.44 f
+  rfile/read1/m7/m0/C/out (nand2_522)      0.00       0.44 f
+  rfile/read1/m7/m0/Out (mux_2_1_174)      0.00       0.44 f
+  rfile/read1/m7/m4/InA (mux_2_1_170)      0.00       0.44 f
+  rfile/read1/m7/m4/A/in1 (nand2_512)      0.00       0.44 f
+  rfile/read1/m7/m4/A/U1/Y (AND2X1)        0.04       0.48 f
+  rfile/read1/m7/m4/A/U2/Y (INVX1)         0.00       0.48 r
+  rfile/read1/m7/m4/A/out (nand2_512)      0.00       0.48 r
+  rfile/read1/m7/m4/C/in1 (nand2_510)      0.00       0.48 r
+  rfile/read1/m7/m4/C/U1/Y (AND2X1)        0.04       0.52 r
+  rfile/read1/m7/m4/C/U2/Y (INVX1)         0.02       0.55 f
+  rfile/read1/m7/m4/C/out (nand2_510)      0.00       0.55 f
+  rfile/read1/m7/m4/Out (mux_2_1_170)      0.00       0.55 f
+  rfile/read1/m7/m6/InA (mux_2_1_168)      0.00       0.55 f
+  rfile/read1/m7/m6/A/in1 (nand2_506)      0.00       0.55 f
+  rfile/read1/m7/m6/A/U1/Y (AND2X1)        0.04       0.59 f
+  rfile/read1/m7/m6/A/U2/Y (INVX1)         0.00       0.59 r
+  rfile/read1/m7/m6/A/out (nand2_506)      0.00       0.59 r
+  rfile/read1/m7/m6/C/in1 (nand2_504)      0.00       0.59 r
+  rfile/read1/m7/m6/C/U1/Y (AND2X1)        0.04       0.63 r
+  rfile/read1/m7/m6/C/U2/Y (INVX1)         0.02       0.65 f
+  rfile/read1/m7/m6/C/out (nand2_504)      0.00       0.65 f
+  rfile/read1/m7/m6/Out (mux_2_1_168)      0.00       0.65 f
+  rfile/read1/m7/Out (mux_8_1_24)          0.00       0.65 f
+  rfile/read1/Out<7> (mux16_8_1_1)         0.00       0.65 f
+  rfile/read1data<7> (rf)                  0.00       0.65 f
+  m1/InB<7> (mux16_2_1_1)                  0.00       0.65 f
+  m1/m7/InB (mux_2_1_248)                  0.00       0.65 f
+  m1/m7/B/in1 (nand2_745)                  0.00       0.65 f
+  m1/m7/B/U1/Y (AND2X1)                    0.04       0.69 f
+  m1/m7/B/U2/Y (INVX1)                     0.00       0.70 r
+  m1/m7/B/out (nand2_745)                  0.00       0.70 r
+  m1/m7/C/in2 (nand2_744)                  0.00       0.70 r
+  m1/m7/C/U1/Y (NAND2X1)                   0.01       0.70 f
+  m1/m7/C/out (nand2_744)                  0.00       0.70 f
+  m1/m7/Out (mux_2_1_248)                  0.00       0.70 f
+  m1/Out<7> (mux16_2_1_1)                  0.00       0.70 f
+  read1data<7> (out)                       0.00       0.70 f
+  data arrival time                                   0.70
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<6>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<0> (in)                      0.02       0.12 r
+  rfile/read1regsel<0> (rf)                0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)           0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read1/m6/S<0> (mux_8_1_25)         0.00       0.26 r
+  rfile/read1/m6/U1/Y (INVX2)              0.03       0.29 f
+  rfile/read1/m6/U2/Y (INVX8)              0.03       0.32 r
+  rfile/read1/m6/m0/S (mux_2_1_181)        0.00       0.32 r
+  rfile/read1/m6/m0/nS/in1 (not1_181)      0.00       0.32 r
+  rfile/read1/m6/m0/nS/U1/Y (INVX1)        0.02       0.34 f
+  rfile/read1/m6/m0/nS/out (not1_181)      0.00       0.34 f
+  rfile/read1/m6/m0/A/in2 (nand2_545)      0.00       0.34 f
+  rfile/read1/m6/m0/A/U1/Y (AND2X1)        0.03       0.37 f
+  rfile/read1/m6/m0/A/U2/Y (INVX1)         0.00       0.38 r
+  rfile/read1/m6/m0/A/out (nand2_545)      0.00       0.38 r
+  rfile/read1/m6/m0/C/in1 (nand2_543)      0.00       0.38 r
+  rfile/read1/m6/m0/C/U1/Y (AND2X1)        0.04       0.42 r
+  rfile/read1/m6/m0/C/U2/Y (INVX1)         0.02       0.44 f
+  rfile/read1/m6/m0/C/out (nand2_543)      0.00       0.44 f
+  rfile/read1/m6/m0/Out (mux_2_1_181)      0.00       0.44 f
+  rfile/read1/m6/m4/InA (mux_2_1_177)      0.00       0.44 f
+  rfile/read1/m6/m4/A/in1 (nand2_533)      0.00       0.44 f
+  rfile/read1/m6/m4/A/U1/Y (AND2X1)        0.04       0.48 f
+  rfile/read1/m6/m4/A/U2/Y (INVX1)         0.00       0.48 r
+  rfile/read1/m6/m4/A/out (nand2_533)      0.00       0.48 r
+  rfile/read1/m6/m4/C/in1 (nand2_531)      0.00       0.48 r
+  rfile/read1/m6/m4/C/U1/Y (AND2X1)        0.04       0.52 r
+  rfile/read1/m6/m4/C/U2/Y (INVX1)         0.02       0.55 f
+  rfile/read1/m6/m4/C/out (nand2_531)      0.00       0.55 f
+  rfile/read1/m6/m4/Out (mux_2_1_177)      0.00       0.55 f
+  rfile/read1/m6/m6/InA (mux_2_1_175)      0.00       0.55 f
+  rfile/read1/m6/m6/A/in1 (nand2_527)      0.00       0.55 f
+  rfile/read1/m6/m6/A/U1/Y (AND2X1)        0.04       0.59 f
+  rfile/read1/m6/m6/A/U2/Y (INVX1)         0.00       0.59 r
+  rfile/read1/m6/m6/A/out (nand2_527)      0.00       0.59 r
+  rfile/read1/m6/m6/C/in1 (nand2_525)      0.00       0.59 r
+  rfile/read1/m6/m6/C/U1/Y (AND2X1)        0.04       0.63 r
+  rfile/read1/m6/m6/C/U2/Y (INVX1)         0.02       0.65 f
+  rfile/read1/m6/m6/C/out (nand2_525)      0.00       0.65 f
+  rfile/read1/m6/m6/Out (mux_2_1_175)      0.00       0.65 f
+  rfile/read1/m6/Out (mux_8_1_25)          0.00       0.65 f
+  rfile/read1/Out<6> (mux16_8_1_1)         0.00       0.65 f
+  rfile/read1data<6> (rf)                  0.00       0.65 f
+  m1/InB<6> (mux16_2_1_1)                  0.00       0.65 f
+  m1/m6/InB (mux_2_1_249)                  0.00       0.65 f
+  m1/m6/B/in1 (nand2_748)                  0.00       0.65 f
+  m1/m6/B/U1/Y (AND2X1)                    0.04       0.69 f
+  m1/m6/B/U2/Y (INVX1)                     0.00       0.70 r
+  m1/m6/B/out (nand2_748)                  0.00       0.70 r
+  m1/m6/C/in2 (nand2_747)                  0.00       0.70 r
+  m1/m6/C/U1/Y (NAND2X1)                   0.01       0.70 f
+  m1/m6/C/out (nand2_747)                  0.00       0.70 f
+  m1/m6/Out (mux_2_1_249)                  0.00       0.70 f
+  m1/Out<6> (mux16_2_1_1)                  0.00       0.70 f
+  read1data<6> (out)                       0.00       0.70 f
+  data arrival time                                   0.70
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<5>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<0> (in)                      0.02       0.12 r
+  rfile/read1regsel<0> (rf)                0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)           0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read1/m5/S<0> (mux_8_1_26)         0.00       0.26 r
+  rfile/read1/m5/U1/Y (INVX2)              0.03       0.29 f
+  rfile/read1/m5/U2/Y (INVX8)              0.03       0.32 r
+  rfile/read1/m5/m0/S (mux_2_1_188)        0.00       0.32 r
+  rfile/read1/m5/m0/nS/in1 (not1_188)      0.00       0.32 r
+  rfile/read1/m5/m0/nS/U1/Y (INVX1)        0.02       0.34 f
+  rfile/read1/m5/m0/nS/out (not1_188)      0.00       0.34 f
+  rfile/read1/m5/m0/A/in2 (nand2_566)      0.00       0.34 f
+  rfile/read1/m5/m0/A/U1/Y (AND2X1)        0.03       0.37 f
+  rfile/read1/m5/m0/A/U2/Y (INVX1)         0.00       0.38 r
+  rfile/read1/m5/m0/A/out (nand2_566)      0.00       0.38 r
+  rfile/read1/m5/m0/C/in1 (nand2_564)      0.00       0.38 r
+  rfile/read1/m5/m0/C/U1/Y (AND2X1)        0.04       0.42 r
+  rfile/read1/m5/m0/C/U2/Y (INVX1)         0.02       0.44 f
+  rfile/read1/m5/m0/C/out (nand2_564)      0.00       0.44 f
+  rfile/read1/m5/m0/Out (mux_2_1_188)      0.00       0.44 f
+  rfile/read1/m5/m4/InA (mux_2_1_184)      0.00       0.44 f
+  rfile/read1/m5/m4/A/in1 (nand2_554)      0.00       0.44 f
+  rfile/read1/m5/m4/A/U1/Y (AND2X1)        0.04       0.48 f
+  rfile/read1/m5/m4/A/U2/Y (INVX1)         0.00       0.48 r
+  rfile/read1/m5/m4/A/out (nand2_554)      0.00       0.48 r
+  rfile/read1/m5/m4/C/in1 (nand2_552)      0.00       0.48 r
+  rfile/read1/m5/m4/C/U1/Y (AND2X1)        0.04       0.52 r
+  rfile/read1/m5/m4/C/U2/Y (INVX1)         0.02       0.55 f
+  rfile/read1/m5/m4/C/out (nand2_552)      0.00       0.55 f
+  rfile/read1/m5/m4/Out (mux_2_1_184)      0.00       0.55 f
+  rfile/read1/m5/m6/InA (mux_2_1_182)      0.00       0.55 f
+  rfile/read1/m5/m6/A/in1 (nand2_548)      0.00       0.55 f
+  rfile/read1/m5/m6/A/U1/Y (AND2X1)        0.04       0.59 f
+  rfile/read1/m5/m6/A/U2/Y (INVX1)         0.00       0.59 r
+  rfile/read1/m5/m6/A/out (nand2_548)      0.00       0.59 r
+  rfile/read1/m5/m6/C/in1 (nand2_546)      0.00       0.59 r
+  rfile/read1/m5/m6/C/U1/Y (AND2X1)        0.04       0.63 r
+  rfile/read1/m5/m6/C/U2/Y (INVX1)         0.02       0.65 f
+  rfile/read1/m5/m6/C/out (nand2_546)      0.00       0.65 f
+  rfile/read1/m5/m6/Out (mux_2_1_182)      0.00       0.65 f
+  rfile/read1/m5/Out (mux_8_1_26)          0.00       0.65 f
+  rfile/read1/Out<5> (mux16_8_1_1)         0.00       0.65 f
+  rfile/read1data<5> (rf)                  0.00       0.65 f
+  m1/InB<5> (mux16_2_1_1)                  0.00       0.65 f
+  m1/m5/InB (mux_2_1_250)                  0.00       0.65 f
+  m1/m5/B/in1 (nand2_751)                  0.00       0.65 f
+  m1/m5/B/U1/Y (AND2X1)                    0.04       0.69 f
+  m1/m5/B/U2/Y (INVX1)                     0.00       0.70 r
+  m1/m5/B/out (nand2_751)                  0.00       0.70 r
+  m1/m5/C/in2 (nand2_750)                  0.00       0.70 r
+  m1/m5/C/U1/Y (NAND2X1)                   0.01       0.70 f
+  m1/m5/C/out (nand2_750)                  0.00       0.70 f
+  m1/m5/Out (mux_2_1_250)                  0.00       0.70 f
+  m1/Out<5> (mux16_2_1_1)                  0.00       0.70 f
+  read1data<5> (out)                       0.00       0.70 f
+  data arrival time                                   0.70
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<4>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<0> (in)                      0.02       0.12 r
+  rfile/read1regsel<0> (rf)                0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)           0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read1/m4/S<0> (mux_8_1_27)         0.00       0.26 r
+  rfile/read1/m4/U1/Y (INVX2)              0.03       0.29 f
+  rfile/read1/m4/U2/Y (INVX8)              0.03       0.32 r
+  rfile/read1/m4/m0/S (mux_2_1_195)        0.00       0.32 r
+  rfile/read1/m4/m0/nS/in1 (not1_195)      0.00       0.32 r
+  rfile/read1/m4/m0/nS/U1/Y (INVX1)        0.02       0.34 f
+  rfile/read1/m4/m0/nS/out (not1_195)      0.00       0.34 f
+  rfile/read1/m4/m0/A/in2 (nand2_587)      0.00       0.34 f
+  rfile/read1/m4/m0/A/U1/Y (AND2X1)        0.03       0.37 f
+  rfile/read1/m4/m0/A/U2/Y (INVX1)         0.00       0.38 r
+  rfile/read1/m4/m0/A/out (nand2_587)      0.00       0.38 r
+  rfile/read1/m4/m0/C/in1 (nand2_585)      0.00       0.38 r
+  rfile/read1/m4/m0/C/U1/Y (AND2X1)        0.04       0.42 r
+  rfile/read1/m4/m0/C/U2/Y (INVX1)         0.02       0.44 f
+  rfile/read1/m4/m0/C/out (nand2_585)      0.00       0.44 f
+  rfile/read1/m4/m0/Out (mux_2_1_195)      0.00       0.44 f
+  rfile/read1/m4/m4/InA (mux_2_1_191)      0.00       0.44 f
+  rfile/read1/m4/m4/A/in1 (nand2_575)      0.00       0.44 f
+  rfile/read1/m4/m4/A/U1/Y (AND2X1)        0.04       0.48 f
+  rfile/read1/m4/m4/A/U2/Y (INVX1)         0.00       0.48 r
+  rfile/read1/m4/m4/A/out (nand2_575)      0.00       0.48 r
+  rfile/read1/m4/m4/C/in1 (nand2_573)      0.00       0.48 r
+  rfile/read1/m4/m4/C/U1/Y (AND2X1)        0.04       0.52 r
+  rfile/read1/m4/m4/C/U2/Y (INVX1)         0.02       0.55 f
+  rfile/read1/m4/m4/C/out (nand2_573)      0.00       0.55 f
+  rfile/read1/m4/m4/Out (mux_2_1_191)      0.00       0.55 f
+  rfile/read1/m4/m6/InA (mux_2_1_189)      0.00       0.55 f
+  rfile/read1/m4/m6/A/in1 (nand2_569)      0.00       0.55 f
+  rfile/read1/m4/m6/A/U1/Y (AND2X1)        0.04       0.59 f
+  rfile/read1/m4/m6/A/U2/Y (INVX1)         0.00       0.59 r
+  rfile/read1/m4/m6/A/out (nand2_569)      0.00       0.59 r
+  rfile/read1/m4/m6/C/in1 (nand2_567)      0.00       0.59 r
+  rfile/read1/m4/m6/C/U1/Y (AND2X1)        0.04       0.63 r
+  rfile/read1/m4/m6/C/U2/Y (INVX1)         0.02       0.65 f
+  rfile/read1/m4/m6/C/out (nand2_567)      0.00       0.65 f
+  rfile/read1/m4/m6/Out (mux_2_1_189)      0.00       0.65 f
+  rfile/read1/m4/Out (mux_8_1_27)          0.00       0.65 f
+  rfile/read1/Out<4> (mux16_8_1_1)         0.00       0.65 f
+  rfile/read1data<4> (rf)                  0.00       0.65 f
+  m1/InB<4> (mux16_2_1_1)                  0.00       0.65 f
+  m1/m4/InB (mux_2_1_251)                  0.00       0.65 f
+  m1/m4/B/in1 (nand2_754)                  0.00       0.65 f
+  m1/m4/B/U1/Y (AND2X1)                    0.04       0.69 f
+  m1/m4/B/U2/Y (INVX1)                     0.00       0.70 r
+  m1/m4/B/out (nand2_754)                  0.00       0.70 r
+  m1/m4/C/in2 (nand2_753)                  0.00       0.70 r
+  m1/m4/C/U1/Y (NAND2X1)                   0.01       0.70 f
+  m1/m4/C/out (nand2_753)                  0.00       0.70 f
+  m1/m4/Out (mux_2_1_251)                  0.00       0.70 f
+  m1/Out<4> (mux16_2_1_1)                  0.00       0.70 f
+  read1data<4> (out)                       0.00       0.70 f
+  data arrival time                                   0.70
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<3>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<0> (in)                      0.02       0.12 r
+  rfile/read1regsel<0> (rf)                0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)           0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read1/m3/S<0> (mux_8_1_28)         0.00       0.26 r
+  rfile/read1/m3/U1/Y (INVX2)              0.03       0.29 f
+  rfile/read1/m3/U2/Y (INVX8)              0.03       0.32 r
+  rfile/read1/m3/m0/S (mux_2_1_202)        0.00       0.32 r
+  rfile/read1/m3/m0/nS/in1 (not1_202)      0.00       0.32 r
+  rfile/read1/m3/m0/nS/U1/Y (INVX1)        0.02       0.34 f
+  rfile/read1/m3/m0/nS/out (not1_202)      0.00       0.34 f
+  rfile/read1/m3/m0/A/in2 (nand2_608)      0.00       0.34 f
+  rfile/read1/m3/m0/A/U1/Y (AND2X1)        0.03       0.37 f
+  rfile/read1/m3/m0/A/U2/Y (INVX1)         0.00       0.38 r
+  rfile/read1/m3/m0/A/out (nand2_608)      0.00       0.38 r
+  rfile/read1/m3/m0/C/in1 (nand2_606)      0.00       0.38 r
+  rfile/read1/m3/m0/C/U1/Y (AND2X1)        0.04       0.42 r
+  rfile/read1/m3/m0/C/U2/Y (INVX1)         0.02       0.44 f
+  rfile/read1/m3/m0/C/out (nand2_606)      0.00       0.44 f
+  rfile/read1/m3/m0/Out (mux_2_1_202)      0.00       0.44 f
+  rfile/read1/m3/m4/InA (mux_2_1_198)      0.00       0.44 f
+  rfile/read1/m3/m4/A/in1 (nand2_596)      0.00       0.44 f
+  rfile/read1/m3/m4/A/U1/Y (AND2X1)        0.04       0.48 f
+  rfile/read1/m3/m4/A/U2/Y (INVX1)         0.00       0.48 r
+  rfile/read1/m3/m4/A/out (nand2_596)      0.00       0.48 r
+  rfile/read1/m3/m4/C/in1 (nand2_594)      0.00       0.48 r
+  rfile/read1/m3/m4/C/U1/Y (AND2X1)        0.04       0.52 r
+  rfile/read1/m3/m4/C/U2/Y (INVX1)         0.02       0.55 f
+  rfile/read1/m3/m4/C/out (nand2_594)      0.00       0.55 f
+  rfile/read1/m3/m4/Out (mux_2_1_198)      0.00       0.55 f
+  rfile/read1/m3/m6/InA (mux_2_1_196)      0.00       0.55 f
+  rfile/read1/m3/m6/A/in1 (nand2_590)      0.00       0.55 f
+  rfile/read1/m3/m6/A/U1/Y (AND2X1)        0.04       0.59 f
+  rfile/read1/m3/m6/A/U2/Y (INVX1)         0.00       0.59 r
+  rfile/read1/m3/m6/A/out (nand2_590)      0.00       0.59 r
+  rfile/read1/m3/m6/C/in1 (nand2_588)      0.00       0.59 r
+  rfile/read1/m3/m6/C/U1/Y (AND2X1)        0.04       0.63 r
+  rfile/read1/m3/m6/C/U2/Y (INVX1)         0.02       0.65 f
+  rfile/read1/m3/m6/C/out (nand2_588)      0.00       0.65 f
+  rfile/read1/m3/m6/Out (mux_2_1_196)      0.00       0.65 f
+  rfile/read1/m3/Out (mux_8_1_28)          0.00       0.65 f
+  rfile/read1/Out<3> (mux16_8_1_1)         0.00       0.65 f
+  rfile/read1data<3> (rf)                  0.00       0.65 f
+  m1/InB<3> (mux16_2_1_1)                  0.00       0.65 f
+  m1/m3/InB (mux_2_1_252)                  0.00       0.65 f
+  m1/m3/B/in1 (nand2_757)                  0.00       0.65 f
+  m1/m3/B/U1/Y (AND2X1)                    0.04       0.69 f
+  m1/m3/B/U2/Y (INVX1)                     0.00       0.70 r
+  m1/m3/B/out (nand2_757)                  0.00       0.70 r
+  m1/m3/C/in2 (nand2_756)                  0.00       0.70 r
+  m1/m3/C/U1/Y (NAND2X1)                   0.01       0.70 f
+  m1/m3/C/out (nand2_756)                  0.00       0.70 f
+  m1/m3/Out (mux_2_1_252)                  0.00       0.70 f
+  m1/Out<3> (mux16_2_1_1)                  0.00       0.70 f
+  read1data<3> (out)                       0.00       0.70 f
+  data arrival time                                   0.70
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.20
+
+
+  Startpoint: read1regsel<0>
+              (input port clocked by clk)
+  Endpoint: read1data<2>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read1regsel<0> (in)                      0.02       0.12 r
+  rfile/read1regsel<0> (rf)                0.00       0.12 r
+  rfile/read1/S<0> (mux16_8_1_1)           0.00       0.12 r
+  rfile/read1/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read1/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read1/m2/S<0> (mux_8_1_29)         0.00       0.26 r
+  rfile/read1/m2/U1/Y (INVX2)              0.03       0.29 f
+  rfile/read1/m2/U2/Y (INVX8)              0.03       0.32 r
+  rfile/read1/m2/m0/S (mux_2_1_209)        0.00       0.32 r
+  rfile/read1/m2/m0/nS/in1 (not1_209)      0.00       0.32 r
+  rfile/read1/m2/m0/nS/U1/Y (INVX1)        0.02       0.34 f
+  rfile/read1/m2/m0/nS/out (not1_209)      0.00       0.34 f
+  rfile/read1/m2/m0/A/in2 (nand2_629)      0.00       0.34 f
+  rfile/read1/m2/m0/A/U1/Y (AND2X1)        0.03       0.37 f
+  rfile/read1/m2/m0/A/U2/Y (INVX1)         0.00       0.38 r
+  rfile/read1/m2/m0/A/out (nand2_629)      0.00       0.38 r
+  rfile/read1/m2/m0/C/in1 (nand2_627)      0.00       0.38 r
+  rfile/read1/m2/m0/C/U1/Y (AND2X1)        0.04       0.42 r
+  rfile/read1/m2/m0/C/U2/Y (INVX1)         0.02       0.44 f
+  rfile/read1/m2/m0/C/out (nand2_627)      0.00       0.44 f
+  rfile/read1/m2/m0/Out (mux_2_1_209)      0.00       0.44 f
+  rfile/read1/m2/m4/InA (mux_2_1_205)      0.00       0.44 f
+  rfile/read1/m2/m4/A/in1 (nand2_617)      0.00       0.44 f
+  rfile/read1/m2/m4/A/U1/Y (AND2X1)        0.04       0.48 f
+  rfile/read1/m2/m4/A/U2/Y (INVX1)         0.00       0.48 r
+  rfile/read1/m2/m4/A/out (nand2_617)      0.00       0.48 r
+  rfile/read1/m2/m4/C/in1 (nand2_615)      0.00       0.48 r
+  rfile/read1/m2/m4/C/U1/Y (AND2X1)        0.04       0.52 r
+  rfile/read1/m2/m4/C/U2/Y (INVX1)         0.02       0.55 f
+  rfile/read1/m2/m4/C/out (nand2_615)      0.00       0.55 f
+  rfile/read1/m2/m4/Out (mux_2_1_205)      0.00       0.55 f
+  rfile/read1/m2/m6/InA (mux_2_1_203)      0.00       0.55 f
+  rfile/read1/m2/m6/A/in1 (nand2_611)      0.00       0.55 f
+  rfile/read1/m2/m6/A/U1/Y (AND2X1)        0.04       0.59 f
+  rfile/read1/m2/m6/A/U2/Y (INVX1)         0.00       0.59 r
+  rfile/read1/m2/m6/A/out (nand2_611)      0.00       0.59 r
+  rfile/read1/m2/m6/C/in1 (nand2_609)      0.00       0.59 r
+  rfile/read1/m2/m6/C/U1/Y (AND2X1)        0.04       0.63 r
+  rfile/read1/m2/m6/C/U2/Y (INVX1)         0.02       0.65 f
+  rfile/read1/m2/m6/C/out (nand2_609)      0.00       0.65 f
+  rfile/read1/m2/m6/Out (mux_2_1_203)      0.00       0.65 f
+  rfile/read1/m2/Out (mux_8_1_29)          0.00       0.65 f
+  rfile/read1/Out<2> (mux16_8_1_1)         0.00       0.65 f
+  rfile/read1data<2> (rf)                  0.00       0.65 f
+  m1/InB<2> (mux16_2_1_1)                  0.00       0.65 f
+  m1/m2/InB (mux_2_1_253)                  0.00       0.65 f
+  m1/m2/B/in1 (nand2_760)                  0.00       0.65 f
+  m1/m2/B/U1/Y (AND2X1)                    0.04       0.69 f
+  m1/m2/B/U2/Y (INVX1)                     0.00       0.70 r
+  m1/m2/B/out (nand2_760)                  0.00       0.70 r
+  m1/m2/C/in2 (nand2_759)                  0.00       0.70 r
+  m1/m2/C/U1/Y (NAND2X1)                   0.01       0.70 f
+  m1/m2/C/out (nand2_759)                  0.00       0.70 f
+  m1/m2/Out (mux_2_1_253)                  0.00       0.70 f
+  m1/Out<2> (mux16_2_1_1)                  0.00       0.70 f
+  read1data<2> (out)                       0.00       0.70 f
+  data arrival time                                   0.70
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.20
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<3>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read2regsel<0> (in)                      0.02       0.12 r
+  rfile/read2regsel<0> (rf)                0.00       0.12 r
+  rfile/read2/S<0> (mux16_8_1_0)           0.00       0.12 r
+  rfile/read2/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read2/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read2/m3/S<0> (mux_8_1_12)         0.00       0.26 r
+  rfile/read2/m3/U1/Y (INVX2)              0.03       0.29 f
+  rfile/read2/m3/U2/Y (INVX8)              0.03       0.32 r
+  rfile/read2/m3/m0/S (mux_2_1_90)         0.00       0.32 r
+  rfile/read2/m3/m0/nS/in1 (not1_90)       0.00       0.32 r
+  rfile/read2/m3/m0/nS/U1/Y (INVX1)        0.02       0.34 f
+  rfile/read2/m3/m0/nS/out (not1_90)       0.00       0.34 f
+  rfile/read2/m3/m0/A/in2 (nand2_272)      0.00       0.34 f
+  rfile/read2/m3/m0/A/U1/Y (AND2X1)        0.03       0.37 f
+  rfile/read2/m3/m0/A/U2/Y (INVX1)         0.00       0.38 r
+  rfile/read2/m3/m0/A/out (nand2_272)      0.00       0.38 r
+  rfile/read2/m3/m0/C/in1 (nand2_270)      0.00       0.38 r
+  rfile/read2/m3/m0/C/U1/Y (AND2X1)        0.04       0.42 r
+  rfile/read2/m3/m0/C/U2/Y (INVX1)         0.02       0.44 f
+  rfile/read2/m3/m0/C/out (nand2_270)      0.00       0.44 f
+  rfile/read2/m3/m0/Out (mux_2_1_90)       0.00       0.44 f
+  rfile/read2/m3/m4/InA (mux_2_1_86)       0.00       0.44 f
+  rfile/read2/m3/m4/A/in1 (nand2_260)      0.00       0.44 f
+  rfile/read2/m3/m4/A/U1/Y (AND2X1)        0.04       0.48 f
+  rfile/read2/m3/m4/A/U2/Y (INVX1)         0.00       0.48 r
+  rfile/read2/m3/m4/A/out (nand2_260)      0.00       0.48 r
+  rfile/read2/m3/m4/C/in1 (nand2_258)      0.00       0.48 r
+  rfile/read2/m3/m4/C/U1/Y (AND2X1)        0.04       0.52 r
+  rfile/read2/m3/m4/C/U2/Y (INVX1)         0.02       0.55 f
+  rfile/read2/m3/m4/C/out (nand2_258)      0.00       0.55 f
+  rfile/read2/m3/m4/Out (mux_2_1_86)       0.00       0.55 f
+  rfile/read2/m3/m6/InA (mux_2_1_84)       0.00       0.55 f
+  rfile/read2/m3/m6/A/in1 (nand2_254)      0.00       0.55 f
+  rfile/read2/m3/m6/A/U1/Y (AND2X1)        0.04       0.59 f
+  rfile/read2/m3/m6/A/U2/Y (INVX1)         0.00       0.59 r
+  rfile/read2/m3/m6/A/out (nand2_254)      0.00       0.59 r
+  rfile/read2/m3/m6/C/in1 (nand2_252)      0.00       0.59 r
+  rfile/read2/m3/m6/C/U1/Y (AND2X1)        0.04       0.63 r
+  rfile/read2/m3/m6/C/U2/Y (INVX1)         0.02       0.65 f
+  rfile/read2/m3/m6/C/out (nand2_252)      0.00       0.65 f
+  rfile/read2/m3/m6/Out (mux_2_1_84)       0.00       0.65 f
+  rfile/read2/m3/Out (mux_8_1_12)          0.00       0.65 f
+  rfile/read2/Out<3> (mux16_8_1_0)         0.00       0.65 f
+  rfile/read2data<3> (rf)                  0.00       0.65 f
+  m2/InB<3> (mux16_2_1_0)                  0.00       0.65 f
+  m2/m3/InB (mux_2_1_236)                  0.00       0.65 f
+  m2/m3/B/in1 (nand2_709)                  0.00       0.65 f
+  m2/m3/B/U1/Y (AND2X1)                    0.04       0.69 f
+  m2/m3/B/U2/Y (INVX1)                     0.00       0.70 r
+  m2/m3/B/out (nand2_709)                  0.00       0.70 r
+  m2/m3/C/in2 (nand2_708)                  0.00       0.70 r
+  m2/m3/C/U1/Y (NAND2X1)                   0.01       0.70 f
+  m2/m3/C/out (nand2_708)                  0.00       0.70 f
+  m2/m3/Out (mux_2_1_236)                  0.00       0.70 f
+  m2/Out<3> (mux16_2_1_0)                  0.00       0.70 f
+  read2data<3> (out)                       0.00       0.70 f
+  data arrival time                                   0.70
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.20
+
+
+  Startpoint: read2regsel<0>
+              (input port clocked by clk)
+  Endpoint: read2data<2>
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  read2regsel<0> (in)                      0.02       0.12 r
+  rfile/read2regsel<0> (rf)                0.00       0.12 r
+  rfile/read2/S<0> (mux16_8_1_0)           0.00       0.12 r
+  rfile/read2/U8/Y (INVX1)                 0.01       0.13 f
+  rfile/read2/U1/Y (INVX1)                 0.12       0.26 r
+  rfile/read2/m2/S<0> (mux_8_1_13)         0.00       0.26 r
+  rfile/read2/m2/U1/Y (INVX2)              0.03       0.29 f
+  rfile/read2/m2/U2/Y (INVX8)              0.03       0.32 r
+  rfile/read2/m2/m0/S (mux_2_1_97)         0.00       0.32 r
+  rfile/read2/m2/m0/nS/in1 (not1_97)       0.00       0.32 r
+  rfile/read2/m2/m0/nS/U1/Y (INVX1)        0.02       0.34 f
+  rfile/read2/m2/m0/nS/out (not1_97)       0.00       0.34 f
+  rfile/read2/m2/m0/A/in2 (nand2_293)      0.00       0.34 f
+  rfile/read2/m2/m0/A/U1/Y (AND2X1)        0.03       0.37 f
+  rfile/read2/m2/m0/A/U2/Y (INVX1)         0.00       0.38 r
+  rfile/read2/m2/m0/A/out (nand2_293)      0.00       0.38 r
+  rfile/read2/m2/m0/C/in1 (nand2_291)      0.00       0.38 r
+  rfile/read2/m2/m0/C/U1/Y (AND2X1)        0.04       0.42 r
+  rfile/read2/m2/m0/C/U2/Y (INVX1)         0.02       0.44 f
+  rfile/read2/m2/m0/C/out (nand2_291)      0.00       0.44 f
+  rfile/read2/m2/m0/Out (mux_2_1_97)       0.00       0.44 f
+  rfile/read2/m2/m4/InA (mux_2_1_93)       0.00       0.44 f
+  rfile/read2/m2/m4/A/in1 (nand2_281)      0.00       0.44 f
+  rfile/read2/m2/m4/A/U1/Y (AND2X1)        0.04       0.48 f
+  rfile/read2/m2/m4/A/U2/Y (INVX1)         0.00       0.48 r
+  rfile/read2/m2/m4/A/out (nand2_281)      0.00       0.48 r
+  rfile/read2/m2/m4/C/in1 (nand2_279)      0.00       0.48 r
+  rfile/read2/m2/m4/C/U1/Y (AND2X1)        0.04       0.52 r
+  rfile/read2/m2/m4/C/U2/Y (INVX1)         0.02       0.55 f
+  rfile/read2/m2/m4/C/out (nand2_279)      0.00       0.55 f
+  rfile/read2/m2/m4/Out (mux_2_1_93)       0.00       0.55 f
+  rfile/read2/m2/m6/InA (mux_2_1_91)       0.00       0.55 f
+  rfile/read2/m2/m6/A/in1 (nand2_275)      0.00       0.55 f
+  rfile/read2/m2/m6/A/U1/Y (AND2X1)        0.04       0.59 f
+  rfile/read2/m2/m6/A/U2/Y (INVX1)         0.00       0.59 r
+  rfile/read2/m2/m6/A/out (nand2_275)      0.00       0.59 r
+  rfile/read2/m2/m6/C/in1 (nand2_273)      0.00       0.59 r
+  rfile/read2/m2/m6/C/U1/Y (AND2X1)        0.04       0.63 r
+  rfile/read2/m2/m6/C/U2/Y (INVX1)         0.02       0.65 f
+  rfile/read2/m2/m6/C/out (nand2_273)      0.00       0.65 f
+  rfile/read2/m2/m6/Out (mux_2_1_91)       0.00       0.65 f
+  rfile/read2/m2/Out (mux_8_1_13)          0.00       0.65 f
+  rfile/read2/Out<2> (mux16_8_1_0)         0.00       0.65 f
+  rfile/read2data<2> (rf)                  0.00       0.65 f
+  m2/InB<2> (mux16_2_1_0)                  0.00       0.65 f
+  m2/m2/InB (mux_2_1_237)                  0.00       0.65 f
+  m2/m2/B/in1 (nand2_712)                  0.00       0.65 f
+  m2/m2/B/U1/Y (AND2X1)                    0.04       0.69 f
+  m2/m2/B/U2/Y (INVX1)                     0.00       0.70 r
+  m2/m2/B/out (nand2_712)                  0.00       0.70 r
+  m2/m2/C/in2 (nand2_711)                  0.00       0.70 r
+  m2/m2/C/U1/Y (NAND2X1)                   0.01       0.70 f
+  m2/m2/C/out (nand2_711)                  0.00       0.70 f
+  m2/m2/Out (mux_2_1_237)                  0.00       0.70 f
+  m2/Out<2> (mux16_2_1_0)                  0.00       0.70 f
+  read2data<2> (out)                       0.00       0.70 f
+  data arrival time                                   0.70
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  output external delay                   -0.10       0.90
+  data required time                                  0.90
+  -----------------------------------------------------------
+  data required time                                  0.90
+  data arrival time                                  -0.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.20
+
+
+1

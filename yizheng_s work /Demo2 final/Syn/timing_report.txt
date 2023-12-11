@@ -1,0 +1,2555 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : proc
+Version: L-2016.03-SP4-1
+Date   : Fri Apr 14 22:22:14 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[0]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U5/Y (INVX1)                             0.00       0.39 r
+  ALU/inv_B/ins0/U3/Y (AND2X2)                            0.03       0.43 r
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.04       0.47 r
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.47 r
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.47 r
+  ALU/adder/B<0> (cla16_0)                                0.00       0.47 r
+  ALU/adder/ins0/B<0> (cla4_3)                            0.00       0.47 r
+  ALU/adder/ins0/ins0/B (pfa_15)                          0.00       0.47 r
+  ALU/adder/ins0/ins0/U1/Y (INVX1)                        0.02       0.49 f
+  ALU/adder/ins0/ins0/U4/Y (AND2X2)                       0.03       0.52 f
+  ALU/adder/ins0/ins0/U2/Y (OR2X2)                        0.04       0.56 f
+  ALU/adder/ins0/ins0/P (pfa_15)                          0.00       0.56 f
+  ALU/adder/ins0/header4/P0 (ahead4_3)                    0.00       0.56 f
+  ALU/adder/ins0/header4/U29/Y (NAND3X1)                  0.03       0.59 r
+  ALU/adder/ins0/header4/U30/Y (NOR3X1)                   0.04       0.63 f
+  ALU/adder/ins0/header4/P_g (ahead4_3)                   0.00       0.63 f
+  ALU/adder/ins0/P_g (cla4_3)                             0.00       0.63 f
+  ALU/adder/top/P_g0 (top_ahead_0)                        0.00       0.63 f
+  ALU/adder/top/ins0/P0 (ahead4_4)                        0.00       0.63 f
+  ALU/adder/top/ins0/U4/Y (INVX1)                         0.01       0.64 r
+  ALU/adder/top/ins0/U19/Y (OAI21X1)                      0.02       0.66 f
+  ALU/adder/top/ins0/C1 (ahead4_4)                        0.00       0.66 f
+  ALU/adder/top/C4 (top_ahead_0)                          0.00       0.66 f
+  ALU/adder/ins1/C0 (cla4_2)                              0.00       0.66 f
+  ALU/adder/ins1/header4/C0 (ahead4_2)                    0.00       0.66 f
+  ALU/adder/ins1/header4/U25/Y (NAND3X1)                  0.03       0.68 r
+  ALU/adder/ins1/header4/U6/Y (BUFX2)                     0.03       0.72 r
+  ALU/adder/ins1/header4/U4/Y (OR2X2)                     0.04       0.76 r
+  ALU/adder/ins1/header4/U5/Y (INVX1)                     0.02       0.78 f
+  ALU/adder/ins1/header4/P_g (ahead4_2)                   0.00       0.78 f
+  ALU/adder/ins1/P_g (cla4_2)                             0.00       0.78 f
+  ALU/adder/top/P_g1 (top_ahead_0)                        0.00       0.78 f
+  ALU/adder/top/ins0/P1 (ahead4_4)                        0.00       0.78 f
+  ALU/adder/top/ins0/U26/Y (AOI21X1)                      0.03       0.81 r
+  ALU/adder/top/ins0/U15/Y (INVX1)                        0.03       0.84 f
+  ALU/adder/top/ins0/C2 (ahead4_4)                        0.00       0.84 f
+  ALU/adder/top/C8 (top_ahead_0)                          0.00       0.84 f
+  ALU/adder/ins2/C0 (cla4_1)                              0.00       0.84 f
+  ALU/adder/ins2/header4/C0 (ahead4_1)                    0.00       0.84 f
+  ALU/adder/ins2/header4/U13/Y (AND2X2)                   0.04       0.88 f
+  ALU/adder/ins2/header4/P_g (ahead4_1)                   0.00       0.88 f
+  ALU/adder/ins2/P_g (cla4_1)                             0.00       0.88 f
+  ALU/adder/top/P_g2 (top_ahead_0)                        0.00       0.88 f
+  ALU/adder/top/ins0/P2 (ahead4_4)                        0.00       0.88 f
+  ALU/adder/top/ins0/U23/Y (AOI21X1)                      0.03       0.91 r
+  ALU/adder/top/ins0/U5/Y (BUFX2)                         0.03       0.94 r
+  ALU/adder/top/ins0/U2/Y (INVX1)                         0.02       0.96 f
+  ALU/adder/top/ins0/C3 (ahead4_4)                        0.00       0.96 f
+  ALU/adder/top/C12 (top_ahead_0)                         0.00       0.96 f
+  ALU/adder/ins3/C0 (cla4_0)                              0.00       0.96 f
+  ALU/adder/ins3/header4/C0 (ahead4_0)                    0.00       0.96 f
+  ALU/adder/ins3/header4/U12/Y (AND2X2)                   0.04       1.00 f
+  ALU/adder/ins3/header4/P_g (ahead4_0)                   0.00       1.00 f
+  ALU/adder/ins3/P_g (cla4_0)                             0.00       1.00 f
+  ALU/adder/top/P_g3 (top_ahead_0)                        0.00       1.00 f
+  ALU/adder/top/U3/Y (OR2X2)                              0.04       1.04 f
+  ALU/adder/top/U4/Y (INVX1)                              0.00       1.04 r
+  ALU/adder/top/U7/Y (AOI21X1)                            0.01       1.05 f
+  ALU/adder/top/C16 (top_ahead_0)                         0.00       1.05 f
+  ALU/adder/C16 (cla16_0)                                 0.00       1.05 f
+  ALU/U40/Y (BUFX2)                                       0.04       1.08 f
+  ALU/ofl_ins/C16 (ofl_detector)                          0.00       1.08 f
+  ALU/ofl_ins/sign_det/in1 (xor2_0)                       0.00       1.08 f
+  ALU/ofl_ins/sign_det/U4/Y (AND2X2)                      0.03       1.12 f
+  ALU/ofl_ins/sign_det/U5/Y (INVX1)                       0.00       1.11 r
+  ALU/ofl_ins/sign_det/U2/Y (AND2X2)                      0.03       1.14 r
+  ALU/ofl_ins/sign_det/U3/Y (INVX1)                       0.01       1.16 f
+  ALU/ofl_ins/sign_det/out (xor2_0)                       0.00       1.16 f
+  ALU/ofl_ins/ins1/InB (mux_2_1_208)                      0.00       1.16 f
+  ALU/ofl_ins/ins1/B/in1 (nand2_625)                      0.00       1.16 f
+  ALU/ofl_ins/ins1/B/U1/Y (NAND2X1)                       0.01       1.17 r
+  ALU/ofl_ins/ins1/B/out (nand2_625)                      0.00       1.17 r
+  ALU/ofl_ins/ins1/U1/Y (BUFX2)                           0.03       1.20 r
+  ALU/ofl_ins/ins1/C/in2 (nand2_624)                      0.00       1.20 r
+  ALU/ofl_ins/ins1/C/U1/Y (AND2X2)                        0.03       1.23 r
+  ALU/ofl_ins/ins1/C/U2/Y (INVX1)                         0.02       1.25 f
+  ALU/ofl_ins/ins1/C/out (nand2_624)                      0.00       1.25 f
+  ALU/ofl_ins/ins1/Out (mux_2_1_208)                      0.00       1.25 f
+  ALU/ofl_ins/Ofl (ofl_detector)                          0.00       1.25 f
+  ALU/U11/Y (INVX1)                                       0.00       1.25 r
+  ALU/U12/Y (INVX1)                                       0.02       1.27 f
+  ALU/Ofl (alu)                                           0.00       1.27 f
+  lt_logic/overflow (lt_lte)                              0.00       1.27 f
+  lt_logic/U4/Y (XNOR2X1)                                 0.03       1.30 f
+  lt_logic/U5/Y (OR2X2)                                   0.04       1.34 f
+  lt_logic/lte (lt_lte)                                   0.00       1.34 f
+  control/lte<0> (wrt_ctrl)                               0.00       1.34 f
+  control/U123/Y (INVX1)                                  0.00       1.34 r
+  control/U11/Y (OR2X2)                                   0.04       1.38 r
+  control/U156/Y (NAND3X1)                                0.01       1.38 f
+  control/writedata_EX<0> (wrt_ctrl)                      0.00       1.38 f
+  ex_mem/writedata_EX<0> (EX_MEM)                         0.00       1.38 f
+  ex_mem/writedataEX_MEM_dff[0]/d (dff_214)               0.00       1.38 f
+  ex_mem/writedataEX_MEM_dff[0]/U3/Y (INVX1)              0.00       1.39 r
+  ex_mem/writedataEX_MEM_dff[0]/U4/Y (NOR2X1)             0.01       1.40 f
+  ex_mem/writedataEX_MEM_dff[0]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.40 f
+  data arrival time                                                  1.40
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[0]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.40
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.45
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[11]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U5/Y (INVX1)                             0.00       0.39 r
+  ALU/inv_B/ins0/U3/Y (AND2X2)                            0.03       0.43 r
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.04       0.47 r
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.47 r
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.47 r
+  ALU/adder/B<0> (cla16_0)                                0.00       0.47 r
+  ALU/adder/ins0/B<0> (cla4_3)                            0.00       0.47 r
+  ALU/adder/ins0/ins0/B (pfa_15)                          0.00       0.47 r
+  ALU/adder/ins0/ins0/U1/Y (INVX1)                        0.02       0.49 f
+  ALU/adder/ins0/ins0/U4/Y (AND2X2)                       0.03       0.52 f
+  ALU/adder/ins0/ins0/U2/Y (OR2X2)                        0.04       0.56 f
+  ALU/adder/ins0/ins0/P (pfa_15)                          0.00       0.56 f
+  ALU/adder/ins0/header4/P0 (ahead4_3)                    0.00       0.56 f
+  ALU/adder/ins0/header4/U29/Y (NAND3X1)                  0.03       0.59 r
+  ALU/adder/ins0/header4/U30/Y (NOR3X1)                   0.04       0.63 f
+  ALU/adder/ins0/header4/P_g (ahead4_3)                   0.00       0.63 f
+  ALU/adder/ins0/P_g (cla4_3)                             0.00       0.63 f
+  ALU/adder/top/P_g0 (top_ahead_0)                        0.00       0.63 f
+  ALU/adder/top/ins0/P0 (ahead4_4)                        0.00       0.63 f
+  ALU/adder/top/ins0/U4/Y (INVX1)                         0.01       0.64 r
+  ALU/adder/top/ins0/U19/Y (OAI21X1)                      0.02       0.66 f
+  ALU/adder/top/ins0/C1 (ahead4_4)                        0.00       0.66 f
+  ALU/adder/top/C4 (top_ahead_0)                          0.00       0.66 f
+  ALU/adder/ins1/C0 (cla4_2)                              0.00       0.66 f
+  ALU/adder/ins1/header4/C0 (ahead4_2)                    0.00       0.66 f
+  ALU/adder/ins1/header4/U25/Y (NAND3X1)                  0.03       0.68 r
+  ALU/adder/ins1/header4/U6/Y (BUFX2)                     0.03       0.72 r
+  ALU/adder/ins1/header4/U4/Y (OR2X2)                     0.04       0.76 r
+  ALU/adder/ins1/header4/U5/Y (INVX1)                     0.02       0.78 f
+  ALU/adder/ins1/header4/P_g (ahead4_2)                   0.00       0.78 f
+  ALU/adder/ins1/P_g (cla4_2)                             0.00       0.78 f
+  ALU/adder/top/P_g1 (top_ahead_0)                        0.00       0.78 f
+  ALU/adder/top/ins0/P1 (ahead4_4)                        0.00       0.78 f
+  ALU/adder/top/ins0/U26/Y (AOI21X1)                      0.03       0.81 r
+  ALU/adder/top/ins0/U15/Y (INVX1)                        0.03       0.84 f
+  ALU/adder/top/ins0/C2 (ahead4_4)                        0.00       0.84 f
+  ALU/adder/top/C8 (top_ahead_0)                          0.00       0.84 f
+  ALU/adder/ins2/C0 (cla4_1)                              0.00       0.84 f
+  ALU/adder/ins2/header4/C0 (ahead4_1)                    0.00       0.84 f
+  ALU/adder/ins2/header4/U14/Y (BUFX2)                    0.04       0.87 f
+  ALU/adder/ins2/header4/U11/Y (AOI21X1)                  0.03       0.90 r
+  ALU/adder/ins2/header4/U12/Y (INVX1)                    0.02       0.92 f
+  ALU/adder/ins2/header4/U27/Y (NAND3X1)                  0.03       0.95 r
+  ALU/adder/ins2/header4/U5/Y (BUFX2)                     0.04       0.99 r
+  ALU/adder/ins2/header4/U28/Y (NAND3X1)                  0.01       1.00 f
+  ALU/adder/ins2/header4/C3 (ahead4_1)                    0.00       1.00 f
+  ALU/adder/ins2/U2/Y (BUFX2)                             0.04       1.03 f
+  ALU/adder/ins2/ins3/Cin (pfa_4)                         0.00       1.03 f
+  ALU/adder/ins2/ins3/U6/Y (XOR2X1)                       0.03       1.07 f
+  ALU/adder/ins2/ins3/Sum (pfa_4)                         0.00       1.07 f
+  ALU/adder/ins2/Sum<3> (cla4_1)                          0.00       1.07 f
+  ALU/adder/Sum<11> (cla16_0)                             0.00       1.07 f
+  ALU/U241/Y (AOI22X1)                                    0.04       1.11 r
+  ALU/U30/Y (BUFX2)                                       0.03       1.14 r
+  ALU/U48/Y (AND2X2)                                      0.03       1.18 r
+  ALU/U49/Y (INVX1)                                       0.02       1.19 f
+  ALU/Out<11> (alu)                                       0.00       1.19 f
+  control/alu_result<11> (wrt_ctrl)                       0.00       1.19 f
+  control/U217/Y (AOI22X1)                                0.03       1.22 r
+  control/U18/Y (BUFX2)                                   0.04       1.26 r
+  control/U26/Y (AND2X2)                                  0.03       1.29 r
+  control/U27/Y (INVX1)                                   0.02       1.30 f
+  control/U222/Y (OR2X2)                                  0.04       1.34 f
+  control/writedata_EX<11> (wrt_ctrl)                     0.00       1.34 f
+  ex_mem/writedata_EX<11> (EX_MEM)                        0.00       1.34 f
+  ex_mem/writedataEX_MEM_dff[11]/d (dff_225)              0.00       1.34 f
+  ex_mem/writedataEX_MEM_dff[11]/U3/Y (INVX1)             0.00       1.34 r
+  ex_mem/writedataEX_MEM_dff[11]/U4/Y (NOR2X1)            0.01       1.35 f
+  ex_mem/writedataEX_MEM_dff[11]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.35 f
+  data arrival time                                                  1.35
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[11]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.35
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.40
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[12]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U5/Y (INVX1)                             0.00       0.39 r
+  ALU/inv_B/ins0/U3/Y (AND2X2)                            0.03       0.43 r
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.04       0.47 r
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.47 r
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.47 r
+  ALU/adder/B<0> (cla16_0)                                0.00       0.47 r
+  ALU/adder/ins0/B<0> (cla4_3)                            0.00       0.47 r
+  ALU/adder/ins0/ins0/B (pfa_15)                          0.00       0.47 r
+  ALU/adder/ins0/ins0/U1/Y (INVX1)                        0.02       0.49 f
+  ALU/adder/ins0/ins0/U4/Y (AND2X2)                       0.03       0.52 f
+  ALU/adder/ins0/ins0/U2/Y (OR2X2)                        0.04       0.56 f
+  ALU/adder/ins0/ins0/P (pfa_15)                          0.00       0.56 f
+  ALU/adder/ins0/header4/P0 (ahead4_3)                    0.00       0.56 f
+  ALU/adder/ins0/header4/U29/Y (NAND3X1)                  0.03       0.59 r
+  ALU/adder/ins0/header4/U30/Y (NOR3X1)                   0.04       0.63 f
+  ALU/adder/ins0/header4/P_g (ahead4_3)                   0.00       0.63 f
+  ALU/adder/ins0/P_g (cla4_3)                             0.00       0.63 f
+  ALU/adder/top/P_g0 (top_ahead_0)                        0.00       0.63 f
+  ALU/adder/top/ins0/P0 (ahead4_4)                        0.00       0.63 f
+  ALU/adder/top/ins0/U4/Y (INVX1)                         0.01       0.64 r
+  ALU/adder/top/ins0/U19/Y (OAI21X1)                      0.02       0.66 f
+  ALU/adder/top/ins0/C1 (ahead4_4)                        0.00       0.66 f
+  ALU/adder/top/C4 (top_ahead_0)                          0.00       0.66 f
+  ALU/adder/ins1/C0 (cla4_2)                              0.00       0.66 f
+  ALU/adder/ins1/header4/C0 (ahead4_2)                    0.00       0.66 f
+  ALU/adder/ins1/header4/U25/Y (NAND3X1)                  0.03       0.68 r
+  ALU/adder/ins1/header4/U6/Y (BUFX2)                     0.03       0.72 r
+  ALU/adder/ins1/header4/U4/Y (OR2X2)                     0.04       0.76 r
+  ALU/adder/ins1/header4/U5/Y (INVX1)                     0.02       0.78 f
+  ALU/adder/ins1/header4/P_g (ahead4_2)                   0.00       0.78 f
+  ALU/adder/ins1/P_g (cla4_2)                             0.00       0.78 f
+  ALU/adder/top/P_g1 (top_ahead_0)                        0.00       0.78 f
+  ALU/adder/top/ins0/P1 (ahead4_4)                        0.00       0.78 f
+  ALU/adder/top/ins0/U26/Y (AOI21X1)                      0.03       0.81 r
+  ALU/adder/top/ins0/U15/Y (INVX1)                        0.03       0.84 f
+  ALU/adder/top/ins0/C2 (ahead4_4)                        0.00       0.84 f
+  ALU/adder/top/C8 (top_ahead_0)                          0.00       0.84 f
+  ALU/adder/ins2/C0 (cla4_1)                              0.00       0.84 f
+  ALU/adder/ins2/header4/C0 (ahead4_1)                    0.00       0.84 f
+  ALU/adder/ins2/header4/U13/Y (AND2X2)                   0.04       0.88 f
+  ALU/adder/ins2/header4/P_g (ahead4_1)                   0.00       0.88 f
+  ALU/adder/ins2/P_g (cla4_1)                             0.00       0.88 f
+  ALU/adder/top/P_g2 (top_ahead_0)                        0.00       0.88 f
+  ALU/adder/top/ins0/P2 (ahead4_4)                        0.00       0.88 f
+  ALU/adder/top/ins0/U23/Y (AOI21X1)                      0.03       0.91 r
+  ALU/adder/top/ins0/U5/Y (BUFX2)                         0.03       0.94 r
+  ALU/adder/top/ins0/U2/Y (INVX1)                         0.02       0.96 f
+  ALU/adder/top/ins0/C3 (ahead4_4)                        0.00       0.96 f
+  ALU/adder/top/C12 (top_ahead_0)                         0.00       0.96 f
+  ALU/adder/ins3/C0 (cla4_0)                              0.00       0.96 f
+  ALU/adder/ins3/U1/Y (BUFX2)                             0.04       1.00 f
+  ALU/adder/ins3/ins0/Cin (pfa_3)                         0.00       1.00 f
+  ALU/adder/ins3/ins0/U5/Y (XOR2X1)                       0.03       1.03 f
+  ALU/adder/ins3/ins0/Sum (pfa_3)                         0.00       1.03 f
+  ALU/adder/ins3/Sum<0> (cla4_0)                          0.00       1.03 f
+  ALU/adder/Sum<12> (cla16_0)                             0.00       1.03 f
+  ALU/U245/Y (AOI22X1)                                    0.04       1.08 r
+  ALU/U33/Y (BUFX2)                                       0.04       1.11 r
+  ALU/U158/Y (AND2X2)                                     0.03       1.14 r
+  ALU/U159/Y (INVX1)                                      0.02       1.16 f
+  ALU/Out<12> (alu)                                       0.00       1.16 f
+  control/alu_result<12> (wrt_ctrl)                       0.00       1.16 f
+  control/U223/Y (AOI22X1)                                0.03       1.19 r
+  control/U19/Y (BUFX2)                                   0.04       1.22 r
+  control/U28/Y (AND2X2)                                  0.03       1.25 r
+  control/U29/Y (INVX1)                                   0.02       1.27 f
+  control/U228/Y (OR2X2)                                  0.04       1.31 f
+  control/writedata_EX<12> (wrt_ctrl)                     0.00       1.31 f
+  ex_mem/writedata_EX<12> (EX_MEM)                        0.00       1.31 f
+  ex_mem/writedataEX_MEM_dff[12]/d (dff_226)              0.00       1.31 f
+  ex_mem/writedataEX_MEM_dff[12]/U3/Y (INVX1)             0.00       1.31 r
+  ex_mem/writedataEX_MEM_dff[12]/U4/Y (NOR2X1)            0.01       1.31 f
+  ex_mem/writedataEX_MEM_dff[12]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.31 f
+  data arrival time                                                  1.31
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[12]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.31
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.37
+
+
+  Startpoint: if_id/instr_dff/bits[8]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: PC/pc[15]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_id/instr_dff/bits[8]/state_reg/CLK (DFFPOSX1)        0.00 #     0.00 r
+  if_id/instr_dff/bits[8]/state_reg/Q (DFFPOSX1)          0.11       0.11 f
+  if_id/instr_dff/bits[8]/q (dff_136)                     0.00       0.11 f
+  if_id/instr_dff/regvalue<8> (register_WIDTH16_9)        0.00       0.11 f
+  if_id/instr_IF_ID<8> (IF_ID)                            0.00       0.11 f
+  decoder/instr_IF_ID<8> (instr_decoder)                  0.00       0.11 f
+  decoder/U12/Y (INVX4)                                   0.02       0.13 r
+  decoder/U19/Y (INVX8)                                   0.03       0.16 f
+  decoder/read_reg1<0> (instr_decoder)                    0.00       0.16 f
+  rf/read1regsel<0> (rf_bypass)                           0.00       0.16 f
+  rf/ins1/read1regsel<0> (rf)                             0.00       0.16 f
+  rf/ins1/U337/Y (NAND3X1)                                0.03       0.19 r
+  rf/ins1/U205/Y (BUFX2)                                  0.05       0.23 r
+  rf/ins1/U199/Y (INVX8)                                  0.03       0.26 f
+  rf/ins1/U350/Y (NAND2X1)                                0.01       0.28 r
+  rf/ins1/U202/Y (AND2X2)                                 0.03       0.31 r
+  rf/ins1/U203/Y (INVX1)                                  0.02       0.32 f
+  rf/ins1/U35/Y (OR2X2)                                   0.04       0.36 f
+  rf/ins1/U42/Y (OR2X2)                                   0.04       0.40 f
+  rf/ins1/read1data<2> (rf)                               0.00       0.40 f
+  rf/U24/Y (AND2X2)                                       0.03       0.43 f
+  rf/U23/Y (OR2X2)                                        0.04       0.47 f
+  rf/read1data<2> (rf_bypass)                             0.00       0.47 f
+  ins2/rs<2> (for_unit2)                                  0.00       0.47 f
+  ins2/U5/Y (AND2X2)                                      0.03       0.50 f
+  ins2/U57/Y (INVX1)                                      0.00       0.50 r
+  ins2/U16/Y (AND2X2)                                     0.03       0.53 r
+  ins2/U17/Y (INVX1)                                      0.02       0.55 f
+  ins2/rs_bypass<2> (for_unit2)                           0.00       0.55 f
+  jump_out/rs<2> (pc_jump_out)                            0.00       0.55 f
+  jump_out/U43/Y (MUX2X1)                                 0.04       0.59 r
+  jump_out/U8/Y (INVX2)                                   0.02       0.61 f
+  jump_out/pc_jump/B<2> (cla16_1)                         0.00       0.61 f
+  jump_out/pc_jump/ins0/B<2> (cla4_7)                     0.00       0.61 f
+  jump_out/pc_jump/ins0/ins2/B (pfa_29)                   0.00       0.61 f
+  jump_out/pc_jump/ins0/ins2/U1/Y (XNOR2X1)               0.03       0.64 f
+  jump_out/pc_jump/ins0/ins2/U2/Y (INVX1)                 0.01       0.65 r
+  jump_out/pc_jump/ins0/ins2/P (pfa_29)                   0.00       0.65 r
+  jump_out/pc_jump/ins0/header4/P2 (ahead4_8)             0.00       0.65 r
+  jump_out/pc_jump/ins0/header4/U27/Y (INVX1)             0.01       0.66 f
+  jump_out/pc_jump/ins0/header4/U8/Y (AND2X2)             0.03       0.69 f
+  jump_out/pc_jump/ins0/header4/U10/Y (INVX1)             0.00       0.69 r
+  jump_out/pc_jump/ins0/header4/U32/Y (NAND3X1)           0.01       0.70 f
+  jump_out/pc_jump/ins0/header4/U3/Y (BUFX2)              0.03       0.74 f
+  jump_out/pc_jump/ins0/header4/U33/Y (NAND3X1)           0.03       0.76 r
+  jump_out/pc_jump/ins0/header4/G_g (ahead4_8)            0.00       0.76 r
+  jump_out/pc_jump/ins0/G_g (cla4_7)                      0.00       0.76 r
+  jump_out/pc_jump/top/G_g0 (top_ahead_1)                 0.00       0.76 r
+  jump_out/pc_jump/top/U2/Y (BUFX2)                       0.04       0.80 r
+  jump_out/pc_jump/top/ins0/G0 (ahead4_9)                 0.00       0.80 r
+  jump_out/pc_jump/top/ins0/U1/Y (INVX2)                  0.02       0.83 f
+  jump_out/pc_jump/top/ins0/U26/Y (OAI21X1)               0.03       0.85 r
+  jump_out/pc_jump/top/ins0/C1 (ahead4_9)                 0.00       0.85 r
+  jump_out/pc_jump/top/C4 (top_ahead_1)                   0.00       0.85 r
+  jump_out/pc_jump/ins1/C0 (cla4_6)                       0.00       0.85 r
+  jump_out/pc_jump/ins1/header4/C0 (ahead4_7)             0.00       0.85 r
+  jump_out/pc_jump/ins1/header4/U7/Y (AND2X2)             0.04       0.89 r
+  jump_out/pc_jump/ins1/header4/P_g (ahead4_7)            0.00       0.89 r
+  jump_out/pc_jump/ins1/P_g (cla4_6)                      0.00       0.89 r
+  jump_out/pc_jump/top/P_g1 (top_ahead_1)                 0.00       0.89 r
+  jump_out/pc_jump/top/ins0/P1 (ahead4_9)                 0.00       0.89 r
+  jump_out/pc_jump/top/ins0/U14/Y (INVX1)                 0.02       0.91 f
+  jump_out/pc_jump/top/ins0/U27/Y (OAI21X1)               0.06       0.96 r
+  jump_out/pc_jump/top/ins0/C2 (ahead4_9)                 0.00       0.96 r
+  jump_out/pc_jump/top/C8 (top_ahead_1)                   0.00       0.96 r
+  jump_out/pc_jump/ins2/C0 (cla4_5)                       0.00       0.96 r
+  jump_out/pc_jump/ins2/header4/C0 (ahead4_6)             0.00       0.96 r
+  jump_out/pc_jump/ins2/header4/U18/Y (NAND3X1)           0.02       0.99 f
+  jump_out/pc_jump/ins2/header4/U8/Y (INVX1)              0.00       0.99 r
+  jump_out/pc_jump/ins2/header4/U7/Y (AND2X2)             0.04       1.02 r
+  jump_out/pc_jump/ins2/header4/P_g (ahead4_6)            0.00       1.02 r
+  jump_out/pc_jump/ins2/P_g (cla4_5)                      0.00       1.02 r
+  jump_out/pc_jump/top/P_g2 (top_ahead_1)                 0.00       1.02 r
+  jump_out/pc_jump/top/ins0/P2 (ahead4_9)                 0.00       1.02 r
+  jump_out/pc_jump/top/ins0/U19/Y (AOI21X1)               0.02       1.04 f
+  jump_out/pc_jump/top/ins0/U8/Y (INVX1)                  0.01       1.05 r
+  jump_out/pc_jump/top/ins0/C3 (ahead4_9)                 0.00       1.05 r
+  jump_out/pc_jump/top/C12 (top_ahead_1)                  0.00       1.05 r
+  jump_out/pc_jump/ins3/C0 (cla4_4)                       0.00       1.05 r
+  jump_out/pc_jump/ins3/header4/C0 (ahead4_5)             0.00       1.05 r
+  jump_out/pc_jump/ins3/header4/U4/Y (AND2X2)             0.03       1.08 r
+  jump_out/pc_jump/ins3/header4/U5/Y (INVX1)              0.01       1.10 f
+  jump_out/pc_jump/ins3/header4/U13/Y (AND2X2)            0.03       1.13 f
+  jump_out/pc_jump/ins3/header4/U32/Y (NAND3X1)           0.03       1.16 r
+  jump_out/pc_jump/ins3/header4/C3 (ahead4_5)             0.00       1.16 r
+  jump_out/pc_jump/ins3/U1/Y (BUFX2)                      0.04       1.20 r
+  jump_out/pc_jump/ins3/ins3/Cin (pfa_16)                 0.00       1.20 r
+  jump_out/pc_jump/ins3/ins3/U2/Y (XNOR2X1)               0.03       1.22 f
+  jump_out/pc_jump/ins3/ins3/Sum (pfa_16)                 0.00       1.22 f
+  jump_out/pc_jump/ins3/Sum<3> (cla4_4)                   0.00       1.22 f
+  jump_out/pc_jump/Sum<15> (cla16_1)                      0.00       1.22 f
+  jump_out/pc_jump_out<15> (pc_jump_out)                  0.00       1.22 f
+  PC/pc_jump_out<15> (pc_unit)                            0.00       1.22 f
+  PC/U8/Y (AND2X1)                                        0.03       1.25 f
+  PC/U9/Y (INVX1)                                         0.00       1.25 r
+  PC/U6/Y (AND2X2)                                        0.03       1.28 r
+  PC/U7/Y (INVX1)                                         0.01       1.30 f
+  PC/pc[15]/d (dff_353)                                   0.00       1.30 f
+  PC/pc[15]/U3/Y (INVX1)                                  0.00       1.30 r
+  PC/pc[15]/U4/Y (NOR2X1)                                 0.01       1.30 f
+  PC/pc[15]/state_reg/D (DFFPOSX1)                        0.00       1.30 f
+  data arrival time                                                  1.30
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  PC/pc[15]/state_reg/CLK (DFFPOSX1)                      0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.30
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.36
+
+
+  Startpoint: if_id/instr_dff/bits[8]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: PC/pc[14]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_id/instr_dff/bits[8]/state_reg/CLK (DFFPOSX1)        0.00 #     0.00 r
+  if_id/instr_dff/bits[8]/state_reg/Q (DFFPOSX1)          0.11       0.11 f
+  if_id/instr_dff/bits[8]/q (dff_136)                     0.00       0.11 f
+  if_id/instr_dff/regvalue<8> (register_WIDTH16_9)        0.00       0.11 f
+  if_id/instr_IF_ID<8> (IF_ID)                            0.00       0.11 f
+  decoder/instr_IF_ID<8> (instr_decoder)                  0.00       0.11 f
+  decoder/U12/Y (INVX4)                                   0.02       0.13 r
+  decoder/U19/Y (INVX8)                                   0.03       0.16 f
+  decoder/read_reg1<0> (instr_decoder)                    0.00       0.16 f
+  rf/read1regsel<0> (rf_bypass)                           0.00       0.16 f
+  rf/ins1/read1regsel<0> (rf)                             0.00       0.16 f
+  rf/ins1/U337/Y (NAND3X1)                                0.03       0.19 r
+  rf/ins1/U205/Y (BUFX2)                                  0.05       0.23 r
+  rf/ins1/U199/Y (INVX8)                                  0.03       0.26 f
+  rf/ins1/U350/Y (NAND2X1)                                0.01       0.28 r
+  rf/ins1/U202/Y (AND2X2)                                 0.03       0.31 r
+  rf/ins1/U203/Y (INVX1)                                  0.02       0.32 f
+  rf/ins1/U35/Y (OR2X2)                                   0.04       0.36 f
+  rf/ins1/U42/Y (OR2X2)                                   0.04       0.40 f
+  rf/ins1/read1data<2> (rf)                               0.00       0.40 f
+  rf/U24/Y (AND2X2)                                       0.03       0.43 f
+  rf/U23/Y (OR2X2)                                        0.04       0.47 f
+  rf/read1data<2> (rf_bypass)                             0.00       0.47 f
+  ins2/rs<2> (for_unit2)                                  0.00       0.47 f
+  ins2/U5/Y (AND2X2)                                      0.03       0.50 f
+  ins2/U57/Y (INVX1)                                      0.00       0.50 r
+  ins2/U16/Y (AND2X2)                                     0.03       0.53 r
+  ins2/U17/Y (INVX1)                                      0.02       0.55 f
+  ins2/rs_bypass<2> (for_unit2)                           0.00       0.55 f
+  jump_out/rs<2> (pc_jump_out)                            0.00       0.55 f
+  jump_out/U43/Y (MUX2X1)                                 0.04       0.59 r
+  jump_out/U8/Y (INVX2)                                   0.02       0.61 f
+  jump_out/pc_jump/B<2> (cla16_1)                         0.00       0.61 f
+  jump_out/pc_jump/ins0/B<2> (cla4_7)                     0.00       0.61 f
+  jump_out/pc_jump/ins0/ins2/B (pfa_29)                   0.00       0.61 f
+  jump_out/pc_jump/ins0/ins2/U6/Y (INVX1)                 0.00       0.62 r
+  jump_out/pc_jump/ins0/ins2/U3/Y (OR2X2)                 0.04       0.66 r
+  jump_out/pc_jump/ins0/ins2/U4/Y (INVX1)                 0.02       0.67 f
+  jump_out/pc_jump/ins0/ins2/G (pfa_29)                   0.00       0.67 f
+  jump_out/pc_jump/ins0/header4/G2 (ahead4_8)             0.00       0.67 f
+  jump_out/pc_jump/ins0/header4/U21/Y (INVX1)             0.01       0.68 r
+  jump_out/pc_jump/ins0/header4/U17/Y (INVX1)             0.02       0.70 f
+  jump_out/pc_jump/ins0/header4/U29/Y (AOI21X1)           0.02       0.71 r
+  jump_out/pc_jump/ins0/header4/U28/Y (INVX1)             0.02       0.73 f
+  jump_out/pc_jump/ins0/header4/U32/Y (NAND3X1)           0.03       0.76 r
+  jump_out/pc_jump/ins0/header4/U3/Y (BUFX2)              0.04       0.80 r
+  jump_out/pc_jump/ins0/header4/U33/Y (NAND3X1)           0.01       0.81 f
+  jump_out/pc_jump/ins0/header4/G_g (ahead4_8)            0.00       0.81 f
+  jump_out/pc_jump/ins0/G_g (cla4_7)                      0.00       0.81 f
+  jump_out/pc_jump/top/G_g0 (top_ahead_1)                 0.00       0.81 f
+  jump_out/pc_jump/top/U2/Y (BUFX2)                       0.04       0.84 f
+  jump_out/pc_jump/top/ins0/G0 (ahead4_9)                 0.00       0.84 f
+  jump_out/pc_jump/top/ins0/U1/Y (INVX2)                  0.02       0.86 r
+  jump_out/pc_jump/top/ins0/U26/Y (OAI21X1)               0.01       0.88 f
+  jump_out/pc_jump/top/ins0/C1 (ahead4_9)                 0.00       0.88 f
+  jump_out/pc_jump/top/C4 (top_ahead_1)                   0.00       0.88 f
+  jump_out/pc_jump/ins1/C0 (cla4_6)                       0.00       0.88 f
+  jump_out/pc_jump/ins1/header4/C0 (ahead4_7)             0.00       0.88 f
+  jump_out/pc_jump/ins1/header4/U7/Y (AND2X2)             0.03       0.91 f
+  jump_out/pc_jump/ins1/header4/P_g (ahead4_7)            0.00       0.91 f
+  jump_out/pc_jump/ins1/P_g (cla4_6)                      0.00       0.91 f
+  jump_out/pc_jump/top/P_g1 (top_ahead_1)                 0.00       0.91 f
+  jump_out/pc_jump/top/ins0/P1 (ahead4_9)                 0.00       0.91 f
+  jump_out/pc_jump/top/ins0/U14/Y (INVX1)                 0.00       0.91 r
+  jump_out/pc_jump/top/ins0/U27/Y (OAI21X1)               0.02       0.93 f
+  jump_out/pc_jump/top/ins0/C2 (ahead4_9)                 0.00       0.93 f
+  jump_out/pc_jump/top/C8 (top_ahead_1)                   0.00       0.93 f
+  jump_out/pc_jump/ins2/C0 (cla4_5)                       0.00       0.93 f
+  jump_out/pc_jump/ins2/header4/C0 (ahead4_6)             0.00       0.93 f
+  jump_out/pc_jump/ins2/header4/U18/Y (NAND3X1)           0.03       0.96 r
+  jump_out/pc_jump/ins2/header4/U8/Y (INVX1)              0.02       0.98 f
+  jump_out/pc_jump/ins2/header4/U7/Y (AND2X2)             0.04       1.02 f
+  jump_out/pc_jump/ins2/header4/P_g (ahead4_6)            0.00       1.02 f
+  jump_out/pc_jump/ins2/P_g (cla4_5)                      0.00       1.02 f
+  jump_out/pc_jump/top/P_g2 (top_ahead_1)                 0.00       1.02 f
+  jump_out/pc_jump/top/ins0/P2 (ahead4_9)                 0.00       1.02 f
+  jump_out/pc_jump/top/ins0/U19/Y (AOI21X1)               0.03       1.06 r
+  jump_out/pc_jump/top/ins0/U8/Y (INVX1)                  0.02       1.08 f
+  jump_out/pc_jump/top/ins0/C3 (ahead4_9)                 0.00       1.08 f
+  jump_out/pc_jump/top/C12 (top_ahead_1)                  0.00       1.08 f
+  jump_out/pc_jump/ins3/C0 (cla4_4)                       0.00       1.08 f
+  jump_out/pc_jump/ins3/header4/C0 (ahead4_5)             0.00       1.08 f
+  jump_out/pc_jump/ins3/header4/U1/Y (INVX1)              0.00       1.08 r
+  jump_out/pc_jump/ins3/header4/U2/Y (INVX1)              0.02       1.10 f
+  jump_out/pc_jump/ins3/header4/U14/Y (AOI21X1)           0.04       1.13 r
+  jump_out/pc_jump/ins3/header4/U6/Y (BUFX2)              0.04       1.17 r
+  jump_out/pc_jump/ins3/header4/U15/Y (OAI21X1)           0.02       1.19 f
+  jump_out/pc_jump/ins3/header4/C2 (ahead4_5)             0.00       1.19 f
+  jump_out/pc_jump/ins3/ins2/Cin (pfa_17)                 0.00       1.19 f
+  jump_out/pc_jump/ins3/ins2/U2/Y (XNOR2X1)               0.03       1.22 f
+  jump_out/pc_jump/ins3/ins2/Sum (pfa_17)                 0.00       1.22 f
+  jump_out/pc_jump/ins3/Sum<2> (cla4_4)                   0.00       1.22 f
+  jump_out/pc_jump/Sum<14> (cla16_1)                      0.00       1.22 f
+  jump_out/pc_jump_out<14> (pc_jump_out)                  0.00       1.22 f
+  PC/pc_jump_out<14> (pc_unit)                            0.00       1.22 f
+  PC/U38/Y (AOI22X1)                                      0.03       1.25 r
+  PC/U4/Y (AND2X2)                                        0.03       1.28 r
+  PC/U5/Y (INVX1)                                         0.01       1.29 f
+  PC/pc[14]/d (dff_352)                                   0.00       1.29 f
+  PC/pc[14]/U3/Y (INVX1)                                  0.00       1.30 r
+  PC/pc[14]/U4/Y (NOR2X1)                                 0.01       1.30 f
+  PC/pc[14]/state_reg/D (DFFPOSX1)                        0.00       1.30 f
+  data arrival time                                                  1.30
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  PC/pc[14]/state_reg/CLK (DFFPOSX1)                      0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.30
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.36
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[8]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U1/Y (AND2X2)                            0.03       0.43 f
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.05       0.48 f
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.48 f
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.48 f
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 f
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 f
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 f
+  ALU/shift/stage_1/U6/Y (INVX1)                          0.01       0.52 r
+  ALU/shift/stage_1/U2/Y (INVX1)                          0.01       0.53 f
+  ALU/shift/stage_1/ins1/S (mux_2_1_62)                   0.00       0.53 f
+  ALU/shift/stage_1/ins1/U1/Y (INVX1)                     0.00       0.53 r
+  ALU/shift/stage_1/ins1/U2/Y (INVX1)                     0.01       0.55 f
+  ALU/shift/stage_1/ins1/B/in2 (nand2_187)                0.00       0.55 f
+  ALU/shift/stage_1/ins1/B/U1/Y (AND2X2)                  0.04       0.58 f
+  ALU/shift/stage_1/ins1/B/U2/Y (INVX1)                   0.00       0.58 r
+  ALU/shift/stage_1/ins1/B/out (nand2_187)                0.00       0.58 r
+  ALU/shift/stage_1/ins1/U3/Y (BUFX2)                     0.03       0.61 r
+  ALU/shift/stage_1/ins1/C/in2 (nand2_186)                0.00       0.61 r
+  ALU/shift/stage_1/ins1/C/U1/Y (AND2X2)                  0.03       0.64 r
+  ALU/shift/stage_1/ins1/C/U2/Y (INVX1)                   0.01       0.65 f
+  ALU/shift/stage_1/ins1/C/out (nand2_186)                0.00       0.65 f
+  ALU/shift/stage_1/ins1/Out (mux_2_1_62)                 0.00       0.65 f
+  ALU/shift/stage_1/Out_1<1> (mux_stage_1)                0.00       0.65 f
+  ALU/shift/stage_2/In_stage_2_A<1> (mux_stage_2)         0.00       0.65 f
+  ALU/shift/stage_2/U6/Y (BUFX2)                          0.03       0.69 f
+  ALU/shift/stage_2/ins3/InB (mux_2_1_44)                 0.00       0.69 f
+  ALU/shift/stage_2/ins3/B/in1 (nand2_133)                0.00       0.69 f
+  ALU/shift/stage_2/ins3/B/U1/Y (AND2X2)                  0.03       0.72 f
+  ALU/shift/stage_2/ins3/B/U2/Y (INVX1)                   0.00       0.72 r
+  ALU/shift/stage_2/ins3/B/out (nand2_133)                0.00       0.72 r
+  ALU/shift/stage_2/ins3/U1/Y (BUFX2)                     0.03       0.75 r
+  ALU/shift/stage_2/ins3/C/in2 (nand2_132)                0.00       0.75 r
+  ALU/shift/stage_2/ins3/C/U1/Y (AND2X2)                  0.03       0.78 r
+  ALU/shift/stage_2/ins3/C/U2/Y (INVX1)                   0.01       0.79 f
+  ALU/shift/stage_2/ins3/C/out (nand2_132)                0.00       0.79 f
+  ALU/shift/stage_2/ins3/Out (mux_2_1_44)                 0.00       0.79 f
+  ALU/shift/stage_2/Out_2<3> (mux_stage_2)                0.00       0.79 f
+  ALU/shift/stage_3/In_stage_3_A<3> (mux_stage_3)         0.00       0.79 f
+  ALU/shift/stage_3/U10/Y (BUFX2)                         0.03       0.83 f
+  ALU/shift/stage_3/ins7/InB (mux_2_1_24)                 0.00       0.83 f
+  ALU/shift/stage_3/ins7/B/in1 (nand2_73)                 0.00       0.83 f
+  ALU/shift/stage_3/ins7/B/U1/Y (AND2X2)                  0.03       0.86 f
+  ALU/shift/stage_3/ins7/B/U2/Y (INVX1)                   0.00       0.85 r
+  ALU/shift/stage_3/ins7/B/out (nand2_73)                 0.00       0.85 r
+  ALU/shift/stage_3/ins7/U1/Y (BUFX2)                     0.03       0.89 r
+  ALU/shift/stage_3/ins7/C/in2 (nand2_72)                 0.00       0.89 r
+  ALU/shift/stage_3/ins7/C/U1/Y (AND2X1)                  0.03       0.91 r
+  ALU/shift/stage_3/ins7/C/U2/Y (INVX1)                   0.02       0.94 f
+  ALU/shift/stage_3/ins7/C/out (nand2_72)                 0.00       0.94 f
+  ALU/shift/stage_3/ins7/Out (mux_2_1_24)                 0.00       0.94 f
+  ALU/shift/stage_3/Out_3<7> (mux_stage_3)                0.00       0.94 f
+  ALU/shift/stage_4/In_stage_4_A<7> (mux_stage_4)         0.00       0.94 f
+  ALU/shift/stage_4/ins7/InA (mux_2_1_8)                  0.00       0.94 f
+  ALU/shift/stage_4/ins7/A/in1 (nand2_26)                 0.00       0.94 f
+  ALU/shift/stage_4/ins7/A/U1/Y (AND2X2)                  0.04       0.98 f
+  ALU/shift/stage_4/ins7/A/U2/Y (INVX1)                   0.00       0.97 r
+  ALU/shift/stage_4/ins7/A/out (nand2_26)                 0.00       0.97 r
+  ALU/shift/stage_4/ins7/C/in1 (nand2_24)                 0.00       0.97 r
+  ALU/shift/stage_4/ins7/C/U1/Y (AND2X2)                  0.03       1.00 r
+  ALU/shift/stage_4/ins7/C/U2/Y (INVX1)                   0.02       1.02 f
+  ALU/shift/stage_4/ins7/C/out (nand2_24)                 0.00       1.02 f
+  ALU/shift/stage_4/ins7/Out (mux_2_1_8)                  0.00       1.02 f
+  ALU/shift/stage_4/Out_4<7> (mux_stage_4)                0.00       1.02 f
+  ALU/shift/U15/Y (INVX1)                                 0.00       1.02 r
+  ALU/shift/U16/Y (MUX2X1)                                0.02       1.04 f
+  ALU/shift/Out<8> (shifter)                              0.00       1.04 f
+  ALU/U229/Y (AOI22X1)                                    0.03       1.07 r
+  ALU/U138/Y (BUFX2)                                      0.04       1.10 r
+  ALU/U135/Y (AND2X2)                                     0.03       1.13 r
+  ALU/U136/Y (INVX1)                                      0.02       1.15 f
+  ALU/Out<8> (alu)                                        0.00       1.15 f
+  control/alu_result<8> (wrt_ctrl)                        0.00       1.15 f
+  control/U199/Y (AOI22X1)                                0.03       1.18 r
+  control/U16/Y (BUFX2)                                   0.04       1.21 r
+  control/U22/Y (AND2X2)                                  0.03       1.24 r
+  control/U23/Y (INVX1)                                   0.02       1.26 f
+  control/U205/Y (OR2X2)                                  0.04       1.30 f
+  control/writedata_EX<8> (wrt_ctrl)                      0.00       1.30 f
+  ex_mem/writedata_EX<8> (EX_MEM)                         0.00       1.30 f
+  ex_mem/writedataEX_MEM_dff[8]/d (dff_222)               0.00       1.30 f
+  ex_mem/writedataEX_MEM_dff[8]/U3/Y (INVX1)              0.00       1.30 r
+  ex_mem/writedataEX_MEM_dff[8]/U4/Y (NOR2X1)             0.01       1.30 f
+  ex_mem/writedataEX_MEM_dff[8]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.30 f
+  data arrival time                                                  1.30
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[8]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.30
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.36
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[9]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U5/Y (INVX1)                             0.00       0.39 r
+  ALU/inv_B/ins0/U3/Y (AND2X2)                            0.03       0.43 r
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.04       0.47 r
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.47 r
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.47 r
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 r
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 r
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 r
+  ALU/shift/stage_1/U5/Y (INVX2)                          0.03       0.54 f
+  ALU/shift/stage_1/U10/Y (INVX8)                         0.02       0.56 r
+  ALU/shift/stage_1/ins7/S (mux_2_1_56)                   0.00       0.56 r
+  ALU/shift/stage_1/ins7/nS/in1 (not1_56)                 0.00       0.56 r
+  ALU/shift/stage_1/ins7/nS/U1/Y (INVX1)                  0.02       0.58 f
+  ALU/shift/stage_1/ins7/nS/out (not1_56)                 0.00       0.58 f
+  ALU/shift/stage_1/ins7/A/in2 (nand2_170)                0.00       0.58 f
+  ALU/shift/stage_1/ins7/A/U1/Y (AND2X2)                  0.03       0.61 f
+  ALU/shift/stage_1/ins7/A/U2/Y (INVX1)                   0.00       0.61 r
+  ALU/shift/stage_1/ins7/A/out (nand2_170)                0.00       0.61 r
+  ALU/shift/stage_1/ins7/U3/Y (BUFX2)                     0.03       0.64 r
+  ALU/shift/stage_1/ins7/C/in1 (nand2_168)                0.00       0.64 r
+  ALU/shift/stage_1/ins7/C/U1/Y (AND2X2)                  0.03       0.67 r
+  ALU/shift/stage_1/ins7/C/U2/Y (INVX1)                   0.01       0.68 f
+  ALU/shift/stage_1/ins7/C/out (nand2_168)                0.00       0.68 f
+  ALU/shift/stage_1/ins7/Out (mux_2_1_56)                 0.00       0.68 f
+  ALU/shift/stage_1/Out_1<7> (mux_stage_1)                0.00       0.68 f
+  ALU/shift/stage_2/In_stage_2_A<7> (mux_stage_2)         0.00       0.68 f
+  ALU/shift/stage_2/U9/Y (BUFX2)                          0.03       0.71 f
+  ALU/shift/stage_2/ins9/InB (mux_2_1_38)                 0.00       0.71 f
+  ALU/shift/stage_2/ins9/B/in1 (nand2_115)                0.00       0.71 f
+  ALU/shift/stage_2/ins9/B/U1/Y (AND2X2)                  0.03       0.75 f
+  ALU/shift/stage_2/ins9/B/U2/Y (INVX1)                   0.00       0.74 r
+  ALU/shift/stage_2/ins9/B/out (nand2_115)                0.00       0.74 r
+  ALU/shift/stage_2/ins9/U2/Y (BUFX2)                     0.03       0.78 r
+  ALU/shift/stage_2/ins9/C/in2 (nand2_114)                0.00       0.78 r
+  ALU/shift/stage_2/ins9/C/U1/Y (AND2X2)                  0.03       0.81 r
+  ALU/shift/stage_2/ins9/C/U2/Y (INVX1)                   0.02       0.82 f
+  ALU/shift/stage_2/ins9/C/out (nand2_114)                0.00       0.82 f
+  ALU/shift/stage_2/ins9/Out (mux_2_1_38)                 0.00       0.82 f
+  ALU/shift/stage_2/Out_2<9> (mux_stage_2)                0.00       0.82 f
+  ALU/shift/stage_3/In_stage_3_A<9> (mux_stage_3)         0.00       0.82 f
+  ALU/shift/stage_3/ins9/InA (mux_2_1_22)                 0.00       0.82 f
+  ALU/shift/stage_3/ins9/A/in1 (nand2_68)                 0.00       0.82 f
+  ALU/shift/stage_3/ins9/A/U1/Y (AND2X2)                  0.04       0.86 f
+  ALU/shift/stage_3/ins9/A/U2/Y (INVX1)                   0.00       0.86 r
+  ALU/shift/stage_3/ins9/A/out (nand2_68)                 0.00       0.86 r
+  ALU/shift/stage_3/ins9/U1/Y (BUFX2)                     0.03       0.89 r
+  ALU/shift/stage_3/ins9/C/in1 (nand2_66)                 0.00       0.89 r
+  ALU/shift/stage_3/ins9/C/U1/Y (AND2X2)                  0.03       0.92 r
+  ALU/shift/stage_3/ins9/C/U2/Y (INVX1)                   0.02       0.94 f
+  ALU/shift/stage_3/ins9/C/out (nand2_66)                 0.00       0.94 f
+  ALU/shift/stage_3/ins9/Out (mux_2_1_22)                 0.00       0.94 f
+  ALU/shift/stage_3/Out_3<9> (mux_stage_3)                0.00       0.94 f
+  ALU/shift/stage_4/In_stage_4_A<9> (mux_stage_4)         0.00       0.94 f
+  ALU/shift/stage_4/ins9/InA (mux_2_1_6)                  0.00       0.94 f
+  ALU/shift/stage_4/ins9/A/in1 (nand2_20)                 0.00       0.94 f
+  ALU/shift/stage_4/ins9/A/U1/Y (AND2X2)                  0.03       0.97 f
+  ALU/shift/stage_4/ins9/A/U2/Y (INVX1)                   0.00       0.97 r
+  ALU/shift/stage_4/ins9/A/out (nand2_20)                 0.00       0.97 r
+  ALU/shift/stage_4/ins9/C/in1 (nand2_18)                 0.00       0.97 r
+  ALU/shift/stage_4/ins9/C/U1/Y (AND2X2)                  0.03       1.00 r
+  ALU/shift/stage_4/ins9/C/U2/Y (INVX1)                   0.02       1.01 f
+  ALU/shift/stage_4/ins9/C/out (nand2_18)                 0.00       1.01 f
+  ALU/shift/stage_4/ins9/Out (mux_2_1_6)                  0.00       1.01 f
+  ALU/shift/stage_4/Out_4<9> (mux_stage_4)                0.00       1.01 f
+  ALU/shift/U14/Y (INVX1)                                 0.00       1.02 r
+  ALU/shift/U82/Y (MUX2X1)                                0.02       1.03 f
+  ALU/shift/Out<9> (shifter)                              0.00       1.03 f
+  ALU/U233/Y (AOI22X1)                                    0.03       1.06 r
+  ALU/U144/Y (BUFX2)                                      0.04       1.10 r
+  ALU/U141/Y (AND2X2)                                     0.03       1.13 r
+  ALU/U142/Y (INVX1)                                      0.02       1.15 f
+  ALU/Out<9> (alu)                                        0.00       1.15 f
+  control/alu_result<9> (wrt_ctrl)                        0.00       1.15 f
+  control/U206/Y (AOI22X1)                                0.03       1.18 r
+  control/U17/Y (BUFX2)                                   0.04       1.21 r
+  control/U24/Y (AND2X2)                                  0.03       1.24 r
+  control/U25/Y (INVX1)                                   0.02       1.26 f
+  control/U211/Y (OR2X2)                                  0.04       1.29 f
+  control/writedata_EX<9> (wrt_ctrl)                      0.00       1.29 f
+  ex_mem/writedata_EX<9> (EX_MEM)                         0.00       1.29 f
+  ex_mem/writedataEX_MEM_dff[9]/d (dff_223)               0.00       1.29 f
+  ex_mem/writedataEX_MEM_dff[9]/U3/Y (INVX1)              0.00       1.29 r
+  ex_mem/writedataEX_MEM_dff[9]/U4/Y (NOR2X1)             0.01       1.30 f
+  ex_mem/writedataEX_MEM_dff[9]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.30 f
+  data arrival time                                                  1.30
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[9]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.30
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.35
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[1]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U5/Y (INVX1)                             0.00       0.39 r
+  ALU/inv_B/ins0/U3/Y (AND2X2)                            0.03       0.43 r
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.04       0.47 r
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.47 r
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.47 r
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 r
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 r
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 r
+  ALU/shift/stage_1/U5/Y (INVX2)                          0.03       0.54 f
+  ALU/shift/stage_1/U10/Y (INVX8)                         0.02       0.56 r
+  ALU/shift/stage_1/ins7/S (mux_2_1_56)                   0.00       0.56 r
+  ALU/shift/stage_1/ins7/nS/in1 (not1_56)                 0.00       0.56 r
+  ALU/shift/stage_1/ins7/nS/U1/Y (INVX1)                  0.02       0.58 f
+  ALU/shift/stage_1/ins7/nS/out (not1_56)                 0.00       0.58 f
+  ALU/shift/stage_1/ins7/A/in2 (nand2_170)                0.00       0.58 f
+  ALU/shift/stage_1/ins7/A/U1/Y (AND2X2)                  0.03       0.61 f
+  ALU/shift/stage_1/ins7/A/U2/Y (INVX1)                   0.00       0.61 r
+  ALU/shift/stage_1/ins7/A/out (nand2_170)                0.00       0.61 r
+  ALU/shift/stage_1/ins7/U3/Y (BUFX2)                     0.03       0.64 r
+  ALU/shift/stage_1/ins7/C/in1 (nand2_168)                0.00       0.64 r
+  ALU/shift/stage_1/ins7/C/U1/Y (AND2X2)                  0.03       0.67 r
+  ALU/shift/stage_1/ins7/C/U2/Y (INVX1)                   0.01       0.68 f
+  ALU/shift/stage_1/ins7/C/out (nand2_168)                0.00       0.68 f
+  ALU/shift/stage_1/ins7/Out (mux_2_1_56)                 0.00       0.68 f
+  ALU/shift/stage_1/Out_1<7> (mux_stage_1)                0.00       0.68 f
+  ALU/shift/stage_2/In_stage_2_A<7> (mux_stage_2)         0.00       0.68 f
+  ALU/shift/stage_2/U9/Y (BUFX2)                          0.03       0.71 f
+  ALU/shift/stage_2/ins9/InB (mux_2_1_38)                 0.00       0.71 f
+  ALU/shift/stage_2/ins9/B/in1 (nand2_115)                0.00       0.71 f
+  ALU/shift/stage_2/ins9/B/U1/Y (AND2X2)                  0.03       0.75 f
+  ALU/shift/stage_2/ins9/B/U2/Y (INVX1)                   0.00       0.74 r
+  ALU/shift/stage_2/ins9/B/out (nand2_115)                0.00       0.74 r
+  ALU/shift/stage_2/ins9/U2/Y (BUFX2)                     0.03       0.78 r
+  ALU/shift/stage_2/ins9/C/in2 (nand2_114)                0.00       0.78 r
+  ALU/shift/stage_2/ins9/C/U1/Y (AND2X2)                  0.03       0.81 r
+  ALU/shift/stage_2/ins9/C/U2/Y (INVX1)                   0.02       0.82 f
+  ALU/shift/stage_2/ins9/C/out (nand2_114)                0.00       0.82 f
+  ALU/shift/stage_2/ins9/Out (mux_2_1_38)                 0.00       0.82 f
+  ALU/shift/stage_2/Out_2<9> (mux_stage_2)                0.00       0.82 f
+  ALU/shift/stage_3/In_stage_3_A<9> (mux_stage_3)         0.00       0.82 f
+  ALU/shift/stage_3/ins9/InA (mux_2_1_22)                 0.00       0.82 f
+  ALU/shift/stage_3/ins9/A/in1 (nand2_68)                 0.00       0.82 f
+  ALU/shift/stage_3/ins9/A/U1/Y (AND2X2)                  0.04       0.86 f
+  ALU/shift/stage_3/ins9/A/U2/Y (INVX1)                   0.00       0.86 r
+  ALU/shift/stage_3/ins9/A/out (nand2_68)                 0.00       0.86 r
+  ALU/shift/stage_3/ins9/U1/Y (BUFX2)                     0.03       0.89 r
+  ALU/shift/stage_3/ins9/C/in1 (nand2_66)                 0.00       0.89 r
+  ALU/shift/stage_3/ins9/C/U1/Y (AND2X2)                  0.03       0.92 r
+  ALU/shift/stage_3/ins9/C/U2/Y (INVX1)                   0.02       0.94 f
+  ALU/shift/stage_3/ins9/C/out (nand2_66)                 0.00       0.94 f
+  ALU/shift/stage_3/ins9/Out (mux_2_1_22)                 0.00       0.94 f
+  ALU/shift/stage_3/Out_3<9> (mux_stage_3)                0.00       0.94 f
+  ALU/shift/stage_4/In_stage_4_A<9> (mux_stage_4)         0.00       0.94 f
+  ALU/shift/stage_4/U19/Y (INVX1)                         0.00       0.94 r
+  ALU/shift/stage_4/U28/Y (OAI21X1)                       0.01       0.95 f
+  ALU/shift/stage_4/ins1/InB (mux_2_1_14)                 0.00       0.95 f
+  ALU/shift/stage_4/ins1/B/in1 (nand2_43)                 0.00       0.95 f
+  ALU/shift/stage_4/ins1/B/U1/Y (AND2X2)                  0.04       0.99 f
+  ALU/shift/stage_4/ins1/B/U2/Y (INVX1)                   0.00       0.98 r
+  ALU/shift/stage_4/ins1/B/out (nand2_43)                 0.00       0.98 r
+  ALU/shift/stage_4/ins1/U2/Y (BUFX2)                     0.03       1.02 r
+  ALU/shift/stage_4/ins1/C/in2 (nand2_42)                 0.00       1.02 r
+  ALU/shift/stage_4/ins1/C/U1/Y (AND2X2)                  0.03       1.05 r
+  ALU/shift/stage_4/ins1/C/U2/Y (INVX1)                   0.01       1.06 f
+  ALU/shift/stage_4/ins1/C/out (nand2_42)                 0.00       1.06 f
+  ALU/shift/stage_4/ins1/Out (mux_2_1_14)                 0.00       1.06 f
+  ALU/shift/stage_4/Out_4<1> (mux_stage_4)                0.00       1.06 f
+  ALU/shift/U40/Y (INVX1)                                 0.01       1.07 r
+  ALU/shift/U75/Y (MUX2X1)                                0.02       1.09 f
+  ALU/shift/Out<1> (shifter)                              0.00       1.09 f
+  ALU/U201/Y (AOI22X1)                                    0.03       1.12 r
+  ALU/U118/Y (BUFX2)                                      0.04       1.15 r
+  ALU/U115/Y (AND2X2)                                     0.03       1.18 r
+  ALU/U116/Y (INVX1)                                      0.02       1.20 f
+  ALU/Out<1> (alu)                                        0.00       1.20 f
+  control/alu_result<1> (wrt_ctrl)                        0.00       1.20 f
+  control/U160/Y (AOI22X1)                                0.04       1.24 r
+  control/U161/Y (AND2X2)                                 0.03       1.28 r
+  control/U162/Y (NAND3X1)                                0.01       1.29 f
+  control/writedata_EX<1> (wrt_ctrl)                      0.00       1.29 f
+  ex_mem/writedata_EX<1> (EX_MEM)                         0.00       1.29 f
+  ex_mem/writedataEX_MEM_dff[1]/d (dff_215)               0.00       1.29 f
+  ex_mem/writedataEX_MEM_dff[1]/U3/Y (INVX1)              0.00       1.29 r
+  ex_mem/writedataEX_MEM_dff[1]/U4/Y (NOR2X1)             0.01       1.30 f
+  ex_mem/writedataEX_MEM_dff[1]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.30 f
+  data arrival time                                                  1.30
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[1]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.30
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.35
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[4]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U1/Y (AND2X2)                            0.03       0.43 f
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.05       0.48 f
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.48 f
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.48 f
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 f
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 f
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 f
+  ALU/shift/stage_1/U5/Y (INVX2)                          0.02       0.54 r
+  ALU/shift/stage_1/U10/Y (INVX8)                         0.03       0.56 f
+  ALU/shift/stage_1/ins13/S (mux_2_1_50)                  0.00       0.56 f
+  ALU/shift/stage_1/ins13/B/in2 (nand2_151)               0.00       0.56 f
+  ALU/shift/stage_1/ins13/B/U1/Y (AND2X2)                 0.03       0.60 f
+  ALU/shift/stage_1/ins13/B/U2/Y (INVX1)                  0.00       0.59 r
+  ALU/shift/stage_1/ins13/B/out (nand2_151)               0.00       0.59 r
+  ALU/shift/stage_1/ins13/U1/Y (BUFX2)                    0.03       0.62 r
+  ALU/shift/stage_1/ins13/C/in2 (nand2_150)               0.00       0.62 r
+  ALU/shift/stage_1/ins13/C/U1/Y (AND2X2)                 0.03       0.65 r
+  ALU/shift/stage_1/ins13/C/U2/Y (INVX1)                  0.02       0.67 f
+  ALU/shift/stage_1/ins13/C/out (nand2_150)               0.00       0.67 f
+  ALU/shift/stage_1/ins13/Out (mux_2_1_50)                0.00       0.67 f
+  ALU/shift/stage_1/Out_1<13> (mux_stage_1)               0.00       0.67 f
+  ALU/shift/stage_2/In_stage_2_A<13> (mux_stage_2)        0.00       0.67 f
+  ALU/shift/stage_2/ins15/InB (mux_2_1_32)                0.00       0.67 f
+  ALU/shift/stage_2/ins15/B/in1 (nand2_97)                0.00       0.67 f
+  ALU/shift/stage_2/ins15/B/U1/Y (AND2X2)                 0.04       0.71 f
+  ALU/shift/stage_2/ins15/B/U2/Y (INVX1)                  0.00       0.71 r
+  ALU/shift/stage_2/ins15/B/out (nand2_97)                0.00       0.71 r
+  ALU/shift/stage_2/ins15/U1/Y (BUFX2)                    0.03       0.74 r
+  ALU/shift/stage_2/ins15/C/in2 (nand2_96)                0.00       0.74 r
+  ALU/shift/stage_2/ins15/C/U1/Y (AND2X2)                 0.03       0.77 r
+  ALU/shift/stage_2/ins15/C/U2/Y (INVX1)                  0.01       0.78 f
+  ALU/shift/stage_2/ins15/C/out (nand2_96)                0.00       0.78 f
+  ALU/shift/stage_2/ins15/Out (mux_2_1_32)                0.00       0.78 f
+  ALU/shift/stage_2/Out_2<15> (mux_stage_2)               0.00       0.78 f
+  ALU/shift/stage_3/In_stage_3_A<15> (mux_stage_3)        0.00       0.78 f
+  ALU/shift/stage_3/U6/Y (BUFX2)                          0.03       0.81 f
+  ALU/shift/stage_3/U18/Y (INVX1)                         0.00       0.82 r
+  ALU/shift/stage_3/U21/Y (OAI21X1)                       0.01       0.83 f
+  ALU/shift/stage_3/ins3/InB (mux_2_1_28)                 0.00       0.83 f
+  ALU/shift/stage_3/ins3/B/in1 (nand2_85)                 0.00       0.83 f
+  ALU/shift/stage_3/ins3/B/U1/Y (AND2X1)                  0.03       0.86 f
+  ALU/shift/stage_3/ins3/B/U2/Y (INVX1)                   0.00       0.86 r
+  ALU/shift/stage_3/ins3/B/out (nand2_85)                 0.00       0.86 r
+  ALU/shift/stage_3/ins3/U1/Y (BUFX2)                     0.03       0.89 r
+  ALU/shift/stage_3/ins3/C/in2 (nand2_84)                 0.00       0.89 r
+  ALU/shift/stage_3/ins3/C/U1/Y (AND2X2)                  0.03       0.92 r
+  ALU/shift/stage_3/ins3/C/U2/Y (INVX1)                   0.02       0.94 f
+  ALU/shift/stage_3/ins3/C/out (nand2_84)                 0.00       0.94 f
+  ALU/shift/stage_3/ins3/Out (mux_2_1_28)                 0.00       0.94 f
+  ALU/shift/stage_3/Out_3<3> (mux_stage_3)                0.00       0.94 f
+  ALU/shift/stage_4/In_stage_4_A<3> (mux_stage_4)         0.00       0.94 f
+  ALU/shift/stage_4/ins11/InB (mux_2_1_4)                 0.00       0.94 f
+  ALU/shift/stage_4/ins11/B/in1 (nand2_13)                0.00       0.94 f
+  ALU/shift/stage_4/ins11/B/U1/Y (AND2X2)                 0.04       0.98 f
+  ALU/shift/stage_4/ins11/B/U2/Y (INVX1)                  0.00       0.98 r
+  ALU/shift/stage_4/ins11/B/out (nand2_13)                0.00       0.98 r
+  ALU/shift/stage_4/ins11/U1/Y (BUFX4)                    0.02       1.00 r
+  ALU/shift/stage_4/ins11/C/in2 (nand2_12)                0.00       1.00 r
+  ALU/shift/stage_4/ins11/C/U1/Y (AND2X2)                 0.03       1.03 r
+  ALU/shift/stage_4/ins11/C/U2/Y (INVX1)                  0.02       1.05 f
+  ALU/shift/stage_4/ins11/C/out (nand2_12)                0.00       1.05 f
+  ALU/shift/stage_4/ins11/Out (mux_2_1_4)                 0.00       1.05 f
+  ALU/shift/stage_4/Out_4<11> (mux_stage_4)               0.00       1.05 f
+  ALU/shift/U32/Y (INVX1)                                 0.00       1.05 r
+  ALU/shift/U78/Y (MUX2X1)                                0.02       1.07 f
+  ALU/shift/Out<4> (shifter)                              0.00       1.07 f
+  ALU/U213/Y (AOI22X1)                                    0.04       1.11 r
+  ALU/U114/Y (BUFX2)                                      0.04       1.15 r
+  ALU/U111/Y (AND2X2)                                     0.03       1.18 r
+  ALU/U112/Y (INVX1)                                      0.02       1.20 f
+  ALU/Out<4> (alu)                                        0.00       1.20 f
+  control/alu_result<4> (wrt_ctrl)                        0.00       1.20 f
+  control/U178/Y (AOI22X1)                                0.05       1.24 r
+  control/U179/Y (AND2X2)                                 0.03       1.28 r
+  control/U180/Y (NAND3X1)                                0.01       1.29 f
+  control/writedata_EX<4> (wrt_ctrl)                      0.00       1.29 f
+  ex_mem/writedata_EX<4> (EX_MEM)                         0.00       1.29 f
+  ex_mem/writedataEX_MEM_dff[4]/d (dff_218)               0.00       1.29 f
+  ex_mem/writedataEX_MEM_dff[4]/U3/Y (INVX1)              0.00       1.29 r
+  ex_mem/writedataEX_MEM_dff[4]/U4/Y (NOR2X1)             0.01       1.30 f
+  ex_mem/writedataEX_MEM_dff[4]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.30 f
+  data arrival time                                                  1.30
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[4]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.30
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.35
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[15]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U1/Y (AND2X2)                            0.03       0.43 f
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.05       0.48 f
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.48 f
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.48 f
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 f
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 f
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 f
+  ALU/shift/stage_1/U6/Y (INVX1)                          0.01       0.52 r
+  ALU/shift/stage_1/U2/Y (INVX1)                          0.01       0.53 f
+  ALU/shift/stage_1/ins1/S (mux_2_1_62)                   0.00       0.53 f
+  ALU/shift/stage_1/ins1/U1/Y (INVX1)                     0.00       0.53 r
+  ALU/shift/stage_1/ins1/U2/Y (INVX1)                     0.01       0.55 f
+  ALU/shift/stage_1/ins1/B/in2 (nand2_187)                0.00       0.55 f
+  ALU/shift/stage_1/ins1/B/U1/Y (AND2X2)                  0.04       0.58 f
+  ALU/shift/stage_1/ins1/B/U2/Y (INVX1)                   0.00       0.58 r
+  ALU/shift/stage_1/ins1/B/out (nand2_187)                0.00       0.58 r
+  ALU/shift/stage_1/ins1/U3/Y (BUFX2)                     0.03       0.61 r
+  ALU/shift/stage_1/ins1/C/in2 (nand2_186)                0.00       0.61 r
+  ALU/shift/stage_1/ins1/C/U1/Y (AND2X2)                  0.03       0.64 r
+  ALU/shift/stage_1/ins1/C/U2/Y (INVX1)                   0.01       0.65 f
+  ALU/shift/stage_1/ins1/C/out (nand2_186)                0.00       0.65 f
+  ALU/shift/stage_1/ins1/Out (mux_2_1_62)                 0.00       0.65 f
+  ALU/shift/stage_1/Out_1<1> (mux_stage_1)                0.00       0.65 f
+  ALU/shift/stage_2/In_stage_2_A<1> (mux_stage_2)         0.00       0.65 f
+  ALU/shift/stage_2/U6/Y (BUFX2)                          0.03       0.69 f
+  ALU/shift/stage_2/ins3/InB (mux_2_1_44)                 0.00       0.69 f
+  ALU/shift/stage_2/ins3/B/in1 (nand2_133)                0.00       0.69 f
+  ALU/shift/stage_2/ins3/B/U1/Y (AND2X2)                  0.03       0.72 f
+  ALU/shift/stage_2/ins3/B/U2/Y (INVX1)                   0.00       0.72 r
+  ALU/shift/stage_2/ins3/B/out (nand2_133)                0.00       0.72 r
+  ALU/shift/stage_2/ins3/U1/Y (BUFX2)                     0.03       0.75 r
+  ALU/shift/stage_2/ins3/C/in2 (nand2_132)                0.00       0.75 r
+  ALU/shift/stage_2/ins3/C/U1/Y (AND2X2)                  0.03       0.78 r
+  ALU/shift/stage_2/ins3/C/U2/Y (INVX1)                   0.01       0.79 f
+  ALU/shift/stage_2/ins3/C/out (nand2_132)                0.00       0.79 f
+  ALU/shift/stage_2/ins3/Out (mux_2_1_44)                 0.00       0.79 f
+  ALU/shift/stage_2/Out_2<3> (mux_stage_2)                0.00       0.79 f
+  ALU/shift/stage_3/In_stage_3_A<3> (mux_stage_3)         0.00       0.79 f
+  ALU/shift/stage_3/U10/Y (BUFX2)                         0.03       0.83 f
+  ALU/shift/stage_3/ins7/InB (mux_2_1_24)                 0.00       0.83 f
+  ALU/shift/stage_3/ins7/B/in1 (nand2_73)                 0.00       0.83 f
+  ALU/shift/stage_3/ins7/B/U1/Y (AND2X2)                  0.03       0.86 f
+  ALU/shift/stage_3/ins7/B/U2/Y (INVX1)                   0.00       0.85 r
+  ALU/shift/stage_3/ins7/B/out (nand2_73)                 0.00       0.85 r
+  ALU/shift/stage_3/ins7/U1/Y (BUFX2)                     0.03       0.89 r
+  ALU/shift/stage_3/ins7/C/in2 (nand2_72)                 0.00       0.89 r
+  ALU/shift/stage_3/ins7/C/U1/Y (AND2X1)                  0.03       0.91 r
+  ALU/shift/stage_3/ins7/C/U2/Y (INVX1)                   0.02       0.94 f
+  ALU/shift/stage_3/ins7/C/out (nand2_72)                 0.00       0.94 f
+  ALU/shift/stage_3/ins7/Out (mux_2_1_24)                 0.00       0.94 f
+  ALU/shift/stage_3/Out_3<7> (mux_stage_3)                0.00       0.94 f
+  ALU/shift/stage_4/In_stage_4_A<7> (mux_stage_4)         0.00       0.94 f
+  ALU/shift/stage_4/ins15/InB (mux_2_1_0)                 0.00       0.94 f
+  ALU/shift/stage_4/ins15/B/in1 (nand2_1)                 0.00       0.94 f
+  ALU/shift/stage_4/ins15/B/U1/Y (AND2X1)                 0.03       0.97 f
+  ALU/shift/stage_4/ins15/B/U2/Y (INVX1)                  0.00       0.97 r
+  ALU/shift/stage_4/ins15/B/out (nand2_1)                 0.00       0.97 r
+  ALU/shift/stage_4/ins15/U2/Y (BUFX2)                    0.03       1.00 r
+  ALU/shift/stage_4/ins15/C/in2 (nand2_0)                 0.00       1.00 r
+  ALU/shift/stage_4/ins15/C/U1/Y (AND2X2)                 0.03       1.03 r
+  ALU/shift/stage_4/ins15/C/U2/Y (INVX1)                  0.02       1.05 f
+  ALU/shift/stage_4/ins15/C/out (nand2_0)                 0.00       1.05 f
+  ALU/shift/stage_4/ins15/Out (mux_2_1_0)                 0.00       1.05 f
+  ALU/shift/stage_4/Out_4<15> (mux_stage_4)               0.00       1.05 f
+  ALU/shift/U27/Y (INVX1)                                 0.00       1.05 r
+  ALU/shift/U86/Y (MUX2X1)                                0.02       1.07 f
+  ALU/shift/Out<15> (shifter)                             0.00       1.07 f
+  ALU/U36/Y (AND2X1)                                      0.03       1.10 f
+  ALU/U37/Y (INVX1)                                       0.00       1.10 r
+  ALU/U164/Y (AND2X2)                                     0.03       1.13 r
+  ALU/U50/Y (AND2X2)                                      0.03       1.16 r
+  ALU/U51/Y (INVX1)                                       0.02       1.18 f
+  ALU/Out<15> (alu)                                       0.00       1.18 f
+  U44/Y (INVX1)                                           0.00       1.18 r
+  U45/Y (INVX1)                                           0.02       1.20 f
+  control/alu_result<15> (wrt_ctrl)                       0.00       1.20 f
+  control/U239/Y (AOI22X1)                                0.04       1.24 r
+  control/U7/Y (AND2X2)                                   0.03       1.27 r
+  control/U8/Y (INVX1)                                    0.01       1.28 f
+  control/writedata_EX<15> (wrt_ctrl)                     0.00       1.28 f
+  ex_mem/writedata_EX<15> (EX_MEM)                        0.00       1.28 f
+  ex_mem/writedataEX_MEM_dff[15]/d (dff_229)              0.00       1.28 f
+  ex_mem/writedataEX_MEM_dff[15]/U3/Y (INVX1)             0.00       1.29 r
+  ex_mem/writedataEX_MEM_dff[15]/U4/Y (NOR2X1)            0.01       1.29 f
+  ex_mem/writedataEX_MEM_dff[15]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.29 f
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[15]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.35
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[10]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U5/Y (INVX1)                             0.00       0.39 r
+  ALU/inv_B/ins0/U3/Y (AND2X2)                            0.03       0.43 r
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.04       0.47 r
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.47 r
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.47 r
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 r
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 r
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 r
+  ALU/shift/stage_1/U5/Y (INVX2)                          0.03       0.54 f
+  ALU/shift/stage_1/U10/Y (INVX8)                         0.02       0.56 r
+  ALU/shift/stage_1/ins11/S (mux_2_1_52)                  0.00       0.56 r
+  ALU/shift/stage_1/ins11/nS/in1 (not1_52)                0.00       0.56 r
+  ALU/shift/stage_1/ins11/nS/U1/Y (INVX1)                 0.02       0.58 f
+  ALU/shift/stage_1/ins11/nS/out (not1_52)                0.00       0.58 f
+  ALU/shift/stage_1/ins11/A/in2 (nand2_158)               0.00       0.58 f
+  ALU/shift/stage_1/ins11/A/U1/Y (AND2X2)                 0.03       0.61 f
+  ALU/shift/stage_1/ins11/A/U2/Y (INVX1)                  0.00       0.61 r
+  ALU/shift/stage_1/ins11/A/out (nand2_158)               0.00       0.61 r
+  ALU/shift/stage_1/ins11/U1/Y (BUFX2)                    0.03       0.64 r
+  ALU/shift/stage_1/ins11/C/in1 (nand2_156)               0.00       0.64 r
+  ALU/shift/stage_1/ins11/C/U1/Y (AND2X2)                 0.03       0.67 r
+  ALU/shift/stage_1/ins11/C/U2/Y (INVX1)                  0.01       0.68 f
+  ALU/shift/stage_1/ins11/C/out (nand2_156)               0.00       0.68 f
+  ALU/shift/stage_1/ins11/Out (mux_2_1_52)                0.00       0.68 f
+  ALU/shift/stage_1/Out_1<11> (mux_stage_1)               0.00       0.68 f
+  ALU/shift/stage_2/In_stage_2_A<11> (mux_stage_2)        0.00       0.68 f
+  ALU/shift/stage_2/U12/Y (BUFX2)                         0.03       0.71 f
+  ALU/shift/stage_2/ins13/InB (mux_2_1_34)                0.00       0.71 f
+  ALU/shift/stage_2/ins13/B/in1 (nand2_103)               0.00       0.71 f
+  ALU/shift/stage_2/ins13/B/U1/Y (AND2X2)                 0.03       0.75 f
+  ALU/shift/stage_2/ins13/B/U2/Y (INVX1)                  0.00       0.74 r
+  ALU/shift/stage_2/ins13/B/out (nand2_103)               0.00       0.74 r
+  ALU/shift/stage_2/ins13/U2/Y (INVX1)                    0.01       0.76 f
+  ALU/shift/stage_2/ins13/U3/Y (INVX1)                    0.00       0.76 r
+  ALU/shift/stage_2/ins13/C/in2 (nand2_102)               0.00       0.76 r
+  ALU/shift/stage_2/ins13/C/U1/Y (AND2X2)                 0.03       0.79 r
+  ALU/shift/stage_2/ins13/C/U2/Y (INVX1)                  0.02       0.80 f
+  ALU/shift/stage_2/ins13/C/out (nand2_102)               0.00       0.80 f
+  ALU/shift/stage_2/ins13/Out (mux_2_1_34)                0.00       0.80 f
+  ALU/shift/stage_2/Out_2<13> (mux_stage_2)               0.00       0.80 f
+  ALU/shift/stage_3/In_stage_3_A<13> (mux_stage_3)        0.00       0.80 f
+  ALU/shift/stage_3/U7/Y (BUFX2)                          0.03       0.84 f
+  ALU/shift/stage_3/ins13/InA (mux_2_1_18)                0.00       0.84 f
+  ALU/shift/stage_3/ins13/A/in1 (nand2_56)                0.00       0.84 f
+  ALU/shift/stage_3/ins13/A/U1/Y (AND2X2)                 0.03       0.87 f
+  ALU/shift/stage_3/ins13/A/U2/Y (INVX1)                  0.00       0.87 r
+  ALU/shift/stage_3/ins13/A/out (nand2_56)                0.00       0.87 r
+  ALU/shift/stage_3/ins13/U1/Y (BUFX2)                    0.03       0.90 r
+  ALU/shift/stage_3/ins13/C/in1 (nand2_54)                0.00       0.90 r
+  ALU/shift/stage_3/ins13/C/U1/Y (AND2X2)                 0.03       0.93 r
+  ALU/shift/stage_3/ins13/C/U2/Y (INVX1)                  0.02       0.94 f
+  ALU/shift/stage_3/ins13/C/out (nand2_54)                0.00       0.94 f
+  ALU/shift/stage_3/ins13/Out (mux_2_1_18)                0.00       0.94 f
+  ALU/shift/stage_3/Out_3<13> (mux_stage_3)               0.00       0.94 f
+  ALU/shift/stage_4/In_stage_4_A<13> (mux_stage_4)        0.00       0.94 f
+  ALU/shift/stage_4/U6/Y (INVX1)                          0.00       0.95 r
+  ALU/shift/stage_4/U24/Y (OAI21X1)                       0.01       0.96 f
+  ALU/shift/stage_4/ins5/InB (mux_2_1_10)                 0.00       0.96 f
+  ALU/shift/stage_4/ins5/B/in1 (nand2_31)                 0.00       0.96 f
+  ALU/shift/stage_4/ins5/B/U1/Y (AND2X2)                  0.03       0.99 f
+  ALU/shift/stage_4/ins5/B/U2/Y (INVX1)                   0.00       0.99 r
+  ALU/shift/stage_4/ins5/B/out (nand2_31)                 0.00       0.99 r
+  ALU/shift/stage_4/ins5/C/in2 (nand2_30)                 0.00       0.99 r
+  ALU/shift/stage_4/ins5/C/U1/Y (AND2X2)                  0.03       1.02 r
+  ALU/shift/stage_4/ins5/C/U2/Y (INVX1)                   0.02       1.04 f
+  ALU/shift/stage_4/ins5/C/out (nand2_30)                 0.00       1.04 f
+  ALU/shift/stage_4/ins5/Out (mux_2_1_10)                 0.00       1.04 f
+  ALU/shift/stage_4/Out_4<5> (mux_stage_4)                0.00       1.04 f
+  ALU/shift/U33/Y (INVX1)                                 0.00       1.04 r
+  ALU/shift/U11/Y (MUX2X1)                                0.02       1.06 f
+  ALU/shift/Out<10> (shifter)                             0.00       1.06 f
+  ALU/U237/Y (AOI22X1)                                    0.03       1.08 r
+  ALU/U150/Y (BUFX2)                                      0.04       1.12 r
+  ALU/U147/Y (AND2X2)                                     0.03       1.15 r
+  ALU/U148/Y (INVX1)                                      0.02       1.17 f
+  ALU/Out<10> (alu)                                       0.00       1.17 f
+  control/alu_result<10> (wrt_ctrl)                       0.00       1.17 f
+  control/U212/Y (AOI22X1)                                0.03       1.20 r
+  control/U20/Y (BUFX2)                                   0.03       1.24 r
+  control/U12/Y (AND2X2)                                  0.03       1.27 r
+  control/U13/Y (INVX1)                                   0.01       1.28 f
+  control/writedata_EX<10> (wrt_ctrl)                     0.00       1.28 f
+  ex_mem/writedata_EX<10> (EX_MEM)                        0.00       1.28 f
+  ex_mem/writedataEX_MEM_dff[10]/d (dff_224)              0.00       1.28 f
+  ex_mem/writedataEX_MEM_dff[10]/U3/Y (INVX1)             0.00       1.28 r
+  ex_mem/writedataEX_MEM_dff[10]/U4/Y (NOR2X1)            0.01       1.29 f
+  ex_mem/writedataEX_MEM_dff[10]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.29 f
+  data arrival time                                                  1.29
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[10]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.35
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[13]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U5/Y (INVX1)                             0.00       0.39 r
+  ALU/inv_B/ins0/U3/Y (AND2X2)                            0.03       0.43 r
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.04       0.47 r
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.47 r
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.47 r
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 r
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 r
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 r
+  ALU/shift/stage_1/U5/Y (INVX2)                          0.03       0.54 f
+  ALU/shift/stage_1/U10/Y (INVX8)                         0.02       0.56 r
+  ALU/shift/stage_1/ins8/S (mux_2_1_55)                   0.00       0.56 r
+  ALU/shift/stage_1/ins8/nS/in1 (not1_55)                 0.00       0.56 r
+  ALU/shift/stage_1/ins8/nS/U1/Y (INVX1)                  0.02       0.58 f
+  ALU/shift/stage_1/ins8/nS/out (not1_55)                 0.00       0.58 f
+  ALU/shift/stage_1/ins8/A/in2 (nand2_167)                0.00       0.58 f
+  ALU/shift/stage_1/ins8/A/U1/Y (AND2X2)                  0.03       0.61 f
+  ALU/shift/stage_1/ins8/A/U2/Y (INVX1)                   0.00       0.61 r
+  ALU/shift/stage_1/ins8/A/out (nand2_167)                0.00       0.61 r
+  ALU/shift/stage_1/ins8/U3/Y (BUFX2)                     0.03       0.64 r
+  ALU/shift/stage_1/ins8/C/in1 (nand2_165)                0.00       0.64 r
+  ALU/shift/stage_1/ins8/C/U1/Y (AND2X2)                  0.03       0.67 r
+  ALU/shift/stage_1/ins8/C/U2/Y (INVX1)                   0.01       0.68 f
+  ALU/shift/stage_1/ins8/C/out (nand2_165)                0.00       0.68 f
+  ALU/shift/stage_1/ins8/Out (mux_2_1_55)                 0.00       0.68 f
+  ALU/shift/stage_1/Out_1<8> (mux_stage_1)                0.00       0.68 f
+  ALU/shift/stage_2/In_stage_2_A<8> (mux_stage_2)         0.00       0.68 f
+  ALU/shift/stage_2/U10/Y (BUFX2)                         0.03       0.71 f
+  ALU/shift/stage_2/U2/Y (INVX1)                          0.00       0.71 r
+  ALU/shift/stage_2/U3/Y (INVX1)                          0.01       0.72 f
+  ALU/shift/stage_2/ins10/InB (mux_2_1_37)                0.00       0.72 f
+  ALU/shift/stage_2/ins10/B/in1 (nand2_112)               0.00       0.72 f
+  ALU/shift/stage_2/ins10/B/U1/Y (AND2X2)                 0.04       0.76 f
+  ALU/shift/stage_2/ins10/B/U2/Y (INVX1)                  0.00       0.76 r
+  ALU/shift/stage_2/ins10/B/out (nand2_112)               0.00       0.76 r
+  ALU/shift/stage_2/ins10/C/in2 (nand2_111)               0.00       0.76 r
+  ALU/shift/stage_2/ins10/C/U1/Y (AND2X2)                 0.03       0.79 r
+  ALU/shift/stage_2/ins10/C/U2/Y (INVX1)                  0.01       0.80 f
+  ALU/shift/stage_2/ins10/C/out (nand2_111)               0.00       0.80 f
+  ALU/shift/stage_2/ins10/Out (mux_2_1_37)                0.00       0.80 f
+  ALU/shift/stage_2/Out_2<10> (mux_stage_2)               0.00       0.80 f
+  ALU/shift/stage_3/In_stage_3_A<10> (mux_stage_3)        0.00       0.80 f
+  ALU/shift/stage_3/U13/Y (BUFX2)                         0.03       0.83 f
+  ALU/shift/stage_3/ins10/InA (mux_2_1_21)                0.00       0.83 f
+  ALU/shift/stage_3/ins10/A/in1 (nand2_65)                0.00       0.83 f
+  ALU/shift/stage_3/ins10/A/U1/Y (AND2X2)                 0.03       0.87 f
+  ALU/shift/stage_3/ins10/A/U2/Y (INVX1)                  0.00       0.86 r
+  ALU/shift/stage_3/ins10/A/out (nand2_65)                0.00       0.86 r
+  ALU/shift/stage_3/ins10/U1/Y (BUFX2)                    0.03       0.89 r
+  ALU/shift/stage_3/ins10/C/in1 (nand2_63)                0.00       0.89 r
+  ALU/shift/stage_3/ins10/C/U1/Y (AND2X2)                 0.03       0.93 r
+  ALU/shift/stage_3/ins10/C/U2/Y (INVX1)                  0.02       0.94 f
+  ALU/shift/stage_3/ins10/C/out (nand2_63)                0.00       0.94 f
+  ALU/shift/stage_3/ins10/Out (mux_2_1_21)                0.00       0.94 f
+  ALU/shift/stage_3/Out_3<10> (mux_stage_3)               0.00       0.94 f
+  ALU/shift/stage_4/In_stage_4_A<10> (mux_stage_4)        0.00       0.94 f
+  ALU/shift/stage_4/U16/Y (INVX1)                         0.00       0.95 r
+  ALU/shift/stage_4/U27/Y (OAI21X1)                       0.01       0.96 f
+  ALU/shift/stage_4/ins2/InB (mux_2_1_13)                 0.00       0.96 f
+  ALU/shift/stage_4/ins2/B/in1 (nand2_40)                 0.00       0.96 f
+  ALU/shift/stage_4/ins2/B/U1/Y (AND2X2)                  0.03       0.99 f
+  ALU/shift/stage_4/ins2/B/U2/Y (INVX1)                   0.00       0.99 r
+  ALU/shift/stage_4/ins2/B/out (nand2_40)                 0.00       0.99 r
+  ALU/shift/stage_4/ins2/C/in2 (nand2_39)                 0.00       0.99 r
+  ALU/shift/stage_4/ins2/C/U1/Y (AND2X2)                  0.03       1.02 r
+  ALU/shift/stage_4/ins2/C/U2/Y (INVX1)                   0.02       1.04 f
+  ALU/shift/stage_4/ins2/C/out (nand2_39)                 0.00       1.04 f
+  ALU/shift/stage_4/ins2/Out (mux_2_1_13)                 0.00       1.04 f
+  ALU/shift/stage_4/Out_4<2> (mux_stage_4)                0.00       1.04 f
+  ALU/shift/U41/Y (INVX1)                                 0.00       1.04 r
+  ALU/shift/U6/Y (MUX2X1)                                 0.02       1.06 f
+  ALU/shift/Out<13> (shifter)                             0.00       1.06 f
+  ALU/U249/Y (AOI22X1)                                    0.03       1.08 r
+  ALU/U34/Y (BUFX2)                                       0.04       1.12 r
+  ALU/U153/Y (AND2X2)                                     0.03       1.15 r
+  ALU/U154/Y (INVX1)                                      0.02       1.17 f
+  ALU/Out<13> (alu)                                       0.00       1.17 f
+  control/alu_result<13> (wrt_ctrl)                       0.00       1.17 f
+  control/U229/Y (AOI22X1)                                0.03       1.19 r
+  control/U21/Y (BUFX2)                                   0.03       1.23 r
+  control/U9/Y (AND2X2)                                   0.03       1.26 r
+  control/U10/Y (INVX1)                                   0.01       1.27 f
+  control/writedata_EX<13> (wrt_ctrl)                     0.00       1.27 f
+  ex_mem/writedata_EX<13> (EX_MEM)                        0.00       1.27 f
+  ex_mem/writedataEX_MEM_dff[13]/d (dff_227)              0.00       1.27 f
+  ex_mem/writedataEX_MEM_dff[13]/U3/Y (INVX1)             0.00       1.28 r
+  ex_mem/writedataEX_MEM_dff[13]/U4/Y (NOR2X1)            0.01       1.28 f
+  ex_mem/writedataEX_MEM_dff[13]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.28 f
+  data arrival time                                                  1.28
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[13]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.28
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.34
+
+
+  Startpoint: if_id/instr_dff/bits[8]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: PC/pc[13]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_id/instr_dff/bits[8]/state_reg/CLK (DFFPOSX1)        0.00 #     0.00 r
+  if_id/instr_dff/bits[8]/state_reg/Q (DFFPOSX1)          0.11       0.11 f
+  if_id/instr_dff/bits[8]/q (dff_136)                     0.00       0.11 f
+  if_id/instr_dff/regvalue<8> (register_WIDTH16_9)        0.00       0.11 f
+  if_id/instr_IF_ID<8> (IF_ID)                            0.00       0.11 f
+  decoder/instr_IF_ID<8> (instr_decoder)                  0.00       0.11 f
+  decoder/U12/Y (INVX4)                                   0.02       0.13 r
+  decoder/U19/Y (INVX8)                                   0.03       0.16 f
+  decoder/read_reg1<0> (instr_decoder)                    0.00       0.16 f
+  rf/read1regsel<0> (rf_bypass)                           0.00       0.16 f
+  rf/ins1/read1regsel<0> (rf)                             0.00       0.16 f
+  rf/ins1/U337/Y (NAND3X1)                                0.03       0.19 r
+  rf/ins1/U205/Y (BUFX2)                                  0.05       0.23 r
+  rf/ins1/U199/Y (INVX8)                                  0.03       0.26 f
+  rf/ins1/U350/Y (NAND2X1)                                0.01       0.28 r
+  rf/ins1/U202/Y (AND2X2)                                 0.03       0.31 r
+  rf/ins1/U203/Y (INVX1)                                  0.02       0.32 f
+  rf/ins1/U35/Y (OR2X2)                                   0.04       0.36 f
+  rf/ins1/U42/Y (OR2X2)                                   0.04       0.40 f
+  rf/ins1/read1data<2> (rf)                               0.00       0.40 f
+  rf/U24/Y (AND2X2)                                       0.03       0.43 f
+  rf/U23/Y (OR2X2)                                        0.04       0.47 f
+  rf/read1data<2> (rf_bypass)                             0.00       0.47 f
+  ins2/rs<2> (for_unit2)                                  0.00       0.47 f
+  ins2/U5/Y (AND2X2)                                      0.03       0.50 f
+  ins2/U57/Y (INVX1)                                      0.00       0.50 r
+  ins2/U16/Y (AND2X2)                                     0.03       0.53 r
+  ins2/U17/Y (INVX1)                                      0.02       0.55 f
+  ins2/rs_bypass<2> (for_unit2)                           0.00       0.55 f
+  jump_out/rs<2> (pc_jump_out)                            0.00       0.55 f
+  jump_out/U43/Y (MUX2X1)                                 0.04       0.59 r
+  jump_out/U8/Y (INVX2)                                   0.02       0.61 f
+  jump_out/pc_jump/B<2> (cla16_1)                         0.00       0.61 f
+  jump_out/pc_jump/ins0/B<2> (cla4_7)                     0.00       0.61 f
+  jump_out/pc_jump/ins0/ins2/B (pfa_29)                   0.00       0.61 f
+  jump_out/pc_jump/ins0/ins2/U6/Y (INVX1)                 0.00       0.62 r
+  jump_out/pc_jump/ins0/ins2/U3/Y (OR2X2)                 0.04       0.66 r
+  jump_out/pc_jump/ins0/ins2/U4/Y (INVX1)                 0.02       0.67 f
+  jump_out/pc_jump/ins0/ins2/G (pfa_29)                   0.00       0.67 f
+  jump_out/pc_jump/ins0/header4/G2 (ahead4_8)             0.00       0.67 f
+  jump_out/pc_jump/ins0/header4/U21/Y (INVX1)             0.01       0.68 r
+  jump_out/pc_jump/ins0/header4/U17/Y (INVX1)             0.02       0.70 f
+  jump_out/pc_jump/ins0/header4/U29/Y (AOI21X1)           0.02       0.71 r
+  jump_out/pc_jump/ins0/header4/U28/Y (INVX1)             0.02       0.73 f
+  jump_out/pc_jump/ins0/header4/U32/Y (NAND3X1)           0.03       0.76 r
+  jump_out/pc_jump/ins0/header4/U3/Y (BUFX2)              0.04       0.80 r
+  jump_out/pc_jump/ins0/header4/U33/Y (NAND3X1)           0.01       0.81 f
+  jump_out/pc_jump/ins0/header4/G_g (ahead4_8)            0.00       0.81 f
+  jump_out/pc_jump/ins0/G_g (cla4_7)                      0.00       0.81 f
+  jump_out/pc_jump/top/G_g0 (top_ahead_1)                 0.00       0.81 f
+  jump_out/pc_jump/top/U2/Y (BUFX2)                       0.04       0.84 f
+  jump_out/pc_jump/top/ins0/G0 (ahead4_9)                 0.00       0.84 f
+  jump_out/pc_jump/top/ins0/U1/Y (INVX2)                  0.02       0.86 r
+  jump_out/pc_jump/top/ins0/U26/Y (OAI21X1)               0.01       0.88 f
+  jump_out/pc_jump/top/ins0/C1 (ahead4_9)                 0.00       0.88 f
+  jump_out/pc_jump/top/C4 (top_ahead_1)                   0.00       0.88 f
+  jump_out/pc_jump/ins1/C0 (cla4_6)                       0.00       0.88 f
+  jump_out/pc_jump/ins1/header4/C0 (ahead4_7)             0.00       0.88 f
+  jump_out/pc_jump/ins1/header4/U7/Y (AND2X2)             0.03       0.91 f
+  jump_out/pc_jump/ins1/header4/P_g (ahead4_7)            0.00       0.91 f
+  jump_out/pc_jump/ins1/P_g (cla4_6)                      0.00       0.91 f
+  jump_out/pc_jump/top/P_g1 (top_ahead_1)                 0.00       0.91 f
+  jump_out/pc_jump/top/ins0/P1 (ahead4_9)                 0.00       0.91 f
+  jump_out/pc_jump/top/ins0/U14/Y (INVX1)                 0.00       0.91 r
+  jump_out/pc_jump/top/ins0/U27/Y (OAI21X1)               0.02       0.93 f
+  jump_out/pc_jump/top/ins0/C2 (ahead4_9)                 0.00       0.93 f
+  jump_out/pc_jump/top/C8 (top_ahead_1)                   0.00       0.93 f
+  jump_out/pc_jump/ins2/C0 (cla4_5)                       0.00       0.93 f
+  jump_out/pc_jump/ins2/header4/C0 (ahead4_6)             0.00       0.93 f
+  jump_out/pc_jump/ins2/header4/U18/Y (NAND3X1)           0.03       0.96 r
+  jump_out/pc_jump/ins2/header4/U8/Y (INVX1)              0.02       0.98 f
+  jump_out/pc_jump/ins2/header4/U7/Y (AND2X2)             0.04       1.02 f
+  jump_out/pc_jump/ins2/header4/P_g (ahead4_6)            0.00       1.02 f
+  jump_out/pc_jump/ins2/P_g (cla4_5)                      0.00       1.02 f
+  jump_out/pc_jump/top/P_g2 (top_ahead_1)                 0.00       1.02 f
+  jump_out/pc_jump/top/ins0/P2 (ahead4_9)                 0.00       1.02 f
+  jump_out/pc_jump/top/ins0/U19/Y (AOI21X1)               0.03       1.06 r
+  jump_out/pc_jump/top/ins0/U8/Y (INVX1)                  0.02       1.08 f
+  jump_out/pc_jump/top/ins0/C3 (ahead4_9)                 0.00       1.08 f
+  jump_out/pc_jump/top/C12 (top_ahead_1)                  0.00       1.08 f
+  jump_out/pc_jump/ins3/C0 (cla4_4)                       0.00       1.08 f
+  jump_out/pc_jump/ins3/header4/C0 (ahead4_5)             0.00       1.08 f
+  jump_out/pc_jump/ins3/header4/U1/Y (INVX1)              0.00       1.08 r
+  jump_out/pc_jump/ins3/header4/U2/Y (INVX1)              0.02       1.10 f
+  jump_out/pc_jump/ins3/header4/U14/Y (AOI21X1)           0.04       1.13 r
+  jump_out/pc_jump/ins3/header4/U6/Y (BUFX2)              0.04       1.17 r
+  jump_out/pc_jump/ins3/header4/U24/Y (INVX1)             0.02       1.19 f
+  jump_out/pc_jump/ins3/header4/C1 (ahead4_5)             0.00       1.19 f
+  jump_out/pc_jump/ins3/ins1/Cin (pfa_18)                 0.00       1.19 f
+  jump_out/pc_jump/ins3/ins1/U2/Y (XNOR2X1)               0.03       1.22 f
+  jump_out/pc_jump/ins3/ins1/Sum (pfa_18)                 0.00       1.22 f
+  jump_out/pc_jump/ins3/Sum<1> (cla4_4)                   0.00       1.22 f
+  jump_out/pc_jump/Sum<13> (cla16_1)                      0.00       1.22 f
+  jump_out/pc_jump_out<13> (pc_jump_out)                  0.00       1.22 f
+  PC/pc_jump_out<13> (pc_unit)                            0.00       1.22 f
+  PC/U39/Y (AOI22X1)                                      0.03       1.25 r
+  PC/U40/Y (OAI21X1)                                      0.02       1.27 f
+  PC/pc[13]/d (dff_351)                                   0.00       1.27 f
+  PC/pc[13]/U3/Y (INVX1)                                  0.00       1.27 r
+  PC/pc[13]/U4/Y (NOR2X1)                                 0.01       1.28 f
+  PC/pc[13]/state_reg/D (DFFPOSX1)                        0.00       1.28 f
+  data arrival time                                                  1.28
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  PC/pc[13]/state_reg/CLK (DFFPOSX1)                      0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.28
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.33
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[5]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U5/Y (INVX1)                             0.00       0.39 r
+  ALU/inv_B/ins0/U3/Y (AND2X2)                            0.03       0.43 r
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.04       0.47 r
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.47 r
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.47 r
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 r
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 r
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 r
+  ALU/shift/stage_1/U5/Y (INVX2)                          0.03       0.54 f
+  ALU/shift/stage_1/U10/Y (INVX8)                         0.02       0.56 r
+  ALU/shift/stage_1/ins11/S (mux_2_1_52)                  0.00       0.56 r
+  ALU/shift/stage_1/ins11/nS/in1 (not1_52)                0.00       0.56 r
+  ALU/shift/stage_1/ins11/nS/U1/Y (INVX1)                 0.02       0.58 f
+  ALU/shift/stage_1/ins11/nS/out (not1_52)                0.00       0.58 f
+  ALU/shift/stage_1/ins11/A/in2 (nand2_158)               0.00       0.58 f
+  ALU/shift/stage_1/ins11/A/U1/Y (AND2X2)                 0.03       0.61 f
+  ALU/shift/stage_1/ins11/A/U2/Y (INVX1)                  0.00       0.61 r
+  ALU/shift/stage_1/ins11/A/out (nand2_158)               0.00       0.61 r
+  ALU/shift/stage_1/ins11/U1/Y (BUFX2)                    0.03       0.64 r
+  ALU/shift/stage_1/ins11/C/in1 (nand2_156)               0.00       0.64 r
+  ALU/shift/stage_1/ins11/C/U1/Y (AND2X2)                 0.03       0.67 r
+  ALU/shift/stage_1/ins11/C/U2/Y (INVX1)                  0.01       0.68 f
+  ALU/shift/stage_1/ins11/C/out (nand2_156)               0.00       0.68 f
+  ALU/shift/stage_1/ins11/Out (mux_2_1_52)                0.00       0.68 f
+  ALU/shift/stage_1/Out_1<11> (mux_stage_1)               0.00       0.68 f
+  ALU/shift/stage_2/In_stage_2_A<11> (mux_stage_2)        0.00       0.68 f
+  ALU/shift/stage_2/U12/Y (BUFX2)                         0.03       0.71 f
+  ALU/shift/stage_2/ins13/InB (mux_2_1_34)                0.00       0.71 f
+  ALU/shift/stage_2/ins13/B/in1 (nand2_103)               0.00       0.71 f
+  ALU/shift/stage_2/ins13/B/U1/Y (AND2X2)                 0.03       0.75 f
+  ALU/shift/stage_2/ins13/B/U2/Y (INVX1)                  0.00       0.74 r
+  ALU/shift/stage_2/ins13/B/out (nand2_103)               0.00       0.74 r
+  ALU/shift/stage_2/ins13/U2/Y (INVX1)                    0.01       0.76 f
+  ALU/shift/stage_2/ins13/U3/Y (INVX1)                    0.00       0.76 r
+  ALU/shift/stage_2/ins13/C/in2 (nand2_102)               0.00       0.76 r
+  ALU/shift/stage_2/ins13/C/U1/Y (AND2X2)                 0.03       0.79 r
+  ALU/shift/stage_2/ins13/C/U2/Y (INVX1)                  0.02       0.80 f
+  ALU/shift/stage_2/ins13/C/out (nand2_102)               0.00       0.80 f
+  ALU/shift/stage_2/ins13/Out (mux_2_1_34)                0.00       0.80 f
+  ALU/shift/stage_2/Out_2<13> (mux_stage_2)               0.00       0.80 f
+  ALU/shift/stage_3/In_stage_3_A<13> (mux_stage_3)        0.00       0.80 f
+  ALU/shift/stage_3/U7/Y (BUFX2)                          0.03       0.84 f
+  ALU/shift/stage_3/ins13/InA (mux_2_1_18)                0.00       0.84 f
+  ALU/shift/stage_3/ins13/A/in1 (nand2_56)                0.00       0.84 f
+  ALU/shift/stage_3/ins13/A/U1/Y (AND2X2)                 0.03       0.87 f
+  ALU/shift/stage_3/ins13/A/U2/Y (INVX1)                  0.00       0.87 r
+  ALU/shift/stage_3/ins13/A/out (nand2_56)                0.00       0.87 r
+  ALU/shift/stage_3/ins13/U1/Y (BUFX2)                    0.03       0.90 r
+  ALU/shift/stage_3/ins13/C/in1 (nand2_54)                0.00       0.90 r
+  ALU/shift/stage_3/ins13/C/U1/Y (AND2X2)                 0.03       0.93 r
+  ALU/shift/stage_3/ins13/C/U2/Y (INVX1)                  0.02       0.94 f
+  ALU/shift/stage_3/ins13/C/out (nand2_54)                0.00       0.94 f
+  ALU/shift/stage_3/ins13/Out (mux_2_1_18)                0.00       0.94 f
+  ALU/shift/stage_3/Out_3<13> (mux_stage_3)               0.00       0.94 f
+  ALU/shift/stage_4/In_stage_4_A<13> (mux_stage_4)        0.00       0.94 f
+  ALU/shift/stage_4/U6/Y (INVX1)                          0.00       0.95 r
+  ALU/shift/stage_4/U24/Y (OAI21X1)                       0.01       0.96 f
+  ALU/shift/stage_4/ins5/InB (mux_2_1_10)                 0.00       0.96 f
+  ALU/shift/stage_4/ins5/B/in1 (nand2_31)                 0.00       0.96 f
+  ALU/shift/stage_4/ins5/B/U1/Y (AND2X2)                  0.03       0.99 f
+  ALU/shift/stage_4/ins5/B/U2/Y (INVX1)                   0.00       0.99 r
+  ALU/shift/stage_4/ins5/B/out (nand2_31)                 0.00       0.99 r
+  ALU/shift/stage_4/ins5/C/in2 (nand2_30)                 0.00       0.99 r
+  ALU/shift/stage_4/ins5/C/U1/Y (AND2X2)                  0.03       1.02 r
+  ALU/shift/stage_4/ins5/C/U2/Y (INVX1)                   0.02       1.04 f
+  ALU/shift/stage_4/ins5/C/out (nand2_30)                 0.00       1.04 f
+  ALU/shift/stage_4/ins5/Out (mux_2_1_10)                 0.00       1.04 f
+  ALU/shift/stage_4/Out_4<5> (mux_stage_4)                0.00       1.04 f
+  ALU/shift/U8/Y (INVX1)                                  0.00       1.04 r
+  ALU/shift/U79/Y (MUX2X1)                                0.02       1.06 f
+  ALU/shift/Out<5> (shifter)                              0.00       1.06 f
+  ALU/U217/Y (AOI22X1)                                    0.03       1.09 r
+  ALU/U29/Y (BUFX2)                                       0.03       1.12 r
+  ALU/U46/Y (AND2X2)                                      0.03       1.15 r
+  ALU/U47/Y (INVX1)                                       0.02       1.17 f
+  ALU/Out<5> (alu)                                        0.00       1.17 f
+  control/alu_result<5> (wrt_ctrl)                        0.00       1.17 f
+  control/U184/Y (AOI22X1)                                0.04       1.21 r
+  control/U185/Y (AND2X2)                                 0.03       1.25 r
+  control/U186/Y (NAND3X1)                                0.01       1.26 f
+  control/writedata_EX<5> (wrt_ctrl)                      0.00       1.26 f
+  ex_mem/writedata_EX<5> (EX_MEM)                         0.00       1.26 f
+  ex_mem/writedataEX_MEM_dff[5]/d (dff_219)               0.00       1.26 f
+  ex_mem/writedataEX_MEM_dff[5]/U3/Y (INVX1)              0.00       1.26 r
+  ex_mem/writedataEX_MEM_dff[5]/U4/Y (NOR2X1)             0.01       1.27 f
+  ex_mem/writedataEX_MEM_dff[5]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.27 f
+  data arrival time                                                  1.27
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[5]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.27
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.32
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[2]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U5/Y (INVX1)                             0.00       0.39 r
+  ALU/inv_B/ins0/U3/Y (AND2X2)                            0.03       0.43 r
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.04       0.47 r
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.47 r
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.47 r
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 r
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 r
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 r
+  ALU/shift/stage_1/U5/Y (INVX2)                          0.03       0.54 f
+  ALU/shift/stage_1/U10/Y (INVX8)                         0.02       0.56 r
+  ALU/shift/stage_1/ins8/S (mux_2_1_55)                   0.00       0.56 r
+  ALU/shift/stage_1/ins8/nS/in1 (not1_55)                 0.00       0.56 r
+  ALU/shift/stage_1/ins8/nS/U1/Y (INVX1)                  0.02       0.58 f
+  ALU/shift/stage_1/ins8/nS/out (not1_55)                 0.00       0.58 f
+  ALU/shift/stage_1/ins8/A/in2 (nand2_167)                0.00       0.58 f
+  ALU/shift/stage_1/ins8/A/U1/Y (AND2X2)                  0.03       0.61 f
+  ALU/shift/stage_1/ins8/A/U2/Y (INVX1)                   0.00       0.61 r
+  ALU/shift/stage_1/ins8/A/out (nand2_167)                0.00       0.61 r
+  ALU/shift/stage_1/ins8/U3/Y (BUFX2)                     0.03       0.64 r
+  ALU/shift/stage_1/ins8/C/in1 (nand2_165)                0.00       0.64 r
+  ALU/shift/stage_1/ins8/C/U1/Y (AND2X2)                  0.03       0.67 r
+  ALU/shift/stage_1/ins8/C/U2/Y (INVX1)                   0.01       0.68 f
+  ALU/shift/stage_1/ins8/C/out (nand2_165)                0.00       0.68 f
+  ALU/shift/stage_1/ins8/Out (mux_2_1_55)                 0.00       0.68 f
+  ALU/shift/stage_1/Out_1<8> (mux_stage_1)                0.00       0.68 f
+  ALU/shift/stage_2/In_stage_2_A<8> (mux_stage_2)         0.00       0.68 f
+  ALU/shift/stage_2/U10/Y (BUFX2)                         0.03       0.71 f
+  ALU/shift/stage_2/U2/Y (INVX1)                          0.00       0.71 r
+  ALU/shift/stage_2/U3/Y (INVX1)                          0.01       0.72 f
+  ALU/shift/stage_2/ins10/InB (mux_2_1_37)                0.00       0.72 f
+  ALU/shift/stage_2/ins10/B/in1 (nand2_112)               0.00       0.72 f
+  ALU/shift/stage_2/ins10/B/U1/Y (AND2X2)                 0.04       0.76 f
+  ALU/shift/stage_2/ins10/B/U2/Y (INVX1)                  0.00       0.76 r
+  ALU/shift/stage_2/ins10/B/out (nand2_112)               0.00       0.76 r
+  ALU/shift/stage_2/ins10/C/in2 (nand2_111)               0.00       0.76 r
+  ALU/shift/stage_2/ins10/C/U1/Y (AND2X2)                 0.03       0.79 r
+  ALU/shift/stage_2/ins10/C/U2/Y (INVX1)                  0.01       0.80 f
+  ALU/shift/stage_2/ins10/C/out (nand2_111)               0.00       0.80 f
+  ALU/shift/stage_2/ins10/Out (mux_2_1_37)                0.00       0.80 f
+  ALU/shift/stage_2/Out_2<10> (mux_stage_2)               0.00       0.80 f
+  ALU/shift/stage_3/In_stage_3_A<10> (mux_stage_3)        0.00       0.80 f
+  ALU/shift/stage_3/U13/Y (BUFX2)                         0.03       0.83 f
+  ALU/shift/stage_3/ins10/InA (mux_2_1_21)                0.00       0.83 f
+  ALU/shift/stage_3/ins10/A/in1 (nand2_65)                0.00       0.83 f
+  ALU/shift/stage_3/ins10/A/U1/Y (AND2X2)                 0.03       0.87 f
+  ALU/shift/stage_3/ins10/A/U2/Y (INVX1)                  0.00       0.86 r
+  ALU/shift/stage_3/ins10/A/out (nand2_65)                0.00       0.86 r
+  ALU/shift/stage_3/ins10/U1/Y (BUFX2)                    0.03       0.89 r
+  ALU/shift/stage_3/ins10/C/in1 (nand2_63)                0.00       0.89 r
+  ALU/shift/stage_3/ins10/C/U1/Y (AND2X2)                 0.03       0.93 r
+  ALU/shift/stage_3/ins10/C/U2/Y (INVX1)                  0.02       0.94 f
+  ALU/shift/stage_3/ins10/C/out (nand2_63)                0.00       0.94 f
+  ALU/shift/stage_3/ins10/Out (mux_2_1_21)                0.00       0.94 f
+  ALU/shift/stage_3/Out_3<10> (mux_stage_3)               0.00       0.94 f
+  ALU/shift/stage_4/In_stage_4_A<10> (mux_stage_4)        0.00       0.94 f
+  ALU/shift/stage_4/U16/Y (INVX1)                         0.00       0.95 r
+  ALU/shift/stage_4/U27/Y (OAI21X1)                       0.01       0.96 f
+  ALU/shift/stage_4/ins2/InB (mux_2_1_13)                 0.00       0.96 f
+  ALU/shift/stage_4/ins2/B/in1 (nand2_40)                 0.00       0.96 f
+  ALU/shift/stage_4/ins2/B/U1/Y (AND2X2)                  0.03       0.99 f
+  ALU/shift/stage_4/ins2/B/U2/Y (INVX1)                   0.00       0.99 r
+  ALU/shift/stage_4/ins2/B/out (nand2_40)                 0.00       0.99 r
+  ALU/shift/stage_4/ins2/C/in2 (nand2_39)                 0.00       0.99 r
+  ALU/shift/stage_4/ins2/C/U1/Y (AND2X2)                  0.03       1.02 r
+  ALU/shift/stage_4/ins2/C/U2/Y (INVX1)                   0.02       1.04 f
+  ALU/shift/stage_4/ins2/C/out (nand2_39)                 0.00       1.04 f
+  ALU/shift/stage_4/ins2/Out (mux_2_1_13)                 0.00       1.04 f
+  ALU/shift/stage_4/Out_4<2> (mux_stage_4)                0.00       1.04 f
+  ALU/shift/U5/Y (INVX1)                                  0.00       1.04 r
+  ALU/shift/U76/Y (MUX2X1)                                0.02       1.06 f
+  ALU/shift/Out<2> (shifter)                              0.00       1.06 f
+  ALU/U205/Y (AOI22X1)                                    0.03       1.09 r
+  ALU/U32/Y (BUFX2)                                       0.04       1.12 r
+  ALU/U42/Y (AND2X2)                                      0.03       1.15 r
+  ALU/U43/Y (INVX1)                                       0.02       1.17 f
+  ALU/Out<2> (alu)                                        0.00       1.17 f
+  control/alu_result<2> (wrt_ctrl)                        0.00       1.17 f
+  control/U166/Y (AOI22X1)                                0.04       1.21 r
+  control/U167/Y (AND2X2)                                 0.03       1.25 r
+  control/U168/Y (NAND3X1)                                0.01       1.25 f
+  control/writedata_EX<2> (wrt_ctrl)                      0.00       1.25 f
+  ex_mem/writedata_EX<2> (EX_MEM)                         0.00       1.25 f
+  ex_mem/writedataEX_MEM_dff[2]/d (dff_216)               0.00       1.25 f
+  ex_mem/writedataEX_MEM_dff[2]/U3/Y (INVX1)              0.00       1.26 r
+  ex_mem/writedataEX_MEM_dff[2]/U4/Y (NOR2X1)             0.01       1.26 f
+  ex_mem/writedataEX_MEM_dff[2]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.26 f
+  data arrival time                                                  1.26
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[2]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.26
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.32
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[7]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U1/Y (AND2X2)                            0.03       0.43 f
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.05       0.48 f
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.48 f
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.48 f
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 f
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 f
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 f
+  ALU/shift/stage_1/U6/Y (INVX1)                          0.01       0.52 r
+  ALU/shift/stage_1/U2/Y (INVX1)                          0.01       0.53 f
+  ALU/shift/stage_1/ins1/S (mux_2_1_62)                   0.00       0.53 f
+  ALU/shift/stage_1/ins1/U1/Y (INVX1)                     0.00       0.53 r
+  ALU/shift/stage_1/ins1/U2/Y (INVX1)                     0.01       0.55 f
+  ALU/shift/stage_1/ins1/B/in2 (nand2_187)                0.00       0.55 f
+  ALU/shift/stage_1/ins1/B/U1/Y (AND2X2)                  0.04       0.58 f
+  ALU/shift/stage_1/ins1/B/U2/Y (INVX1)                   0.00       0.58 r
+  ALU/shift/stage_1/ins1/B/out (nand2_187)                0.00       0.58 r
+  ALU/shift/stage_1/ins1/U3/Y (BUFX2)                     0.03       0.61 r
+  ALU/shift/stage_1/ins1/C/in2 (nand2_186)                0.00       0.61 r
+  ALU/shift/stage_1/ins1/C/U1/Y (AND2X2)                  0.03       0.64 r
+  ALU/shift/stage_1/ins1/C/U2/Y (INVX1)                   0.01       0.65 f
+  ALU/shift/stage_1/ins1/C/out (nand2_186)                0.00       0.65 f
+  ALU/shift/stage_1/ins1/Out (mux_2_1_62)                 0.00       0.65 f
+  ALU/shift/stage_1/Out_1<1> (mux_stage_1)                0.00       0.65 f
+  ALU/shift/stage_2/In_stage_2_A<1> (mux_stage_2)         0.00       0.65 f
+  ALU/shift/stage_2/U6/Y (BUFX2)                          0.03       0.69 f
+  ALU/shift/stage_2/ins3/InB (mux_2_1_44)                 0.00       0.69 f
+  ALU/shift/stage_2/ins3/B/in1 (nand2_133)                0.00       0.69 f
+  ALU/shift/stage_2/ins3/B/U1/Y (AND2X2)                  0.03       0.72 f
+  ALU/shift/stage_2/ins3/B/U2/Y (INVX1)                   0.00       0.72 r
+  ALU/shift/stage_2/ins3/B/out (nand2_133)                0.00       0.72 r
+  ALU/shift/stage_2/ins3/U1/Y (BUFX2)                     0.03       0.75 r
+  ALU/shift/stage_2/ins3/C/in2 (nand2_132)                0.00       0.75 r
+  ALU/shift/stage_2/ins3/C/U1/Y (AND2X2)                  0.03       0.78 r
+  ALU/shift/stage_2/ins3/C/U2/Y (INVX1)                   0.01       0.79 f
+  ALU/shift/stage_2/ins3/C/out (nand2_132)                0.00       0.79 f
+  ALU/shift/stage_2/ins3/Out (mux_2_1_44)                 0.00       0.79 f
+  ALU/shift/stage_2/Out_2<3> (mux_stage_2)                0.00       0.79 f
+  ALU/shift/stage_3/In_stage_3_A<3> (mux_stage_3)         0.00       0.79 f
+  ALU/shift/stage_3/U10/Y (BUFX2)                         0.03       0.83 f
+  ALU/shift/stage_3/ins7/InB (mux_2_1_24)                 0.00       0.83 f
+  ALU/shift/stage_3/ins7/B/in1 (nand2_73)                 0.00       0.83 f
+  ALU/shift/stage_3/ins7/B/U1/Y (AND2X2)                  0.03       0.86 f
+  ALU/shift/stage_3/ins7/B/U2/Y (INVX1)                   0.00       0.85 r
+  ALU/shift/stage_3/ins7/B/out (nand2_73)                 0.00       0.85 r
+  ALU/shift/stage_3/ins7/U1/Y (BUFX2)                     0.03       0.89 r
+  ALU/shift/stage_3/ins7/C/in2 (nand2_72)                 0.00       0.89 r
+  ALU/shift/stage_3/ins7/C/U1/Y (AND2X1)                  0.03       0.91 r
+  ALU/shift/stage_3/ins7/C/U2/Y (INVX1)                   0.02       0.94 f
+  ALU/shift/stage_3/ins7/C/out (nand2_72)                 0.00       0.94 f
+  ALU/shift/stage_3/ins7/Out (mux_2_1_24)                 0.00       0.94 f
+  ALU/shift/stage_3/Out_3<7> (mux_stage_3)                0.00       0.94 f
+  ALU/shift/stage_4/In_stage_4_A<7> (mux_stage_4)         0.00       0.94 f
+  ALU/shift/stage_4/ins7/InA (mux_2_1_8)                  0.00       0.94 f
+  ALU/shift/stage_4/ins7/A/in1 (nand2_26)                 0.00       0.94 f
+  ALU/shift/stage_4/ins7/A/U1/Y (AND2X2)                  0.04       0.98 f
+  ALU/shift/stage_4/ins7/A/U2/Y (INVX1)                   0.00       0.97 r
+  ALU/shift/stage_4/ins7/A/out (nand2_26)                 0.00       0.97 r
+  ALU/shift/stage_4/ins7/C/in1 (nand2_24)                 0.00       0.97 r
+  ALU/shift/stage_4/ins7/C/U1/Y (AND2X2)                  0.03       1.00 r
+  ALU/shift/stage_4/ins7/C/U2/Y (INVX1)                   0.02       1.02 f
+  ALU/shift/stage_4/ins7/C/out (nand2_24)                 0.00       1.02 f
+  ALU/shift/stage_4/ins7/Out (mux_2_1_8)                  0.00       1.02 f
+  ALU/shift/stage_4/Out_4<7> (mux_stage_4)                0.00       1.02 f
+  ALU/shift/U37/Y (INVX1)                                 0.00       1.02 r
+  ALU/shift/U81/Y (MUX2X1)                                0.02       1.04 f
+  ALU/shift/Out<7> (shifter)                              0.00       1.04 f
+  ALU/U225/Y (AOI22X1)                                    0.04       1.08 r
+  ALU/U132/Y (BUFX2)                                      0.04       1.11 r
+  ALU/U129/Y (AND2X2)                                     0.03       1.14 r
+  ALU/U130/Y (INVX1)                                      0.02       1.16 f
+  ALU/Out<7> (alu)                                        0.00       1.16 f
+  control/alu_result<7> (wrt_ctrl)                        0.00       1.16 f
+  control/U196/Y (AOI22X1)                                0.05       1.21 r
+  control/U197/Y (AND2X2)                                 0.03       1.24 r
+  control/U198/Y (NAND3X1)                                0.01       1.25 f
+  control/writedata_EX<7> (wrt_ctrl)                      0.00       1.25 f
+  ex_mem/writedata_EX<7> (EX_MEM)                         0.00       1.25 f
+  ex_mem/writedataEX_MEM_dff[7]/d (dff_221)               0.00       1.25 f
+  ex_mem/writedataEX_MEM_dff[7]/U3/Y (INVX1)              0.00       1.25 r
+  ex_mem/writedataEX_MEM_dff[7]/U4/Y (NOR2X1)             0.01       1.26 f
+  ex_mem/writedataEX_MEM_dff[7]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.26 f
+  data arrival time                                                  1.26
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[7]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.26
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.32
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[3]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U1/Y (AND2X2)                            0.03       0.43 f
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.05       0.48 f
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.48 f
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.48 f
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 f
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 f
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 f
+  ALU/shift/stage_1/U5/Y (INVX2)                          0.02       0.54 r
+  ALU/shift/stage_1/U10/Y (INVX8)                         0.03       0.56 f
+  ALU/shift/stage_1/ins14/S (mux_2_1_49)                  0.00       0.56 f
+  ALU/shift/stage_1/ins14/B/in2 (nand2_148)               0.00       0.56 f
+  ALU/shift/stage_1/ins14/B/U1/Y (AND2X2)                 0.03       0.60 f
+  ALU/shift/stage_1/ins14/B/U2/Y (INVX1)                  0.00       0.59 r
+  ALU/shift/stage_1/ins14/B/out (nand2_148)               0.00       0.59 r
+  ALU/shift/stage_1/ins14/U1/Y (BUFX2)                    0.03       0.62 r
+  ALU/shift/stage_1/ins14/C/in2 (nand2_147)               0.00       0.62 r
+  ALU/shift/stage_1/ins14/C/U1/Y (AND2X2)                 0.03       0.65 r
+  ALU/shift/stage_1/ins14/C/U2/Y (INVX1)                  0.02       0.67 f
+  ALU/shift/stage_1/ins14/C/out (nand2_147)               0.00       0.67 f
+  ALU/shift/stage_1/ins14/Out (mux_2_1_49)                0.00       0.67 f
+  ALU/shift/stage_1/Out_1<14> (mux_stage_1)               0.00       0.67 f
+  ALU/shift/stage_2/In_stage_2_A<14> (mux_stage_2)        0.00       0.67 f
+  ALU/shift/stage_2/U16/Y (INVX1)                         0.00       0.68 r
+  ALU/shift/stage_2/U20/Y (MUX2X1)                        0.02       0.69 f
+  ALU/shift/stage_2/ins0/InB (mux_2_1_47)                 0.00       0.69 f
+  ALU/shift/stage_2/ins0/B/in1 (nand2_142)                0.00       0.69 f
+  ALU/shift/stage_2/ins0/B/U1/Y (AND2X2)                  0.04       0.73 f
+  ALU/shift/stage_2/ins0/B/U2/Y (INVX1)                   0.00       0.72 r
+  ALU/shift/stage_2/ins0/B/out (nand2_142)                0.00       0.72 r
+  ALU/shift/stage_2/ins0/U1/Y (BUFX2)                     0.03       0.75 r
+  ALU/shift/stage_2/ins0/C/in2 (nand2_141)                0.00       0.75 r
+  ALU/shift/stage_2/ins0/C/U1/Y (AND2X2)                  0.03       0.79 r
+  ALU/shift/stage_2/ins0/C/U2/Y (INVX1)                   0.02       0.80 f
+  ALU/shift/stage_2/ins0/C/out (nand2_141)                0.00       0.80 f
+  ALU/shift/stage_2/ins0/Out (mux_2_1_47)                 0.00       0.80 f
+  ALU/shift/stage_2/Out_2<0> (mux_stage_2)                0.00       0.80 f
+  ALU/shift/stage_3/In_stage_3_A<0> (mux_stage_3)         0.00       0.80 f
+  ALU/shift/stage_3/ins4/InB (mux_2_1_27)                 0.00       0.80 f
+  ALU/shift/stage_3/ins4/B/in1 (nand2_82)                 0.00       0.80 f
+  ALU/shift/stage_3/ins4/B/U1/Y (AND2X2)                  0.03       0.84 f
+  ALU/shift/stage_3/ins4/B/U2/Y (INVX1)                   0.00       0.83 r
+  ALU/shift/stage_3/ins4/B/out (nand2_82)                 0.00       0.83 r
+  ALU/shift/stage_3/ins4/U1/Y (BUFX2)                     0.03       0.86 r
+  ALU/shift/stage_3/ins4/C/in2 (nand2_81)                 0.00       0.86 r
+  ALU/shift/stage_3/ins4/C/U1/Y (AND2X2)                  0.03       0.89 r
+  ALU/shift/stage_3/ins4/C/U2/Y (INVX1)                   0.01       0.91 f
+  ALU/shift/stage_3/ins4/C/out (nand2_81)                 0.00       0.91 f
+  ALU/shift/stage_3/ins4/Out (mux_2_1_27)                 0.00       0.91 f
+  ALU/shift/stage_3/Out_3<4> (mux_stage_3)                0.00       0.91 f
+  ALU/shift/stage_4/In_stage_4_A<4> (mux_stage_4)         0.00       0.91 f
+  ALU/shift/stage_4/U8/Y (BUFX2)                          0.03       0.94 f
+  ALU/shift/stage_4/ins12/InB (mux_2_1_3)                 0.00       0.94 f
+  ALU/shift/stage_4/ins12/B/in1 (nand2_10)                0.00       0.94 f
+  ALU/shift/stage_4/ins12/B/U1/Y (AND2X2)                 0.03       0.98 f
+  ALU/shift/stage_4/ins12/B/U2/Y (INVX1)                  0.00       0.97 r
+  ALU/shift/stage_4/ins12/B/out (nand2_10)                0.00       0.97 r
+  ALU/shift/stage_4/ins12/C/in2 (nand2_9)                 0.00       0.97 r
+  ALU/shift/stage_4/ins12/C/U1/Y (AND2X2)                 0.03       1.00 r
+  ALU/shift/stage_4/ins12/C/U2/Y (INVX1)                  0.02       1.02 f
+  ALU/shift/stage_4/ins12/C/out (nand2_9)                 0.00       1.02 f
+  ALU/shift/stage_4/ins12/Out (mux_2_1_3)                 0.00       1.02 f
+  ALU/shift/stage_4/Out_4<12> (mux_stage_4)               0.00       1.02 f
+  ALU/shift/U29/Y (INVX1)                                 0.00       1.02 r
+  ALU/shift/U77/Y (MUX2X1)                                0.02       1.04 f
+  ALU/shift/Out<3> (shifter)                              0.00       1.04 f
+  ALU/U209/Y (AOI22X1)                                    0.04       1.08 r
+  ALU/U28/Y (BUFX2)                                       0.03       1.12 r
+  ALU/U44/Y (AND2X2)                                      0.03       1.15 r
+  ALU/U45/Y (INVX1)                                       0.02       1.17 f
+  ALU/Out<3> (alu)                                        0.00       1.17 f
+  control/alu_result<3> (wrt_ctrl)                        0.00       1.17 f
+  control/U172/Y (AOI22X1)                                0.04       1.21 r
+  control/U173/Y (AND2X2)                                 0.03       1.24 r
+  control/U174/Y (NAND3X1)                                0.01       1.25 f
+  control/writedata_EX<3> (wrt_ctrl)                      0.00       1.25 f
+  ex_mem/writedata_EX<3> (EX_MEM)                         0.00       1.25 f
+  ex_mem/writedataEX_MEM_dff[3]/d (dff_217)               0.00       1.25 f
+  ex_mem/writedataEX_MEM_dff[3]/U3/Y (INVX1)              0.00       1.25 r
+  ex_mem/writedataEX_MEM_dff[3]/U4/Y (NOR2X1)             0.01       1.26 f
+  ex_mem/writedataEX_MEM_dff[3]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.26 f
+  data arrival time                                                  1.26
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[3]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.26
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.31
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[6]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U5/Y (INVX1)                             0.00       0.39 r
+  ALU/inv_B/ins0/U3/Y (AND2X2)                            0.03       0.43 r
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.04       0.47 r
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.47 r
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.47 r
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 r
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 r
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 r
+  ALU/shift/stage_1/U5/Y (INVX2)                          0.03       0.54 f
+  ALU/shift/stage_1/U10/Y (INVX8)                         0.02       0.56 r
+  ALU/shift/stage_1/ins7/S (mux_2_1_56)                   0.00       0.56 r
+  ALU/shift/stage_1/ins7/nS/in1 (not1_56)                 0.00       0.56 r
+  ALU/shift/stage_1/ins7/nS/U1/Y (INVX1)                  0.02       0.58 f
+  ALU/shift/stage_1/ins7/nS/out (not1_56)                 0.00       0.58 f
+  ALU/shift/stage_1/ins7/A/in2 (nand2_170)                0.00       0.58 f
+  ALU/shift/stage_1/ins7/A/U1/Y (AND2X2)                  0.03       0.61 f
+  ALU/shift/stage_1/ins7/A/U2/Y (INVX1)                   0.00       0.61 r
+  ALU/shift/stage_1/ins7/A/out (nand2_170)                0.00       0.61 r
+  ALU/shift/stage_1/ins7/U3/Y (BUFX2)                     0.03       0.64 r
+  ALU/shift/stage_1/ins7/C/in1 (nand2_168)                0.00       0.64 r
+  ALU/shift/stage_1/ins7/C/U1/Y (AND2X2)                  0.03       0.67 r
+  ALU/shift/stage_1/ins7/C/U2/Y (INVX1)                   0.01       0.68 f
+  ALU/shift/stage_1/ins7/C/out (nand2_168)                0.00       0.68 f
+  ALU/shift/stage_1/ins7/Out (mux_2_1_56)                 0.00       0.68 f
+  ALU/shift/stage_1/Out_1<7> (mux_stage_1)                0.00       0.68 f
+  ALU/shift/stage_2/In_stage_2_A<7> (mux_stage_2)         0.00       0.68 f
+  ALU/shift/stage_2/U9/Y (BUFX2)                          0.03       0.71 f
+  ALU/shift/stage_2/ins9/InB (mux_2_1_38)                 0.00       0.71 f
+  ALU/shift/stage_2/ins9/B/in1 (nand2_115)                0.00       0.71 f
+  ALU/shift/stage_2/ins9/B/U1/Y (AND2X2)                  0.03       0.75 f
+  ALU/shift/stage_2/ins9/B/U2/Y (INVX1)                   0.00       0.74 r
+  ALU/shift/stage_2/ins9/B/out (nand2_115)                0.00       0.74 r
+  ALU/shift/stage_2/ins9/U2/Y (BUFX2)                     0.03       0.78 r
+  ALU/shift/stage_2/ins9/C/in2 (nand2_114)                0.00       0.78 r
+  ALU/shift/stage_2/ins9/C/U1/Y (AND2X2)                  0.03       0.81 r
+  ALU/shift/stage_2/ins9/C/U2/Y (INVX1)                   0.02       0.82 f
+  ALU/shift/stage_2/ins9/C/out (nand2_114)                0.00       0.82 f
+  ALU/shift/stage_2/ins9/Out (mux_2_1_38)                 0.00       0.82 f
+  ALU/shift/stage_2/Out_2<9> (mux_stage_2)                0.00       0.82 f
+  ALU/shift/stage_3/In_stage_3_A<9> (mux_stage_3)         0.00       0.82 f
+  ALU/shift/stage_3/ins9/InA (mux_2_1_22)                 0.00       0.82 f
+  ALU/shift/stage_3/ins9/A/in1 (nand2_68)                 0.00       0.82 f
+  ALU/shift/stage_3/ins9/A/U1/Y (AND2X2)                  0.04       0.86 f
+  ALU/shift/stage_3/ins9/A/U2/Y (INVX1)                   0.00       0.86 r
+  ALU/shift/stage_3/ins9/A/out (nand2_68)                 0.00       0.86 r
+  ALU/shift/stage_3/ins9/U1/Y (BUFX2)                     0.03       0.89 r
+  ALU/shift/stage_3/ins9/C/in1 (nand2_66)                 0.00       0.89 r
+  ALU/shift/stage_3/ins9/C/U1/Y (AND2X2)                  0.03       0.92 r
+  ALU/shift/stage_3/ins9/C/U2/Y (INVX1)                   0.02       0.94 f
+  ALU/shift/stage_3/ins9/C/out (nand2_66)                 0.00       0.94 f
+  ALU/shift/stage_3/ins9/Out (mux_2_1_22)                 0.00       0.94 f
+  ALU/shift/stage_3/Out_3<9> (mux_stage_3)                0.00       0.94 f
+  ALU/shift/stage_4/In_stage_4_A<9> (mux_stage_4)         0.00       0.94 f
+  ALU/shift/stage_4/ins9/InA (mux_2_1_6)                  0.00       0.94 f
+  ALU/shift/stage_4/ins9/A/in1 (nand2_20)                 0.00       0.94 f
+  ALU/shift/stage_4/ins9/A/U1/Y (AND2X2)                  0.03       0.97 f
+  ALU/shift/stage_4/ins9/A/U2/Y (INVX1)                   0.00       0.97 r
+  ALU/shift/stage_4/ins9/A/out (nand2_20)                 0.00       0.97 r
+  ALU/shift/stage_4/ins9/C/in1 (nand2_18)                 0.00       0.97 r
+  ALU/shift/stage_4/ins9/C/U1/Y (AND2X2)                  0.03       1.00 r
+  ALU/shift/stage_4/ins9/C/U2/Y (INVX1)                   0.02       1.01 f
+  ALU/shift/stage_4/ins9/C/out (nand2_18)                 0.00       1.01 f
+  ALU/shift/stage_4/ins9/Out (mux_2_1_6)                  0.00       1.01 f
+  ALU/shift/stage_4/Out_4<9> (mux_stage_4)                0.00       1.01 f
+  ALU/shift/U38/Y (INVX1)                                 0.00       1.02 r
+  ALU/shift/U80/Y (MUX2X1)                                0.02       1.04 f
+  ALU/shift/Out<6> (shifter)                              0.00       1.04 f
+  ALU/U221/Y (AOI22X1)                                    0.04       1.07 r
+  ALU/U126/Y (BUFX2)                                      0.04       1.11 r
+  ALU/U123/Y (AND2X2)                                     0.03       1.14 r
+  ALU/U124/Y (INVX1)                                      0.02       1.16 f
+  ALU/Out<6> (alu)                                        0.00       1.16 f
+  control/alu_result<6> (wrt_ctrl)                        0.00       1.16 f
+  control/U190/Y (AOI22X1)                                0.05       1.21 r
+  control/U191/Y (AND2X2)                                 0.03       1.24 r
+  control/U192/Y (NAND3X1)                                0.01       1.25 f
+  control/writedata_EX<6> (wrt_ctrl)                      0.00       1.25 f
+  ex_mem/writedata_EX<6> (EX_MEM)                         0.00       1.25 f
+  ex_mem/writedataEX_MEM_dff[6]/d (dff_220)               0.00       1.25 f
+  ex_mem/writedataEX_MEM_dff[6]/U3/Y (INVX1)              0.00       1.25 r
+  ex_mem/writedataEX_MEM_dff[6]/U4/Y (NOR2X1)             0.01       1.26 f
+  ex_mem/writedataEX_MEM_dff[6]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.26 f
+  data arrival time                                                  1.26
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[6]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.26
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.31
+
+
+  Startpoint: id_ex/read_reg2_dff[0]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ex_mem/writedataEX_MEM_dff[14]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_ex/read_reg2_dff[0]/state_reg/CLK (DFFPOSX1)         0.00 #     0.00 r
+  id_ex/read_reg2_dff[0]/state_reg/Q (DFFPOSX1)           0.11       0.11 f
+  id_ex/read_reg2_dff[0]/q (dff_233)                      0.00       0.11 f
+  id_ex/read_reg2_ID_EX<0> (ID_EX)                        0.00       0.11 f
+  ins1/read_reg2_ID_EX<0> (for_unit_1)                    0.00       0.11 f
+  ins1/U219/Y (XNOR2X1)                                   0.05       0.16 r
+  ins1/U103/Y (OR2X2)                                     0.05       0.21 r
+  ins1/U105/Y (INVX1)                                     0.02       0.23 f
+  ins1/U148/Y (AND2X2)                                    0.03       0.26 f
+  ins1/U135/Y (INVX1)                                     0.00       0.26 r
+  ins1/U348/Y (NAND3X1)                                   0.01       0.27 f
+  ins1/U349/Y (NAND3X1)                                   0.04       0.31 r
+  ins1/U58/Y (BUFX2)                                      0.03       0.34 r
+  ins1/U36/Y (AND2X2)                                     0.03       0.38 r
+  ins1/U37/Y (INVX1)                                      0.02       0.39 f
+  ins1/alu_B<0> (for_unit_1)                              0.00       0.39 f
+  ALU/B<0> (alu)                                          0.00       0.39 f
+  ALU/inv_B/In<0> (input_inv_0)                           0.00       0.39 f
+  ALU/inv_B/ins0/in1 (xor2_16)                            0.00       0.39 f
+  ALU/inv_B/ins0/U5/Y (INVX1)                             0.00       0.39 r
+  ALU/inv_B/ins0/U3/Y (AND2X2)                            0.03       0.43 r
+  ALU/inv_B/ins0/U2/Y (OR2X2)                             0.04       0.47 r
+  ALU/inv_B/ins0/out (xor2_16)                            0.00       0.47 r
+  ALU/inv_B/Out<0> (input_inv_0)                          0.00       0.47 r
+  ALU/U52/Y (BUFX2)                                       0.04       0.51 r
+  ALU/shift/Cnt<0> (shifter)                              0.00       0.51 r
+  ALU/shift/stage_1/Cnt_0 (mux_stage_1)                   0.00       0.51 r
+  ALU/shift/stage_1/U5/Y (INVX2)                          0.03       0.54 f
+  ALU/shift/stage_1/U10/Y (INVX8)                         0.02       0.56 r
+  ALU/shift/stage_1/ins7/S (mux_2_1_56)                   0.00       0.56 r
+  ALU/shift/stage_1/ins7/nS/in1 (not1_56)                 0.00       0.56 r
+  ALU/shift/stage_1/ins7/nS/U1/Y (INVX1)                  0.02       0.58 f
+  ALU/shift/stage_1/ins7/nS/out (not1_56)                 0.00       0.58 f
+  ALU/shift/stage_1/ins7/A/in2 (nand2_170)                0.00       0.58 f
+  ALU/shift/stage_1/ins7/A/U1/Y (AND2X2)                  0.03       0.61 f
+  ALU/shift/stage_1/ins7/A/U2/Y (INVX1)                   0.00       0.61 r
+  ALU/shift/stage_1/ins7/A/out (nand2_170)                0.00       0.61 r
+  ALU/shift/stage_1/ins7/U3/Y (BUFX2)                     0.03       0.64 r
+  ALU/shift/stage_1/ins7/C/in1 (nand2_168)                0.00       0.64 r
+  ALU/shift/stage_1/ins7/C/U1/Y (AND2X2)                  0.03       0.67 r
+  ALU/shift/stage_1/ins7/C/U2/Y (INVX1)                   0.01       0.68 f
+  ALU/shift/stage_1/ins7/C/out (nand2_168)                0.00       0.68 f
+  ALU/shift/stage_1/ins7/Out (mux_2_1_56)                 0.00       0.68 f
+  ALU/shift/stage_1/Out_1<7> (mux_stage_1)                0.00       0.68 f
+  ALU/shift/stage_2/In_stage_2_A<7> (mux_stage_2)         0.00       0.68 f
+  ALU/shift/stage_2/U9/Y (BUFX2)                          0.03       0.71 f
+  ALU/shift/stage_2/ins9/InB (mux_2_1_38)                 0.00       0.71 f
+  ALU/shift/stage_2/ins9/B/in1 (nand2_115)                0.00       0.71 f
+  ALU/shift/stage_2/ins9/B/U1/Y (AND2X2)                  0.03       0.75 f
+  ALU/shift/stage_2/ins9/B/U2/Y (INVX1)                   0.00       0.74 r
+  ALU/shift/stage_2/ins9/B/out (nand2_115)                0.00       0.74 r
+  ALU/shift/stage_2/ins9/U2/Y (BUFX2)                     0.03       0.78 r
+  ALU/shift/stage_2/ins9/C/in2 (nand2_114)                0.00       0.78 r
+  ALU/shift/stage_2/ins9/C/U1/Y (AND2X2)                  0.03       0.81 r
+  ALU/shift/stage_2/ins9/C/U2/Y (INVX1)                   0.02       0.82 f
+  ALU/shift/stage_2/ins9/C/out (nand2_114)                0.00       0.82 f
+  ALU/shift/stage_2/ins9/Out (mux_2_1_38)                 0.00       0.82 f
+  ALU/shift/stage_2/Out_2<9> (mux_stage_2)                0.00       0.82 f
+  ALU/shift/stage_3/In_stage_3_A<9> (mux_stage_3)         0.00       0.82 f
+  ALU/shift/stage_3/ins9/InA (mux_2_1_22)                 0.00       0.82 f
+  ALU/shift/stage_3/ins9/A/in1 (nand2_68)                 0.00       0.82 f
+  ALU/shift/stage_3/ins9/A/U1/Y (AND2X2)                  0.04       0.86 f
+  ALU/shift/stage_3/ins9/A/U2/Y (INVX1)                   0.00       0.86 r
+  ALU/shift/stage_3/ins9/A/out (nand2_68)                 0.00       0.86 r
+  ALU/shift/stage_3/ins9/U1/Y (BUFX2)                     0.03       0.89 r
+  ALU/shift/stage_3/ins9/C/in1 (nand2_66)                 0.00       0.89 r
+  ALU/shift/stage_3/ins9/C/U1/Y (AND2X2)                  0.03       0.92 r
+  ALU/shift/stage_3/ins9/C/U2/Y (INVX1)                   0.02       0.94 f
+  ALU/shift/stage_3/ins9/C/out (nand2_66)                 0.00       0.94 f
+  ALU/shift/stage_3/ins9/Out (mux_2_1_22)                 0.00       0.94 f
+  ALU/shift/stage_3/Out_3<9> (mux_stage_3)                0.00       0.94 f
+  ALU/shift/stage_4/In_stage_4_A<9> (mux_stage_4)         0.00       0.94 f
+  ALU/shift/stage_4/U19/Y (INVX1)                         0.00       0.94 r
+  ALU/shift/stage_4/U28/Y (OAI21X1)                       0.01       0.95 f
+  ALU/shift/stage_4/ins1/InB (mux_2_1_14)                 0.00       0.95 f
+  ALU/shift/stage_4/ins1/B/in1 (nand2_43)                 0.00       0.95 f
+  ALU/shift/stage_4/ins1/B/U1/Y (AND2X2)                  0.04       0.99 f
+  ALU/shift/stage_4/ins1/B/U2/Y (INVX1)                   0.00       0.98 r
+  ALU/shift/stage_4/ins1/B/out (nand2_43)                 0.00       0.98 r
+  ALU/shift/stage_4/ins1/U2/Y (BUFX2)                     0.03       1.02 r
+  ALU/shift/stage_4/ins1/C/in2 (nand2_42)                 0.00       1.02 r
+  ALU/shift/stage_4/ins1/C/U1/Y (AND2X2)                  0.03       1.05 r
+  ALU/shift/stage_4/ins1/C/U2/Y (INVX1)                   0.01       1.06 f
+  ALU/shift/stage_4/ins1/C/out (nand2_42)                 0.00       1.06 f
+  ALU/shift/stage_4/ins1/Out (mux_2_1_14)                 0.00       1.06 f
+  ALU/shift/stage_4/Out_4<1> (mux_stage_4)                0.00       1.06 f
+  ALU/shift/U40/Y (INVX1)                                 0.01       1.07 r
+  ALU/shift/U85/Y (MUX2X1)                                0.02       1.09 f
+  ALU/shift/Out<14> (shifter)                             0.00       1.09 f
+  ALU/U64/Y (AND2X1)                                      0.03       1.12 f
+  ALU/U65/Y (INVX1)                                       0.00       1.13 r
+  ALU/U254/Y (NAND3X1)                                    0.02       1.14 f
+  ALU/U41/Y (BUFX2)                                       0.03       1.18 f
+  ALU/Out<14> (alu)                                       0.00       1.18 f
+  control/alu_result<14> (wrt_ctrl)                       0.00       1.18 f
+  control/U73/Y (AND2X2)                                  0.03       1.21 f
+  control/U74/Y (INVX1)                                   0.00       1.20 r
+  control/U14/Y (AND2X2)                                  0.03       1.23 r
+  control/U15/Y (INVX1)                                   0.01       1.25 f
+  control/writedata_EX<14> (wrt_ctrl)                     0.00       1.25 f
+  ex_mem/writedata_EX<14> (EX_MEM)                        0.00       1.25 f
+  ex_mem/writedataEX_MEM_dff[14]/d (dff_228)              0.00       1.25 f
+  ex_mem/writedataEX_MEM_dff[14]/U3/Y (INVX1)             0.00       1.25 r
+  ex_mem/writedataEX_MEM_dff[14]/U4/Y (NOR2X1)            0.01       1.26 f
+  ex_mem/writedataEX_MEM_dff[14]/state_reg/D (DFFPOSX1)
+                                                          0.00       1.26 f
+  data arrival time                                                  1.26
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  ex_mem/writedataEX_MEM_dff[14]/state_reg/CLK (DFFPOSX1)
+                                                          0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.26
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.31
+
+
+  Startpoint: if_id/instr_dff/bits[10]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_id/instr_dff/bits[2]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_id/instr_dff/bits[10]/state_reg/CLK (DFFPOSX1)       0.00 #     0.00 r
+  if_id/instr_dff/bits[10]/state_reg/Q (DFFPOSX1)         0.11       0.11 f
+  if_id/instr_dff/bits[10]/q (dff_138)                    0.00       0.11 f
+  if_id/instr_dff/regvalue<10> (register_WIDTH16_9)       0.00       0.11 f
+  if_id/instr_IF_ID<10> (IF_ID)                           0.00       0.11 f
+  decoder/instr_IF_ID<10> (instr_decoder)                 0.00       0.11 f
+  decoder/U11/Y (INVX4)                                   0.02       0.13 r
+  decoder/U20/Y (INVX8)                                   0.02       0.16 f
+  decoder/read_reg1<2> (instr_decoder)                    0.00       0.16 f
+  rf/read1regsel<2> (rf_bypass)                           0.00       0.16 f
+  rf/ins1/read1regsel<2> (rf)                             0.00       0.16 f
+  rf/ins1/U17/Y (INVX1)                                   0.02       0.17 r
+  rf/ins1/U337/Y (NAND3X1)                                0.02       0.19 f
+  rf/ins1/U205/Y (BUFX2)                                  0.04       0.23 f
+  rf/ins1/U199/Y (INVX8)                                  0.03       0.26 r
+  rf/ins1/U197/Y (AND2X2)                                 0.03       0.29 r
+  rf/ins1/U198/Y (INVX1)                                  0.01       0.30 f
+  rf/ins1/U301/Y (AND2X2)                                 0.04       0.34 f
+  rf/ins1/U341/Y (AND2X2)                                 0.03       0.37 f
+  rf/ins1/U47/Y (INVX1)                                   0.00       0.37 r
+  rf/ins1/U46/Y (OR2X2)                                   0.04       0.41 r
+  rf/ins1/U45/Y (OR2X2)                                   0.04       0.45 r
+  rf/ins1/read1data<0> (rf)                               0.00       0.45 r
+  rf/U17/Y (INVX1)                                        0.02       0.47 f
+  rf/U16/Y (MUX2X1)                                       0.05       0.51 r
+  rf/read1data<0> (rf_bypass)                             0.00       0.51 r
+  ins2/rs<0> (for_unit2)                                  0.00       0.51 r
+  ins2/U122/Y (AOI22X1)                                   0.04       0.55 f
+  ins2/U18/Y (AND2X2)                                     0.04       0.59 f
+  ins2/U19/Y (INVX1)                                      0.01       0.60 r
+  ins2/rs_bypass<0> (for_unit2)                           0.00       0.60 r
+  jump_out/rs<0> (pc_jump_out)                            0.00       0.60 r
+  jump_out/U29/Y (BUFX2)                                  0.03       0.63 r
+  jump_out/ins1/rs<0> (pc_ctrl)                           0.00       0.63 r
+  jump_out/ins1/U16/Y (OR2X2)                             0.04       0.66 r
+  jump_out/ins1/U17/Y (NOR3X1)                            0.03       0.70 f
+  jump_out/ins1/U7/Y (AND2X2)                             0.04       0.74 f
+  jump_out/ins1/U18/Y (NAND3X1)                           0.03       0.76 r
+  jump_out/ins1/U3/Y (BUFX2)                              0.04       0.80 r
+  jump_out/ins1/U19/Y (XOR2X1)                            0.04       0.84 r
+  jump_out/ins1/U21/Y (MUX2X1)                            0.03       0.87 f
+  jump_out/ins1/U22/Y (AOI21X1)                           0.03       0.89 r
+  jump_out/ins1/pc_sel (pc_ctrl)                          0.00       0.89 r
+  jump_out/U12/Y (BUFX2)                                  0.04       0.93 r
+  jump_out/pc_sel (pc_jump_out)                           0.00       0.93 r
+  U61/Y (INVX1)                                           0.02       0.95 f
+  U38/Y (AND2X1)                                          0.03       0.98 f
+  U49/Y (INVX1)                                           0.01       0.98 r
+  if_id/flush (IF_ID)                                     0.00       0.98 r
+  if_id/U3/Y (INVX1)                                      0.06       1.05 f
+  if_id/U19/Y (AND2X1)                                    0.05       1.10 f
+  if_id/instr_dff/writedata<2> (register_WIDTH16_9)       0.00       1.10 f
+  if_id/instr_dff/write_enable[2]/InB (mux_2_1_194)       0.00       1.10 f
+  if_id/instr_dff/write_enable[2]/B/in1 (nand2_583)       0.00       1.10 f
+  if_id/instr_dff/write_enable[2]/B/U1/Y (AND2X2)         0.04       1.14 f
+  if_id/instr_dff/write_enable[2]/B/U2/Y (INVX1)          0.01       1.14 r
+  if_id/instr_dff/write_enable[2]/B/out (nand2_583)       0.00       1.14 r
+  if_id/instr_dff/write_enable[2]/U1/Y (BUFX2)            0.03       1.18 r
+  if_id/instr_dff/write_enable[2]/C/in2 (nand2_582)       0.00       1.18 r
+  if_id/instr_dff/write_enable[2]/C/U1/Y (AND2X2)         0.03       1.21 r
+  if_id/instr_dff/write_enable[2]/C/U2/Y (INVX1)          0.01       1.22 f
+  if_id/instr_dff/write_enable[2]/C/out (nand2_582)       0.00       1.22 f
+  if_id/instr_dff/write_enable[2]/Out (mux_2_1_194)       0.00       1.22 f
+  if_id/instr_dff/bits[2]/d (dff_130)                     0.00       1.22 f
+  if_id/instr_dff/bits[2]/U3/Y (INVX1)                    0.00       1.22 r
+  if_id/instr_dff/bits[2]/U4/Y (NOR2X1)                   0.01       1.23 f
+  if_id/instr_dff/bits[2]/state_reg/D (DFFPOSX1)          0.00       1.23 f
+  data arrival time                                                  1.23
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  if_id/instr_dff/bits[2]/state_reg/CLK (DFFPOSX1)        0.00       1.00 r
+  library setup time                                     -0.07       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -1.23
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.30
+
+
+1

@@ -1,0 +1,2028 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : proc
+Version: L-2016.03-SP4-1
+Date   : Mon Apr 10 13:29:46 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fetch/pc[14]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U105/Y (OR2X2)                        0.04       0.34 r
+  writeback/control/U38/Y (AND2X2)                        0.03       0.37 r
+  writeback/control/U37/Y (NOR2X1)                        0.01       0.38 f
+  writeback/control/U157/Y (INVX1)                        0.00       0.38 r
+  writeback/control/U113/Y (OR2X2)                        0.04       0.41 r
+  writeback/control/writedata<2> (wrt_ctrl)               0.00       0.41 r
+  writeback/writedata<2> (IW)                             0.00       0.41 r
+  decode/IW_writedata<2> (ID)                             0.00       0.41 r
+  decode/rf/writedata<2> (rf_bypass)                      0.00       0.41 r
+  decode/rf/U44/Y (INVX1)                                 0.02       0.43 f
+  decode/rf/U93/Y (OAI21X1)                               0.05       0.48 r
+  decode/rf/read1data<2> (rf_bypass)                      0.00       0.48 r
+  decode/branch_pc_adder2/A<2> (cla16_1)                  0.00       0.48 r
+  decode/branch_pc_adder2/ins0/A<2> (cla4_7)              0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/A (pfa_29)            0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/U12/Y (AND2X2)        0.04       0.52 r
+  decode/branch_pc_adder2/ins0/ins2/G (pfa_29)            0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/G2 (ahead4_8)      0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/U27/Y (OR2X2)      0.04       0.56 r
+  decode/branch_pc_adder2/ins0/header4/U5/Y (OR2X2)       0.04       0.59 r
+  decode/branch_pc_adder2/ins0/header4/U6/Y (INVX1)       0.01       0.61 f
+  decode/branch_pc_adder2/ins0/header4/U24/Y (AND2X2)     0.03       0.64 f
+  decode/branch_pc_adder2/ins0/header4/U36/Y (AOI21X1)
+                                                          0.01       0.65 r
+  decode/branch_pc_adder2/ins0/header4/U10/Y (BUFX2)      0.03       0.69 r
+  decode/branch_pc_adder2/ins0/header4/U37/Y (AND2X2)     0.04       0.72 r
+  decode/branch_pc_adder2/ins0/header4/G_g (ahead4_8)     0.00       0.72 r
+  decode/branch_pc_adder2/ins0/G_g (cla4_7)               0.00       0.72 r
+  decode/branch_pc_adder2/top/G_g0 (top_ahead_1)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/G0 (ahead4_9)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/U7/Y (OR2X2)           0.04       0.77 r
+  decode/branch_pc_adder2/top/ins0/C1 (ahead4_9)          0.00       0.77 r
+  decode/branch_pc_adder2/top/C4 (top_ahead_1)            0.00       0.77 r
+  decode/branch_pc_adder2/ins1/C0 (cla4_6)                0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/C0 (ahead4_7)      0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/U16/Y (AND2X2)     0.04       0.81 r
+  decode/branch_pc_adder2/ins1/header4/P_g (ahead4_7)     0.00       0.81 r
+  decode/branch_pc_adder2/ins1/P_g (cla4_6)               0.00       0.81 r
+  decode/branch_pc_adder2/top/P_g1 (top_ahead_1)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/P1 (ahead4_9)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/U13/Y (AND2X2)         0.03       0.84 r
+  decode/branch_pc_adder2/top/ins0/U11/Y (OR2X2)          0.04       0.88 r
+  decode/branch_pc_adder2/top/ins0/C2 (ahead4_9)          0.00       0.88 r
+  decode/branch_pc_adder2/top/C8 (top_ahead_1)            0.00       0.88 r
+  decode/branch_pc_adder2/ins2/C0 (cla4_5)                0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/C0 (ahead4_6)      0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/U18/Y (AND2X2)     0.04       0.92 r
+  decode/branch_pc_adder2/ins2/header4/P_g (ahead4_6)     0.00       0.92 r
+  decode/branch_pc_adder2/ins2/P_g (cla4_5)               0.00       0.92 r
+  decode/branch_pc_adder2/top/P_g2 (top_ahead_1)          0.00       0.92 r
+  decode/branch_pc_adder2/top/ins0/P2 (ahead4_9)          0.00       0.92 r
+  decode/branch_pc_adder2/top/ins0/U18/Y (AOI21X1)        0.02       0.94 f
+  decode/branch_pc_adder2/top/ins0/U2/Y (INVX1)           0.02       0.95 r
+  decode/branch_pc_adder2/top/ins0/C3 (ahead4_9)          0.00       0.95 r
+  decode/branch_pc_adder2/top/C12 (top_ahead_1)           0.00       0.95 r
+  decode/branch_pc_adder2/ins3/C0 (cla4_4)                0.00       0.95 r
+  decode/branch_pc_adder2/ins3/header4/C0 (ahead4_5)      0.00       0.95 r
+  decode/branch_pc_adder2/ins3/header4/U32/Y (NAND3X1)
+                                                          0.01       0.96 f
+  decode/branch_pc_adder2/ins3/header4/U13/Y (BUFX2)      0.03       0.99 f
+  decode/branch_pc_adder2/ins3/header4/U33/Y (NAND3X1)
+                                                          0.03       1.02 r
+  decode/branch_pc_adder2/ins3/header4/C2 (ahead4_5)      0.00       1.02 r
+  decode/branch_pc_adder2/ins3/ins2/Cin (pfa_17)          0.00       1.02 r
+  decode/branch_pc_adder2/ins3/ins2/U1/Y (BUFX2)          0.04       1.06 r
+  decode/branch_pc_adder2/ins3/ins2/U4/Y (XNOR2X1)        0.03       1.08 f
+  decode/branch_pc_adder2/ins3/ins2/Sum (pfa_17)          0.00       1.08 f
+  decode/branch_pc_adder2/ins3/Sum<2> (cla4_4)            0.00       1.08 f
+  decode/branch_pc_adder2/Sum<14> (cla16_1)               0.00       1.08 f
+  decode/U71/Y (INVX1)                                    0.00       1.09 r
+  decode/U56/Y (MUX2X1)                                   0.02       1.10 f
+  decode/branch_PC<14> (ID)                               0.00       1.10 f
+  fetch/branch_PC<14> (IF)                                0.00       1.10 f
+  fetch/U37/Y (AND2X2)                                    0.03       1.14 f
+  fetch/U38/Y (INVX1)                                     0.00       1.13 r
+  fetch/U16/Y (AND2X2)                                    0.03       1.16 r
+  fetch/U17/Y (INVX1)                                     0.01       1.18 f
+  fetch/pc[14]/d (dff_441)                                0.00       1.18 f
+  fetch/pc[14]/U3/Y (INVX1)                               0.00       1.18 r
+  fetch/pc[14]/U4/Y (NOR2X1)                              0.01       1.19 f
+  fetch/pc[14]/state_reg/D (DFFPOSX1)                     0.00       1.19 f
+  data arrival time                                                  1.19
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  fetch/pc[14]/state_reg/CLK (DFFPOSX1)                   0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.19
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fetch/pc[9]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U105/Y (OR2X2)                        0.04       0.34 r
+  writeback/control/U38/Y (AND2X2)                        0.03       0.37 r
+  writeback/control/U37/Y (NOR2X1)                        0.01       0.38 f
+  writeback/control/U157/Y (INVX1)                        0.00       0.38 r
+  writeback/control/U113/Y (OR2X2)                        0.04       0.41 r
+  writeback/control/writedata<2> (wrt_ctrl)               0.00       0.41 r
+  writeback/writedata<2> (IW)                             0.00       0.41 r
+  decode/IW_writedata<2> (ID)                             0.00       0.41 r
+  decode/rf/writedata<2> (rf_bypass)                      0.00       0.41 r
+  decode/rf/U44/Y (INVX1)                                 0.02       0.43 f
+  decode/rf/U93/Y (OAI21X1)                               0.05       0.48 r
+  decode/rf/read1data<2> (rf_bypass)                      0.00       0.48 r
+  decode/branch_pc_adder2/A<2> (cla16_1)                  0.00       0.48 r
+  decode/branch_pc_adder2/ins0/A<2> (cla4_7)              0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/A (pfa_29)            0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/U12/Y (AND2X2)        0.04       0.52 r
+  decode/branch_pc_adder2/ins0/ins2/G (pfa_29)            0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/G2 (ahead4_8)      0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/U27/Y (OR2X2)      0.04       0.56 r
+  decode/branch_pc_adder2/ins0/header4/U5/Y (OR2X2)       0.04       0.59 r
+  decode/branch_pc_adder2/ins0/header4/U6/Y (INVX1)       0.01       0.61 f
+  decode/branch_pc_adder2/ins0/header4/U24/Y (AND2X2)     0.03       0.64 f
+  decode/branch_pc_adder2/ins0/header4/U36/Y (AOI21X1)
+                                                          0.01       0.65 r
+  decode/branch_pc_adder2/ins0/header4/U10/Y (BUFX2)      0.03       0.69 r
+  decode/branch_pc_adder2/ins0/header4/U37/Y (AND2X2)     0.04       0.72 r
+  decode/branch_pc_adder2/ins0/header4/G_g (ahead4_8)     0.00       0.72 r
+  decode/branch_pc_adder2/ins0/G_g (cla4_7)               0.00       0.72 r
+  decode/branch_pc_adder2/top/G_g0 (top_ahead_1)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/G0 (ahead4_9)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/U7/Y (OR2X2)           0.04       0.77 r
+  decode/branch_pc_adder2/top/ins0/C1 (ahead4_9)          0.00       0.77 r
+  decode/branch_pc_adder2/top/C4 (top_ahead_1)            0.00       0.77 r
+  decode/branch_pc_adder2/ins1/C0 (cla4_6)                0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/C0 (ahead4_7)      0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/U16/Y (AND2X2)     0.04       0.81 r
+  decode/branch_pc_adder2/ins1/header4/P_g (ahead4_7)     0.00       0.81 r
+  decode/branch_pc_adder2/ins1/P_g (cla4_6)               0.00       0.81 r
+  decode/branch_pc_adder2/top/P_g1 (top_ahead_1)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/P1 (ahead4_9)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/U13/Y (AND2X2)         0.03       0.84 r
+  decode/branch_pc_adder2/top/ins0/U11/Y (OR2X2)          0.04       0.88 r
+  decode/branch_pc_adder2/top/ins0/C2 (ahead4_9)          0.00       0.88 r
+  decode/branch_pc_adder2/top/C8 (top_ahead_1)            0.00       0.88 r
+  decode/branch_pc_adder2/ins2/C0 (cla4_5)                0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/C0 (ahead4_6)      0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/U1/Y (INVX1)       0.02       0.90 f
+  decode/branch_pc_adder2/ins2/header4/U2/Y (INVX1)       0.00       0.90 r
+  decode/branch_pc_adder2/ins2/header4/U11/Y (AND2X2)     0.04       0.93 r
+  decode/branch_pc_adder2/ins2/header4/U14/Y (INVX1)      0.02       0.95 f
+  decode/branch_pc_adder2/ins2/header4/U5/Y (AND2X2)      0.03       0.99 f
+  decode/branch_pc_adder2/ins2/header4/U6/Y (INVX1)       0.01       0.99 r
+  decode/branch_pc_adder2/ins2/header4/C1 (ahead4_6)      0.00       0.99 r
+  decode/branch_pc_adder2/ins2/ins1/Cin (pfa_22)          0.00       0.99 r
+  decode/branch_pc_adder2/ins2/ins1/U3/Y (XNOR2X1)        0.03       1.02 f
+  decode/branch_pc_adder2/ins2/ins1/Sum (pfa_22)          0.00       1.02 f
+  decode/branch_pc_adder2/ins2/Sum<1> (cla4_5)            0.00       1.02 f
+  decode/branch_pc_adder2/Sum<9> (cla16_1)                0.00       1.02 f
+  decode/U152/Y (MUX2X1)                                  0.04       1.06 r
+  decode/U90/Y (INVX1)                                    0.02       1.08 f
+  decode/branch_PC<9> (ID)                                0.00       1.08 f
+  fetch/branch_PC<9> (IF)                                 0.00       1.08 f
+  fetch/U72/Y (AOI22X1)                                   0.04       1.12 r
+  fetch/U25/Y (BUFX2)                                     0.04       1.15 r
+  fetch/U73/Y (OAI21X1)                                   0.01       1.17 f
+  fetch/pc[9]/d (dff_436)                                 0.00       1.17 f
+  fetch/pc[9]/U3/Y (INVX1)                                0.00       1.17 r
+  fetch/pc[9]/U4/Y (NOR2X1)                               0.01       1.18 f
+  fetch/pc[9]/state_reg/D (DFFPOSX1)                      0.00       1.18 f
+  data arrival time                                                  1.18
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  fetch/pc[9]/state_reg/CLK (DFFPOSX1)                    0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.18
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.23
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fetch/pc[13]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U105/Y (OR2X2)                        0.04       0.34 r
+  writeback/control/U38/Y (AND2X2)                        0.03       0.37 r
+  writeback/control/U37/Y (NOR2X1)                        0.01       0.38 f
+  writeback/control/U157/Y (INVX1)                        0.00       0.38 r
+  writeback/control/U113/Y (OR2X2)                        0.04       0.41 r
+  writeback/control/writedata<2> (wrt_ctrl)               0.00       0.41 r
+  writeback/writedata<2> (IW)                             0.00       0.41 r
+  decode/IW_writedata<2> (ID)                             0.00       0.41 r
+  decode/rf/writedata<2> (rf_bypass)                      0.00       0.41 r
+  decode/rf/U44/Y (INVX1)                                 0.02       0.43 f
+  decode/rf/U93/Y (OAI21X1)                               0.05       0.48 r
+  decode/rf/read1data<2> (rf_bypass)                      0.00       0.48 r
+  decode/branch_pc_adder2/A<2> (cla16_1)                  0.00       0.48 r
+  decode/branch_pc_adder2/ins0/A<2> (cla4_7)              0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/A (pfa_29)            0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/U12/Y (AND2X2)        0.04       0.52 r
+  decode/branch_pc_adder2/ins0/ins2/G (pfa_29)            0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/G2 (ahead4_8)      0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/U27/Y (OR2X2)      0.04       0.56 r
+  decode/branch_pc_adder2/ins0/header4/U5/Y (OR2X2)       0.04       0.59 r
+  decode/branch_pc_adder2/ins0/header4/U6/Y (INVX1)       0.01       0.61 f
+  decode/branch_pc_adder2/ins0/header4/U24/Y (AND2X2)     0.03       0.64 f
+  decode/branch_pc_adder2/ins0/header4/U36/Y (AOI21X1)
+                                                          0.01       0.65 r
+  decode/branch_pc_adder2/ins0/header4/U10/Y (BUFX2)      0.03       0.69 r
+  decode/branch_pc_adder2/ins0/header4/U37/Y (AND2X2)     0.04       0.72 r
+  decode/branch_pc_adder2/ins0/header4/G_g (ahead4_8)     0.00       0.72 r
+  decode/branch_pc_adder2/ins0/G_g (cla4_7)               0.00       0.72 r
+  decode/branch_pc_adder2/top/G_g0 (top_ahead_1)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/G0 (ahead4_9)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/U7/Y (OR2X2)           0.04       0.77 r
+  decode/branch_pc_adder2/top/ins0/C1 (ahead4_9)          0.00       0.77 r
+  decode/branch_pc_adder2/top/C4 (top_ahead_1)            0.00       0.77 r
+  decode/branch_pc_adder2/ins1/C0 (cla4_6)                0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/C0 (ahead4_7)      0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/U16/Y (AND2X2)     0.04       0.81 r
+  decode/branch_pc_adder2/ins1/header4/P_g (ahead4_7)     0.00       0.81 r
+  decode/branch_pc_adder2/ins1/P_g (cla4_6)               0.00       0.81 r
+  decode/branch_pc_adder2/top/P_g1 (top_ahead_1)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/P1 (ahead4_9)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/U13/Y (AND2X2)         0.03       0.84 r
+  decode/branch_pc_adder2/top/ins0/U11/Y (OR2X2)          0.04       0.88 r
+  decode/branch_pc_adder2/top/ins0/C2 (ahead4_9)          0.00       0.88 r
+  decode/branch_pc_adder2/top/C8 (top_ahead_1)            0.00       0.88 r
+  decode/branch_pc_adder2/ins2/C0 (cla4_5)                0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/C0 (ahead4_6)      0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/U18/Y (AND2X2)     0.04       0.92 r
+  decode/branch_pc_adder2/ins2/header4/P_g (ahead4_6)     0.00       0.92 r
+  decode/branch_pc_adder2/ins2/P_g (cla4_5)               0.00       0.92 r
+  decode/branch_pc_adder2/top/P_g2 (top_ahead_1)          0.00       0.92 r
+  decode/branch_pc_adder2/top/ins0/P2 (ahead4_9)          0.00       0.92 r
+  decode/branch_pc_adder2/top/ins0/U18/Y (AOI21X1)        0.02       0.94 f
+  decode/branch_pc_adder2/top/ins0/U2/Y (INVX1)           0.02       0.95 r
+  decode/branch_pc_adder2/top/ins0/C3 (ahead4_9)          0.00       0.95 r
+  decode/branch_pc_adder2/top/C12 (top_ahead_1)           0.00       0.95 r
+  decode/branch_pc_adder2/ins3/C0 (cla4_4)                0.00       0.95 r
+  decode/branch_pc_adder2/ins3/header4/C0 (ahead4_5)      0.00       0.95 r
+  decode/branch_pc_adder2/ins3/header4/U2/Y (INVX1)       0.01       0.97 f
+  decode/branch_pc_adder2/ins3/header4/U3/Y (INVX1)       0.01       0.97 r
+  decode/branch_pc_adder2/ins3/header4/U6/Y (AND2X2)      0.03       1.00 r
+  decode/branch_pc_adder2/ins3/header4/U4/Y (OR2X2)       0.04       1.05 r
+  decode/branch_pc_adder2/ins3/header4/C1 (ahead4_5)      0.00       1.05 r
+  decode/branch_pc_adder2/ins3/ins1/Cin (pfa_18)          0.00       1.05 r
+  decode/branch_pc_adder2/ins3/ins1/U3/Y (XNOR2X1)        0.03       1.07 f
+  decode/branch_pc_adder2/ins3/ins1/Sum (pfa_18)          0.00       1.07 f
+  decode/branch_pc_adder2/ins3/Sum<1> (cla4_4)            0.00       1.07 f
+  decode/branch_pc_adder2/Sum<13> (cla16_1)               0.00       1.07 f
+  decode/U61/Y (INVX1)                                    0.00       1.08 r
+  decode/U68/Y (MUX2X1)                                   0.02       1.09 f
+  decode/branch_PC<13> (ID)                               0.00       1.09 f
+  fetch/branch_PC<13> (IF)                                0.00       1.09 f
+  fetch/U39/Y (AND2X2)                                    0.03       1.13 f
+  fetch/U40/Y (INVX1)                                     0.00       1.12 r
+  fetch/U18/Y (AND2X2)                                    0.03       1.15 r
+  fetch/U19/Y (INVX1)                                     0.01       1.17 f
+  fetch/pc[13]/d (dff_440)                                0.00       1.17 f
+  fetch/pc[13]/U3/Y (INVX1)                               0.00       1.17 r
+  fetch/pc[13]/U4/Y (NOR2X1)                              0.01       1.17 f
+  fetch/pc[13]/state_reg/D (DFFPOSX1)                     0.00       1.17 f
+  data arrival time                                                  1.17
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  fetch/pc[13]/state_reg/CLK (DFFPOSX1)                   0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.17
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.23
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fetch/pc[15]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U105/Y (OR2X2)                        0.04       0.34 r
+  writeback/control/U38/Y (AND2X2)                        0.03       0.37 r
+  writeback/control/U37/Y (NOR2X1)                        0.01       0.38 f
+  writeback/control/U157/Y (INVX1)                        0.00       0.38 r
+  writeback/control/U113/Y (OR2X2)                        0.04       0.41 r
+  writeback/control/writedata<2> (wrt_ctrl)               0.00       0.41 r
+  writeback/writedata<2> (IW)                             0.00       0.41 r
+  decode/IW_writedata<2> (ID)                             0.00       0.41 r
+  decode/rf/writedata<2> (rf_bypass)                      0.00       0.41 r
+  decode/rf/U44/Y (INVX1)                                 0.02       0.43 f
+  decode/rf/U93/Y (OAI21X1)                               0.05       0.48 r
+  decode/rf/read1data<2> (rf_bypass)                      0.00       0.48 r
+  decode/branch_pc_adder2/A<2> (cla16_1)                  0.00       0.48 r
+  decode/branch_pc_adder2/ins0/A<2> (cla4_7)              0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/A (pfa_29)            0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/U12/Y (AND2X2)        0.04       0.52 r
+  decode/branch_pc_adder2/ins0/ins2/G (pfa_29)            0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/G2 (ahead4_8)      0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/U27/Y (OR2X2)      0.04       0.56 r
+  decode/branch_pc_adder2/ins0/header4/U5/Y (OR2X2)       0.04       0.59 r
+  decode/branch_pc_adder2/ins0/header4/U6/Y (INVX1)       0.01       0.61 f
+  decode/branch_pc_adder2/ins0/header4/U24/Y (AND2X2)     0.03       0.64 f
+  decode/branch_pc_adder2/ins0/header4/U36/Y (AOI21X1)
+                                                          0.01       0.65 r
+  decode/branch_pc_adder2/ins0/header4/U10/Y (BUFX2)      0.03       0.69 r
+  decode/branch_pc_adder2/ins0/header4/U37/Y (AND2X2)     0.04       0.72 r
+  decode/branch_pc_adder2/ins0/header4/G_g (ahead4_8)     0.00       0.72 r
+  decode/branch_pc_adder2/ins0/G_g (cla4_7)               0.00       0.72 r
+  decode/branch_pc_adder2/top/G_g0 (top_ahead_1)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/G0 (ahead4_9)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/U7/Y (OR2X2)           0.04       0.77 r
+  decode/branch_pc_adder2/top/ins0/C1 (ahead4_9)          0.00       0.77 r
+  decode/branch_pc_adder2/top/C4 (top_ahead_1)            0.00       0.77 r
+  decode/branch_pc_adder2/ins1/C0 (cla4_6)                0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/C0 (ahead4_7)      0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/U16/Y (AND2X2)     0.04       0.81 r
+  decode/branch_pc_adder2/ins1/header4/P_g (ahead4_7)     0.00       0.81 r
+  decode/branch_pc_adder2/ins1/P_g (cla4_6)               0.00       0.81 r
+  decode/branch_pc_adder2/top/P_g1 (top_ahead_1)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/P1 (ahead4_9)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/U13/Y (AND2X2)         0.03       0.84 r
+  decode/branch_pc_adder2/top/ins0/U11/Y (OR2X2)          0.04       0.88 r
+  decode/branch_pc_adder2/top/ins0/C2 (ahead4_9)          0.00       0.88 r
+  decode/branch_pc_adder2/top/C8 (top_ahead_1)            0.00       0.88 r
+  decode/branch_pc_adder2/ins2/C0 (cla4_5)                0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/C0 (ahead4_6)      0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/U18/Y (AND2X2)     0.04       0.92 r
+  decode/branch_pc_adder2/ins2/header4/P_g (ahead4_6)     0.00       0.92 r
+  decode/branch_pc_adder2/ins2/P_g (cla4_5)               0.00       0.92 r
+  decode/branch_pc_adder2/top/P_g2 (top_ahead_1)          0.00       0.92 r
+  decode/branch_pc_adder2/top/ins0/P2 (ahead4_9)          0.00       0.92 r
+  decode/branch_pc_adder2/top/ins0/U18/Y (AOI21X1)        0.02       0.94 f
+  decode/branch_pc_adder2/top/ins0/U2/Y (INVX1)           0.02       0.95 r
+  decode/branch_pc_adder2/top/ins0/C3 (ahead4_9)          0.00       0.95 r
+  decode/branch_pc_adder2/top/C12 (top_ahead_1)           0.00       0.95 r
+  decode/branch_pc_adder2/ins3/C0 (cla4_4)                0.00       0.95 r
+  decode/branch_pc_adder2/ins3/header4/C0 (ahead4_5)      0.00       0.95 r
+  decode/branch_pc_adder2/ins3/header4/U2/Y (INVX1)       0.01       0.97 f
+  decode/branch_pc_adder2/ins3/header4/U1/Y (INVX1)       0.00       0.97 r
+  decode/branch_pc_adder2/ins3/header4/U7/Y (AND2X2)      0.03       1.00 r
+  decode/branch_pc_adder2/ins3/header4/U5/Y (OR2X2)       0.04       1.04 r
+  decode/branch_pc_adder2/ins3/header4/C3 (ahead4_5)      0.00       1.04 r
+  decode/branch_pc_adder2/ins3/ins3/Cin (pfa_16)          0.00       1.04 r
+  decode/branch_pc_adder2/ins3/ins3/U3/Y (XNOR2X1)        0.03       1.07 f
+  decode/branch_pc_adder2/ins3/ins3/Sum (pfa_16)          0.00       1.07 f
+  decode/branch_pc_adder2/ins3/Sum<3> (cla4_4)            0.00       1.07 f
+  decode/branch_pc_adder2/Sum<15> (cla16_1)               0.00       1.07 f
+  decode/U62/Y (INVX1)                                    0.00       1.07 r
+  decode/U12/Y (MUX2X1)                                   0.02       1.09 f
+  decode/branch_PC<15> (ID)                               0.00       1.09 f
+  fetch/branch_PC<15> (IF)                                0.00       1.09 f
+  fetch/U35/Y (AND2X2)                                    0.03       1.12 f
+  fetch/U36/Y (INVX1)                                     0.00       1.12 r
+  fetch/U14/Y (AND2X2)                                    0.03       1.15 r
+  fetch/U15/Y (INVX1)                                     0.01       1.16 f
+  fetch/pc[15]/d (dff_442)                                0.00       1.16 f
+  fetch/pc[15]/U3/Y (INVX1)                               0.00       1.16 r
+  fetch/pc[15]/U4/Y (NOR2X1)                              0.01       1.17 f
+  fetch/pc[15]/state_reg/D (DFFPOSX1)                     0.00       1.17 f
+  data arrival time                                                  1.17
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  fetch/pc[15]/state_reg/CLK (DFFPOSX1)                   0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.17
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.23
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fetch/pc[11]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U105/Y (OR2X2)                        0.04       0.34 r
+  writeback/control/U38/Y (AND2X2)                        0.03       0.37 r
+  writeback/control/U37/Y (NOR2X1)                        0.01       0.38 f
+  writeback/control/U157/Y (INVX1)                        0.00       0.38 r
+  writeback/control/U113/Y (OR2X2)                        0.04       0.41 r
+  writeback/control/writedata<2> (wrt_ctrl)               0.00       0.41 r
+  writeback/writedata<2> (IW)                             0.00       0.41 r
+  decode/IW_writedata<2> (ID)                             0.00       0.41 r
+  decode/rf/writedata<2> (rf_bypass)                      0.00       0.41 r
+  decode/rf/U44/Y (INVX1)                                 0.02       0.43 f
+  decode/rf/U93/Y (OAI21X1)                               0.05       0.48 r
+  decode/rf/read1data<2> (rf_bypass)                      0.00       0.48 r
+  decode/branch_pc_adder2/A<2> (cla16_1)                  0.00       0.48 r
+  decode/branch_pc_adder2/ins0/A<2> (cla4_7)              0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/A (pfa_29)            0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/U12/Y (AND2X2)        0.04       0.52 r
+  decode/branch_pc_adder2/ins0/ins2/G (pfa_29)            0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/G2 (ahead4_8)      0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/U27/Y (OR2X2)      0.04       0.56 r
+  decode/branch_pc_adder2/ins0/header4/U5/Y (OR2X2)       0.04       0.59 r
+  decode/branch_pc_adder2/ins0/header4/U6/Y (INVX1)       0.01       0.61 f
+  decode/branch_pc_adder2/ins0/header4/U24/Y (AND2X2)     0.03       0.64 f
+  decode/branch_pc_adder2/ins0/header4/U36/Y (AOI21X1)
+                                                          0.01       0.65 r
+  decode/branch_pc_adder2/ins0/header4/U10/Y (BUFX2)      0.03       0.69 r
+  decode/branch_pc_adder2/ins0/header4/U37/Y (AND2X2)     0.04       0.72 r
+  decode/branch_pc_adder2/ins0/header4/G_g (ahead4_8)     0.00       0.72 r
+  decode/branch_pc_adder2/ins0/G_g (cla4_7)               0.00       0.72 r
+  decode/branch_pc_adder2/top/G_g0 (top_ahead_1)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/G0 (ahead4_9)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/U7/Y (OR2X2)           0.04       0.77 r
+  decode/branch_pc_adder2/top/ins0/C1 (ahead4_9)          0.00       0.77 r
+  decode/branch_pc_adder2/top/C4 (top_ahead_1)            0.00       0.77 r
+  decode/branch_pc_adder2/ins1/C0 (cla4_6)                0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/C0 (ahead4_7)      0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/U16/Y (AND2X2)     0.04       0.81 r
+  decode/branch_pc_adder2/ins1/header4/P_g (ahead4_7)     0.00       0.81 r
+  decode/branch_pc_adder2/ins1/P_g (cla4_6)               0.00       0.81 r
+  decode/branch_pc_adder2/top/P_g1 (top_ahead_1)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/P1 (ahead4_9)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/U13/Y (AND2X2)         0.03       0.84 r
+  decode/branch_pc_adder2/top/ins0/U11/Y (OR2X2)          0.04       0.88 r
+  decode/branch_pc_adder2/top/ins0/C2 (ahead4_9)          0.00       0.88 r
+  decode/branch_pc_adder2/top/C8 (top_ahead_1)            0.00       0.88 r
+  decode/branch_pc_adder2/ins2/C0 (cla4_5)                0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/C0 (ahead4_6)      0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/U1/Y (INVX1)       0.02       0.90 f
+  decode/branch_pc_adder2/ins2/header4/U2/Y (INVX1)       0.00       0.90 r
+  decode/branch_pc_adder2/ins2/header4/U11/Y (AND2X2)     0.04       0.93 r
+  decode/branch_pc_adder2/ins2/header4/U31/Y (NOR3X1)     0.04       0.97 f
+  decode/branch_pc_adder2/ins2/header4/U33/Y (OAI21X1)
+                                                          0.05       1.02 r
+  decode/branch_pc_adder2/ins2/header4/C3 (ahead4_6)      0.00       1.02 r
+  decode/branch_pc_adder2/ins2/ins3/Cin (pfa_20)          0.00       1.02 r
+  decode/branch_pc_adder2/ins2/ins3/U6/Y (XOR2X1)         0.03       1.06 f
+  decode/branch_pc_adder2/ins2/ins3/Sum (pfa_20)          0.00       1.06 f
+  decode/branch_pc_adder2/ins2/Sum<3> (cla4_5)            0.00       1.06 f
+  decode/branch_pc_adder2/Sum<11> (cla16_1)               0.00       1.06 f
+  decode/U66/Y (INVX1)                                    0.01       1.06 r
+  decode/U72/Y (MUX2X1)                                   0.02       1.08 f
+  decode/branch_PC<11> (ID)                               0.00       1.08 f
+  fetch/branch_PC<11> (IF)                                0.00       1.08 f
+  fetch/U41/Y (AND2X2)                                    0.03       1.11 f
+  fetch/U42/Y (INVX1)                                     0.00       1.11 r
+  fetch/U20/Y (AND2X2)                                    0.03       1.14 r
+  fetch/U21/Y (INVX1)                                     0.01       1.15 f
+  fetch/pc[11]/d (dff_438)                                0.00       1.15 f
+  fetch/pc[11]/U3/Y (INVX1)                               0.00       1.15 r
+  fetch/pc[11]/U4/Y (NOR2X1)                              0.01       1.16 f
+  fetch/pc[11]/state_reg/D (DFFPOSX1)                     0.00       1.16 f
+  data arrival time                                                  1.16
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  fetch/pc[11]/state_reg/CLK (DFFPOSX1)                   0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.22
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fetch/pc[4]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U59/Y (OR2X2)                         0.06       0.35 r
+  writeback/control/U421/Y (NAND2X1)                      0.02       0.37 f
+  writeback/control/U170/Y (INVX1)                        0.00       0.37 r
+  writeback/control/U98/Y (OR2X2)                         0.04       0.42 r
+  writeback/control/U97/Y (OR2X2)                         0.04       0.46 r
+  writeback/control/U12/Y (OR2X2)                         0.04       0.50 r
+  writeback/control/writedata<13> (wrt_ctrl)              0.00       0.50 r
+  writeback/writedata<13> (IW)                            0.00       0.50 r
+  decode/IW_writedata<13> (ID)                            0.00       0.50 r
+  decode/rf/writedata<13> (rf_bypass)                     0.00       0.50 r
+  decode/rf/U11/Y (MUX2X1)                                0.02       0.52 f
+  decode/rf/U21/Y (INVX1)                                 0.02       0.54 r
+  decode/rf/read1data<13> (rf_bypass)                     0.00       0.54 r
+  decode/h_detect/rs<13> (hazard)                         0.00       0.54 r
+  decode/h_detect/bd/rs<13> (branch_detector)             0.00       0.54 r
+  decode/h_detect/bd/U13/Y (OR2X2)                        0.03       0.57 r
+  decode/h_detect/bd/U14/Y (INVX1)                        0.01       0.59 f
+  decode/h_detect/bd/U28/Y (NAND3X1)                      0.03       0.62 r
+  decode/h_detect/bd/U11/Y (BUFX2)                        0.03       0.66 r
+  decode/h_detect/bd/U9/Y (OR2X2)                         0.04       0.69 r
+  decode/h_detect/bd/U10/Y (INVX1)                        0.02       0.71 f
+  decode/h_detect/bd/U31/Y (NAND3X1)                      0.03       0.74 r
+  decode/h_detect/bd/U15/Y (BUFX2)                        0.04       0.77 r
+  decode/h_detect/bd/U3/Y (MUX2X1)                        0.03       0.80 f
+  decode/h_detect/bd/U19/Y (XNOR2X1)                      0.03       0.83 f
+  decode/h_detect/bd/U32/Y (OAI21X1)                      0.04       0.87 r
+  decode/h_detect/bd/U33/Y (NOR2X1)                       0.02       0.89 f
+  decode/h_detect/bd/branch_taken (branch_detector)       0.00       0.89 f
+  decode/h_detect/U4/Y (BUFX2)                            0.03       0.92 f
+  decode/h_detect/U26/Y (AND2X2)                          0.03       0.95 f
+  decode/h_detect/branch_taken (hazard)                   0.00       0.95 f
+  decode/branch_taken (ID)                                0.00       0.95 f
+  fetch/take_branch (IF)                                  0.00       0.95 f
+  fetch/U9/Y (AND2X2)                                     0.06       1.01 f
+  fetch/U44/Y (INVX1)                                     0.02       1.03 r
+  fetch/U5/Y (INVX2)                                      0.03       1.06 f
+  fetch/U82/Y (AOI22X1)                                   0.04       1.10 r
+  fetch/U30/Y (BUFX2)                                     0.04       1.13 r
+  fetch/U83/Y (OAI21X1)                                   0.01       1.14 f
+  fetch/pc[4]/d (dff_431)                                 0.00       1.14 f
+  fetch/pc[4]/U3/Y (INVX1)                                0.00       1.15 r
+  fetch/pc[4]/U4/Y (NOR2X1)                               0.01       1.16 f
+  fetch/pc[4]/state_reg/D (DFFPOSX1)                      0.00       1.16 f
+  data arrival time                                                  1.16
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  fetch/pc[4]/state_reg/CLK (DFFPOSX1)                    0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.21
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fetch/pc[10]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U105/Y (OR2X2)                        0.04       0.34 r
+  writeback/control/U38/Y (AND2X2)                        0.03       0.37 r
+  writeback/control/U37/Y (NOR2X1)                        0.01       0.38 f
+  writeback/control/U157/Y (INVX1)                        0.00       0.38 r
+  writeback/control/U113/Y (OR2X2)                        0.04       0.41 r
+  writeback/control/writedata<2> (wrt_ctrl)               0.00       0.41 r
+  writeback/writedata<2> (IW)                             0.00       0.41 r
+  decode/IW_writedata<2> (ID)                             0.00       0.41 r
+  decode/rf/writedata<2> (rf_bypass)                      0.00       0.41 r
+  decode/rf/U44/Y (INVX1)                                 0.02       0.43 f
+  decode/rf/U93/Y (OAI21X1)                               0.05       0.48 r
+  decode/rf/read1data<2> (rf_bypass)                      0.00       0.48 r
+  decode/branch_pc_adder2/A<2> (cla16_1)                  0.00       0.48 r
+  decode/branch_pc_adder2/ins0/A<2> (cla4_7)              0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/A (pfa_29)            0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/U12/Y (AND2X2)        0.04       0.52 r
+  decode/branch_pc_adder2/ins0/ins2/G (pfa_29)            0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/G2 (ahead4_8)      0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/U27/Y (OR2X2)      0.04       0.56 r
+  decode/branch_pc_adder2/ins0/header4/U5/Y (OR2X2)       0.04       0.59 r
+  decode/branch_pc_adder2/ins0/header4/U6/Y (INVX1)       0.01       0.61 f
+  decode/branch_pc_adder2/ins0/header4/U24/Y (AND2X2)     0.03       0.64 f
+  decode/branch_pc_adder2/ins0/header4/U36/Y (AOI21X1)
+                                                          0.01       0.65 r
+  decode/branch_pc_adder2/ins0/header4/U10/Y (BUFX2)      0.03       0.69 r
+  decode/branch_pc_adder2/ins0/header4/U37/Y (AND2X2)     0.04       0.72 r
+  decode/branch_pc_adder2/ins0/header4/G_g (ahead4_8)     0.00       0.72 r
+  decode/branch_pc_adder2/ins0/G_g (cla4_7)               0.00       0.72 r
+  decode/branch_pc_adder2/top/G_g0 (top_ahead_1)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/G0 (ahead4_9)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/U7/Y (OR2X2)           0.04       0.77 r
+  decode/branch_pc_adder2/top/ins0/C1 (ahead4_9)          0.00       0.77 r
+  decode/branch_pc_adder2/top/C4 (top_ahead_1)            0.00       0.77 r
+  decode/branch_pc_adder2/ins1/C0 (cla4_6)                0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/C0 (ahead4_7)      0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/U16/Y (AND2X2)     0.04       0.81 r
+  decode/branch_pc_adder2/ins1/header4/P_g (ahead4_7)     0.00       0.81 r
+  decode/branch_pc_adder2/ins1/P_g (cla4_6)               0.00       0.81 r
+  decode/branch_pc_adder2/top/P_g1 (top_ahead_1)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/P1 (ahead4_9)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/U13/Y (AND2X2)         0.03       0.84 r
+  decode/branch_pc_adder2/top/ins0/U11/Y (OR2X2)          0.04       0.88 r
+  decode/branch_pc_adder2/top/ins0/C2 (ahead4_9)          0.00       0.88 r
+  decode/branch_pc_adder2/top/C8 (top_ahead_1)            0.00       0.88 r
+  decode/branch_pc_adder2/ins2/C0 (cla4_5)                0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/C0 (ahead4_6)      0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/U1/Y (INVX1)       0.02       0.90 f
+  decode/branch_pc_adder2/ins2/header4/U2/Y (INVX1)       0.00       0.90 r
+  decode/branch_pc_adder2/ins2/header4/U11/Y (AND2X2)     0.04       0.93 r
+  decode/branch_pc_adder2/ins2/header4/U14/Y (INVX1)      0.02       0.95 f
+  decode/branch_pc_adder2/ins2/header4/U9/Y (AND2X2)      0.03       0.99 f
+  decode/branch_pc_adder2/ins2/header4/U10/Y (INVX1)      0.00       0.98 r
+  decode/branch_pc_adder2/ins2/header4/U15/Y (AND2X2)     0.04       1.02 r
+  decode/branch_pc_adder2/ins2/header4/C2 (ahead4_6)      0.00       1.02 r
+  decode/branch_pc_adder2/ins2/ins2/Cin (pfa_21)          0.00       1.02 r
+  decode/branch_pc_adder2/ins2/ins2/U2/Y (XNOR2X1)        0.03       1.05 f
+  decode/branch_pc_adder2/ins2/ins2/Sum (pfa_21)          0.00       1.05 f
+  decode/branch_pc_adder2/ins2/Sum<2> (cla4_5)            0.00       1.05 f
+  decode/branch_pc_adder2/Sum<10> (cla16_1)               0.00       1.05 f
+  decode/U3/Y (INVX1)                                     0.00       1.05 r
+  decode/U4/Y (MUX2X1)                                    0.02       1.07 f
+  decode/branch_PC<10> (ID)                               0.00       1.07 f
+  fetch/branch_PC<10> (IF)                                0.00       1.07 f
+  fetch/U22/Y (AND2X2)                                    0.03       1.10 f
+  fetch/U23/Y (INVX1)                                     0.00       1.10 r
+  fetch/U6/Y (AND2X2)                                     0.03       1.13 r
+  fetch/U71/Y (OAI21X1)                                   0.01       1.14 f
+  fetch/pc[10]/d (dff_437)                                0.00       1.14 f
+  fetch/pc[10]/U3/Y (INVX1)                               0.00       1.14 r
+  fetch/pc[10]/U4/Y (NOR2X1)                              0.01       1.15 f
+  fetch/pc[10]/state_reg/D (DFFPOSX1)                     0.00       1.15 f
+  data arrival time                                                  1.15
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  fetch/pc[10]/state_reg/CLK (DFFPOSX1)                   0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.15
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.21
+
+
+  Startpoint: pipeDE/instr[1]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pipeEM/alu_zero_dff/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeDE/instr[1]/state_reg/CLK (DFFPOSX1)                0.00 #     0.00 r
+  pipeDE/instr[1]/state_reg/Q (DFFPOSX1)                  0.11       0.11 f
+  pipeDE/instr[1]/q (dff_380)                             0.00       0.11 f
+  pipeDE/IE_instr<1> (ID_IE)                              0.00       0.11 f
+  execute/instr<1> (IE)                                   0.00       0.11 f
+  execute/alu_i/instr<1> (alu_inv)                        0.00       0.11 f
+  execute/alu_i/U23/Y (INVX1)                             0.01       0.11 r
+  execute/alu_i/U25/Y (NAND3X1)                           0.01       0.13 f
+  execute/alu_i/U26/Y (MUX2X1)                            0.04       0.17 r
+  execute/alu_i/U18/Y (AND2X2)                            0.04       0.21 r
+  execute/alu_i/invA (alu_inv)                            0.00       0.21 r
+  execute/ALU/invA (alu)                                  0.00       0.21 r
+  execute/ALU/inv_A/Flag (input_inv_1)                    0.00       0.21 r
+  execute/ALU/inv_A/U9/Y (INVX1)                          0.02       0.22 f
+  execute/ALU/inv_A/U2/Y (INVX1)                          0.01       0.23 r
+  execute/ALU/inv_A/ins2/in2 (xor2_30)                    0.00       0.23 r
+  execute/ALU/inv_A/ins2/U1/Y (XOR2X1)                    0.04       0.27 r
+  execute/ALU/inv_A/ins2/out (xor2_30)                    0.00       0.27 r
+  execute/ALU/inv_A/U11/Y (BUFX4)                         0.02       0.29 r
+  execute/ALU/inv_A/Out<2> (input_inv_1)                  0.00       0.29 r
+  execute/ALU/adder/A<2> (cla16_0)                        0.00       0.29 r
+  execute/ALU/adder/ins0/A<2> (cla4_3)                    0.00       0.29 r
+  execute/ALU/adder/ins0/ins2/A (pfa_13)                  0.00       0.29 r
+  execute/ALU/adder/ins0/ins2/U9/Y (INVX1)                0.02       0.31 f
+  execute/ALU/adder/ins0/ins2/U10/Y (OR2X2)               0.04       0.35 f
+  execute/ALU/adder/ins0/ins2/U11/Y (INVX1)               0.01       0.36 r
+  execute/ALU/adder/ins0/ins2/G (pfa_13)                  0.00       0.36 r
+  execute/ALU/adder/ins0/header4/G2 (ahead4_3)            0.00       0.36 r
+  execute/ALU/adder/ins0/header4/U10/Y (OR2X2)            0.04       0.40 r
+  execute/ALU/adder/ins0/header4/U11/Y (INVX1)            0.01       0.41 f
+  execute/ALU/adder/ins0/header4/U8/Y (AND2X2)            0.03       0.44 f
+  execute/ALU/adder/ins0/header4/U9/Y (INVX1)             0.00       0.44 r
+  execute/ALU/adder/ins0/header4/U12/Y (AND2X2)           0.03       0.47 r
+  execute/ALU/adder/ins0/header4/U13/Y (INVX1)            0.01       0.49 f
+  execute/ALU/adder/ins0/header4/U3/Y (OR2X2)             0.04       0.52 f
+  execute/ALU/adder/ins0/header4/U4/Y (INVX1)             0.01       0.53 r
+  execute/ALU/adder/ins0/header4/G_g (ahead4_3)           0.00       0.53 r
+  execute/ALU/adder/ins0/G_g (cla4_3)                     0.00       0.53 r
+  execute/ALU/adder/top/G_g0 (top_ahead_0)                0.00       0.53 r
+  execute/ALU/adder/top/ins0/G0 (ahead4_4)                0.00       0.53 r
+  execute/ALU/adder/top/ins0/U1/Y (OR2X2)                 0.04       0.57 r
+  execute/ALU/adder/top/ins0/C1 (ahead4_4)                0.00       0.57 r
+  execute/ALU/adder/top/C4 (top_ahead_0)                  0.00       0.57 r
+  execute/ALU/adder/ins1/C0 (cla4_2)                      0.00       0.57 r
+  execute/ALU/adder/ins1/header4/C0 (ahead4_2)            0.00       0.57 r
+  execute/ALU/adder/ins1/header4/U17/Y (INVX1)            0.02       0.59 f
+  execute/ALU/adder/ins1/header4/U1/Y (OR2X2)             0.04       0.63 f
+  execute/ALU/adder/ins1/header4/U2/Y (INVX1)             0.01       0.64 r
+  execute/ALU/adder/ins1/header4/P_g (ahead4_2)           0.00       0.64 r
+  execute/ALU/adder/ins1/P_g (cla4_2)                     0.00       0.64 r
+  execute/ALU/adder/top/P_g1 (top_ahead_0)                0.00       0.64 r
+  execute/ALU/adder/top/ins0/P1 (ahead4_4)                0.00       0.64 r
+  execute/ALU/adder/top/ins0/U11/Y (AND2X2)               0.03       0.67 r
+  execute/ALU/adder/top/ins0/U13/Y (INVX1)                0.01       0.68 f
+  execute/ALU/adder/top/ins0/U7/Y (AND2X2)                0.03       0.71 f
+  execute/ALU/adder/top/ins0/U4/Y (INVX1)                 0.01       0.72 r
+  execute/ALU/adder/top/ins0/C2 (ahead4_4)                0.00       0.72 r
+  execute/ALU/adder/top/C8 (top_ahead_0)                  0.00       0.72 r
+  execute/ALU/adder/ins2/C0 (cla4_1)                      0.00       0.72 r
+  execute/ALU/adder/ins2/header4/C0 (ahead4_1)            0.00       0.72 r
+  execute/ALU/adder/ins2/header4/U17/Y (AND2X2)           0.03       0.75 r
+  execute/ALU/adder/ins2/header4/P_g (ahead4_1)           0.00       0.75 r
+  execute/ALU/adder/ins2/P_g (cla4_1)                     0.00       0.75 r
+  execute/ALU/adder/top/P_g2 (top_ahead_0)                0.00       0.75 r
+  execute/ALU/adder/top/ins0/P2 (ahead4_4)                0.00       0.75 r
+  execute/ALU/adder/top/ins0/U19/Y (INVX1)                0.02       0.77 f
+  execute/ALU/adder/top/ins0/U35/Y (OAI21X1)              0.06       0.83 r
+  execute/ALU/adder/top/ins0/C3 (ahead4_4)                0.00       0.83 r
+  execute/ALU/adder/top/C12 (top_ahead_0)                 0.00       0.83 r
+  execute/ALU/adder/ins3/C0 (cla4_0)                      0.00       0.83 r
+  execute/ALU/adder/ins3/header4/C0 (ahead4_0)            0.00       0.83 r
+  execute/ALU/adder/ins3/header4/U22/Y (AND2X2)           0.04       0.87 r
+  execute/ALU/adder/ins3/header4/P_g (ahead4_0)           0.00       0.87 r
+  execute/ALU/adder/ins3/P_g (cla4_0)                     0.00       0.87 r
+  execute/ALU/adder/top/P_g3 (top_ahead_0)                0.00       0.87 r
+  execute/ALU/adder/top/U6/Y (OR2X2)                      0.04       0.90 r
+  execute/ALU/adder/top/U13/Y (AND2X2)                    0.04       0.94 r
+  execute/ALU/adder/top/C16 (top_ahead_0)                 0.00       0.94 r
+  execute/ALU/adder/C16 (cla16_0)                         0.00       0.94 r
+  execute/ALU/ofl_ins/C16 (ofl_detector)                  0.00       0.94 r
+  execute/ALU/ofl_ins/sign_det/in1 (xor2_0)               0.00       0.94 r
+  execute/ALU/ofl_ins/sign_det/U1/Y (AND2X2)              0.03       0.97 r
+  execute/ALU/ofl_ins/sign_det/U6/Y (INVX1)               0.01       0.99 f
+  execute/ALU/ofl_ins/sign_det/U2/Y (AND2X2)              0.03       1.02 f
+  execute/ALU/ofl_ins/sign_det/U3/Y (INVX1)               0.00       1.02 r
+  execute/ALU/ofl_ins/sign_det/out (xor2_0)               0.00       1.02 r
+  execute/ALU/ofl_ins/ins1/InB (mux_2_1_192)              0.00       1.02 r
+  execute/ALU/ofl_ins/ins1/B/in1 (nand2_577)              0.00       1.02 r
+  execute/ALU/ofl_ins/ins1/B/U1/Y (AND2X2)                0.03       1.05 r
+  execute/ALU/ofl_ins/ins1/B/U2/Y (INVX1)                 0.01       1.06 f
+  execute/ALU/ofl_ins/ins1/B/out (nand2_577)              0.00       1.06 f
+  execute/ALU/ofl_ins/ins1/C/in2 (nand2_576)              0.00       1.06 f
+  execute/ALU/ofl_ins/ins1/C/U1/Y (AND2X2)                0.03       1.09 f
+  execute/ALU/ofl_ins/ins1/C/U2/Y (INVX1)                 0.00       1.10 r
+  execute/ALU/ofl_ins/ins1/C/out (nand2_576)              0.00       1.10 r
+  execute/ALU/ofl_ins/ins1/Out (mux_2_1_192)              0.00       1.10 r
+  execute/ALU/ofl_ins/Ofl (ofl_detector)                  0.00       1.10 r
+  execute/ALU/zero_ins/Ofl (zero_detector)                0.00       1.10 r
+  execute/ALU/zero_ins/U6/Y (OR2X2)                       0.03       1.13 r
+  execute/ALU/zero_ins/U7/Y (INVX1)                       0.01       1.14 f
+  execute/ALU/zero_ins/Out (zero_detector)                0.00       1.14 f
+  execute/ALU/Z (alu)                                     0.00       1.14 f
+  execute/alu_zero (IE)                                   0.00       1.14 f
+  pipeEM/IE_alu_zero (IE_IM)                              0.00       1.14 f
+  pipeEM/alu_zero_dff/d (dff_452)                         0.00       1.14 f
+  pipeEM/alu_zero_dff/U3/Y (INVX1)                        0.00       1.14 r
+  pipeEM/alu_zero_dff/U4/Y (NOR2X1)                       0.01       1.15 f
+  pipeEM/alu_zero_dff/state_reg/D (DFFPOSX1)              0.00       1.15 f
+  data arrival time                                                  1.15
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  pipeEM/alu_zero_dff/state_reg/CLK (DFFPOSX1)            0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.15
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.21
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fetch/pc[12]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U105/Y (OR2X2)                        0.04       0.34 r
+  writeback/control/U38/Y (AND2X2)                        0.03       0.37 r
+  writeback/control/U37/Y (NOR2X1)                        0.01       0.38 f
+  writeback/control/U157/Y (INVX1)                        0.00       0.38 r
+  writeback/control/U113/Y (OR2X2)                        0.04       0.41 r
+  writeback/control/writedata<2> (wrt_ctrl)               0.00       0.41 r
+  writeback/writedata<2> (IW)                             0.00       0.41 r
+  decode/IW_writedata<2> (ID)                             0.00       0.41 r
+  decode/rf/writedata<2> (rf_bypass)                      0.00       0.41 r
+  decode/rf/U44/Y (INVX1)                                 0.02       0.43 f
+  decode/rf/U93/Y (OAI21X1)                               0.05       0.48 r
+  decode/rf/read1data<2> (rf_bypass)                      0.00       0.48 r
+  decode/branch_pc_adder2/A<2> (cla16_1)                  0.00       0.48 r
+  decode/branch_pc_adder2/ins0/A<2> (cla4_7)              0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/A (pfa_29)            0.00       0.48 r
+  decode/branch_pc_adder2/ins0/ins2/U12/Y (AND2X2)        0.04       0.52 r
+  decode/branch_pc_adder2/ins0/ins2/G (pfa_29)            0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/G2 (ahead4_8)      0.00       0.52 r
+  decode/branch_pc_adder2/ins0/header4/U27/Y (OR2X2)      0.04       0.56 r
+  decode/branch_pc_adder2/ins0/header4/U5/Y (OR2X2)       0.04       0.59 r
+  decode/branch_pc_adder2/ins0/header4/U6/Y (INVX1)       0.01       0.61 f
+  decode/branch_pc_adder2/ins0/header4/U24/Y (AND2X2)     0.03       0.64 f
+  decode/branch_pc_adder2/ins0/header4/U36/Y (AOI21X1)
+                                                          0.01       0.65 r
+  decode/branch_pc_adder2/ins0/header4/U10/Y (BUFX2)      0.03       0.69 r
+  decode/branch_pc_adder2/ins0/header4/U37/Y (AND2X2)     0.04       0.72 r
+  decode/branch_pc_adder2/ins0/header4/G_g (ahead4_8)     0.00       0.72 r
+  decode/branch_pc_adder2/ins0/G_g (cla4_7)               0.00       0.72 r
+  decode/branch_pc_adder2/top/G_g0 (top_ahead_1)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/G0 (ahead4_9)          0.00       0.72 r
+  decode/branch_pc_adder2/top/ins0/U7/Y (OR2X2)           0.04       0.77 r
+  decode/branch_pc_adder2/top/ins0/C1 (ahead4_9)          0.00       0.77 r
+  decode/branch_pc_adder2/top/C4 (top_ahead_1)            0.00       0.77 r
+  decode/branch_pc_adder2/ins1/C0 (cla4_6)                0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/C0 (ahead4_7)      0.00       0.77 r
+  decode/branch_pc_adder2/ins1/header4/U16/Y (AND2X2)     0.04       0.81 r
+  decode/branch_pc_adder2/ins1/header4/P_g (ahead4_7)     0.00       0.81 r
+  decode/branch_pc_adder2/ins1/P_g (cla4_6)               0.00       0.81 r
+  decode/branch_pc_adder2/top/P_g1 (top_ahead_1)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/P1 (ahead4_9)          0.00       0.81 r
+  decode/branch_pc_adder2/top/ins0/U13/Y (AND2X2)         0.03       0.84 r
+  decode/branch_pc_adder2/top/ins0/U11/Y (OR2X2)          0.04       0.88 r
+  decode/branch_pc_adder2/top/ins0/C2 (ahead4_9)          0.00       0.88 r
+  decode/branch_pc_adder2/top/C8 (top_ahead_1)            0.00       0.88 r
+  decode/branch_pc_adder2/ins2/C0 (cla4_5)                0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/C0 (ahead4_6)      0.00       0.88 r
+  decode/branch_pc_adder2/ins2/header4/U18/Y (AND2X2)     0.04       0.92 r
+  decode/branch_pc_adder2/ins2/header4/P_g (ahead4_6)     0.00       0.92 r
+  decode/branch_pc_adder2/ins2/P_g (cla4_5)               0.00       0.92 r
+  decode/branch_pc_adder2/top/P_g2 (top_ahead_1)          0.00       0.92 r
+  decode/branch_pc_adder2/top/ins0/P2 (ahead4_9)          0.00       0.92 r
+  decode/branch_pc_adder2/top/ins0/U18/Y (AOI21X1)        0.02       0.94 f
+  decode/branch_pc_adder2/top/ins0/U2/Y (INVX1)           0.02       0.95 r
+  decode/branch_pc_adder2/top/ins0/C3 (ahead4_9)          0.00       0.95 r
+  decode/branch_pc_adder2/top/C12 (top_ahead_1)           0.00       0.95 r
+  decode/branch_pc_adder2/ins3/C0 (cla4_4)                0.00       0.95 r
+  decode/branch_pc_adder2/ins3/U1/Y (BUFX2)               0.04       0.99 r
+  decode/branch_pc_adder2/ins3/ins0/Cin (pfa_19)          0.00       0.99 r
+  decode/branch_pc_adder2/ins3/ins0/U2/Y (XNOR2X1)        0.03       1.01 f
+  decode/branch_pc_adder2/ins3/ins0/Sum (pfa_19)          0.00       1.01 f
+  decode/branch_pc_adder2/ins3/Sum<0> (cla4_4)            0.00       1.01 f
+  decode/branch_pc_adder2/Sum<12> (cla16_1)               0.00       1.01 f
+  decode/U60/Y (INVX1)                                    0.00       1.02 r
+  decode/U65/Y (MUX2X1)                                   0.02       1.03 f
+  decode/branch_PC<12> (ID)                               0.00       1.03 f
+  fetch/branch_PC<12> (IF)                                0.00       1.03 f
+  fetch/U68/Y (AOI22X1)                                   0.04       1.07 r
+  fetch/U24/Y (BUFX2)                                     0.04       1.11 r
+  fetch/U69/Y (OAI21X1)                                   0.01       1.12 f
+  fetch/pc[12]/d (dff_439)                                0.00       1.12 f
+  fetch/pc[12]/U3/Y (INVX1)                               0.00       1.13 r
+  fetch/pc[12]/U4/Y (NOR2X1)                              0.01       1.13 f
+  fetch/pc[12]/state_reg/D (DFFPOSX1)                     0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  fetch/pc[12]/state_reg/CLK (DFFPOSX1)                   0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.19
+
+
+  Startpoint: pipeDE/instr[1]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pipeEM/alu_result_dff[14]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeDE/instr[1]/state_reg/CLK (DFFPOSX1)                0.00 #     0.00 r
+  pipeDE/instr[1]/state_reg/Q (DFFPOSX1)                  0.11       0.11 f
+  pipeDE/instr[1]/q (dff_380)                             0.00       0.11 f
+  pipeDE/IE_instr<1> (ID_IE)                              0.00       0.11 f
+  execute/instr<1> (IE)                                   0.00       0.11 f
+  execute/alu_i/instr<1> (alu_inv)                        0.00       0.11 f
+  execute/alu_i/U23/Y (INVX1)                             0.01       0.11 r
+  execute/alu_i/U25/Y (NAND3X1)                           0.01       0.13 f
+  execute/alu_i/U26/Y (MUX2X1)                            0.04       0.17 r
+  execute/alu_i/U18/Y (AND2X2)                            0.04       0.21 r
+  execute/alu_i/invA (alu_inv)                            0.00       0.21 r
+  execute/ALU/invA (alu)                                  0.00       0.21 r
+  execute/ALU/inv_A/Flag (input_inv_1)                    0.00       0.21 r
+  execute/ALU/inv_A/U9/Y (INVX1)                          0.02       0.22 f
+  execute/ALU/inv_A/U2/Y (INVX1)                          0.01       0.23 r
+  execute/ALU/inv_A/ins2/in2 (xor2_30)                    0.00       0.23 r
+  execute/ALU/inv_A/ins2/U1/Y (XOR2X1)                    0.04       0.27 r
+  execute/ALU/inv_A/ins2/out (xor2_30)                    0.00       0.27 r
+  execute/ALU/inv_A/U11/Y (BUFX4)                         0.02       0.29 r
+  execute/ALU/inv_A/Out<2> (input_inv_1)                  0.00       0.29 r
+  execute/ALU/adder/A<2> (cla16_0)                        0.00       0.29 r
+  execute/ALU/adder/ins0/A<2> (cla4_3)                    0.00       0.29 r
+  execute/ALU/adder/ins0/ins2/A (pfa_13)                  0.00       0.29 r
+  execute/ALU/adder/ins0/ins2/U9/Y (INVX1)                0.02       0.31 f
+  execute/ALU/adder/ins0/ins2/U10/Y (OR2X2)               0.04       0.35 f
+  execute/ALU/adder/ins0/ins2/U11/Y (INVX1)               0.01       0.36 r
+  execute/ALU/adder/ins0/ins2/G (pfa_13)                  0.00       0.36 r
+  execute/ALU/adder/ins0/header4/G2 (ahead4_3)            0.00       0.36 r
+  execute/ALU/adder/ins0/header4/U10/Y (OR2X2)            0.04       0.40 r
+  execute/ALU/adder/ins0/header4/U11/Y (INVX1)            0.01       0.41 f
+  execute/ALU/adder/ins0/header4/U8/Y (AND2X2)            0.03       0.44 f
+  execute/ALU/adder/ins0/header4/U9/Y (INVX1)             0.00       0.44 r
+  execute/ALU/adder/ins0/header4/U12/Y (AND2X2)           0.03       0.47 r
+  execute/ALU/adder/ins0/header4/U13/Y (INVX1)            0.01       0.49 f
+  execute/ALU/adder/ins0/header4/U3/Y (OR2X2)             0.04       0.52 f
+  execute/ALU/adder/ins0/header4/U4/Y (INVX1)             0.01       0.53 r
+  execute/ALU/adder/ins0/header4/G_g (ahead4_3)           0.00       0.53 r
+  execute/ALU/adder/ins0/G_g (cla4_3)                     0.00       0.53 r
+  execute/ALU/adder/top/G_g0 (top_ahead_0)                0.00       0.53 r
+  execute/ALU/adder/top/ins0/G0 (ahead4_4)                0.00       0.53 r
+  execute/ALU/adder/top/ins0/U1/Y (OR2X2)                 0.04       0.57 r
+  execute/ALU/adder/top/ins0/C1 (ahead4_4)                0.00       0.57 r
+  execute/ALU/adder/top/C4 (top_ahead_0)                  0.00       0.57 r
+  execute/ALU/adder/ins1/C0 (cla4_2)                      0.00       0.57 r
+  execute/ALU/adder/ins1/header4/C0 (ahead4_2)            0.00       0.57 r
+  execute/ALU/adder/ins1/header4/U17/Y (INVX1)            0.02       0.59 f
+  execute/ALU/adder/ins1/header4/U1/Y (OR2X2)             0.04       0.63 f
+  execute/ALU/adder/ins1/header4/U2/Y (INVX1)             0.01       0.64 r
+  execute/ALU/adder/ins1/header4/P_g (ahead4_2)           0.00       0.64 r
+  execute/ALU/adder/ins1/P_g (cla4_2)                     0.00       0.64 r
+  execute/ALU/adder/top/P_g1 (top_ahead_0)                0.00       0.64 r
+  execute/ALU/adder/top/ins0/P1 (ahead4_4)                0.00       0.64 r
+  execute/ALU/adder/top/ins0/U11/Y (AND2X2)               0.03       0.67 r
+  execute/ALU/adder/top/ins0/U13/Y (INVX1)                0.01       0.68 f
+  execute/ALU/adder/top/ins0/U7/Y (AND2X2)                0.03       0.71 f
+  execute/ALU/adder/top/ins0/U4/Y (INVX1)                 0.01       0.72 r
+  execute/ALU/adder/top/ins0/C2 (ahead4_4)                0.00       0.72 r
+  execute/ALU/adder/top/C8 (top_ahead_0)                  0.00       0.72 r
+  execute/ALU/adder/ins2/C0 (cla4_1)                      0.00       0.72 r
+  execute/ALU/adder/ins2/header4/C0 (ahead4_1)            0.00       0.72 r
+  execute/ALU/adder/ins2/header4/U17/Y (AND2X2)           0.03       0.75 r
+  execute/ALU/adder/ins2/header4/P_g (ahead4_1)           0.00       0.75 r
+  execute/ALU/adder/ins2/P_g (cla4_1)                     0.00       0.75 r
+  execute/ALU/adder/top/P_g2 (top_ahead_0)                0.00       0.75 r
+  execute/ALU/adder/top/ins0/P2 (ahead4_4)                0.00       0.75 r
+  execute/ALU/adder/top/ins0/U19/Y (INVX1)                0.02       0.77 f
+  execute/ALU/adder/top/ins0/U35/Y (OAI21X1)              0.06       0.83 r
+  execute/ALU/adder/top/ins0/C3 (ahead4_4)                0.00       0.83 r
+  execute/ALU/adder/top/C12 (top_ahead_0)                 0.00       0.83 r
+  execute/ALU/adder/ins3/C0 (cla4_0)                      0.00       0.83 r
+  execute/ALU/adder/ins3/header4/C0 (ahead4_0)            0.00       0.83 r
+  execute/ALU/adder/ins3/header4/U6/Y (OR2X2)             0.04       0.87 r
+  execute/ALU/adder/ins3/header4/U4/Y (AND2X1)            0.03       0.90 r
+  execute/ALU/adder/ins3/header4/U15/Y (INVX1)            0.02       0.92 f
+  execute/ALU/adder/ins3/header4/U13/Y (AND2X2)           0.03       0.95 f
+  execute/ALU/adder/ins3/header4/U14/Y (INVX1)            0.01       0.96 r
+  execute/ALU/adder/ins3/header4/C2 (ahead4_0)            0.00       0.96 r
+  execute/ALU/adder/ins3/ins2/Cin (pfa_1)                 0.00       0.96 r
+  execute/ALU/adder/ins3/ins2/U1/Y (XOR2X1)               0.03       0.99 f
+  execute/ALU/adder/ins3/ins2/Sum (pfa_1)                 0.00       0.99 f
+  execute/ALU/adder/ins3/Sum<2> (cla4_0)                  0.00       0.99 f
+  execute/ALU/adder/Sum<14> (cla16_0)                     0.00       0.99 f
+  execute/ALU/U28/Y (INVX1)                               0.00       0.99 r
+  execute/ALU/U29/Y (INVX1)                               0.01       1.01 f
+  execute/ALU/U276/Y (AOI22X1)                            0.04       1.05 r
+  execute/ALU/U116/Y (BUFX2)                              0.03       1.08 r
+  execute/ALU/U57/Y (AND2X2)                              0.03       1.11 r
+  execute/ALU/U63/Y (INVX1)                               0.01       1.13 f
+  execute/ALU/Out<14> (alu)                               0.00       1.13 f
+  execute/alu_result<14> (IE)                             0.00       1.13 f
+  pipeEM/IE_alu_result<14> (IE_IM)                        0.00       1.13 f
+  pipeEM/alu_result_dff[14]/d (dff_243)                   0.00       1.13 f
+  pipeEM/alu_result_dff[14]/U3/Y (INVX1)                  0.00       1.13 r
+  pipeEM/alu_result_dff[14]/U4/Y (NOR2X1)                 0.01       1.13 f
+  pipeEM/alu_result_dff[14]/state_reg/D (DFFPOSX1)        0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  pipeEM/alu_result_dff[14]/state_reg/CLK (DFFPOSX1)      0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.19
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pipeFD/instr[11]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U59/Y (OR2X2)                         0.06       0.35 r
+  writeback/control/U421/Y (NAND2X1)                      0.02       0.37 f
+  writeback/control/U170/Y (INVX1)                        0.00       0.37 r
+  writeback/control/U98/Y (OR2X2)                         0.04       0.42 r
+  writeback/control/U97/Y (OR2X2)                         0.04       0.46 r
+  writeback/control/U12/Y (OR2X2)                         0.04       0.50 r
+  writeback/control/writedata<13> (wrt_ctrl)              0.00       0.50 r
+  writeback/writedata<13> (IW)                            0.00       0.50 r
+  decode/IW_writedata<13> (ID)                            0.00       0.50 r
+  decode/rf/writedata<13> (rf_bypass)                     0.00       0.50 r
+  decode/rf/U11/Y (MUX2X1)                                0.02       0.52 f
+  decode/rf/U21/Y (INVX1)                                 0.02       0.54 r
+  decode/rf/read1data<13> (rf_bypass)                     0.00       0.54 r
+  decode/h_detect/rs<13> (hazard)                         0.00       0.54 r
+  decode/h_detect/bd/rs<13> (branch_detector)             0.00       0.54 r
+  decode/h_detect/bd/U13/Y (OR2X2)                        0.03       0.57 r
+  decode/h_detect/bd/U14/Y (INVX1)                        0.01       0.59 f
+  decode/h_detect/bd/U28/Y (NAND3X1)                      0.03       0.62 r
+  decode/h_detect/bd/U11/Y (BUFX2)                        0.03       0.66 r
+  decode/h_detect/bd/U9/Y (OR2X2)                         0.04       0.69 r
+  decode/h_detect/bd/U10/Y (INVX1)                        0.02       0.71 f
+  decode/h_detect/bd/U31/Y (NAND3X1)                      0.03       0.74 r
+  decode/h_detect/bd/U15/Y (BUFX2)                        0.04       0.77 r
+  decode/h_detect/bd/U3/Y (MUX2X1)                        0.03       0.80 f
+  decode/h_detect/bd/U19/Y (XNOR2X1)                      0.04       0.84 r
+  decode/h_detect/bd/U32/Y (OAI21X1)                      0.02       0.86 f
+  decode/h_detect/bd/U33/Y (NOR2X1)                       0.03       0.88 r
+  decode/h_detect/bd/branch_taken (branch_detector)       0.00       0.88 r
+  decode/h_detect/U4/Y (BUFX2)                            0.03       0.92 r
+  decode/h_detect/U26/Y (AND2X2)                          0.04       0.95 r
+  decode/h_detect/U33/Y (INVX1)                           0.02       0.97 f
+  decode/h_detect/U32/Y (INVX1)                           0.00       0.97 r
+  decode/h_detect/IF_flush (hazard)                       0.00       0.97 r
+  decode/IF_flush (ID)                                    0.00       0.97 r
+  pipeFD/IF_flush (IF_ID)                                 0.00       0.97 r
+  pipeFD/U111/Y (INVX1)                                   0.02       0.99 f
+  pipeFD/U123/Y (AND2X2)                                  0.05       1.04 f
+  pipeFD/U115/Y (AND2X2)                                  0.04       1.08 f
+  pipeFD/U116/Y (INVX1)                                   0.00       1.08 r
+  pipeFD/U25/Y (AND2X2)                                   0.03       1.11 r
+  pipeFD/U26/Y (INVX1)                                    0.01       1.12 f
+  pipeFD/instr[11]/d (dff_422)                            0.00       1.12 f
+  pipeFD/instr[11]/U3/Y (INVX1)                           0.00       1.13 r
+  pipeFD/instr[11]/U4/Y (NOR2X1)                          0.01       1.13 f
+  pipeFD/instr[11]/state_reg/D (DFFPOSX1)                 0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  pipeFD/instr[11]/state_reg/CLK (DFFPOSX1)               0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.19
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pipeFD/instr[2]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U59/Y (OR2X2)                         0.06       0.35 r
+  writeback/control/U421/Y (NAND2X1)                      0.02       0.37 f
+  writeback/control/U170/Y (INVX1)                        0.00       0.37 r
+  writeback/control/U98/Y (OR2X2)                         0.04       0.42 r
+  writeback/control/U97/Y (OR2X2)                         0.04       0.46 r
+  writeback/control/U12/Y (OR2X2)                         0.04       0.50 r
+  writeback/control/writedata<13> (wrt_ctrl)              0.00       0.50 r
+  writeback/writedata<13> (IW)                            0.00       0.50 r
+  decode/IW_writedata<13> (ID)                            0.00       0.50 r
+  decode/rf/writedata<13> (rf_bypass)                     0.00       0.50 r
+  decode/rf/U11/Y (MUX2X1)                                0.02       0.52 f
+  decode/rf/U21/Y (INVX1)                                 0.02       0.54 r
+  decode/rf/read1data<13> (rf_bypass)                     0.00       0.54 r
+  decode/h_detect/rs<13> (hazard)                         0.00       0.54 r
+  decode/h_detect/bd/rs<13> (branch_detector)             0.00       0.54 r
+  decode/h_detect/bd/U13/Y (OR2X2)                        0.03       0.57 r
+  decode/h_detect/bd/U14/Y (INVX1)                        0.01       0.59 f
+  decode/h_detect/bd/U28/Y (NAND3X1)                      0.03       0.62 r
+  decode/h_detect/bd/U11/Y (BUFX2)                        0.03       0.66 r
+  decode/h_detect/bd/U9/Y (OR2X2)                         0.04       0.69 r
+  decode/h_detect/bd/U10/Y (INVX1)                        0.02       0.71 f
+  decode/h_detect/bd/U31/Y (NAND3X1)                      0.03       0.74 r
+  decode/h_detect/bd/U15/Y (BUFX2)                        0.04       0.77 r
+  decode/h_detect/bd/U3/Y (MUX2X1)                        0.03       0.80 f
+  decode/h_detect/bd/U19/Y (XNOR2X1)                      0.04       0.84 r
+  decode/h_detect/bd/U32/Y (OAI21X1)                      0.02       0.86 f
+  decode/h_detect/bd/U33/Y (NOR2X1)                       0.03       0.88 r
+  decode/h_detect/bd/branch_taken (branch_detector)       0.00       0.88 r
+  decode/h_detect/U4/Y (BUFX2)                            0.03       0.92 r
+  decode/h_detect/U26/Y (AND2X2)                          0.04       0.95 r
+  decode/h_detect/U33/Y (INVX1)                           0.02       0.97 f
+  decode/h_detect/U32/Y (INVX1)                           0.00       0.97 r
+  decode/h_detect/IF_flush (hazard)                       0.00       0.97 r
+  decode/IF_flush (ID)                                    0.00       0.97 r
+  pipeFD/IF_flush (IF_ID)                                 0.00       0.97 r
+  pipeFD/U111/Y (INVX1)                                   0.02       0.99 f
+  pipeFD/U123/Y (AND2X2)                                  0.05       1.04 f
+  pipeFD/U75/Y (AND2X2)                                   0.04       1.08 f
+  pipeFD/U76/Y (INVX1)                                    0.00       1.08 r
+  pipeFD/U77/Y (AND2X2)                                   0.03       1.11 r
+  pipeFD/U78/Y (INVX1)                                    0.01       1.12 f
+  pipeFD/instr[2]/d (dff_413)                             0.00       1.12 f
+  pipeFD/instr[2]/U3/Y (INVX1)                            0.00       1.13 r
+  pipeFD/instr[2]/U4/Y (NOR2X1)                           0.01       1.13 f
+  pipeFD/instr[2]/state_reg/D (DFFPOSX1)                  0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  pipeFD/instr[2]/state_reg/CLK (DFFPOSX1)                0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.19
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pipeFD/instr[5]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U59/Y (OR2X2)                         0.06       0.35 r
+  writeback/control/U421/Y (NAND2X1)                      0.02       0.37 f
+  writeback/control/U170/Y (INVX1)                        0.00       0.37 r
+  writeback/control/U98/Y (OR2X2)                         0.04       0.42 r
+  writeback/control/U97/Y (OR2X2)                         0.04       0.46 r
+  writeback/control/U12/Y (OR2X2)                         0.04       0.50 r
+  writeback/control/writedata<13> (wrt_ctrl)              0.00       0.50 r
+  writeback/writedata<13> (IW)                            0.00       0.50 r
+  decode/IW_writedata<13> (ID)                            0.00       0.50 r
+  decode/rf/writedata<13> (rf_bypass)                     0.00       0.50 r
+  decode/rf/U11/Y (MUX2X1)                                0.02       0.52 f
+  decode/rf/U21/Y (INVX1)                                 0.02       0.54 r
+  decode/rf/read1data<13> (rf_bypass)                     0.00       0.54 r
+  decode/h_detect/rs<13> (hazard)                         0.00       0.54 r
+  decode/h_detect/bd/rs<13> (branch_detector)             0.00       0.54 r
+  decode/h_detect/bd/U13/Y (OR2X2)                        0.03       0.57 r
+  decode/h_detect/bd/U14/Y (INVX1)                        0.01       0.59 f
+  decode/h_detect/bd/U28/Y (NAND3X1)                      0.03       0.62 r
+  decode/h_detect/bd/U11/Y (BUFX2)                        0.03       0.66 r
+  decode/h_detect/bd/U9/Y (OR2X2)                         0.04       0.69 r
+  decode/h_detect/bd/U10/Y (INVX1)                        0.02       0.71 f
+  decode/h_detect/bd/U31/Y (NAND3X1)                      0.03       0.74 r
+  decode/h_detect/bd/U15/Y (BUFX2)                        0.04       0.77 r
+  decode/h_detect/bd/U3/Y (MUX2X1)                        0.03       0.80 f
+  decode/h_detect/bd/U19/Y (XNOR2X1)                      0.04       0.84 r
+  decode/h_detect/bd/U32/Y (OAI21X1)                      0.02       0.86 f
+  decode/h_detect/bd/U33/Y (NOR2X1)                       0.03       0.88 r
+  decode/h_detect/bd/branch_taken (branch_detector)       0.00       0.88 r
+  decode/h_detect/U4/Y (BUFX2)                            0.03       0.92 r
+  decode/h_detect/U26/Y (AND2X2)                          0.04       0.95 r
+  decode/h_detect/U33/Y (INVX1)                           0.02       0.97 f
+  decode/h_detect/U32/Y (INVX1)                           0.00       0.97 r
+  decode/h_detect/IF_flush (hazard)                       0.00       0.97 r
+  decode/IF_flush (ID)                                    0.00       0.97 r
+  pipeFD/IF_flush (IF_ID)                                 0.00       0.97 r
+  pipeFD/U111/Y (INVX1)                                   0.02       0.99 f
+  pipeFD/U123/Y (AND2X2)                                  0.05       1.04 f
+  pipeFD/U47/Y (AND2X2)                                   0.04       1.08 f
+  pipeFD/U48/Y (INVX1)                                    0.00       1.08 r
+  pipeFD/U49/Y (AND2X2)                                   0.03       1.11 r
+  pipeFD/U50/Y (INVX1)                                    0.01       1.12 f
+  pipeFD/instr[5]/d (dff_416)                             0.00       1.12 f
+  pipeFD/instr[5]/U3/Y (INVX1)                            0.00       1.13 r
+  pipeFD/instr[5]/U4/Y (NOR2X1)                           0.01       1.13 f
+  pipeFD/instr[5]/state_reg/D (DFFPOSX1)                  0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  pipeFD/instr[5]/state_reg/CLK (DFFPOSX1)                0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.19
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pipeFD/instr[10]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U59/Y (OR2X2)                         0.06       0.35 r
+  writeback/control/U421/Y (NAND2X1)                      0.02       0.37 f
+  writeback/control/U170/Y (INVX1)                        0.00       0.37 r
+  writeback/control/U98/Y (OR2X2)                         0.04       0.42 r
+  writeback/control/U97/Y (OR2X2)                         0.04       0.46 r
+  writeback/control/U12/Y (OR2X2)                         0.04       0.50 r
+  writeback/control/writedata<13> (wrt_ctrl)              0.00       0.50 r
+  writeback/writedata<13> (IW)                            0.00       0.50 r
+  decode/IW_writedata<13> (ID)                            0.00       0.50 r
+  decode/rf/writedata<13> (rf_bypass)                     0.00       0.50 r
+  decode/rf/U11/Y (MUX2X1)                                0.02       0.52 f
+  decode/rf/U21/Y (INVX1)                                 0.02       0.54 r
+  decode/rf/read1data<13> (rf_bypass)                     0.00       0.54 r
+  decode/h_detect/rs<13> (hazard)                         0.00       0.54 r
+  decode/h_detect/bd/rs<13> (branch_detector)             0.00       0.54 r
+  decode/h_detect/bd/U13/Y (OR2X2)                        0.03       0.57 r
+  decode/h_detect/bd/U14/Y (INVX1)                        0.01       0.59 f
+  decode/h_detect/bd/U28/Y (NAND3X1)                      0.03       0.62 r
+  decode/h_detect/bd/U11/Y (BUFX2)                        0.03       0.66 r
+  decode/h_detect/bd/U9/Y (OR2X2)                         0.04       0.69 r
+  decode/h_detect/bd/U10/Y (INVX1)                        0.02       0.71 f
+  decode/h_detect/bd/U31/Y (NAND3X1)                      0.03       0.74 r
+  decode/h_detect/bd/U15/Y (BUFX2)                        0.04       0.77 r
+  decode/h_detect/bd/U3/Y (MUX2X1)                        0.03       0.80 f
+  decode/h_detect/bd/U19/Y (XNOR2X1)                      0.04       0.84 r
+  decode/h_detect/bd/U32/Y (OAI21X1)                      0.02       0.86 f
+  decode/h_detect/bd/U33/Y (NOR2X1)                       0.03       0.88 r
+  decode/h_detect/bd/branch_taken (branch_detector)       0.00       0.88 r
+  decode/h_detect/U4/Y (BUFX2)                            0.03       0.92 r
+  decode/h_detect/U26/Y (AND2X2)                          0.04       0.95 r
+  decode/h_detect/U33/Y (INVX1)                           0.02       0.97 f
+  decode/h_detect/U32/Y (INVX1)                           0.00       0.97 r
+  decode/h_detect/IF_flush (hazard)                       0.00       0.97 r
+  decode/IF_flush (ID)                                    0.00       0.97 r
+  pipeFD/IF_flush (IF_ID)                                 0.00       0.97 r
+  pipeFD/U111/Y (INVX1)                                   0.02       0.99 f
+  pipeFD/U123/Y (AND2X2)                                  0.05       1.04 f
+  pipeFD/U27/Y (AND2X2)                                   0.04       1.08 f
+  pipeFD/U28/Y (INVX1)                                    0.00       1.08 r
+  pipeFD/U29/Y (AND2X2)                                   0.03       1.11 r
+  pipeFD/U30/Y (INVX1)                                    0.01       1.12 f
+  pipeFD/instr[10]/d (dff_421)                            0.00       1.12 f
+  pipeFD/instr[10]/U3/Y (INVX1)                           0.00       1.13 r
+  pipeFD/instr[10]/U4/Y (NOR2X1)                          0.01       1.13 f
+  pipeFD/instr[10]/state_reg/D (DFFPOSX1)                 0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  pipeFD/instr[10]/state_reg/CLK (DFFPOSX1)               0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.19
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pipeFD/instr[15]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U59/Y (OR2X2)                         0.06       0.35 r
+  writeback/control/U421/Y (NAND2X1)                      0.02       0.37 f
+  writeback/control/U170/Y (INVX1)                        0.00       0.37 r
+  writeback/control/U98/Y (OR2X2)                         0.04       0.42 r
+  writeback/control/U97/Y (OR2X2)                         0.04       0.46 r
+  writeback/control/U12/Y (OR2X2)                         0.04       0.50 r
+  writeback/control/writedata<13> (wrt_ctrl)              0.00       0.50 r
+  writeback/writedata<13> (IW)                            0.00       0.50 r
+  decode/IW_writedata<13> (ID)                            0.00       0.50 r
+  decode/rf/writedata<13> (rf_bypass)                     0.00       0.50 r
+  decode/rf/U11/Y (MUX2X1)                                0.02       0.52 f
+  decode/rf/U21/Y (INVX1)                                 0.02       0.54 r
+  decode/rf/read1data<13> (rf_bypass)                     0.00       0.54 r
+  decode/h_detect/rs<13> (hazard)                         0.00       0.54 r
+  decode/h_detect/bd/rs<13> (branch_detector)             0.00       0.54 r
+  decode/h_detect/bd/U13/Y (OR2X2)                        0.03       0.57 r
+  decode/h_detect/bd/U14/Y (INVX1)                        0.01       0.59 f
+  decode/h_detect/bd/U28/Y (NAND3X1)                      0.03       0.62 r
+  decode/h_detect/bd/U11/Y (BUFX2)                        0.03       0.66 r
+  decode/h_detect/bd/U9/Y (OR2X2)                         0.04       0.69 r
+  decode/h_detect/bd/U10/Y (INVX1)                        0.02       0.71 f
+  decode/h_detect/bd/U31/Y (NAND3X1)                      0.03       0.74 r
+  decode/h_detect/bd/U15/Y (BUFX2)                        0.04       0.77 r
+  decode/h_detect/bd/U3/Y (MUX2X1)                        0.03       0.80 f
+  decode/h_detect/bd/U19/Y (XNOR2X1)                      0.04       0.84 r
+  decode/h_detect/bd/U32/Y (OAI21X1)                      0.02       0.86 f
+  decode/h_detect/bd/U33/Y (NOR2X1)                       0.03       0.88 r
+  decode/h_detect/bd/branch_taken (branch_detector)       0.00       0.88 r
+  decode/h_detect/U4/Y (BUFX2)                            0.03       0.92 r
+  decode/h_detect/U26/Y (AND2X2)                          0.04       0.95 r
+  decode/h_detect/U33/Y (INVX1)                           0.02       0.97 f
+  decode/h_detect/U32/Y (INVX1)                           0.00       0.97 r
+  decode/h_detect/IF_flush (hazard)                       0.00       0.97 r
+  decode/IF_flush (ID)                                    0.00       0.97 r
+  pipeFD/IF_flush (IF_ID)                                 0.00       0.97 r
+  pipeFD/U111/Y (INVX1)                                   0.02       0.99 f
+  pipeFD/U123/Y (AND2X2)                                  0.05       1.04 f
+  pipeFD/U9/Y (AND2X2)                                    0.04       1.08 f
+  pipeFD/U10/Y (INVX1)                                    0.00       1.08 r
+  pipeFD/U11/Y (AND2X2)                                   0.03       1.11 r
+  pipeFD/U12/Y (INVX1)                                    0.01       1.12 f
+  pipeFD/instr[15]/d (dff_426)                            0.00       1.12 f
+  pipeFD/instr[15]/U3/Y (INVX1)                           0.00       1.13 r
+  pipeFD/instr[15]/U4/Y (NOR2X1)                          0.01       1.13 f
+  pipeFD/instr[15]/state_reg/D (DFFPOSX1)                 0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  pipeFD/instr[15]/state_reg/CLK (DFFPOSX1)               0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.19
+
+
+  Startpoint: pipeDE/instr[14]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pipeEM/alu_result_dff[0]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeDE/instr[14]/state_reg/CLK (DFFPOSX1)               0.00 #     0.00 r
+  pipeDE/instr[14]/state_reg/Q (DFFPOSX1)                 0.11       0.11 f
+  pipeDE/instr[14]/q (dff_393)                            0.00       0.11 f
+  pipeDE/IE_instr<14> (ID_IE)                             0.00       0.11 f
+  execute/instr<14> (IE)                                  0.00       0.11 f
+  execute/U6/Y (BUFX2)                                    0.04       0.15 f
+  execute/ALU/Op<14> (alu)                                0.00       0.15 f
+  execute/ALU/U173/Y (AND2X2)                             0.04       0.19 f
+  execute/ALU/U144/Y (NAND3X1)                            0.03       0.22 r
+  execute/ALU/U179/Y (BUFX2)                              0.04       0.25 r
+  execute/ALU/U5/Y (INVX1)                                0.02       0.27 f
+  execute/ALU/U26/Y (NOR3X1)                              0.02       0.29 r
+  execute/ALU/U21/Y (INVX1)                               0.03       0.32 f
+  execute/ALU/U140/Y (OAI21X1)                            0.04       0.36 r
+  execute/ALU/U139/Y (OAI21X1)                            0.02       0.38 f
+  execute/ALU/shift/Op<1> (shifter)                       0.00       0.38 f
+  execute/ALU/shift/U141/Y (INVX1)                        0.01       0.39 r
+  execute/ALU/shift/U24/Y (INVX1)                         0.02       0.41 f
+  execute/ALU/shift/U38/Y (AND2X2)                        0.04       0.45 f
+  execute/ALU/shift/U120/Y (INVX1)                        0.00       0.45 r
+  execute/ALU/shift/U87/Y (OAI21X1)                       0.01       0.46 f
+  execute/ALU/shift/stage_1/In_stage_1_A<1> (mux_stage_1)
+                                                          0.00       0.46 f
+  execute/ALU/shift/stage_1/U3/Y (INVX1)                  0.00       0.46 r
+  execute/ALU/shift/stage_1/U4/Y (INVX1)                  0.01       0.47 f
+  execute/ALU/shift/stage_1/ins1/InA (mux_2_1_78)         0.00       0.47 f
+  execute/ALU/shift/stage_1/ins1/A/in1 (nand2_236)        0.00       0.47 f
+  execute/ALU/shift/stage_1/ins1/A/U1/Y (AND2X2)          0.04       0.51 f
+  execute/ALU/shift/stage_1/ins1/A/U2/Y (INVX1)           0.00       0.50 r
+  execute/ALU/shift/stage_1/ins1/A/out (nand2_236)        0.00       0.50 r
+  execute/ALU/shift/stage_1/ins1/U2/Y (BUFX2)             0.03       0.53 r
+  execute/ALU/shift/stage_1/ins1/C/in1 (nand2_234)        0.00       0.53 r
+  execute/ALU/shift/stage_1/ins1/C/U1/Y (AND2X2)          0.03       0.57 r
+  execute/ALU/shift/stage_1/ins1/C/U2/Y (INVX1)           0.02       0.58 f
+  execute/ALU/shift/stage_1/ins1/C/out (nand2_234)        0.00       0.58 f
+  execute/ALU/shift/stage_1/ins1/Out (mux_2_1_78)         0.00       0.58 f
+  execute/ALU/shift/stage_1/Out_1<1> (mux_stage_1)        0.00       0.58 f
+  execute/ALU/shift/stage_2/In_stage_2_A<1> (mux_stage_2)
+                                                          0.00       0.58 f
+  execute/ALU/shift/stage_2/ins3/InB (mux_2_1_60)         0.00       0.58 f
+  execute/ALU/shift/stage_2/ins3/B/in1 (nand2_181)        0.00       0.58 f
+  execute/ALU/shift/stage_2/ins3/B/U1/Y (AND2X2)          0.04       0.62 f
+  execute/ALU/shift/stage_2/ins3/B/U2/Y (INVX1)           0.00       0.62 r
+  execute/ALU/shift/stage_2/ins3/B/out (nand2_181)        0.00       0.62 r
+  execute/ALU/shift/stage_2/ins3/U1/Y (BUFX2)             0.03       0.65 r
+  execute/ALU/shift/stage_2/ins3/C/in2 (nand2_180)        0.00       0.65 r
+  execute/ALU/shift/stage_2/ins3/C/U1/Y (AND2X2)          0.03       0.68 r
+  execute/ALU/shift/stage_2/ins3/C/U2/Y (INVX1)           0.02       0.70 f
+  execute/ALU/shift/stage_2/ins3/C/out (nand2_180)        0.00       0.70 f
+  execute/ALU/shift/stage_2/ins3/Out (mux_2_1_60)         0.00       0.70 f
+  execute/ALU/shift/stage_2/Out_2<3> (mux_stage_2)        0.00       0.70 f
+  execute/ALU/shift/stage_3/In_stage_3_A<3> (mux_stage_3)
+                                                          0.00       0.70 f
+  execute/ALU/shift/stage_3/ins7/InB (mux_2_1_40)         0.00       0.70 f
+  execute/ALU/shift/stage_3/ins7/B/in1 (nand2_121)        0.00       0.70 f
+  execute/ALU/shift/stage_3/ins7/B/U1/Y (AND2X2)          0.03       0.73 f
+  execute/ALU/shift/stage_3/ins7/B/U2/Y (INVX1)           0.01       0.74 r
+  execute/ALU/shift/stage_3/ins7/B/out (nand2_121)        0.00       0.74 r
+  execute/ALU/shift/stage_3/ins7/U1/Y (BUFX2)             0.03       0.77 r
+  execute/ALU/shift/stage_3/ins7/C/in2 (nand2_120)        0.00       0.77 r
+  execute/ALU/shift/stage_3/ins7/C/U1/Y (AND2X2)          0.03       0.80 r
+  execute/ALU/shift/stage_3/ins7/C/U2/Y (INVX1)           0.01       0.81 f
+  execute/ALU/shift/stage_3/ins7/C/out (nand2_120)        0.00       0.81 f
+  execute/ALU/shift/stage_3/ins7/Out (mux_2_1_40)         0.00       0.81 f
+  execute/ALU/shift/stage_3/Out_3<7> (mux_stage_3)        0.00       0.81 f
+  execute/ALU/shift/stage_4/In_stage_4_A<7> (mux_stage_4)
+                                                          0.00       0.81 f
+  execute/ALU/shift/stage_4/U44/Y (BUFX2)                 0.03       0.85 f
+  execute/ALU/shift/stage_4/ins15/InB (mux_2_1_16)        0.00       0.85 f
+  execute/ALU/shift/stage_4/ins15/B/in1 (nand2_49)        0.00       0.85 f
+  execute/ALU/shift/stage_4/ins15/B/U1/Y (AND2X2)         0.03       0.88 f
+  execute/ALU/shift/stage_4/ins15/B/U2/Y (INVX1)          0.01       0.89 r
+  execute/ALU/shift/stage_4/ins15/B/out (nand2_49)        0.00       0.89 r
+  execute/ALU/shift/stage_4/ins15/U1/Y (BUFX2)            0.03       0.92 r
+  execute/ALU/shift/stage_4/ins15/C/in2 (nand2_48)        0.00       0.92 r
+  execute/ALU/shift/stage_4/ins15/C/U1/Y (AND2X2)         0.03       0.95 r
+  execute/ALU/shift/stage_4/ins15/C/U2/Y (INVX1)          0.02       0.97 f
+  execute/ALU/shift/stage_4/ins15/C/out (nand2_48)        0.00       0.97 f
+  execute/ALU/shift/stage_4/ins15/Out (mux_2_1_16)        0.00       0.97 f
+  execute/ALU/shift/stage_4/Out_4<15> (mux_stage_4)       0.00       0.97 f
+  execute/ALU/shift/U10/Y (AND2X1)                        0.03       1.00 f
+  execute/ALU/shift/U70/Y (INVX1)                         0.00       1.00 r
+  execute/ALU/shift/U69/Y (OAI21X1)                       0.01       1.01 f
+  execute/ALU/shift/Out<0> (shifter)                      0.00       1.01 f
+  execute/ALU/U134/Y (AOI22X1)                            0.04       1.04 r
+  execute/ALU/U117/Y (BUFX2)                              0.03       1.08 r
+  execute/ALU/U69/Y (AND2X2)                              0.03       1.11 r
+  execute/ALU/U75/Y (INVX1)                               0.01       1.12 f
+  execute/ALU/Out<0> (alu)                                0.00       1.12 f
+  execute/alu_result<0> (IE)                              0.00       1.12 f
+  pipeEM/IE_alu_result<0> (IE_IM)                         0.00       1.12 f
+  pipeEM/alu_result_dff[0]/d (dff_229)                    0.00       1.12 f
+  pipeEM/alu_result_dff[0]/U3/Y (INVX1)                   0.00       1.12 r
+  pipeEM/alu_result_dff[0]/U4/Y (NOR2X1)                  0.01       1.13 f
+  pipeEM/alu_result_dff[0]/state_reg/D (DFFPOSX1)         0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  pipeEM/alu_result_dff[0]/state_reg/CLK (DFFPOSX1)       0.00       1.00 r
+  library setup time                                     -0.05       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.19
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fetch/pc[7]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U59/Y (OR2X2)                         0.06       0.35 r
+  writeback/control/U421/Y (NAND2X1)                      0.02       0.37 f
+  writeback/control/U170/Y (INVX1)                        0.00       0.37 r
+  writeback/control/U98/Y (OR2X2)                         0.04       0.42 r
+  writeback/control/U97/Y (OR2X2)                         0.04       0.46 r
+  writeback/control/U12/Y (OR2X2)                         0.04       0.50 r
+  writeback/control/writedata<13> (wrt_ctrl)              0.00       0.50 r
+  writeback/writedata<13> (IW)                            0.00       0.50 r
+  decode/IW_writedata<13> (ID)                            0.00       0.50 r
+  decode/rf/writedata<13> (rf_bypass)                     0.00       0.50 r
+  decode/rf/U11/Y (MUX2X1)                                0.02       0.52 f
+  decode/rf/U21/Y (INVX1)                                 0.02       0.54 r
+  decode/rf/read1data<13> (rf_bypass)                     0.00       0.54 r
+  decode/h_detect/rs<13> (hazard)                         0.00       0.54 r
+  decode/h_detect/bd/rs<13> (branch_detector)             0.00       0.54 r
+  decode/h_detect/bd/U13/Y (OR2X2)                        0.03       0.57 r
+  decode/h_detect/bd/U14/Y (INVX1)                        0.01       0.59 f
+  decode/h_detect/bd/U28/Y (NAND3X1)                      0.03       0.62 r
+  decode/h_detect/bd/U11/Y (BUFX2)                        0.03       0.66 r
+  decode/h_detect/bd/U9/Y (OR2X2)                         0.04       0.69 r
+  decode/h_detect/bd/U10/Y (INVX1)                        0.02       0.71 f
+  decode/h_detect/bd/U31/Y (NAND3X1)                      0.03       0.74 r
+  decode/h_detect/bd/U15/Y (BUFX2)                        0.04       0.77 r
+  decode/h_detect/bd/U3/Y (MUX2X1)                        0.03       0.80 f
+  decode/h_detect/bd/U19/Y (XNOR2X1)                      0.04       0.84 r
+  decode/h_detect/bd/U32/Y (OAI21X1)                      0.02       0.86 f
+  decode/h_detect/bd/U33/Y (NOR2X1)                       0.03       0.88 r
+  decode/h_detect/bd/branch_taken (branch_detector)       0.00       0.88 r
+  decode/h_detect/U4/Y (BUFX2)                            0.03       0.92 r
+  decode/h_detect/U26/Y (AND2X2)                          0.04       0.95 r
+  decode/h_detect/branch_taken (hazard)                   0.00       0.95 r
+  decode/branch_taken (ID)                                0.00       0.95 r
+  fetch/take_branch (IF)                                  0.00       0.95 r
+  fetch/U4/Y (INVX1)                                      0.03       0.99 f
+  fetch/U10/Y (AND2X2)                                    0.05       1.04 f
+  fetch/U76/Y (AOI22X1)                                   0.03       1.07 r
+  fetch/U27/Y (BUFX2)                                     0.04       1.11 r
+  fetch/U77/Y (OAI21X1)                                   0.01       1.12 f
+  fetch/pc[7]/d (dff_434)                                 0.00       1.12 f
+  fetch/pc[7]/U3/Y (INVX1)                                0.00       1.12 r
+  fetch/pc[7]/U4/Y (NOR2X1)                               0.01       1.13 f
+  fetch/pc[7]/state_reg/D (DFFPOSX1)                      0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  fetch/pc[7]/state_reg/CLK (DFFPOSX1)                    0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.19
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fetch/pc[8]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U59/Y (OR2X2)                         0.06       0.35 r
+  writeback/control/U421/Y (NAND2X1)                      0.02       0.37 f
+  writeback/control/U170/Y (INVX1)                        0.00       0.37 r
+  writeback/control/U98/Y (OR2X2)                         0.04       0.42 r
+  writeback/control/U97/Y (OR2X2)                         0.04       0.46 r
+  writeback/control/U12/Y (OR2X2)                         0.04       0.50 r
+  writeback/control/writedata<13> (wrt_ctrl)              0.00       0.50 r
+  writeback/writedata<13> (IW)                            0.00       0.50 r
+  decode/IW_writedata<13> (ID)                            0.00       0.50 r
+  decode/rf/writedata<13> (rf_bypass)                     0.00       0.50 r
+  decode/rf/U11/Y (MUX2X1)                                0.02       0.52 f
+  decode/rf/U21/Y (INVX1)                                 0.02       0.54 r
+  decode/rf/read1data<13> (rf_bypass)                     0.00       0.54 r
+  decode/h_detect/rs<13> (hazard)                         0.00       0.54 r
+  decode/h_detect/bd/rs<13> (branch_detector)             0.00       0.54 r
+  decode/h_detect/bd/U13/Y (OR2X2)                        0.03       0.57 r
+  decode/h_detect/bd/U14/Y (INVX1)                        0.01       0.59 f
+  decode/h_detect/bd/U28/Y (NAND3X1)                      0.03       0.62 r
+  decode/h_detect/bd/U11/Y (BUFX2)                        0.03       0.66 r
+  decode/h_detect/bd/U9/Y (OR2X2)                         0.04       0.69 r
+  decode/h_detect/bd/U10/Y (INVX1)                        0.02       0.71 f
+  decode/h_detect/bd/U31/Y (NAND3X1)                      0.03       0.74 r
+  decode/h_detect/bd/U15/Y (BUFX2)                        0.04       0.77 r
+  decode/h_detect/bd/U3/Y (MUX2X1)                        0.03       0.80 f
+  decode/h_detect/bd/U19/Y (XNOR2X1)                      0.04       0.84 r
+  decode/h_detect/bd/U32/Y (OAI21X1)                      0.02       0.86 f
+  decode/h_detect/bd/U33/Y (NOR2X1)                       0.03       0.88 r
+  decode/h_detect/bd/branch_taken (branch_detector)       0.00       0.88 r
+  decode/h_detect/U4/Y (BUFX2)                            0.03       0.92 r
+  decode/h_detect/U26/Y (AND2X2)                          0.04       0.95 r
+  decode/h_detect/branch_taken (hazard)                   0.00       0.95 r
+  decode/branch_taken (ID)                                0.00       0.95 r
+  fetch/take_branch (IF)                                  0.00       0.95 r
+  fetch/U4/Y (INVX1)                                      0.03       0.99 f
+  fetch/U10/Y (AND2X2)                                    0.05       1.04 f
+  fetch/U74/Y (AOI22X1)                                   0.03       1.07 r
+  fetch/U26/Y (BUFX2)                                     0.04       1.11 r
+  fetch/U75/Y (OAI21X1)                                   0.01       1.12 f
+  fetch/pc[8]/d (dff_435)                                 0.00       1.12 f
+  fetch/pc[8]/U3/Y (INVX1)                                0.00       1.12 r
+  fetch/pc[8]/U4/Y (NOR2X1)                               0.01       1.13 f
+  fetch/pc[8]/state_reg/D (DFFPOSX1)                      0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  fetch/pc[8]/state_reg/CLK (DFFPOSX1)                    0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.19
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fetch/pc[2]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U59/Y (OR2X2)                         0.06       0.35 r
+  writeback/control/U421/Y (NAND2X1)                      0.02       0.37 f
+  writeback/control/U170/Y (INVX1)                        0.00       0.37 r
+  writeback/control/U98/Y (OR2X2)                         0.04       0.42 r
+  writeback/control/U97/Y (OR2X2)                         0.04       0.46 r
+  writeback/control/U12/Y (OR2X2)                         0.04       0.50 r
+  writeback/control/writedata<13> (wrt_ctrl)              0.00       0.50 r
+  writeback/writedata<13> (IW)                            0.00       0.50 r
+  decode/IW_writedata<13> (ID)                            0.00       0.50 r
+  decode/rf/writedata<13> (rf_bypass)                     0.00       0.50 r
+  decode/rf/U11/Y (MUX2X1)                                0.02       0.52 f
+  decode/rf/U21/Y (INVX1)                                 0.02       0.54 r
+  decode/rf/read1data<13> (rf_bypass)                     0.00       0.54 r
+  decode/h_detect/rs<13> (hazard)                         0.00       0.54 r
+  decode/h_detect/bd/rs<13> (branch_detector)             0.00       0.54 r
+  decode/h_detect/bd/U13/Y (OR2X2)                        0.03       0.57 r
+  decode/h_detect/bd/U14/Y (INVX1)                        0.01       0.59 f
+  decode/h_detect/bd/U28/Y (NAND3X1)                      0.03       0.62 r
+  decode/h_detect/bd/U11/Y (BUFX2)                        0.03       0.66 r
+  decode/h_detect/bd/U9/Y (OR2X2)                         0.04       0.69 r
+  decode/h_detect/bd/U10/Y (INVX1)                        0.02       0.71 f
+  decode/h_detect/bd/U31/Y (NAND3X1)                      0.03       0.74 r
+  decode/h_detect/bd/U15/Y (BUFX2)                        0.04       0.77 r
+  decode/h_detect/bd/U3/Y (MUX2X1)                        0.03       0.80 f
+  decode/h_detect/bd/U19/Y (XNOR2X1)                      0.04       0.84 r
+  decode/h_detect/bd/U32/Y (OAI21X1)                      0.02       0.86 f
+  decode/h_detect/bd/U33/Y (NOR2X1)                       0.03       0.88 r
+  decode/h_detect/bd/branch_taken (branch_detector)       0.00       0.88 r
+  decode/h_detect/U4/Y (BUFX2)                            0.03       0.92 r
+  decode/h_detect/U26/Y (AND2X2)                          0.04       0.95 r
+  decode/h_detect/branch_taken (hazard)                   0.00       0.95 r
+  decode/branch_taken (ID)                                0.00       0.95 r
+  fetch/take_branch (IF)                                  0.00       0.95 r
+  fetch/U4/Y (INVX1)                                      0.03       0.99 f
+  fetch/U10/Y (AND2X2)                                    0.05       1.04 f
+  fetch/U86/Y (AOI22X1)                                   0.03       1.07 r
+  fetch/U32/Y (BUFX2)                                     0.04       1.11 r
+  fetch/U87/Y (OAI21X1)                                   0.01       1.12 f
+  fetch/pc[2]/d (dff_429)                                 0.00       1.12 f
+  fetch/pc[2]/U3/Y (INVX1)                                0.00       1.12 r
+  fetch/pc[2]/U4/Y (NOR2X1)                               0.01       1.13 f
+  fetch/pc[2]/state_reg/D (DFFPOSX1)                      0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  fetch/pc[2]/state_reg/CLK (DFFPOSX1)                    0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.19
+
+
+  Startpoint: pipeMW/instr_dff[12]/state_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fetch/pc[0]/state_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  pipeMW/instr_dff[12]/state_reg/CLK (DFFPOSX1)           0.00 #     0.00 r
+  pipeMW/instr_dff[12]/state_reg/Q (DFFPOSX1)             0.07       0.07 r
+  pipeMW/instr_dff[12]/q (dff_193)                        0.00       0.07 r
+  pipeMW/IW_instr<12> (IM_IW)                             0.00       0.07 r
+  writeback/instr<12> (IW)                                0.00       0.07 r
+  writeback/control/instr<12> (wrt_ctrl)                  0.00       0.07 r
+  writeback/control/U340/Y (INVX1)                        0.02       0.09 f
+  writeback/control/U222/Y (NOR2X1)                       0.03       0.12 r
+  writeback/control/U223/Y (INVX1)                        0.02       0.14 f
+  writeback/control/U55/Y (OR2X2)                         0.04       0.17 f
+  writeback/control/U348/Y (NAND3X1)                      0.03       0.20 r
+  writeback/control/U143/Y (BUFX2)                        0.03       0.24 r
+  writeback/control/U349/Y (NAND2X1)                      0.01       0.25 f
+  writeback/control/U234/Y (INVX1)                        0.01       0.26 r
+  writeback/control/U106/Y (OR2X2)                        0.04       0.30 r
+  writeback/control/U59/Y (OR2X2)                         0.06       0.35 r
+  writeback/control/U421/Y (NAND2X1)                      0.02       0.37 f
+  writeback/control/U170/Y (INVX1)                        0.00       0.37 r
+  writeback/control/U98/Y (OR2X2)                         0.04       0.42 r
+  writeback/control/U97/Y (OR2X2)                         0.04       0.46 r
+  writeback/control/U12/Y (OR2X2)                         0.04       0.50 r
+  writeback/control/writedata<13> (wrt_ctrl)              0.00       0.50 r
+  writeback/writedata<13> (IW)                            0.00       0.50 r
+  decode/IW_writedata<13> (ID)                            0.00       0.50 r
+  decode/rf/writedata<13> (rf_bypass)                     0.00       0.50 r
+  decode/rf/U11/Y (MUX2X1)                                0.02       0.52 f
+  decode/rf/U21/Y (INVX1)                                 0.02       0.54 r
+  decode/rf/read1data<13> (rf_bypass)                     0.00       0.54 r
+  decode/h_detect/rs<13> (hazard)                         0.00       0.54 r
+  decode/h_detect/bd/rs<13> (branch_detector)             0.00       0.54 r
+  decode/h_detect/bd/U13/Y (OR2X2)                        0.03       0.57 r
+  decode/h_detect/bd/U14/Y (INVX1)                        0.01       0.59 f
+  decode/h_detect/bd/U28/Y (NAND3X1)                      0.03       0.62 r
+  decode/h_detect/bd/U11/Y (BUFX2)                        0.03       0.66 r
+  decode/h_detect/bd/U9/Y (OR2X2)                         0.04       0.69 r
+  decode/h_detect/bd/U10/Y (INVX1)                        0.02       0.71 f
+  decode/h_detect/bd/U31/Y (NAND3X1)                      0.03       0.74 r
+  decode/h_detect/bd/U15/Y (BUFX2)                        0.04       0.77 r
+  decode/h_detect/bd/U3/Y (MUX2X1)                        0.03       0.80 f
+  decode/h_detect/bd/U19/Y (XNOR2X1)                      0.04       0.84 r
+  decode/h_detect/bd/U32/Y (OAI21X1)                      0.02       0.86 f
+  decode/h_detect/bd/U33/Y (NOR2X1)                       0.03       0.88 r
+  decode/h_detect/bd/branch_taken (branch_detector)       0.00       0.88 r
+  decode/h_detect/U4/Y (BUFX2)                            0.03       0.92 r
+  decode/h_detect/U26/Y (AND2X2)                          0.04       0.95 r
+  decode/h_detect/branch_taken (hazard)                   0.00       0.95 r
+  decode/branch_taken (ID)                                0.00       0.95 r
+  fetch/take_branch (IF)                                  0.00       0.95 r
+  fetch/U4/Y (INVX1)                                      0.03       0.99 f
+  fetch/U11/Y (AND2X2)                                    0.05       1.04 f
+  fetch/U90/Y (AOI22X1)                                   0.03       1.07 r
+  fetch/U34/Y (BUFX2)                                     0.04       1.11 r
+  fetch/U91/Y (OAI21X1)                                   0.01       1.12 f
+  fetch/pc[0]/d (dff_427)                                 0.00       1.12 f
+  fetch/pc[0]/U3/Y (INVX1)                                0.00       1.12 r
+  fetch/pc[0]/U4/Y (NOR2X1)                               0.01       1.13 f
+  fetch/pc[0]/state_reg/D (DFFPOSX1)                      0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock clk (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  fetch/pc[0]/state_reg/CLK (DFFPOSX1)                    0.00       1.00 r
+  library setup time                                     -0.06       0.94
+  data required time                                                 0.94
+  --------------------------------------------------------------------------
+  data required time                                                 0.94
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.19
+
+
+1

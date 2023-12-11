@@ -1,0 +1,220 @@
+I:/ECE552/HW2/hw2_1/mux_stage_1_tb.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/mux_stage_1_tb.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_1_tb
+
+Top level modules:
+	mux_stage_1_tb
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/op_low_s_tb.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/op_low_s_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module op_low_s_tb
+
+Top level modules:
+	op_low_s_tb
+
+} {} {}} I:/ECE552/HW2/hw2_1/shifter_hier_bench.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/shifter_hier_bench.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module shifter_hier_bench
+
+Top level modules:
+	shifter_hier_bench
+
+} {} {}} I:/ECE552/HW2/hw2_1/clkrst.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/clkrst.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module clkrst
+
+Top level modules:
+	clkrst
+
+} {} {}} I:/ECE552/HW2/hw2_1/nand2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/nand2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module nand2
+
+Top level modules:
+	nand2
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/s_1_tb.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/s_1_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+
+} {} {}} I:/ECE552/HW2/hw2_1/mux_stage_1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/mux_stage_1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_1
+
+Top level modules:
+	mux_stage_1
+
+} {} {}} I:/ECE552/HW2/hw2_1/shifter.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/shifter.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module shifter
+
+Top level modules:
+	shifter
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/mux_stage_1_tb.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/mux_stage_1_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module mux_stage_1_tb
+
+Top level modules:
+	mux_stage_1_tb
+
+} {} {}} I:/ECE552/HW2/hw2_1/mux_stage_2.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/mux_stage_2.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_2
+
+Top level modules:
+	mux_stage_2
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/shifter_hier_bench.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/shifter_hier_bench.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module shifter_hier_bench
+
+Top level modules:
+	shifter_hier_bench
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/nand2.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/nand2.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module nand2
+
+Top level modules:
+	nand2
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/clkrst.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/clkrst.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module clkrst
+
+Top level modules:
+	clkrst
+
+} {} {}} I:/ECE552/HW2/hw2_1/mux_stage_3.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/mux_stage_3.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_3
+
+Top level modules:
+	mux_stage_3
+
+} {} {}} I:/ECE552/HW2/hw2_1/mux_stage_4.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/mux_stage_4.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_stage_4
+
+Top level modules:
+	mux_stage_4
+
+} {} {}} I:/ECE552/HW2/hw2_1/dir_mux.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/dir_mux.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module dir_mux
+
+Top level modules:
+	dir_mux
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/shifter.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/shifter.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module shifter
+
+Top level modules:
+	shifter
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/mux_stage_1.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/mux_stage_1.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module mux_stage_1
+
+Top level modules:
+	mux_stage_1
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/rot_detector.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/rot_detector.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module rot_detector
+
+Top level modules:
+	rot_detector
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/mux_stage_2.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/mux_stage_2.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module mux_stage_2
+
+Top level modules:
+	mux_stage_2
+
+} {} {}} I:/ECE552/HW2/hw2_1/not1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/not1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module not1
+
+Top level modules:
+	not1
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/mux_stage_3.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/mux_stage_3.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module mux_stage_3
+
+Top level modules:
+	mux_stage_3
+
+} {} {}} I:/ECE552/HW2/hw2_1/mux_2_1.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/mux_2_1.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module mux_2_1
+
+Top level modules:
+	mux_2_1
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/dir_mux.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/dir_mux.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module dir_mux
+
+Top level modules:
+	dir_mux
+
+} {} {}} I:/ECE552/HW2/hw2_1/shifter_hier.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/shifter_hier.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module shifter_hier
+
+Top level modules:
+	shifter_hier
+
+} {} {}} I:/ECE552/HW2/hw2_1/dir_mux_tb.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/dir_mux_tb.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module dir_mux_tb
+
+Top level modules:
+	dir_mux_tb
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/not1.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/not1.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module not1
+
+Top level modules:
+	not1
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/mux_stage_2_tb.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/mux_stage_2_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/mux_2_1.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/mux_2_1.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module mux_2_1
+
+Top level modules:
+	mux_2_1
+
+} {} {}} I:/ECE552/HW2/hw2_1/op_low_s_tb.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/op_low_s_tb.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+-- Compiling module op_low_s_tb
+
+Top level modules:
+	op_low_s_tb
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/shifter_hier.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/shifter_hier.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module shifter_hier
+
+Top level modules:
+	shifter_hier
+
+} {} {}} I:/ECE552/HW2/hw2_1/s_1_tb.v {1 {vlog -work work -vopt -stats=none I:/ECE552/HW2/hw2_1/s_1_tb.v
+Model Technology ModelSim SE vlog 10.3c Compiler 2014.07 Jul 19 2014
+
+} {} {}} /userspace/y/yizheng/ECE552/HW2/hw2_1/dir_mux_tb.v {1 {vlog -work work -vopt -stats=none /userspace/y/yizheng/ECE552/HW2/hw2_1/dir_mux_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  2 2014
+-- Compiling module dir_mux_tb
+
+Top level modules:
+	dir_mux_tb
+
+} {} {}}

@@ -1,0 +1,117 @@
+ 
+****************************************
+Report : cell
+Design : proc
+Version: L-2016.03-SP4-1
+Date   : Fri Apr 14 22:22:14 2017
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+ALU                       alu                             2995.541844
+                                                                    h
+PC                        pc_unit                         783.730982
+                                                                    h, n
+U22                       AOI22X1         gscl45nm        3.285100  
+U23                       AOI22X1         gscl45nm        3.285100  
+U24                       AOI22X1         gscl45nm        3.285100  
+U25                       AOI22X1         gscl45nm        3.285100  
+U26                       AOI22X1         gscl45nm        3.285100  
+U27                       AOI22X1         gscl45nm        3.285100  
+U28                       AOI22X1         gscl45nm        3.285100  
+U29                       AOI22X1         gscl45nm        3.285100  
+U30                       AOI22X1         gscl45nm        3.285100  
+U31                       AOI22X1         gscl45nm        3.285100  
+U32                       AOI22X1         gscl45nm        3.285100  
+U33                       AOI22X1         gscl45nm        3.285100  
+U34                       AOI22X1         gscl45nm        3.285100  
+U35                       AOI22X1         gscl45nm        3.285100  
+U36                       AOI22X1         gscl45nm        3.285100  
+U37                       AOI22X1         gscl45nm        3.285100  
+U38                       AND2X1          gscl45nm        2.346500  
+U39                       INVX2           gscl45nm        1.877200  
+U40                       INVX1           gscl45nm        1.407900  
+U41                       INVX1           gscl45nm        1.407900  
+U42                       BUFX2           gscl45nm        2.346500  
+U43                       BUFX2           gscl45nm        2.346500  
+U44                       INVX1           gscl45nm        1.407900  
+U45                       INVX1           gscl45nm        1.407900  
+U46                       BUFX2           gscl45nm        2.346500  
+U47                       INVX1           gscl45nm        1.407900  
+U48                       INVX1           gscl45nm        1.407900  
+U49                       INVX1           gscl45nm        1.407900  
+U50                       INVX1           gscl45nm        1.407900  
+U51                       INVX4           gscl45nm        3.285100  
+U52                       INVX1           gscl45nm        1.407900  
+U53                       BUFX2           gscl45nm        2.346500  
+U54                       BUFX2           gscl45nm        2.346500  
+U55                       BUFX2           gscl45nm        2.346500  
+U56                       INVX1           gscl45nm        1.407900  
+U57                       INVX2           gscl45nm        1.877200  
+U58                       INVX2           gscl45nm        1.877200  
+U59                       INVX1           gscl45nm        1.407900  
+U60                       INVX1           gscl45nm        1.407900  
+U61                       INVX1           gscl45nm        1.407900  
+U62                       BUFX2           gscl45nm        2.346500  
+U63                       BUFX2           gscl45nm        2.346500  
+U64                       INVX1           gscl45nm        1.407900  
+U65                       INVX1           gscl45nm        1.407900  
+U66                       INVX1           gscl45nm        1.407900  
+U67                       INVX1           gscl45nm        1.407900  
+U68                       INVX1           gscl45nm        1.407900  
+U69                       INVX1           gscl45nm        1.407900  
+U70                       INVX1           gscl45nm        1.407900  
+U71                       INVX1           gscl45nm        1.407900  
+U72                       INVX1           gscl45nm        1.407900  
+U73                       INVX1           gscl45nm        1.407900  
+U74                       INVX1           gscl45nm        1.407900  
+U75                       INVX1           gscl45nm        1.407900  
+U76                       INVX1           gscl45nm        1.407900  
+U77                       INVX1           gscl45nm        1.407900  
+U78                       INVX1           gscl45nm        1.407900  
+U79                       INVX1           gscl45nm        1.407900  
+U80                       INVX1           gscl45nm        1.407900  
+U82                       INVX1           gscl45nm        1.407900  
+U83                       INVX1           gscl45nm        1.407900  
+U84                       BUFX2           gscl45nm        2.346500  
+U85                       BUFX2           gscl45nm        2.346500  
+U86                       AND2X2          gscl45nm        2.815800  
+alu_bmux                  alu_b_mux                       87.289800 h
+control                   wrt_ctrl                        584.278489
+                                                                    h
+counter                   stall_c                         22.526399 h, n
+decoder                   instr_decoder                   411.106792
+                                                                    h
+dmem                      memory2c_0                      14321.627834
+                                                                    h, n
+ex_mem                    EX_MEM                          906.687578
+                                                                    h, n
+haz                       haz_d                           58.662498 h
+id_ex                     ID_EX                           1161.986772
+                                                                    h, n
+if_id                     IF_ID                           925.459578
+                                                                    h, n
+imem                      memory2c_1                      14346.031434
+                                                                    h, n
+ins1                      for_unit_1                      856.941785
+                                                                    h
+ins2                      for_unit2                       316.308195
+                                                                    h
+jump_B_sel                pc_jump_B_sel_1                 4.693000  h
+jump_out                  pc_jump_out                     802.033682
+                                                                    h
+lt_logic                  lt_lte                          11.732500 h
+mem_wb                    MEM_WB                          238.873694
+                                                                    h, n
+rf                        rf_bypass                       5036.996794
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 83 cells                                            44007.668049
+1

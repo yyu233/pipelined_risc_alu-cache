@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : fifo
+Version: L-2016.03-SP4-1
+Date   : Thu Mar 23 15:47:50 2017
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    gscl45nm (File: /u/k/a/karu/courses/cs552/cad/Synopsys_Libraries/libs/gscl45nm.db)
+
+Number of ports:                         5705
+Number of nets:                          9071
+Number of cells:                         4985
+Number of combinational cells:           3167
+Number of sequential cells:               267
+Number of macros/black boxes:               0
+Number of buf/inv:                       1841
+Number of references:                       7
+
+Combinational area:               5969.965150
+Buf/Inv area:                     2718.654848
+Noncombinational area:            2108.564854
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  8078.530003
+Total area:                 undefined
+1

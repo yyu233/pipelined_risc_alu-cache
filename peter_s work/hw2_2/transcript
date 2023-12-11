@@ -1,0 +1,51 @@
+# vsim -c alu_hier_bench -lib __work -voptargs="+acc" -wlf dump.wlf -do "log -howmany -rec /* ; run -all" 
+# Start time: 18:40:07 on Feb 11,2017
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.4c linux Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading work.alu_hier_bench(fast)
+# Loading work.alu_hier(fast)
+# Loading work.clkrst(fast)
+# Loading work.alu(fast)
+# Loading work.not16(fast)
+# Loading work.mux16_2_1(fast)
+# Loading work.mux_2_1(fast)
+# Loading work.not1(fast)
+# Loading work.nand2(fast)
+# Loading work.shifter(fast)
+# Loading work.dir_mux(fast)
+# Loading work.mux_stage_1(fast)
+# Loading work.mux_stage_2(fast)
+# Loading work.rot_detector(fast)
+# Loading work.nor2(fast)
+# Loading work.mux_stage_3(fast)
+# Loading work.mux_stage_4(fast)
+# Loading work.cla16(fast)
+# Loading work.top_ahead(fast)
+# Loading work.ahead4(fast)
+# Loading work.cla4(fast)
+# Loading work.pfa(fast)
+# Loading work.and16(fast)
+# Loading work.or16(fast)
+# Loading work.xor16(fast)
+# log -howmany -rec /* 
+# 3969
+#  run -all
+# TEST PASSED
+# ** Note: $finish    : alu_hier_bench.v(42)
+#    Time: 5 us  Iteration: 0  Instance: /alu_hier_bench
+# End time: 18:40:08 on Feb 11,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
